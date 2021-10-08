@@ -18,22 +18,6 @@ namespace GuiMockups
         //build a connection to db
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
 
-
-        //--frmCustomerOrder Update 
-        //add command object
-        private static SqlCommand _sqlResultsCommand;
-        //add the data adapter
-        private static SqlDataAdapter _daResults = new SqlDataAdapter();
-        //add the data tables
-        private static DataTable _dtResultsTable = new DataTable();
-
-        //add command object
-        private static SqlCommand _sqlResultsCommand2;
-        //add the data adapter
-        private static SqlDataAdapter _daResults2 = new SqlDataAdapter();
-        //add the data tables
-        private static DataTable _dtResultsTable2 = new DataTable();
-        //--frmCustomerOrder Update  ^^
         // this is a test, anthony. hello!
         public static void OpenDatabase()
         {
