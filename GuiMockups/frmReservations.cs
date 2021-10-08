@@ -16,5 +16,11 @@ namespace GuiMockups
         {
             InitializeComponent();
         }
+
+        private void btnBookNow_Click(object sender, EventArgs e)
+        {
+            //get the date selected in the month calendar assigns value to a string. 
+            string calDate = monthCalendar1.SelectionRange.Start.ToShortDateString();
+        }
     }
 }

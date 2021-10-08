@@ -16,5 +16,20 @@ namespace GuiMockups
         {
             InitializeComponent();
         }
+
+        private void frmCustomerOrder_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrees_Click(object sender, EventArgs e)
+        {
+            ProgOps.imageChange(pbxMenu1, "101");
+            ProgOps.imageChange(pbxMenu2, "102");
+            ProgOps.imageChange(pbxMenu3, "103");
+            ProgOps.changeLabels(lblDescription1, "101");
+            ProgOps.changeLabels(lblDescription2, "102");
+            ProgOps.changeLabels(lblDescription3, "103");
+        }
     }
 }

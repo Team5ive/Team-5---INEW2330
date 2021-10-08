@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+using System.Drawing;
 
 namespace GuiMockups
 {
@@ -16,6 +18,22 @@ namespace GuiMockups
         //build a connection to db
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
 
+
+        //--frmCustomerOrder Update 
+        //add command object
+        private static SqlCommand _sqlResultsCommand;
+        //add the data adapter
+        private static SqlDataAdapter _daResults = new SqlDataAdapter();
+        //add the data tables
+        private static DataTable _dtResultsTable = new DataTable();
+
+        //add command object
+        private static SqlCommand _sqlResultsCommand2;
+        //add the data adapter
+        private static SqlDataAdapter _daResults2 = new SqlDataAdapter();
+        //add the data tables
+        private static DataTable _dtResultsTable2 = new DataTable();
+        //--frmCustomerOrder Update  ^^
         // this is a test, anthony. hello!
         public static void OpenDatabase()
         {
@@ -30,6 +48,62 @@ namespace GuiMockups
             //dispose of database
             _cntDatabase.Dispose();
             MessageBox.Show("Close Database Successful", "Close Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        // ----- frmCustomerOrder(imageChange, changeLabel)
+        public static void imageChange(PictureBox pbxItem1, string menuID)
+        {
+            _sqlResultsCommand = new SqlCommand("SELECT Menu_Image FROM [group5fa212330].[Menu] WHERE Menu_ID = " + menuID, _cntDatabase);
+
+            SqlDataAdapter da = new SqlDataAdapter(_sqlResultsCommand);
+
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count > 0)
+
+            {
+
+                MemoryStream ms = new MemoryStream((byte[])ds.Tables[0].Rows[0]["Menu_Image"]);
+
+                pbxItem1.Image = new Bitmap(ms);
+
+            }
+
+            //dispose of command, adapter, and table objects
+            _sqlResultsCommand.Dispose();
+            _daResults.Dispose();
+            _dtResultsTable.Dispose();
+        }
+
+        public static void changeLabels(Label description1, string menuID)
+        {
+            try
+            {
+                //string to build a query
+                string query = "SELECT Menu_Description FROM [group5fa212330].[Menu] WHERE Menu_ID =" + menuID;
+                //establish a command object
+                _sqlResultsCommand2 = new SqlCommand(query, _cntDatabase);
+                //establish data adapter
+                _daResults2 = new SqlDataAdapter();
+                _daResults2.SelectCommand = _sqlResultsCommand2;
+                //fill the data table
+                _dtResultsTable2 = new DataTable();
+                _daResults2.Fill(_dtResultsTable2);
+                //bind to controls to data table 
+                description1.DataBindings.Add("Text", _dtResultsTable2, "Menu_Description");
+                _sqlResultsCommand2.Dispose();
+                _daResults2.Dispose();
+                _dtResultsTable2.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error in SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+            }
+
         }
     }
 
