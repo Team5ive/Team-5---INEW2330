@@ -15,8 +15,6 @@ namespace GuiMockups
         private const string CONNECT_STRING = @"Server=cstnt.tstc.edu;Database= inew2330fa21;User Id=group5fa212330;password=5283165";
         //build a connection to db
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
-
-        // this is a test, anthony. hello!
         public static void OpenDatabase()
         {
             //open the connection to database
