@@ -13,6 +13,21 @@ namespace GuiMockups
 {
     class ProgOps
     {
+        //add command object
+        private static SqlCommand _sqlResultsCommand;
+        //add the data adapter
+        private static SqlDataAdapter _daResults = new SqlDataAdapter();
+        //add the data tables
+        private static DataTable _dtResultsTable = new DataTable();
+
+        //add command object
+        private static SqlCommand _sqlResultsCommand2;
+        //add the data adapter
+        private static SqlDataAdapter _daResults2 = new SqlDataAdapter();
+        //add the data tables
+        private static DataTable _dtResultsTable2 = new DataTable();
+        //--- frmCustomerOrder
+
         //connection string
         private const string CONNECT_STRING = @"Server=cstnt.tstc.edu;Database= inew2330fa21;User Id=group5fa212330;password=5283165";
         //build a connection to db
