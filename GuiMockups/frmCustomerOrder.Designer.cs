@@ -41,14 +41,14 @@
             this.btnEntrees = new System.Windows.Forms.Button();
             this.btnAppetizers = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblYellow = new System.Windows.Forms.Label();
             this.lblMenu = new System.Windows.Forms.Label();
             this.pbxSwirl1 = new System.Windows.Forms.PictureBox();
             this.pbxSwirl2 = new System.Windows.Forms.PictureBox();
             this.gbxEntrees = new System.Windows.Forms.GroupBox();
-            this.lblItem3 = new System.Windows.Forms.Label();
-            this.lblItem2 = new System.Windows.Forms.Label();
-            this.lblItem1 = new System.Windows.Forms.Label();
+            this.lblItemMenu3 = new System.Windows.Forms.Label();
+            this.lblItemMenu2 = new System.Windows.Forms.Label();
+            this.lblItemMenu1 = new System.Windows.Forms.Label();
             this.radItem3 = new System.Windows.Forms.RadioButton();
             this.radItem2 = new System.Windows.Forms.RadioButton();
             this.radItem1 = new System.Windows.Forms.RadioButton();
@@ -59,18 +59,57 @@
             this.pbxMenu1 = new System.Windows.Forms.PictureBox();
             this.lblDescription1 = new System.Windows.Forms.Label();
             this.gbxAppetizers = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblItemMenu13 = new System.Windows.Forms.Label();
             this.lblMenu2 = new System.Windows.Forms.Label();
             this.lblMenu1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radCheck3 = new System.Windows.Forms.RadioButton();
+            this.radCheck2 = new System.Windows.Forms.RadioButton();
+            this.radCheck1 = new System.Windows.Forms.RadioButton();
             this.lblApp3 = new System.Windows.Forms.Label();
             this.pbxApp3 = new System.Windows.Forms.PictureBox();
             this.lblApp2 = new System.Windows.Forms.Label();
             this.pbxApp2 = new System.Windows.Forms.PictureBox();
             this.pbxApp1 = new System.Windows.Forms.PictureBox();
             this.lblApp1 = new System.Windows.Forms.Label();
+            this.gbxSoups = new System.Windows.Forms.GroupBox();
+            this.lblItem13 = new System.Windows.Forms.Label();
+            this.lblItem12 = new System.Windows.Forms.Label();
+            this.lblItem11 = new System.Windows.Forms.Label();
+            this.radItem6 = new System.Windows.Forms.RadioButton();
+            this.radItem5 = new System.Windows.Forms.RadioButton();
+            this.radItem4 = new System.Windows.Forms.RadioButton();
+            this.lblSalad3 = new System.Windows.Forms.Label();
+            this.pbxSoup3 = new System.Windows.Forms.PictureBox();
+            this.lblSalad2 = new System.Windows.Forms.Label();
+            this.pbxSoup2 = new System.Windows.Forms.PictureBox();
+            this.pbxSoup1 = new System.Windows.Forms.PictureBox();
+            this.lblsalad1 = new System.Windows.Forms.Label();
+            this.lblItem21 = new System.Windows.Forms.Label();
+            this.radDessert1 = new System.Windows.Forms.RadioButton();
+            this.pbxDessert1 = new System.Windows.Forms.PictureBox();
+            this.gbxDesserts = new System.Windows.Forms.GroupBox();
+            this.lblItem20 = new System.Windows.Forms.Label();
+            this.lblItem19 = new System.Windows.Forms.Label();
+            this.radDessert3 = new System.Windows.Forms.RadioButton();
+            this.radDessert2 = new System.Windows.Forms.RadioButton();
+            this.lblDessert3 = new System.Windows.Forms.Label();
+            this.pbxDessert3 = new System.Windows.Forms.PictureBox();
+            this.lblDessert2 = new System.Windows.Forms.Label();
+            this.pbxDessert2 = new System.Windows.Forms.PictureBox();
+            this.lblDessert1 = new System.Windows.Forms.Label();
+            this.gbxDrinks = new System.Windows.Forms.GroupBox();
+            this.lblItem17 = new System.Windows.Forms.Label();
+            this.lblItem16 = new System.Windows.Forms.Label();
+            this.lblItem15 = new System.Windows.Forms.Label();
+            this.radDrink3 = new System.Windows.Forms.RadioButton();
+            this.radDrink2 = new System.Windows.Forms.RadioButton();
+            this.radDrink1 = new System.Windows.Forms.RadioButton();
+            this.lblDrink3 = new System.Windows.Forms.Label();
+            this.pbxDrink3 = new System.Windows.Forms.PictureBox();
+            this.lblDrink2 = new System.Windows.Forms.Label();
+            this.pbxDrink2 = new System.Windows.Forms.PictureBox();
+            this.pbxDrink1 = new System.Windows.Forms.PictureBox();
+            this.lblDrink1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).BeginInit();
             this.gbxEntrees.SuspendLayout();
@@ -81,6 +120,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).BeginInit();
+            this.gbxSoups.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).BeginInit();
+            this.gbxDesserts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).BeginInit();
+            this.gbxDrinks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinus
@@ -154,6 +205,7 @@
             this.btnHome.TabIndex = 59;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnDrinks
             // 
@@ -225,14 +277,14 @@
             this.label7.Size = new System.Drawing.Size(840, 60);
             this.label7.TabIndex = 53;
             // 
-            // label6
+            // lblYellow
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.label6.Location = new System.Drawing.Point(-4, 154);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(840, 37);
-            this.label6.TabIndex = 52;
+            this.lblYellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.lblYellow.Location = new System.Drawing.Point(-4, 154);
+            this.lblYellow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblYellow.Name = "lblYellow";
+            this.lblYellow.Size = new System.Drawing.Size(840, 37);
+            this.lblYellow.TabIndex = 52;
             // 
             // lblMenu
             // 
@@ -270,9 +322,11 @@
             // 
             // gbxEntrees
             // 
-            this.gbxEntrees.Controls.Add(this.lblItem3);
-            this.gbxEntrees.Controls.Add(this.lblItem2);
-            this.gbxEntrees.Controls.Add(this.lblItem1);
+            this.gbxEntrees.Controls.Add(this.gbxDrinks);
+            this.gbxEntrees.Controls.Add(this.gbxDesserts);
+            this.gbxEntrees.Controls.Add(this.lblItemMenu3);
+            this.gbxEntrees.Controls.Add(this.lblItemMenu2);
+            this.gbxEntrees.Controls.Add(this.lblItemMenu1);
             this.gbxEntrees.Controls.Add(this.radItem3);
             this.gbxEntrees.Controls.Add(this.radItem2);
             this.gbxEntrees.Controls.Add(this.radItem1);
@@ -292,35 +346,35 @@
             this.gbxEntrees.TabStop = false;
             this.gbxEntrees.Text = "Entrees";
             // 
-            // lblItem3
+            // lblItemMenu3
             // 
-            this.lblItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblItem3.Location = new System.Drawing.Point(187, 272);
-            this.lblItem3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblItem3.Name = "lblItem3";
-            this.lblItem3.Size = new System.Drawing.Size(442, 31);
-            this.lblItem3.TabIndex = 74;
-            this.lblItem3.Text = "Salmon Consommé  ............................................... 59.99";
+            this.lblItemMenu3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItemMenu3.Location = new System.Drawing.Point(187, 272);
+            this.lblItemMenu3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItemMenu3.Name = "lblItemMenu3";
+            this.lblItemMenu3.Size = new System.Drawing.Size(442, 31);
+            this.lblItemMenu3.TabIndex = 74;
+            this.lblItemMenu3.Text = "Salmon Consommé  ............................................... 59.99";
             // 
-            // lblItem2
+            // lblItemMenu2
             // 
-            this.lblItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblItem2.Location = new System.Drawing.Point(187, 153);
-            this.lblItem2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblItem2.Name = "lblItem2";
-            this.lblItem2.Size = new System.Drawing.Size(442, 31);
-            this.lblItem2.TabIndex = 73;
-            this.lblItem2.Text = "Dover Sole  .................................................... 49.99";
+            this.lblItemMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItemMenu2.Location = new System.Drawing.Point(187, 153);
+            this.lblItemMenu2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItemMenu2.Name = "lblItemMenu2";
+            this.lblItemMenu2.Size = new System.Drawing.Size(442, 31);
+            this.lblItemMenu2.TabIndex = 73;
+            this.lblItemMenu2.Text = "Dover Sole  .................................................... 49.99";
             // 
-            // lblItem1
+            // lblItemMenu1
             // 
-            this.lblItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblItem1.Location = new System.Drawing.Point(187, 35);
-            this.lblItem1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblItem1.Name = "lblItem1";
-            this.lblItem1.Size = new System.Drawing.Size(442, 31);
-            this.lblItem1.TabIndex = 72;
-            this.lblItem1.Text = "Krabby Patty  .................................................. 10.00";
+            this.lblItemMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItemMenu1.Location = new System.Drawing.Point(187, 35);
+            this.lblItemMenu1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItemMenu1.Name = "lblItemMenu1";
+            this.lblItemMenu1.Size = new System.Drawing.Size(442, 31);
+            this.lblItemMenu1.TabIndex = 72;
+            this.lblItemMenu1.Text = "Krabby Patty  .................................................. 10.00";
             // 
             // radItem3
             // 
@@ -414,18 +468,20 @@
             // 
             // gbxAppetizers
             // 
-            this.gbxAppetizers.Controls.Add(this.label1);
+            this.gbxAppetizers.Controls.Add(this.gbxSoups);
+            this.gbxAppetizers.Controls.Add(this.lblItemMenu13);
             this.gbxAppetizers.Controls.Add(this.lblMenu2);
             this.gbxAppetizers.Controls.Add(this.lblMenu1);
-            this.gbxAppetizers.Controls.Add(this.radioButton1);
-            this.gbxAppetizers.Controls.Add(this.radioButton2);
-            this.gbxAppetizers.Controls.Add(this.radioButton3);
+            this.gbxAppetizers.Controls.Add(this.radCheck3);
+            this.gbxAppetizers.Controls.Add(this.radCheck2);
+            this.gbxAppetizers.Controls.Add(this.radCheck1);
             this.gbxAppetizers.Controls.Add(this.lblApp3);
             this.gbxAppetizers.Controls.Add(this.pbxApp3);
             this.gbxAppetizers.Controls.Add(this.lblApp2);
             this.gbxAppetizers.Controls.Add(this.pbxApp2);
             this.gbxAppetizers.Controls.Add(this.pbxApp1);
             this.gbxAppetizers.Controls.Add(this.lblApp1);
+            this.gbxAppetizers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.gbxAppetizers.Location = new System.Drawing.Point(70, 219);
             this.gbxAppetizers.Name = "gbxAppetizers";
             this.gbxAppetizers.Size = new System.Drawing.Size(696, 412);
@@ -434,15 +490,15 @@
             this.gbxAppetizers.Text = "Appetizers";
             this.gbxAppetizers.Visible = false;
             // 
-            // label1
+            // lblItemMenu13
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label1.Location = new System.Drawing.Point(194, 269);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(442, 31);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Tuna-Urchin Toast .............................................. 21.99";
+            this.lblItemMenu13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItemMenu13.Location = new System.Drawing.Point(194, 269);
+            this.lblItemMenu13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItemMenu13.Name = "lblItemMenu13";
+            this.lblItemMenu13.Size = new System.Drawing.Size(442, 31);
+            this.lblItemMenu13.TabIndex = 62;
+            this.lblItemMenu13.Text = "Tuna-Urchin Toast .............................................. 21.99";
             // 
             // lblMenu2
             // 
@@ -464,38 +520,38 @@
             this.lblMenu1.TabIndex = 60;
             this.lblMenu1.Text = "Scallops ....................................................... 24.99";
             // 
-            // radioButton1
+            // radCheck3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 307);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(21, 20);
-            this.radioButton1.TabIndex = 59;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radCheck3.AutoSize = true;
+            this.radCheck3.Location = new System.Drawing.Point(26, 307);
+            this.radCheck3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radCheck3.Name = "radCheck3";
+            this.radCheck3.Size = new System.Drawing.Size(21, 20);
+            this.radCheck3.TabIndex = 59;
+            this.radCheck3.TabStop = true;
+            this.radCheck3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radCheck2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 190);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(21, 20);
-            this.radioButton2.TabIndex = 58;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radCheck2.AutoSize = true;
+            this.radCheck2.Location = new System.Drawing.Point(26, 190);
+            this.radCheck2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radCheck2.Name = "radCheck2";
+            this.radCheck2.Size = new System.Drawing.Size(21, 20);
+            this.radCheck2.TabIndex = 58;
+            this.radCheck2.TabStop = true;
+            this.radCheck2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radCheck1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(26, 78);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(21, 20);
-            this.radioButton3.TabIndex = 57;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radCheck1.AutoSize = true;
+            this.radCheck1.Location = new System.Drawing.Point(26, 78);
+            this.radCheck1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radCheck1.Name = "radCheck1";
+            this.radCheck1.Size = new System.Drawing.Size(21, 20);
+            this.radCheck1.TabIndex = 57;
+            this.radCheck1.TabStop = true;
+            this.radCheck1.UseVisualStyleBackColor = true;
             // 
             // lblApp3
             // 
@@ -554,6 +610,441 @@
             this.lblApp1.Size = new System.Drawing.Size(442, 77);
             this.lblApp1.TabIndex = 53;
             // 
+            // gbxSoups
+            // 
+            this.gbxSoups.Controls.Add(this.lblItem13);
+            this.gbxSoups.Controls.Add(this.lblItem12);
+            this.gbxSoups.Controls.Add(this.lblItem11);
+            this.gbxSoups.Controls.Add(this.radItem6);
+            this.gbxSoups.Controls.Add(this.radItem5);
+            this.gbxSoups.Controls.Add(this.radItem4);
+            this.gbxSoups.Controls.Add(this.lblSalad3);
+            this.gbxSoups.Controls.Add(this.pbxSoup3);
+            this.gbxSoups.Controls.Add(this.lblSalad2);
+            this.gbxSoups.Controls.Add(this.pbxSoup2);
+            this.gbxSoups.Controls.Add(this.pbxSoup1);
+            this.gbxSoups.Controls.Add(this.lblsalad1);
+            this.gbxSoups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.gbxSoups.Location = new System.Drawing.Point(5, 2);
+            this.gbxSoups.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxSoups.Name = "gbxSoups";
+            this.gbxSoups.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxSoups.Size = new System.Drawing.Size(679, 410);
+            this.gbxSoups.TabIndex = 70;
+            this.gbxSoups.TabStop = false;
+            this.gbxSoups.Text = "Soups";
+            this.gbxSoups.Visible = false;
+            // 
+            // lblItem13
+            // 
+            this.lblItem13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem13.Location = new System.Drawing.Point(190, 271);
+            this.lblItem13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem13.Name = "lblItem13";
+            this.lblItem13.Size = new System.Drawing.Size(442, 31);
+            this.lblItem13.TabIndex = 74;
+            this.lblItem13.Text = "Shrimp Bisque ...................................................29.99";
+            // 
+            // lblItem12
+            // 
+            this.lblItem12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem12.Location = new System.Drawing.Point(190, 153);
+            this.lblItem12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem12.Name = "lblItem12";
+            this.lblItem12.Size = new System.Drawing.Size(442, 31);
+            this.lblItem12.TabIndex = 73;
+            this.lblItem12.Text = "Cioppino  .......................................................29.99";
+            // 
+            // lblItem11
+            // 
+            this.lblItem11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem11.Location = new System.Drawing.Point(190, 32);
+            this.lblItem11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem11.Name = "lblItem11";
+            this.lblItem11.Size = new System.Drawing.Size(442, 31);
+            this.lblItem11.TabIndex = 72;
+            this.lblItem11.Text = "Bouillabaisse ...................................................29.99";
+            // 
+            // radItem6
+            // 
+            this.radItem6.AutoSize = true;
+            this.radItem6.Location = new System.Drawing.Point(15, 313);
+            this.radItem6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radItem6.Name = "radItem6";
+            this.radItem6.Size = new System.Drawing.Size(21, 20);
+            this.radItem6.TabIndex = 71;
+            this.radItem6.TabStop = true;
+            this.radItem6.UseVisualStyleBackColor = true;
+            // 
+            // radItem5
+            // 
+            this.radItem5.AutoSize = true;
+            this.radItem5.Location = new System.Drawing.Point(15, 197);
+            this.radItem5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radItem5.Name = "radItem5";
+            this.radItem5.Size = new System.Drawing.Size(21, 20);
+            this.radItem5.TabIndex = 70;
+            this.radItem5.TabStop = true;
+            this.radItem5.UseVisualStyleBackColor = true;
+            // 
+            // radItem4
+            // 
+            this.radItem4.AutoSize = true;
+            this.radItem4.Location = new System.Drawing.Point(15, 81);
+            this.radItem4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radItem4.Name = "radItem4";
+            this.radItem4.Size = new System.Drawing.Size(21, 20);
+            this.radItem4.TabIndex = 69;
+            this.radItem4.TabStop = true;
+            this.radItem4.UseVisualStyleBackColor = true;
+            // 
+            // lblSalad3
+            // 
+            this.lblSalad3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSalad3.Location = new System.Drawing.Point(190, 302);
+            this.lblSalad3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSalad3.Name = "lblSalad3";
+            this.lblSalad3.Size = new System.Drawing.Size(442, 77);
+            this.lblSalad3.TabIndex = 68;
+            // 
+            // pbxSoup3
+            // 
+            this.pbxSoup3.Location = new System.Drawing.Point(39, 271);
+            this.pbxSoup3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxSoup3.Name = "pbxSoup3";
+            this.pbxSoup3.Size = new System.Drawing.Size(140, 108);
+            this.pbxSoup3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup3.TabIndex = 67;
+            this.pbxSoup3.TabStop = false;
+            // 
+            // lblSalad2
+            // 
+            this.lblSalad2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSalad2.Location = new System.Drawing.Point(190, 184);
+            this.lblSalad2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSalad2.Name = "lblSalad2";
+            this.lblSalad2.Size = new System.Drawing.Size(442, 77);
+            this.lblSalad2.TabIndex = 66;
+            // 
+            // pbxSoup2
+            // 
+            this.pbxSoup2.Location = new System.Drawing.Point(39, 153);
+            this.pbxSoup2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxSoup2.Name = "pbxSoup2";
+            this.pbxSoup2.Size = new System.Drawing.Size(140, 108);
+            this.pbxSoup2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup2.TabIndex = 64;
+            this.pbxSoup2.TabStop = false;
+            // 
+            // pbxSoup1
+            // 
+            this.pbxSoup1.Location = new System.Drawing.Point(39, 29);
+            this.pbxSoup1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxSoup1.Name = "pbxSoup1";
+            this.pbxSoup1.Size = new System.Drawing.Size(140, 108);
+            this.pbxSoup1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup1.TabIndex = 63;
+            this.pbxSoup1.TabStop = false;
+            // 
+            // lblsalad1
+            // 
+            this.lblsalad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblsalad1.Location = new System.Drawing.Point(190, 62);
+            this.lblsalad1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsalad1.Name = "lblsalad1";
+            this.lblsalad1.Size = new System.Drawing.Size(442, 77);
+            this.lblsalad1.TabIndex = 65;
+            // 
+            // lblItem21
+            // 
+            this.lblItem21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem21.Location = new System.Drawing.Point(190, 271);
+            this.lblItem21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem21.Name = "lblItem21";
+            this.lblItem21.Size = new System.Drawing.Size(442, 31);
+            this.lblItem21.TabIndex = 74;
+            this.lblItem21.Text = "Baba Au Rhum ....................................................21.99";
+            // 
+            // radDessert1
+            // 
+            this.radDessert1.AutoSize = true;
+            this.radDessert1.Location = new System.Drawing.Point(15, 81);
+            this.radDessert1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDessert1.Name = "radDessert1";
+            this.radDessert1.Size = new System.Drawing.Size(21, 20);
+            this.radDessert1.TabIndex = 69;
+            this.radDessert1.TabStop = true;
+            this.radDessert1.UseVisualStyleBackColor = true;
+            // 
+            // pbxDessert1
+            // 
+            this.pbxDessert1.Location = new System.Drawing.Point(39, 29);
+            this.pbxDessert1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDessert1.Name = "pbxDessert1";
+            this.pbxDessert1.Size = new System.Drawing.Size(140, 108);
+            this.pbxDessert1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDessert1.TabIndex = 63;
+            this.pbxDessert1.TabStop = false;
+            // 
+            // gbxDesserts
+            // 
+            this.gbxDesserts.Controls.Add(this.lblItem21);
+            this.gbxDesserts.Controls.Add(this.lblItem20);
+            this.gbxDesserts.Controls.Add(this.lblItem19);
+            this.gbxDesserts.Controls.Add(this.radDessert3);
+            this.gbxDesserts.Controls.Add(this.radDessert2);
+            this.gbxDesserts.Controls.Add(this.radDessert1);
+            this.gbxDesserts.Controls.Add(this.lblDessert3);
+            this.gbxDesserts.Controls.Add(this.pbxDessert3);
+            this.gbxDesserts.Controls.Add(this.lblDessert2);
+            this.gbxDesserts.Controls.Add(this.pbxDessert2);
+            this.gbxDesserts.Controls.Add(this.pbxDessert1);
+            this.gbxDesserts.Controls.Add(this.lblDessert1);
+            this.gbxDesserts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.gbxDesserts.Location = new System.Drawing.Point(5, 12);
+            this.gbxDesserts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxDesserts.Name = "gbxDesserts";
+            this.gbxDesserts.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxDesserts.Size = new System.Drawing.Size(679, 410);
+            this.gbxDesserts.TabIndex = 70;
+            this.gbxDesserts.TabStop = false;
+            this.gbxDesserts.Text = "Desserts";
+            this.gbxDesserts.Visible = false;
+            // 
+            // lblItem20
+            // 
+            this.lblItem20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem20.Location = new System.Drawing.Point(190, 153);
+            this.lblItem20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem20.Name = "lblItem20";
+            this.lblItem20.Size = new System.Drawing.Size(442, 31);
+            this.lblItem20.TabIndex = 73;
+            this.lblItem20.Text = "Mille-Feuille ...................................................19.99";
+            // 
+            // lblItem19
+            // 
+            this.lblItem19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem19.Location = new System.Drawing.Point(190, 32);
+            this.lblItem19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem19.Name = "lblItem19";
+            this.lblItem19.Size = new System.Drawing.Size(442, 31);
+            this.lblItem19.TabIndex = 72;
+            this.lblItem19.Text = "Vacherin ........................................................24.99";
+            // 
+            // radDessert3
+            // 
+            this.radDessert3.AutoSize = true;
+            this.radDessert3.Location = new System.Drawing.Point(15, 313);
+            this.radDessert3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDessert3.Name = "radDessert3";
+            this.radDessert3.Size = new System.Drawing.Size(21, 20);
+            this.radDessert3.TabIndex = 71;
+            this.radDessert3.TabStop = true;
+            this.radDessert3.UseVisualStyleBackColor = true;
+            // 
+            // radDessert2
+            // 
+            this.radDessert2.AutoSize = true;
+            this.radDessert2.Location = new System.Drawing.Point(15, 197);
+            this.radDessert2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDessert2.Name = "radDessert2";
+            this.radDessert2.Size = new System.Drawing.Size(21, 20);
+            this.radDessert2.TabIndex = 70;
+            this.radDessert2.TabStop = true;
+            this.radDessert2.UseVisualStyleBackColor = true;
+            // 
+            // lblDessert3
+            // 
+            this.lblDessert3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDessert3.Location = new System.Drawing.Point(190, 302);
+            this.lblDessert3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDessert3.Name = "lblDessert3";
+            this.lblDessert3.Size = new System.Drawing.Size(442, 77);
+            this.lblDessert3.TabIndex = 68;
+            // 
+            // pbxDessert3
+            // 
+            this.pbxDessert3.Location = new System.Drawing.Point(39, 271);
+            this.pbxDessert3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDessert3.Name = "pbxDessert3";
+            this.pbxDessert3.Size = new System.Drawing.Size(140, 108);
+            this.pbxDessert3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDessert3.TabIndex = 67;
+            this.pbxDessert3.TabStop = false;
+            // 
+            // lblDessert2
+            // 
+            this.lblDessert2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDessert2.Location = new System.Drawing.Point(190, 184);
+            this.lblDessert2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDessert2.Name = "lblDessert2";
+            this.lblDessert2.Size = new System.Drawing.Size(442, 77);
+            this.lblDessert2.TabIndex = 66;
+            // 
+            // pbxDessert2
+            // 
+            this.pbxDessert2.Location = new System.Drawing.Point(39, 153);
+            this.pbxDessert2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDessert2.Name = "pbxDessert2";
+            this.pbxDessert2.Size = new System.Drawing.Size(140, 108);
+            this.pbxDessert2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDessert2.TabIndex = 64;
+            this.pbxDessert2.TabStop = false;
+            // 
+            // lblDessert1
+            // 
+            this.lblDessert1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDessert1.Location = new System.Drawing.Point(190, 62);
+            this.lblDessert1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDessert1.Name = "lblDessert1";
+            this.lblDessert1.Size = new System.Drawing.Size(442, 77);
+            this.lblDessert1.TabIndex = 65;
+            // 
+            // gbxDrinks
+            // 
+            this.gbxDrinks.Controls.Add(this.lblItem17);
+            this.gbxDrinks.Controls.Add(this.lblItem16);
+            this.gbxDrinks.Controls.Add(this.lblItem15);
+            this.gbxDrinks.Controls.Add(this.radDrink3);
+            this.gbxDrinks.Controls.Add(this.radDrink2);
+            this.gbxDrinks.Controls.Add(this.radDrink1);
+            this.gbxDrinks.Controls.Add(this.lblDrink3);
+            this.gbxDrinks.Controls.Add(this.pbxDrink3);
+            this.gbxDrinks.Controls.Add(this.lblDrink2);
+            this.gbxDrinks.Controls.Add(this.pbxDrink2);
+            this.gbxDrinks.Controls.Add(this.pbxDrink1);
+            this.gbxDrinks.Controls.Add(this.lblDrink1);
+            this.gbxDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.gbxDrinks.Location = new System.Drawing.Point(5, 2);
+            this.gbxDrinks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxDrinks.Name = "gbxDrinks";
+            this.gbxDrinks.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxDrinks.Size = new System.Drawing.Size(679, 410);
+            this.gbxDrinks.TabIndex = 70;
+            this.gbxDrinks.TabStop = false;
+            this.gbxDrinks.Text = "Drinks";
+            this.gbxDrinks.Visible = false;
+            // 
+            // lblItem17
+            // 
+            this.lblItem17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem17.Location = new System.Drawing.Point(190, 271);
+            this.lblItem17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem17.Name = "lblItem17";
+            this.lblItem17.Size = new System.Drawing.Size(442, 31);
+            this.lblItem17.TabIndex = 74;
+            this.lblItem17.Text = "2015 Guigal Côte Rôtie .........................................344.99";
+            // 
+            // lblItem16
+            // 
+            this.lblItem16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem16.Location = new System.Drawing.Point(190, 153);
+            this.lblItem16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem16.Name = "lblItem16";
+            this.lblItem16.Size = new System.Drawing.Size(442, 31);
+            this.lblItem16.TabIndex = 73;
+            this.lblItem16.Text = "2010 Domaine Romanee-Conti .....................................944.99";
+            // 
+            // lblItem15
+            // 
+            this.lblItem15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblItem15.Location = new System.Drawing.Point(190, 32);
+            this.lblItem15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblItem15.Name = "lblItem15";
+            this.lblItem15.Size = new System.Drawing.Size(442, 31);
+            this.lblItem15.TabIndex = 72;
+            this.lblItem15.Text = "2009 Château Lafite Rothschild .................................424.99";
+            // 
+            // radDrink3
+            // 
+            this.radDrink3.AutoSize = true;
+            this.radDrink3.Location = new System.Drawing.Point(15, 313);
+            this.radDrink3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDrink3.Name = "radDrink3";
+            this.radDrink3.Size = new System.Drawing.Size(21, 20);
+            this.radDrink3.TabIndex = 71;
+            this.radDrink3.TabStop = true;
+            this.radDrink3.UseVisualStyleBackColor = true;
+            // 
+            // radDrink2
+            // 
+            this.radDrink2.AutoSize = true;
+            this.radDrink2.Location = new System.Drawing.Point(15, 197);
+            this.radDrink2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDrink2.Name = "radDrink2";
+            this.radDrink2.Size = new System.Drawing.Size(21, 20);
+            this.radDrink2.TabIndex = 70;
+            this.radDrink2.TabStop = true;
+            this.radDrink2.UseVisualStyleBackColor = true;
+            // 
+            // radDrink1
+            // 
+            this.radDrink1.AutoSize = true;
+            this.radDrink1.Location = new System.Drawing.Point(15, 81);
+            this.radDrink1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radDrink1.Name = "radDrink1";
+            this.radDrink1.Size = new System.Drawing.Size(21, 20);
+            this.radDrink1.TabIndex = 69;
+            this.radDrink1.TabStop = true;
+            this.radDrink1.UseVisualStyleBackColor = true;
+            // 
+            // lblDrink3
+            // 
+            this.lblDrink3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDrink3.Location = new System.Drawing.Point(190, 302);
+            this.lblDrink3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDrink3.Name = "lblDrink3";
+            this.lblDrink3.Size = new System.Drawing.Size(442, 77);
+            this.lblDrink3.TabIndex = 68;
+            // 
+            // pbxDrink3
+            // 
+            this.pbxDrink3.Location = new System.Drawing.Point(39, 271);
+            this.pbxDrink3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDrink3.Name = "pbxDrink3";
+            this.pbxDrink3.Size = new System.Drawing.Size(140, 108);
+            this.pbxDrink3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDrink3.TabIndex = 67;
+            this.pbxDrink3.TabStop = false;
+            // 
+            // lblDrink2
+            // 
+            this.lblDrink2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDrink2.Location = new System.Drawing.Point(190, 184);
+            this.lblDrink2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDrink2.Name = "lblDrink2";
+            this.lblDrink2.Size = new System.Drawing.Size(442, 77);
+            this.lblDrink2.TabIndex = 66;
+            // 
+            // pbxDrink2
+            // 
+            this.pbxDrink2.Location = new System.Drawing.Point(39, 153);
+            this.pbxDrink2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDrink2.Name = "pbxDrink2";
+            this.pbxDrink2.Size = new System.Drawing.Size(140, 108);
+            this.pbxDrink2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDrink2.TabIndex = 64;
+            this.pbxDrink2.TabStop = false;
+            // 
+            // pbxDrink1
+            // 
+            this.pbxDrink1.Location = new System.Drawing.Point(39, 29);
+            this.pbxDrink1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxDrink1.Name = "pbxDrink1";
+            this.pbxDrink1.Size = new System.Drawing.Size(140, 108);
+            this.pbxDrink1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDrink1.TabIndex = 63;
+            this.pbxDrink1.TabStop = false;
+            // 
+            // lblDrink1
+            // 
+            this.lblDrink1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDrink1.Location = new System.Drawing.Point(190, 62);
+            this.lblDrink1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDrink1.Name = "lblDrink1";
+            this.lblDrink1.Size = new System.Drawing.Size(442, 77);
+            this.lblDrink1.TabIndex = 65;
+            // 
             // frmCustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -574,7 +1065,7 @@
             this.Controls.Add(this.btnAppetizers);
             this.Controls.Add(this.gbxAppetizers);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblYellow);
             this.Controls.Add(this.pbxSwirl1);
             this.Controls.Add(this.pbxSwirl2);
             this.Controls.Add(this.lblMenu);
@@ -595,6 +1086,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).EndInit();
+            this.gbxSoups.ResumeLayout(false);
+            this.gbxSoups.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).EndInit();
+            this.gbxDesserts.ResumeLayout(false);
+            this.gbxDesserts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).EndInit();
+            this.gbxDrinks.ResumeLayout(false);
+            this.gbxDrinks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -613,14 +1119,14 @@
         private System.Windows.Forms.Button btnEntrees;
         private System.Windows.Forms.Button btnAppetizers;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblYellow;
         private System.Windows.Forms.PictureBox pbxSwirl1;
         private System.Windows.Forms.PictureBox pbxSwirl2;
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.GroupBox gbxEntrees;
-        private System.Windows.Forms.Label lblItem3;
-        private System.Windows.Forms.Label lblItem2;
-        private System.Windows.Forms.Label lblItem1;
+        private System.Windows.Forms.Label lblItemMenu3;
+        private System.Windows.Forms.Label lblItemMenu2;
+        private System.Windows.Forms.Label lblItemMenu1;
         private System.Windows.Forms.RadioButton radItem3;
         private System.Windows.Forms.RadioButton radItem2;
         private System.Windows.Forms.RadioButton radItem1;
@@ -631,17 +1137,56 @@
         private System.Windows.Forms.PictureBox pbxMenu1;
         private System.Windows.Forms.Label lblDescription1;
         private System.Windows.Forms.GroupBox gbxAppetizers;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblItemMenu13;
         private System.Windows.Forms.Label lblMenu2;
         private System.Windows.Forms.Label lblMenu1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radCheck3;
+        private System.Windows.Forms.RadioButton radCheck2;
+        private System.Windows.Forms.RadioButton radCheck1;
         private System.Windows.Forms.Label lblApp3;
         private System.Windows.Forms.PictureBox pbxApp3;
         private System.Windows.Forms.Label lblApp2;
         private System.Windows.Forms.PictureBox pbxApp2;
         private System.Windows.Forms.PictureBox pbxApp1;
         private System.Windows.Forms.Label lblApp1;
+        private System.Windows.Forms.GroupBox gbxSoups;
+        private System.Windows.Forms.Label lblItem13;
+        private System.Windows.Forms.Label lblItem12;
+        private System.Windows.Forms.Label lblItem11;
+        private System.Windows.Forms.RadioButton radItem6;
+        private System.Windows.Forms.RadioButton radItem5;
+        private System.Windows.Forms.RadioButton radItem4;
+        private System.Windows.Forms.Label lblSalad3;
+        private System.Windows.Forms.PictureBox pbxSoup3;
+        private System.Windows.Forms.Label lblSalad2;
+        private System.Windows.Forms.PictureBox pbxSoup2;
+        private System.Windows.Forms.PictureBox pbxSoup1;
+        private System.Windows.Forms.Label lblsalad1;
+        private System.Windows.Forms.GroupBox gbxDesserts;
+        private System.Windows.Forms.Label lblItem21;
+        private System.Windows.Forms.Label lblItem20;
+        private System.Windows.Forms.Label lblItem19;
+        private System.Windows.Forms.RadioButton radDessert3;
+        private System.Windows.Forms.RadioButton radDessert2;
+        private System.Windows.Forms.RadioButton radDessert1;
+        private System.Windows.Forms.Label lblDessert3;
+        private System.Windows.Forms.PictureBox pbxDessert3;
+        private System.Windows.Forms.Label lblDessert2;
+        private System.Windows.Forms.PictureBox pbxDessert2;
+        private System.Windows.Forms.PictureBox pbxDessert1;
+        private System.Windows.Forms.Label lblDessert1;
+        private System.Windows.Forms.GroupBox gbxDrinks;
+        private System.Windows.Forms.Label lblItem17;
+        private System.Windows.Forms.Label lblItem16;
+        private System.Windows.Forms.Label lblItem15;
+        private System.Windows.Forms.RadioButton radDrink3;
+        private System.Windows.Forms.RadioButton radDrink2;
+        private System.Windows.Forms.RadioButton radDrink1;
+        private System.Windows.Forms.Label lblDrink3;
+        private System.Windows.Forms.PictureBox pbxDrink3;
+        private System.Windows.Forms.Label lblDrink2;
+        private System.Windows.Forms.PictureBox pbxDrink2;
+        private System.Windows.Forms.PictureBox pbxDrink1;
+        private System.Windows.Forms.Label lblDrink1;
     }
 }
