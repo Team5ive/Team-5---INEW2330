@@ -94,6 +94,7 @@
             this.lblForgotPassword.Size = new System.Drawing.Size(140, 20);
             this.lblForgotPassword.TabIndex = 0;
             this.lblForgotPassword.Text = "Forgot password?";
+            this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
             // 
             // lblSignIn
             // 
@@ -105,6 +106,7 @@
             this.lblSignIn.TabIndex = 0;
             this.lblSignIn.Text = "Sign In";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // lblNotMember
             // 

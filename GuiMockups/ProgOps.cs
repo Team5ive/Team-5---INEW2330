@@ -104,6 +104,93 @@ namespace GuiMockups
             }
 
         }
+        public static void GetVerificationCodes()
+        {
+            try
+            {
+                //grabs all values from verify table
+                string query = "SELECT * FROM group5fa212330.Verify";
+                //create update command
+                SqlCommand _sqlGetCodesCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlGetCodesCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmLogin.vCodes.Add((read["VerificationCode"].ToString()));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlGetCodesCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Verification Codes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static void GetCustInfo()
+        {
+            try
+            {
+                //grabs all values from customers table
+                string query = "SELECT Email, UserName, Password FROM group5fa212330.Customers";
+                //create update command
+                SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlCustCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmLogin.CustEmails.Add((read["Email"].ToString()));
+                    frmLogin.CustEmails.Add((read["UserName"].ToString()));
+                    frmLogin.CustPass.Add((read["Password"].ToString()));
+                    frmLogin.CustPass.Add((read["Password"].ToString()));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlCustCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Customer Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static void GetEmpInfo()
+        {
+            try
+            {
+                //grabs all values from employees table
+                string query = "SELECT Email, UserName, Password, isManager FROM group5fa212330.Employees";
+                //create update command
+                SqlCommand _sqlEmpCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlEmpCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmLogin.EmpEmails.Add((read["Email"].ToString()));
+                    frmLogin.EmpEmails.Add((read["UserName"].ToString()));
+                    frmLogin.EmpPass.Add((read["Password"].ToString()));
+                    frmLogin.EmpPass.Add((read["Password"].ToString()));
+                    frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlEmpCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Employee Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 
