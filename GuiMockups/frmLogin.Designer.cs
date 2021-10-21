@@ -126,6 +126,7 @@
             this.lblJoin.Size = new System.Drawing.Size(51, 20);
             this.lblJoin.TabIndex = 0;
             this.lblJoin.Text = "Join";
+            this.lblJoin.Click += new System.EventHandler(this.lblJoin_Click);
             // 
             // lblFancy
             // 
@@ -149,6 +150,7 @@
             this.lblSignUp.Size = new System.Drawing.Size(69, 20);
             this.lblSignUp.TabIndex = 0;
             this.lblSignUp.Text = "Sign Up";
+            this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
             // 
             // lblUnlock
             // 

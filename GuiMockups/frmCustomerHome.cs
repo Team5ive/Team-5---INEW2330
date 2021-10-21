@@ -34,5 +34,12 @@ namespace GuiMockups
             frmEditCustomerInfo editCustomerInfo = new frmEditCustomerInfo();
             editCustomerInfo.ShowDialog();
         }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            //sign out message
+            MessageBox.Show("You have been signed out.", "Sign Out Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
     }
 }

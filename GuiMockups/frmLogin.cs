@@ -27,7 +27,10 @@ namespace GuiMockups
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            //open database
             ProgOps.OpenDatabase();
+            tbxEmail.Focus();
+            //fill lists
             ProgOps.GetCustInfo();
             ProgOps.GetEmpInfo();
         }
@@ -39,99 +42,29 @@ namespace GuiMockups
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
-            string email = tbxEmail.Text;
-            int emailHash = email.GetHashCode();
-            bool custLogin = false;
-            bool empLogin = false;
-
-            ProgOps.GetVerificationCodes();
-            if (tbxEmail.Text == "")
-            {
-                //error message
-                MessageBox.Show("Please enter an email address in the specified area.", "Error Obtaining Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbxEmail.Focus();
-                return;
-            }
-
-            for (int i = 0; i < CustEmails.Count; i++)
-            {
-                int listEmailHash = CustEmails[i].GetHashCode();
-                if (emailHash == listEmailHash)
-                {
-                    custLogin = true;
-                }
-            }
-
-            for (int i = 0; i < EmpEmails.Count; i++)
-            {
-                int listEmailHash = EmpEmails[i].GetHashCode();
-                if (emailHash == listEmailHash)
-                {
-                    empLogin = true;
-                }
-            }
-
-            if (custLogin == true || empLogin == true)
-            {
-                try
-                {
-                    // create and initializes variables
-                    Random _random = new Random();
-                    string to = tbxEmail.Text;
-                    string from = "teamfiverestaurant@gmail.com";
-                    int pos = _random.Next(vCodes.Count);
-                    string code = vCodes[pos].ToString();
-                    vCodes.RemoveAt(pos);
-
-                    //create and initialize smtpClient
-                    var smtpClient = new SmtpClient("smtp.gmail.com")
-                    {
-                        Port = 587,
-                        Credentials = new NetworkCredential(from, "TeamFive555"),
-                        EnableSsl = true,
-                    };
-
-                    // custom email message to recipient
-                    var mailMessage = new MailMessage
-                    {
-                        From = new MailAddress(from),
-                        Subject = "Forgot Password?",
-                        Body = "<h3><span style=\"text - decoration: underline; \"><span style=\"color: #b22222; text-decoration: underline;\">PASSWORD RESET REQUESTED</span></span></h3><p><em>Use the given verification code to reset your password</em></p><p>&nbsp;</p><p><span style=\"color: #bfc1c2;\">Verification Code:&nbsp;" + code + "</span></p>",
-                        IsBodyHtml = true
-                    };
-
-                    mailMessage.Priority = MailPriority.Normal;
-                    mailMessage.To.Add(to);
-
-                    //Sends email
-                    smtpClient.Send(mailMessage);
-                }
-                catch
-                {
-                    MessageBox.Show("Verification code not sent\n\nPlease try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                MessageBox.Show("Verification code sent.(Email may be in spam folder)", "Delivered", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                //error message
-                MessageBox.Show("Sorry but the email you have entered do not match our existing records.\nPlease try again", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbxEmail.Text = "";
-                tbxEmail.Focus();
-                return;
-            }
+            //opens frmforgotpass
+            frmForgotPass frmForgotPass = new frmForgotPass();
+            frmForgotPass.ShowDialog();
         }
 
         private void lblSignIn_Click(object sender, EventArgs e)
         {
+            //clears lists
+            CustEmails.Clear();
+            CustPass.Clear();
+            EmpEmails.Clear();
+            EmpPass.Clear();
+            //fills lists
+            ProgOps.GetCustInfo();
+            ProgOps.GetEmpInfo();
+            //initializes variables
             string email = tbxEmail.Text;
             string pass = tbxPassword.Text;
             int emailHash = email.GetHashCode();
             int passHash = pass.GetHashCode();
             bool custLogin = false;
             bool empLogin = false;
-
+            //tests empty email
             if (tbxEmail.Text == "")
             {
                 //error message
@@ -139,6 +72,7 @@ namespace GuiMockups
                 tbxEmail.Focus();
                 return;
             }
+            //tests empty password
             if (tbxPassword.Text == "")
             {
                 //error message
@@ -146,7 +80,7 @@ namespace GuiMockups
                 tbxEmail.Focus();
                 return;
             }
-
+            //compares customer email and passwords to user email and passwords
             for (int i = 0; i < CustEmails.Count; i++)
             {
                 int listEmailHash = CustEmails[i].GetHashCode();
@@ -156,7 +90,7 @@ namespace GuiMockups
                     custLogin = true;
                 }
             }
-
+            //compares employee email and passwords to user email and passwords
             for (int i = 0; i < EmpEmails.Count; i++)
             {
                 int listEmailHash = EmpEmails[i].GetHashCode();
@@ -166,18 +100,19 @@ namespace GuiMockups
                     empLogin = true;
                 }
             }
-
+            //looks for true bool
             if (custLogin == true || empLogin == true)
             {
+                //shows different forms dependent on login
                 if (custLogin == true)
                 {
-                    frmCustomerHome custHome = new frmCustomerHome();
-                    custHome.ShowDialog();
+                    frmCustomerHome frmCustomerHome = new frmCustomerHome();
+                    frmCustomerHome.ShowDialog();
                 }
                 if (empLogin == true)
                 {
-                    frmEmployeeHub empHub = new frmEmployeeHub);
-                    empHub.ShowDialog();
+                    frmEmployeeHub frmEmployeeHub = new frmEmployeeHub();
+                    frmEmployeeHub.ShowDialog();
                 }
             }
             else
@@ -189,6 +124,20 @@ namespace GuiMockups
                 tbxEmail.Focus();
                 return;
             }
+        }
+
+        private void lblSignUp_Click(object sender, EventArgs e)
+        {
+            //opens sign up form
+            frmSignUp frmSignUp = new frmSignUp();
+            frmSignUp.ShowDialog();
+        }
+
+        private void lblJoin_Click(object sender, EventArgs e)
+        {
+            //opens sign up form
+            frmSignUp frmSignUp = new frmSignUp();
+            frmSignUp.ShowDialog();
         }
     }
 }
