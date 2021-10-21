@@ -171,13 +171,13 @@ namespace GuiMockups
             {
                 if (custLogin == true)
                 {
-                    frmDisplayMenu frmDisplayMenu = new frmDisplayMenu();
-                    frmDisplayMenu.ShowDialog();
+                    frmCustomerHome custHome = new frmCustomerHome();
+                    custHome.ShowDialog();
                 }
                 if (empLogin == true)
                 {
-                    frmMain frmMain = new frmMain();
-                    frmMain.ShowDialog();
+                    frmEmployeeHub empHub = new frmEmployeeHub);
+                    empHub.ShowDialog();
                 }
             }
             else

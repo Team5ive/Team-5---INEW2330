@@ -22,5 +22,17 @@ namespace GuiMockups
             frmLogin frmLogin = new frmLogin();
             frmLogin.ShowDialog();
         }
+
+        private void signUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSignUp signUp = new frmSignUp();
+            signUp.ShowDialog();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDisplayMenu menu = new frmDisplayMenu();
+            menu.ShowDialog();
+        }
     }
 }
