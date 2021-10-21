@@ -191,6 +191,44 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error Obtaining Employee Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public static void changeEmpPassword(string email, string pass)
+        {
+            try
+            {
+                string query = "Update group5fa212330.Employees Set Password='" + pass + "' Where Email='" + email + "'" + ";";
+                //create update command
+                SqlCommand _sqlEmpPassCommand = new SqlCommand(query, _cntDatabase);
+                //update command
+                _sqlEmpPassCommand.ExecuteNonQuery();
+                //dispose
+                _sqlEmpPassCommand.Dispose();
+                MessageBox.Show("Your password has been changed.", "Password Changed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void changeCustPassword(string email, string pass)
+        {
+            try
+            {
+                string query = "Update group5fa212330.Customers Set Password='" + pass + "' Where Email='" + email + "'" + ";";
+                //create update command
+                SqlCommand _sqlCustPassCommand = new SqlCommand(query, _cntDatabase);
+                //update command
+                _sqlCustPassCommand.ExecuteNonQuery();
+                //dispose
+                _sqlCustPassCommand.Dispose();
+                MessageBox.Show("Your password has been changed.", "Password Changed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 
