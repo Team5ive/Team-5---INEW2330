@@ -75,14 +75,14 @@
             // 
             this.tbxEmail.Location = new System.Drawing.Point(369, 191);
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(375, 30);
-            this.tbxEmail.TabIndex = 1;
+            this.tbxEmail.Size = new System.Drawing.Size(375, 26);
+            this.tbxEmail.TabIndex = 0;
             // 
             // tbxPassword
             // 
             this.tbxPassword.Location = new System.Drawing.Point(369, 265);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(375, 30);
+            this.tbxPassword.Size = new System.Drawing.Size(375, 26);
             this.tbxPassword.TabIndex = 1;
             // 
             // lblForgotPassword
@@ -254,7 +254,7 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1108, 583);

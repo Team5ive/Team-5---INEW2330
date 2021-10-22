@@ -30,6 +30,7 @@ namespace GuiMockups
         {
             //open database
             ProgOps.OpenDatabase();
+            tbxEmail.SelectAll();
             tbxEmail.Focus();
             //fill lists
             ProgOps.GetCustInfo();
@@ -90,7 +91,6 @@ namespace GuiMockups
                 if (emailHash == listEmailHash && passHash == listPassHash)
                 {
                     ProgOps.CustID = customerID;
-                    MessageBox.Show(customerID);
                     custLogin = true;
                 }
             }
