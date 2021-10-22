@@ -33,7 +33,13 @@ namespace GuiMockups
         //build a connection to db
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
 
-        // this is a test, anthony. hello!
+        private static string _custID;
+
+        public static string CustID
+        {
+            get { return _custID; }
+            set { _custID = value; }
+        }
         public static void OpenDatabase()
         {
             //open the connection to database
@@ -47,6 +53,79 @@ namespace GuiMockups
             //dispose of database
             _cntDatabase.Dispose();
             MessageBox.Show("Close Database Successful", "Close Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public static void insertCustInfo(TextBox firstName, TextBox lastName, TextBox address, TextBox city, TextBox state, TextBox zip, TextBox phone, TextBox email, TextBox userName, TextBox password)
+        {
+            //string to build a query
+            string query = "SELECT * FROM group5fa212330.Customers WHERE Cust_ID =" + _custID;
+            //establish a command object
+            _sqlResultsCommand2 = new SqlCommand(query, _cntDatabase);
+            //establish data adapter
+            _daResults2 = new SqlDataAdapter();
+            _daResults2.SelectCommand = _sqlResultsCommand2;
+            //fill the data table
+            _dtResultsTable2 = new DataTable();
+            _daResults2.Fill(_dtResultsTable2);
+            //bind to controls to data table 
+            // Cust_FName, Cust_LName, Address, City, State, Zip, Phone, Email, UserName
+            firstName.DataBindings.Add("Text", _dtResultsTable2, "Cust_FName");
+            lastName.DataBindings.Add("Text", _dtResultsTable2, "Cust_LName");
+            address.DataBindings.Add("Text", _dtResultsTable2, "Address");
+            city.DataBindings.Add("Text", _dtResultsTable2, "City");
+            state.DataBindings.Add("Text", _dtResultsTable2, "State");
+            zip.DataBindings.Add("Text", _dtResultsTable2, "Zip");
+            phone.DataBindings.Add("Text", _dtResultsTable2, "Phone");
+            email.DataBindings.Add("Text", _dtResultsTable2, "Email");
+            userName.DataBindings.Add("Text", _dtResultsTable2, "UserName");
+            password.DataBindings.Add("Text", _dtResultsTable2, "Password");
+            _sqlResultsCommand2.Dispose();
+            _daResults2.Dispose();
+            _dtResultsTable2.Dispose();
+        }
+        public static void updateCustomerLogin(string userName, string password)
+        {
+            try
+            {
+                // Update query for customer login information
+                string sqlStatement = "UPDATE group5fa212330.customers " + "SET UserName = '" + userName
+                    + "', Password = '" + password + "' Where Cust_ID = " + _custID;
+                //create update command
+                SqlCommand _sqlCustomerLoginCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlCustomerLoginCommand.ExecuteNonQuery();
+                //dispose
+                _sqlCustomerLoginCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void updateCustomerInfo(string firstName, string lastName, string address, string city, string state, string zip, string phone, string email) 
+        {      
+            try
+            {
+                //update query for customer information
+                string sqlStatement = "UPDATE group5fa212330.customers " + "SET Cust_FName = '" + firstName 
+                    + "', Cust_LName = '" + lastName + "', Address = '" + address
+                    + "', City = '" + city + "', State = '" + state + "', Zip = '"
+                    + zip + "', Phone = '" + phone + "', Email = '" + email 
+                    + "' Where Cust_ID = " + _custID ;
+                //create update command
+                SqlCommand _sqlCustomerInfoCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlCustomerInfoCommand.ExecuteNonQuery();
+                //dispose
+                _sqlCustomerInfoCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         // ----- frmCustomerOrder(imageChange, changeLabel)
         public static void imageChange(PictureBox pbxItem1, string menuID)
@@ -136,7 +215,7 @@ namespace GuiMockups
             try
             {
                 //grabs all values from customers table
-                string query = "SELECT Email, UserName, Password FROM group5fa212330.Customers";
+                string query = "SELECT Email, UserName, Password, Cust_ID FROM group5fa212330.Customers";
                 //create update command
                 SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
                 //initializes reader
@@ -148,6 +227,8 @@ namespace GuiMockups
                     frmLogin.CustEmails.Add((read["UserName"].ToString()));
                     frmLogin.CustPass.Add((read["Password"].ToString()));
                     frmLogin.CustPass.Add((read["Password"].ToString()));
+                    frmLogin.custID.Add((read["Cust_ID"].ToString()));
+                    frmLogin.custID.Add((read["Cust_ID"].ToString()));
                 }
                 //closes the reader
                 read.Close();

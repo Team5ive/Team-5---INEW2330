@@ -47,10 +47,9 @@
             this.lblFancy.BackColor = System.Drawing.Color.Transparent;
             this.lblFancy.Font = new System.Drawing.Font("Vladimir Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFancy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.lblFancy.Location = new System.Drawing.Point(269, 91);
-            this.lblFancy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFancy.Location = new System.Drawing.Point(202, 74);
             this.lblFancy.Name = "lblFancy";
-            this.lblFancy.Size = new System.Drawing.Size(195, 59);
+            this.lblFancy.Size = new System.Drawing.Size(146, 48);
             this.lblFancy.TabIndex = 28;
             this.lblFancy.Text = "Fancy!";
             // 
@@ -59,10 +58,9 @@
             this.lblContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblContact.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContact.ForeColor = System.Drawing.Color.Black;
-            this.lblContact.Location = new System.Drawing.Point(0, 50);
-            this.lblContact.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContact.Location = new System.Drawing.Point(0, 41);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(754, 41);
+            this.lblContact.Size = new System.Drawing.Size(566, 33);
             this.lblContact.TabIndex = 27;
             this.lblContact.Text = "Visit Us: 124 Conch Street, Bikini Bottom, Pacific Ocean\r\nCall Us: 800-555-1234";
             this.lblContact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -71,19 +69,17 @@
             // 
             this.lblColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(181)))), ((int)(((byte)(75)))));
-            this.lblColor.Location = new System.Drawing.Point(648, -4);
-            this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblColor.Location = new System.Drawing.Point(486, -3);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(110, 38);
+            this.lblColor.Size = new System.Drawing.Size(82, 31);
             this.lblColor.TabIndex = 26;
             // 
             // lblColor3
             // 
             this.lblColor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblColor3.Location = new System.Drawing.Point(-14, -4);
-            this.lblColor3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblColor3.Location = new System.Drawing.Point(-10, -3);
             this.lblColor3.Name = "lblColor3";
-            this.lblColor3.Size = new System.Drawing.Size(110, 38);
+            this.lblColor3.Size = new System.Drawing.Size(82, 31);
             this.lblColor3.TabIndex = 25;
             // 
             // btnProfile
@@ -92,10 +88,9 @@
             this.btnProfile.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnProfile.Location = new System.Drawing.Point(510, -4);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProfile.Location = new System.Drawing.Point(383, -3);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(135, 38);
+            this.btnProfile.Size = new System.Drawing.Size(101, 31);
             this.btnProfile.TabIndex = 24;
             this.btnProfile.Text = "Profile";
             this.btnProfile.UseVisualStyleBackColor = false;
@@ -107,10 +102,9 @@
             this.btnOrder.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnOrder.Location = new System.Drawing.Point(373, -4);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOrder.Location = new System.Drawing.Point(280, -3);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(135, 38);
+            this.btnOrder.Size = new System.Drawing.Size(101, 31);
             this.btnOrder.TabIndex = 23;
             this.btnOrder.Text = "Order";
             this.btnOrder.UseVisualStyleBackColor = false;
@@ -122,10 +116,9 @@
             this.btnReservation.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReservation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnReservation.Location = new System.Drawing.Point(236, -4);
-            this.btnReservation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReservation.Location = new System.Drawing.Point(177, -3);
             this.btnReservation.Name = "btnReservation";
-            this.btnReservation.Size = new System.Drawing.Size(135, 38);
+            this.btnReservation.Size = new System.Drawing.Size(101, 31);
             this.btnReservation.TabIndex = 22;
             this.btnReservation.Text = "Reservations";
             this.btnReservation.UseVisualStyleBackColor = false;
@@ -137,10 +130,9 @@
             this.btnSignOut.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnSignOut.Location = new System.Drawing.Point(99, -4);
-            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignOut.Location = new System.Drawing.Point(74, -3);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(135, 38);
+            this.btnSignOut.Size = new System.Drawing.Size(101, 31);
             this.btnSignOut.TabIndex = 21;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
@@ -150,10 +142,9 @@
             // 
             this.lblColor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblColor2.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor2.Location = new System.Drawing.Point(2, -4);
-            this.lblColor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblColor2.Location = new System.Drawing.Point(2, -3);
             this.lblColor2.Name = "lblColor2";
-            this.lblColor2.Size = new System.Drawing.Size(754, 38);
+            this.lblColor2.Size = new System.Drawing.Size(566, 31);
             this.lblColor2.TabIndex = 20;
             this.lblColor2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -161,20 +152,19 @@
             // 
             this.pbxShell.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.pbxShell.Image = ((System.Drawing.Image)(resources.GetObject("pbxShell.Image")));
-            this.pbxShell.Location = new System.Drawing.Point(194, 117);
-            this.pbxShell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxShell.Location = new System.Drawing.Point(146, 95);
             this.pbxShell.Name = "pbxShell";
-            this.pbxShell.Size = new System.Drawing.Size(341, 233);
+            this.pbxShell.Size = new System.Drawing.Size(256, 189);
             this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxShell.TabIndex = 19;
             this.pbxShell.TabStop = false;
             // 
             // frmCustomerHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(745, 345);
+            this.ClientSize = new System.Drawing.Size(559, 280);
             this.ControlBox = false;
             this.Controls.Add(this.lblFancy);
             this.Controls.Add(this.lblContact);
@@ -186,7 +176,6 @@
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.lblColor2);
             this.Controls.Add(this.pbxShell);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCustomerHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! -  Customer Menu";
