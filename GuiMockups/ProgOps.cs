@@ -50,9 +50,11 @@ namespace GuiMockups
         {
             //close connection
             _cntDatabase.Close();
-            //dispose of database
-            _cntDatabase.Dispose();
             MessageBox.Show("Close Database Successful", "Close Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public static void disposeConnection() {
+             //dispose of database
+            _cntDatabase.Dispose();
         }
         public static void insertCustInfo(TextBox firstName, TextBox lastName, TextBox address, TextBox city, TextBox state, TextBox zip, TextBox phone, TextBox email, TextBox userName, TextBox password)
         {
@@ -82,6 +84,29 @@ namespace GuiMockups
             _daResults2.Dispose();
             _dtResultsTable2.Dispose();
         }
+        public static void createCustomerLogin(string firstName, string lastName, string email, string pass, string userName)
+        {
+            try
+            {
+                // Update query for customer login information
+                string sqlStatement = "INSERT INTO group5fa212330.customers(Cust_FName, Cust_LName, Address, City, " +
+                    "State, Zip, Phone, Email, UserName, Password) " +
+                    "VALUES('" + firstName + "', '" + lastName + "', '[Address]', '[city]', 'ST', '[ZIP]', '[PHONE]', '" + email + "', '" + userName + "', '" + pass + "') ";
+
+                //create update command
+                SqlCommand _sqlCreateLoginCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlCreateLoginCommand.ExecuteNonQuery();
+                //dispose
+                _sqlCreateLoginCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public static void updateCustomerLogin(string userName, string password)
         {
             try
@@ -89,6 +114,7 @@ namespace GuiMockups
                 // Update query for customer login information
                 string sqlStatement = "UPDATE group5fa212330.customers " + "SET UserName = '" + userName
                     + "', Password = '" + password + "' Where Cust_ID = " + _custID;
+
                 //create update command
                 SqlCommand _sqlCustomerLoginCommand = new SqlCommand(sqlStatement, _cntDatabase);
                 //update command
@@ -154,35 +180,6 @@ namespace GuiMockups
             _dtResultsTable.Dispose();
         }
 
-        public static void changeLabels(Label description1, string menuID)
-        {
-            try
-            {
-                //string to build a query
-                string query = "SELECT Menu_Description FROM [group5fa212330].[Menu] WHERE Menu_ID =" + menuID;
-                //establish a command object
-                _sqlResultsCommand2 = new SqlCommand(query, _cntDatabase);
-                //establish data adapter
-                _daResults2 = new SqlDataAdapter();
-                _daResults2.SelectCommand = _sqlResultsCommand2;
-                //fill the data table
-                _dtResultsTable2 = new DataTable();
-                _daResults2.Fill(_dtResultsTable2);
-                //bind to controls to data table 
-                description1.DataBindings.Add("Text", _dtResultsTable2, "Menu_Description");
-                _sqlResultsCommand2.Dispose();
-                _daResults2.Dispose();
-                _dtResultsTable2.Dispose();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error in SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-            }
-
-        }
         public static void GetVerificationCodes()
         {
             try

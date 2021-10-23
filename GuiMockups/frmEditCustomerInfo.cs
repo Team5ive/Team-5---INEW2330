@@ -51,7 +51,7 @@ namespace GuiMockups
         private void tbxFirstName_KeyPress(object sender, KeyPressEventArgs e)
         {
             //only letter, back space
-            if (e.KeyChar >= 'A' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z' || e.KeyChar >= 'a' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
             {
                 e.Handled = false;
             }
@@ -64,7 +64,7 @@ namespace GuiMockups
         private void tbxLastName_KeyPress(object sender, KeyPressEventArgs e)
         {
             //only letter, back space
-            if (e.KeyChar >= 'A' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z' || e.KeyChar >= 'a' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
             {
                 e.Handled = false;
             }
@@ -77,7 +77,7 @@ namespace GuiMockups
         private void tbxCity_KeyPress(object sender, KeyPressEventArgs e)
         {
             //only letter, back space
-            if (e.KeyChar >= 'A' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z' || e.KeyChar >= 'a' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
             {
                 e.Handled = false;
             }
@@ -90,7 +90,7 @@ namespace GuiMockups
         private void tbxState_KeyPress(object sender, KeyPressEventArgs e)
         {
             //only letter, back space
-            if (e.KeyChar >= 'A' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z' || e.KeyChar >= 'a' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
             {
                 e.Handled = false;
             }

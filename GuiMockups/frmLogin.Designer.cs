@@ -119,13 +119,13 @@
             // 
             // lblJoin
             // 
-            this.lblJoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoin.ForeColor = System.Drawing.Color.Black;
-            this.lblJoin.Location = new System.Drawing.Point(421, 493);
+            this.lblJoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblJoin.Location = new System.Drawing.Point(388, 493);
             this.lblJoin.Name = "lblJoin";
-            this.lblJoin.Size = new System.Drawing.Size(51, 20);
+            this.lblJoin.Size = new System.Drawing.Size(90, 20);
             this.lblJoin.TabIndex = 0;
-            this.lblJoin.Text = "Join";
+            this.lblJoin.Text = "Sign Up";
             this.lblJoin.Click += new System.EventHandler(this.lblJoin_Click);
             // 
             // lblFancy
