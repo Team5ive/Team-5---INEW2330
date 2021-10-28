@@ -16,5 +16,11 @@ namespace GuiMockups
         {
             InitializeComponent();
         }
+
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+            //close this form
+            this.Close();
+        }
     }
 }

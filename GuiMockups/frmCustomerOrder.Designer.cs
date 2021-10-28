@@ -40,12 +40,21 @@
             this.btnSoups = new System.Windows.Forms.Button();
             this.btnEntrees = new System.Windows.Forms.Button();
             this.btnAppetizers = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblGrey = new System.Windows.Forms.Label();
             this.lblYellow = new System.Windows.Forms.Label();
             this.lblMenu = new System.Windows.Forms.Label();
             this.pbxSwirl1 = new System.Windows.Forms.PictureBox();
             this.pbxSwirl2 = new System.Windows.Forms.PictureBox();
             this.gbxEntrees = new System.Windows.Forms.GroupBox();
+            this.radEntree3 = new System.Windows.Forms.RadioButton();
+            this.radEntree2 = new System.Windows.Forms.RadioButton();
+            this.radEntree1 = new System.Windows.Forms.RadioButton();
+            this.lblEntree3 = new System.Windows.Forms.Label();
+            this.pbxEntree3 = new System.Windows.Forms.PictureBox();
+            this.lblEntree2 = new System.Windows.Forms.Label();
+            this.pbxEntree2 = new System.Windows.Forms.PictureBox();
+            this.pbxEntree1 = new System.Windows.Forms.PictureBox();
+            this.lblEntree1 = new System.Windows.Forms.Label();
             this.gbxDrinks = new System.Windows.Forms.GroupBox();
             this.radDrink3 = new System.Windows.Forms.RadioButton();
             this.radDrink2 = new System.Windows.Forms.RadioButton();
@@ -66,26 +75,7 @@
             this.pbxDessert2 = new System.Windows.Forms.PictureBox();
             this.pbxDessert1 = new System.Windows.Forms.PictureBox();
             this.lblDessert1 = new System.Windows.Forms.Label();
-            this.radEntree3 = new System.Windows.Forms.RadioButton();
-            this.radEntree2 = new System.Windows.Forms.RadioButton();
-            this.radEntree1 = new System.Windows.Forms.RadioButton();
-            this.lblEntree3 = new System.Windows.Forms.Label();
-            this.pbxEntree3 = new System.Windows.Forms.PictureBox();
-            this.lblEntree2 = new System.Windows.Forms.Label();
-            this.pbxEntree2 = new System.Windows.Forms.PictureBox();
-            this.pbxEntree1 = new System.Windows.Forms.PictureBox();
-            this.lblEntree1 = new System.Windows.Forms.Label();
             this.gbxAppetizers = new System.Windows.Forms.GroupBox();
-            this.gbxSoups = new System.Windows.Forms.GroupBox();
-            this.radSoup3 = new System.Windows.Forms.RadioButton();
-            this.radSoup2 = new System.Windows.Forms.RadioButton();
-            this.radSoup1 = new System.Windows.Forms.RadioButton();
-            this.lblSalad3 = new System.Windows.Forms.Label();
-            this.pbxSoup3 = new System.Windows.Forms.PictureBox();
-            this.lblSalad2 = new System.Windows.Forms.Label();
-            this.pbxSoup2 = new System.Windows.Forms.PictureBox();
-            this.pbxSoup1 = new System.Windows.Forms.PictureBox();
-            this.lblsalad1 = new System.Windows.Forms.Label();
             this.radApp3 = new System.Windows.Forms.RadioButton();
             this.radApp2 = new System.Windows.Forms.RadioButton();
             this.radApp1 = new System.Windows.Forms.RadioButton();
@@ -95,9 +85,22 @@
             this.pbxApp2 = new System.Windows.Forms.PictureBox();
             this.pbxApp1 = new System.Windows.Forms.PictureBox();
             this.lblApp1 = new System.Windows.Forms.Label();
+            this.gbxSoups = new System.Windows.Forms.GroupBox();
+            this.radSoup3 = new System.Windows.Forms.RadioButton();
+            this.radSoup2 = new System.Windows.Forms.RadioButton();
+            this.radSoup1 = new System.Windows.Forms.RadioButton();
+            this.lblSoup3 = new System.Windows.Forms.Label();
+            this.lblSoup2 = new System.Windows.Forms.Label();
+            this.pbxSoup3 = new System.Windows.Forms.PictureBox();
+            this.pbxSoup2 = new System.Windows.Forms.PictureBox();
+            this.pbxSoup1 = new System.Windows.Forms.PictureBox();
+            this.lblSoup1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).BeginInit();
             this.gbxEntrees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).BeginInit();
             this.gbxDrinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink2)).BeginInit();
@@ -106,17 +109,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).BeginInit();
             this.gbxAppetizers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).BeginInit();
             this.gbxSoups.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinus
@@ -253,13 +253,13 @@
             this.btnAppetizers.UseVisualStyleBackColor = false;
             this.btnAppetizers.Click += new System.EventHandler(this.btnAppetizers_Click);
             // 
-            // label7
+            // lblGrey
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label7.Location = new System.Drawing.Point(-3, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(765, 45);
-            this.label7.TabIndex = 53;
+            this.lblGrey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblGrey.Location = new System.Drawing.Point(-3, 93);
+            this.lblGrey.Name = "lblGrey";
+            this.lblGrey.Size = new System.Drawing.Size(765, 45);
+            this.lblGrey.TabIndex = 53;
             // 
             // lblYellow
             // 
@@ -318,6 +318,96 @@
             this.gbxEntrees.TabIndex = 69;
             this.gbxEntrees.TabStop = false;
             this.gbxEntrees.Text = "Entrees";
+            // 
+            // radEntree3
+            // 
+            this.radEntree3.AutoSize = true;
+            this.radEntree3.Location = new System.Drawing.Point(15, 280);
+            this.radEntree3.Name = "radEntree3";
+            this.radEntree3.Size = new System.Drawing.Size(14, 13);
+            this.radEntree3.TabIndex = 71;
+            this.radEntree3.TabStop = true;
+            this.radEntree3.UseVisualStyleBackColor = true;
+            // 
+            // radEntree2
+            // 
+            this.radEntree2.AutoSize = true;
+            this.radEntree2.Location = new System.Drawing.Point(15, 171);
+            this.radEntree2.Name = "radEntree2";
+            this.radEntree2.Size = new System.Drawing.Size(14, 13);
+            this.radEntree2.TabIndex = 70;
+            this.radEntree2.TabStop = true;
+            this.radEntree2.UseVisualStyleBackColor = true;
+            // 
+            // radEntree1
+            // 
+            this.radEntree1.AutoSize = true;
+            this.radEntree1.Location = new System.Drawing.Point(11, 62);
+            this.radEntree1.Name = "radEntree1";
+            this.radEntree1.Size = new System.Drawing.Size(14, 13);
+            this.radEntree1.TabIndex = 69;
+            this.radEntree1.TabStop = true;
+            this.radEntree1.UseVisualStyleBackColor = true;
+            // 
+            // lblEntree3
+            // 
+            this.lblEntree3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblEntree3.Location = new System.Drawing.Point(187, 240);
+            this.lblEntree3.Name = "lblEntree3";
+            this.lblEntree3.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree3.TabIndex = 68;
+            this.lblEntree3.Text = "Salmon Consommé  ............................................... 59.99\r\n\r\nBarely " +
+    "Cooked Faroe Islands Salmon; Tarragon-Basil Sauce Vierge, Tomato Consommé";
+            this.lblEntree3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxEntree3
+            // 
+            this.pbxEntree3.Location = new System.Drawing.Point(32, 240);
+            this.pbxEntree3.Name = "pbxEntree3";
+            this.pbxEntree3.Size = new System.Drawing.Size(134, 104);
+            this.pbxEntree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEntree3.TabIndex = 67;
+            this.pbxEntree3.TabStop = false;
+            // 
+            // lblEntree2
+            // 
+            this.lblEntree2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblEntree2.Location = new System.Drawing.Point(187, 130);
+            this.lblEntree2.Name = "lblEntree2";
+            this.lblEntree2.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree2.TabIndex = 66;
+            this.lblEntree2.Text = "Dover Sole  .................................................... 49.99\r\n\r\nSautéed" +
+    " Dover Sole, Toasted Almonds, Wild Mushroom, Soy-Lime Emulsion";
+            this.lblEntree2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxEntree2
+            // 
+            this.pbxEntree2.Location = new System.Drawing.Point(30, 130);
+            this.pbxEntree2.Name = "pbxEntree2";
+            this.pbxEntree2.Size = new System.Drawing.Size(134, 104);
+            this.pbxEntree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEntree2.TabIndex = 64;
+            this.pbxEntree2.TabStop = false;
+            // 
+            // pbxEntree1
+            // 
+            this.pbxEntree1.Location = new System.Drawing.Point(30, 19);
+            this.pbxEntree1.Name = "pbxEntree1";
+            this.pbxEntree1.Size = new System.Drawing.Size(134, 104);
+            this.pbxEntree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEntree1.TabIndex = 63;
+            this.pbxEntree1.TabStop = false;
+            // 
+            // lblEntree1
+            // 
+            this.lblEntree1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblEntree1.Location = new System.Drawing.Point(187, 18);
+            this.lblEntree1.Name = "lblEntree1";
+            this.lblEntree1.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree1.TabIndex = 65;
+            this.lblEntree1.Text = "Krabby Patty  .................................................. 10.00\r\n\r\nSesame " +
+    "seed buns, dill pickle, red onion, sliced, tomato, sliced, butter lettuce";
+            this.lblEntree1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gbxDrinks
             // 
@@ -538,96 +628,6 @@
     "esame Dacquoise, Labne Mousse Concord Grape Sorbet";
             this.lblDessert1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radEntree3
-            // 
-            this.radEntree3.AutoSize = true;
-            this.radEntree3.Location = new System.Drawing.Point(15, 280);
-            this.radEntree3.Name = "radEntree3";
-            this.radEntree3.Size = new System.Drawing.Size(14, 13);
-            this.radEntree3.TabIndex = 71;
-            this.radEntree3.TabStop = true;
-            this.radEntree3.UseVisualStyleBackColor = true;
-            // 
-            // radEntree2
-            // 
-            this.radEntree2.AutoSize = true;
-            this.radEntree2.Location = new System.Drawing.Point(15, 171);
-            this.radEntree2.Name = "radEntree2";
-            this.radEntree2.Size = new System.Drawing.Size(14, 13);
-            this.radEntree2.TabIndex = 70;
-            this.radEntree2.TabStop = true;
-            this.radEntree2.UseVisualStyleBackColor = true;
-            // 
-            // radEntree1
-            // 
-            this.radEntree1.AutoSize = true;
-            this.radEntree1.Location = new System.Drawing.Point(11, 62);
-            this.radEntree1.Name = "radEntree1";
-            this.radEntree1.Size = new System.Drawing.Size(14, 13);
-            this.radEntree1.TabIndex = 69;
-            this.radEntree1.TabStop = true;
-            this.radEntree1.UseVisualStyleBackColor = true;
-            // 
-            // lblEntree3
-            // 
-            this.lblEntree3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree3.Location = new System.Drawing.Point(187, 240);
-            this.lblEntree3.Name = "lblEntree3";
-            this.lblEntree3.Size = new System.Drawing.Size(344, 103);
-            this.lblEntree3.TabIndex = 68;
-            this.lblEntree3.Text = "Salmon Consommé  ............................................... 59.99\r\n\r\nBarely " +
-    "Cooked Faroe Islands Salmon; Tarragon-Basil Sauce Vierge, Tomato Consommé";
-            this.lblEntree3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxEntree3
-            // 
-            this.pbxEntree3.Location = new System.Drawing.Point(32, 240);
-            this.pbxEntree3.Name = "pbxEntree3";
-            this.pbxEntree3.Size = new System.Drawing.Size(134, 104);
-            this.pbxEntree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxEntree3.TabIndex = 67;
-            this.pbxEntree3.TabStop = false;
-            // 
-            // lblEntree2
-            // 
-            this.lblEntree2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree2.Location = new System.Drawing.Point(187, 130);
-            this.lblEntree2.Name = "lblEntree2";
-            this.lblEntree2.Size = new System.Drawing.Size(344, 103);
-            this.lblEntree2.TabIndex = 66;
-            this.lblEntree2.Text = "Dover Sole  .................................................... 49.99\r\n\r\nSautéed" +
-    " Dover Sole, Toasted Almonds, Wild Mushroom, Soy-Lime Emulsion";
-            this.lblEntree2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxEntree2
-            // 
-            this.pbxEntree2.Location = new System.Drawing.Point(30, 130);
-            this.pbxEntree2.Name = "pbxEntree2";
-            this.pbxEntree2.Size = new System.Drawing.Size(134, 104);
-            this.pbxEntree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxEntree2.TabIndex = 64;
-            this.pbxEntree2.TabStop = false;
-            // 
-            // pbxEntree1
-            // 
-            this.pbxEntree1.Location = new System.Drawing.Point(30, 19);
-            this.pbxEntree1.Name = "pbxEntree1";
-            this.pbxEntree1.Size = new System.Drawing.Size(134, 104);
-            this.pbxEntree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxEntree1.TabIndex = 63;
-            this.pbxEntree1.TabStop = false;
-            // 
-            // lblEntree1
-            // 
-            this.lblEntree1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree1.Location = new System.Drawing.Point(187, 18);
-            this.lblEntree1.Name = "lblEntree1";
-            this.lblEntree1.Size = new System.Drawing.Size(344, 103);
-            this.lblEntree1.TabIndex = 65;
-            this.lblEntree1.Text = "Krabby Patty  .................................................. 10.00\r\n\r\nSesame " +
-    "seed buns, dill pickle, red onion, sliced, tomato, sliced, butter lettuce";
-            this.lblEntree1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // gbxAppetizers
             // 
             this.gbxAppetizers.Controls.Add(this.radApp3);
@@ -641,123 +641,13 @@
             this.gbxAppetizers.Controls.Add(this.lblApp1);
             this.gbxAppetizers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.gbxAppetizers.Location = new System.Drawing.Point(103, 152);
-            this.gbxAppetizers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxAppetizers.Margin = new System.Windows.Forms.Padding(2);
             this.gbxAppetizers.Name = "gbxAppetizers";
-            this.gbxAppetizers.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxAppetizers.Padding = new System.Windows.Forms.Padding(2);
             this.gbxAppetizers.Size = new System.Drawing.Size(542, 358);
             this.gbxAppetizers.TabIndex = 51;
             this.gbxAppetizers.TabStop = false;
             this.gbxAppetizers.Text = "Appetizers";
-            // 
-            // gbxSoups
-            // 
-            this.gbxSoups.Controls.Add(this.radSoup3);
-            this.gbxSoups.Controls.Add(this.radSoup2);
-            this.gbxSoups.Controls.Add(this.radSoup1);
-            this.gbxSoups.Controls.Add(this.lblSalad3);
-            this.gbxSoups.Controls.Add(this.lblSalad2);
-            this.gbxSoups.Controls.Add(this.pbxSoup3);
-            this.gbxSoups.Controls.Add(this.pbxSoup2);
-            this.gbxSoups.Controls.Add(this.pbxSoup1);
-            this.gbxSoups.Controls.Add(this.lblsalad1);
-            this.gbxSoups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxSoups.Location = new System.Drawing.Point(105, 152);
-            this.gbxSoups.Name = "gbxSoups";
-            this.gbxSoups.Size = new System.Drawing.Size(542, 358);
-            this.gbxSoups.TabIndex = 70;
-            this.gbxSoups.TabStop = false;
-            this.gbxSoups.Text = "Soups";
-            // 
-            // radSoup3
-            // 
-            this.radSoup3.AutoSize = true;
-            this.radSoup3.Location = new System.Drawing.Point(13, 280);
-            this.radSoup3.Name = "radSoup3";
-            this.radSoup3.Size = new System.Drawing.Size(14, 13);
-            this.radSoup3.TabIndex = 71;
-            this.radSoup3.TabStop = true;
-            this.radSoup3.UseVisualStyleBackColor = true;
-            // 
-            // radSoup2
-            // 
-            this.radSoup2.AutoSize = true;
-            this.radSoup2.Location = new System.Drawing.Point(13, 171);
-            this.radSoup2.Name = "radSoup2";
-            this.radSoup2.Size = new System.Drawing.Size(14, 13);
-            this.radSoup2.TabIndex = 70;
-            this.radSoup2.TabStop = true;
-            this.radSoup2.UseVisualStyleBackColor = true;
-            // 
-            // radSoup1
-            // 
-            this.radSoup1.AutoSize = true;
-            this.radSoup1.Location = new System.Drawing.Point(13, 60);
-            this.radSoup1.Name = "radSoup1";
-            this.radSoup1.Size = new System.Drawing.Size(14, 13);
-            this.radSoup1.TabIndex = 69;
-            this.radSoup1.TabStop = true;
-            this.radSoup1.UseVisualStyleBackColor = true;
-            // 
-            // lblSalad3
-            // 
-            this.lblSalad3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSalad3.Location = new System.Drawing.Point(186, 242);
-            this.lblSalad3.Name = "lblSalad3";
-            this.lblSalad3.Size = new System.Drawing.Size(344, 103);
-            this.lblSalad3.TabIndex = 68;
-            this.lblSalad3.Text = "Shrimp Bisque ...................................................29.99\r\n\r\nA thick" +
-    ", creamy soup made with shellfish and thickened by a paste made from their shell" +
-    "s";
-            this.lblSalad3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxSoup3
-            // 
-            this.pbxSoup3.Location = new System.Drawing.Point(32, 241);
-            this.pbxSoup3.Name = "pbxSoup3";
-            this.pbxSoup3.Size = new System.Drawing.Size(134, 104);
-            this.pbxSoup3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSoup3.TabIndex = 67;
-            this.pbxSoup3.TabStop = false;
-            // 
-            // lblSalad2
-            // 
-            this.lblSalad2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSalad2.Location = new System.Drawing.Point(186, 129);
-            this.lblSalad2.Name = "lblSalad2";
-            this.lblSalad2.Size = new System.Drawing.Size(344, 103);
-            this.lblSalad2.TabIndex = 66;
-            this.lblSalad2.Text = "Cioppino  .......................................................29.99\r\n\r\nStew of" +
-    " fish and shellfish cooked with tomatoes, wine, spices, and herbs";
-            this.lblSalad2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxSoup2
-            // 
-            this.pbxSoup2.Location = new System.Drawing.Point(32, 128);
-            this.pbxSoup2.Name = "pbxSoup2";
-            this.pbxSoup2.Size = new System.Drawing.Size(134, 104);
-            this.pbxSoup2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSoup2.TabIndex = 64;
-            this.pbxSoup2.TabStop = false;
-            // 
-            // pbxSoup1
-            // 
-            this.pbxSoup1.Location = new System.Drawing.Point(30, 16);
-            this.pbxSoup1.Name = "pbxSoup1";
-            this.pbxSoup1.Size = new System.Drawing.Size(134, 104);
-            this.pbxSoup1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSoup1.TabIndex = 63;
-            this.pbxSoup1.TabStop = false;
-            // 
-            // lblsalad1
-            // 
-            this.lblsalad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblsalad1.Location = new System.Drawing.Point(186, 16);
-            this.lblsalad1.Name = "lblsalad1";
-            this.lblsalad1.Size = new System.Drawing.Size(344, 103);
-            this.lblsalad1.TabIndex = 65;
-            this.lblsalad1.Text = "Bouillabaisse ...................................................29.99\r\n\r\nSeasone" +
-    "d fish stew made with mussels, anchovies and shrimp";
-            this.lblsalad1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // radApp3
             // 
@@ -849,6 +739,116 @@
     " Ceviche; Scorched Baby Corn, Lime-Truffle Emulsion, Ultra Thin Saffron Tuile";
             this.lblApp1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // gbxSoups
+            // 
+            this.gbxSoups.Controls.Add(this.radSoup3);
+            this.gbxSoups.Controls.Add(this.radSoup2);
+            this.gbxSoups.Controls.Add(this.radSoup1);
+            this.gbxSoups.Controls.Add(this.lblSoup3);
+            this.gbxSoups.Controls.Add(this.lblSoup2);
+            this.gbxSoups.Controls.Add(this.pbxSoup3);
+            this.gbxSoups.Controls.Add(this.pbxSoup2);
+            this.gbxSoups.Controls.Add(this.pbxSoup1);
+            this.gbxSoups.Controls.Add(this.lblSoup1);
+            this.gbxSoups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.gbxSoups.Location = new System.Drawing.Point(105, 152);
+            this.gbxSoups.Name = "gbxSoups";
+            this.gbxSoups.Size = new System.Drawing.Size(542, 358);
+            this.gbxSoups.TabIndex = 70;
+            this.gbxSoups.TabStop = false;
+            this.gbxSoups.Text = "Soups";
+            // 
+            // radSoup3
+            // 
+            this.radSoup3.AutoSize = true;
+            this.radSoup3.Location = new System.Drawing.Point(13, 280);
+            this.radSoup3.Name = "radSoup3";
+            this.radSoup3.Size = new System.Drawing.Size(14, 13);
+            this.radSoup3.TabIndex = 71;
+            this.radSoup3.TabStop = true;
+            this.radSoup3.UseVisualStyleBackColor = true;
+            // 
+            // radSoup2
+            // 
+            this.radSoup2.AutoSize = true;
+            this.radSoup2.Location = new System.Drawing.Point(13, 171);
+            this.radSoup2.Name = "radSoup2";
+            this.radSoup2.Size = new System.Drawing.Size(14, 13);
+            this.radSoup2.TabIndex = 70;
+            this.radSoup2.TabStop = true;
+            this.radSoup2.UseVisualStyleBackColor = true;
+            // 
+            // radSoup1
+            // 
+            this.radSoup1.AutoSize = true;
+            this.radSoup1.Location = new System.Drawing.Point(13, 60);
+            this.radSoup1.Name = "radSoup1";
+            this.radSoup1.Size = new System.Drawing.Size(14, 13);
+            this.radSoup1.TabIndex = 69;
+            this.radSoup1.TabStop = true;
+            this.radSoup1.UseVisualStyleBackColor = true;
+            // 
+            // lblSoup3
+            // 
+            this.lblSoup3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSoup3.Location = new System.Drawing.Point(186, 242);
+            this.lblSoup3.Name = "lblSoup3";
+            this.lblSoup3.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup3.TabIndex = 68;
+            this.lblSoup3.Text = "Shrimp Bisque ...................................................29.99\r\n\r\nA thick" +
+    ", creamy soup made with shellfish and thickened by a paste made from their shell" +
+    "s";
+            this.lblSoup3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblSoup2
+            // 
+            this.lblSoup2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSoup2.Location = new System.Drawing.Point(186, 129);
+            this.lblSoup2.Name = "lblSoup2";
+            this.lblSoup2.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup2.TabIndex = 66;
+            this.lblSoup2.Text = "Cioppino  .......................................................29.99\r\n\r\nStew of" +
+    " fish and shellfish cooked with tomatoes, wine, spices, and herbs";
+            this.lblSoup2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxSoup3
+            // 
+            this.pbxSoup3.Location = new System.Drawing.Point(32, 241);
+            this.pbxSoup3.Name = "pbxSoup3";
+            this.pbxSoup3.Size = new System.Drawing.Size(134, 104);
+            this.pbxSoup3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup3.TabIndex = 67;
+            this.pbxSoup3.TabStop = false;
+            // 
+            // pbxSoup2
+            // 
+            this.pbxSoup2.Location = new System.Drawing.Point(32, 128);
+            this.pbxSoup2.Name = "pbxSoup2";
+            this.pbxSoup2.Size = new System.Drawing.Size(134, 104);
+            this.pbxSoup2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup2.TabIndex = 64;
+            this.pbxSoup2.TabStop = false;
+            // 
+            // pbxSoup1
+            // 
+            this.pbxSoup1.Location = new System.Drawing.Point(30, 16);
+            this.pbxSoup1.Name = "pbxSoup1";
+            this.pbxSoup1.Size = new System.Drawing.Size(134, 104);
+            this.pbxSoup1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup1.TabIndex = 63;
+            this.pbxSoup1.TabStop = false;
+            // 
+            // lblSoup1
+            // 
+            this.lblSoup1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSoup1.Location = new System.Drawing.Point(186, 16);
+            this.lblSoup1.Name = "lblSoup1";
+            this.lblSoup1.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup1.TabIndex = 65;
+            this.lblSoup1.Text = "Bouillabaisse ...................................................29.99\r\n\r\nSeasone" +
+    "d fish stew made with mussels, anchovies and shrimp";
+            this.lblSoup1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmCustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -871,7 +871,7 @@
             this.Controls.Add(this.btnSoups);
             this.Controls.Add(this.btnEntrees);
             this.Controls.Add(this.btnAppetizers);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblGrey);
             this.Controls.Add(this.lblYellow);
             this.Controls.Add(this.pbxSwirl1);
             this.Controls.Add(this.pbxSwirl2);
@@ -885,6 +885,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).EndInit();
             this.gbxEntrees.ResumeLayout(false);
             this.gbxEntrees.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).EndInit();
             this.gbxDrinks.ResumeLayout(false);
             this.gbxDrinks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).EndInit();
@@ -895,19 +898,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).EndInit();
             this.gbxAppetizers.ResumeLayout(false);
             this.gbxAppetizers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).EndInit();
             this.gbxSoups.ResumeLayout(false);
             this.gbxSoups.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -925,7 +925,7 @@
         private System.Windows.Forms.Button btnSoups;
         private System.Windows.Forms.Button btnEntrees;
         private System.Windows.Forms.Button btnAppetizers;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblGrey;
         private System.Windows.Forms.Label lblYellow;
         private System.Windows.Forms.PictureBox pbxSwirl1;
         private System.Windows.Forms.PictureBox pbxSwirl2;
@@ -954,12 +954,12 @@
         private System.Windows.Forms.RadioButton radSoup3;
         private System.Windows.Forms.RadioButton radSoup2;
         private System.Windows.Forms.RadioButton radSoup1;
-        private System.Windows.Forms.Label lblSalad3;
+        private System.Windows.Forms.Label lblSoup3;
         private System.Windows.Forms.PictureBox pbxSoup3;
-        private System.Windows.Forms.Label lblSalad2;
+        private System.Windows.Forms.Label lblSoup2;
         private System.Windows.Forms.PictureBox pbxSoup2;
         private System.Windows.Forms.PictureBox pbxSoup1;
-        private System.Windows.Forms.Label lblsalad1;
+        private System.Windows.Forms.Label lblSoup1;
         private System.Windows.Forms.GroupBox gbxDesserts;
         private System.Windows.Forms.RadioButton radDessert3;
         private System.Windows.Forms.RadioButton radDessert2;
