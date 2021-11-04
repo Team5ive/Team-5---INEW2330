@@ -98,7 +98,7 @@
             this.lblDarkBanner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDarkBanner.Location = new System.Drawing.Point(1, 0);
             this.lblDarkBanner.Name = "lblDarkBanner";
-            this.lblDarkBanner.Size = new System.Drawing.Size(923, 62);
+            this.lblDarkBanner.Size = new System.Drawing.Size(923, 76);
             this.lblDarkBanner.TabIndex = 9;
             // 
             // lblHome
@@ -116,11 +116,11 @@
             // lblFancy
             // 
             this.lblFancy.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFancy.Font = new System.Drawing.Font("Palace Script MT", 50F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFancy.Font = new System.Drawing.Font("Vladimir Script", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFancy.ForeColor = System.Drawing.Color.Gold;
-            this.lblFancy.Location = new System.Drawing.Point(81, 0);
+            this.lblFancy.Location = new System.Drawing.Point(30, -18);
             this.lblFancy.Name = "lblFancy";
-            this.lblFancy.Size = new System.Drawing.Size(146, 62);
+            this.lblFancy.Size = new System.Drawing.Size(265, 94);
             this.lblFancy.TabIndex = 8;
             this.lblFancy.Text = "Fancy!";
             this.lblFancy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -747,6 +747,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(949, 614);
+            this.Controls.Add(this.pbxShell);
+            this.Controls.Add(this.lblFancy);
             this.Controls.Add(this.lblDrinkFour);
             this.Controls.Add(this.lblDrinkFourDesc);
             this.Controls.Add(this.lblDrinkTwoDesc);
@@ -802,8 +804,6 @@
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.lblMenuColor);
             this.Controls.Add(this.lblHome);
-            this.Controls.Add(this.pbxShell);
-            this.Controls.Add(this.lblFancy);
             this.Controls.Add(this.lblDarkBanner);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
