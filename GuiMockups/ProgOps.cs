@@ -69,7 +69,7 @@ namespace GuiMockups
                 //reads the connection and adds the codes to the list
                 while (read.Read())
                 {
-                    frmReservations.bookedTables.Add(Int32.Parse((string)read["TableNumber"]));
+                    frmReservations.bookedTables.Add(read["TableNumber"].ToString());
                 }
                 //closes the reader
                 read.Close();

@@ -12,8 +12,8 @@ namespace GuiMockups
 {
     public partial class frmReservations : Form
     {
-        public static List<int> bookedTables = new List<int>();
-        public static List<int> availableTables = new List<int>();
+        public static List<string> bookedTables = new List<string>();
+        public static List<string> availableTables = new List<string>();
         public frmReservations()
         {
             InitializeComponent();
@@ -22,50 +22,50 @@ namespace GuiMockups
         {
             //adds to List
             availableTables.Clear();
-            availableTables.Add(1);
-            availableTables.Add(2);
-            availableTables.Add(3);
-            availableTables.Add(4);
-            availableTables.Add(5);
-            availableTables.Add(6);
-            availableTables.Add(7);
-            availableTables.Add(8);
-            availableTables.Add(9);
-            availableTables.Add(10);
+            availableTables.Add("1");
+            availableTables.Add("2");
+            availableTables.Add("3");
+            availableTables.Add("4");
+            availableTables.Add("5");
+            availableTables.Add("6");
+            availableTables.Add("7");
+            availableTables.Add("8");
+            availableTables.Add("9");
+            availableTables.Add("10");
             //remove based on tables booked
-            foreach (int i in bookedTables)
+            foreach (string i in bookedTables)
             {
                 switch (i)
                 {
-                    case 1:
-                        availableTables.Remove(1);
+                    case "1":
+                        availableTables.Remove("1");
                         break;
-                    case 2:
-                        availableTables.Remove(2);
+                    case "2":
+                        availableTables.Remove("2");
                         break;
-                    case 3:
-                        availableTables.Remove(3);
+                    case "3":
+                        availableTables.Remove("3");
                         break;
-                    case 4:
-                        availableTables.Remove(4);
+                    case "4":
+                        availableTables.Remove("4");
                         break;
-                    case 5:
-                        availableTables.Remove(5);
+                    case "5":
+                        availableTables.Remove("5");
                         break;
-                    case 6:
-                        availableTables.Remove(6);
+                    case "6":
+                        availableTables.Remove("6");
                         break;
-                    case 7:
-                        availableTables.Remove(7);
+                    case "7":
+                        availableTables.Remove("7");
                         break;
-                    case 8:
-                        availableTables.Remove(8);
+                    case "8":
+                        availableTables.Remove("8");
                         break;
-                    case 9:
-                        availableTables.Remove(9);
+                    case "9":
+                        availableTables.Remove("9");
                         break;
-                    case 10:
-                        availableTables.Remove(10);
+                    case "10":
+                        availableTables.Remove("10");
                         break;
                 }
 
@@ -98,13 +98,13 @@ namespace GuiMockups
             if (Int32.Parse(cbxPartySize.Text) <= 4 && bookedTables.Count < 10)
             {
                 // book tables(date, time, table)
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0].ToString());
+                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
             }
             else if (Int32.Parse(cbxPartySize.Text) >= 4 && bookedTables.Count < 9)
             {
                 //book tables(date, time, table)
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0].ToString());
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[1].ToString());
+                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
+                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[1]);
             }
             else
             {
