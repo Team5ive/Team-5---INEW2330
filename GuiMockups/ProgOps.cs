@@ -94,7 +94,6 @@ namespace GuiMockups
                 _sqlReservationCommand.ExecuteNonQuery();
                 //dispose
                 _sqlReservationCommand.Dispose();
-                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -146,7 +145,6 @@ namespace GuiMockups
                 _sqlCreateLoginCommand.ExecuteNonQuery();
                 //dispose
                 _sqlCreateLoginCommand.Dispose();
-                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

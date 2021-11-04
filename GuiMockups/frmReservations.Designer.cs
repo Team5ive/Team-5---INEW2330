@@ -36,12 +36,12 @@
             this.btnBookNow = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblMsgTimes = new System.Windows.Forms.Label();
-            this.cbxTimes = new System.Windows.Forms.ComboBox();
             this.lblColor2 = new System.Windows.Forms.Label();
             this.lblHoursOp = new System.Windows.Forms.Label();
             this.calReservationDate = new System.Windows.Forms.MonthCalendar();
             this.cbxPartySize = new System.Windows.Forms.ComboBox();
             this.lblMsgTable = new System.Windows.Forms.Label();
+            this.cbxTimes = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,14 +126,6 @@
             this.lblMsgTimes.Text = "Times Available: ";
             this.lblMsgTimes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // cbxTimes
-            // 
-            this.cbxTimes.FormattingEnabled = true;
-            this.cbxTimes.Location = new System.Drawing.Point(487, 173);
-            this.cbxTimes.Name = "cbxTimes";
-            this.cbxTimes.Size = new System.Drawing.Size(160, 21);
-            this.cbxTimes.TabIndex = 46;
-            // 
             // lblColor2
             // 
             this.lblColor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
@@ -193,12 +185,28 @@
             this.lblMsgTable.Text = "Party Size:";
             this.lblMsgTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // cbxTimes
+            // 
+            this.cbxTimes.FormattingEnabled = true;
+            this.cbxTimes.Items.AddRange(new object[] {
+            "11:00am",
+            "2:00pm",
+            "5:00pm",
+            "8:00pm",
+            "11:00pm"});
+            this.cbxTimes.Location = new System.Drawing.Point(487, 168);
+            this.cbxTimes.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxTimes.Name = "cbxTimes";
+            this.cbxTimes.Size = new System.Drawing.Size(160, 21);
+            this.cbxTimes.TabIndex = 86;
+            // 
             // frmReservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(707, 413);
+            this.Controls.Add(this.cbxTimes);
             this.Controls.Add(this.cbxPartySize);
             this.Controls.Add(this.lblMsgTable);
             this.Controls.Add(this.lblMsg2);
@@ -208,7 +216,6 @@
             this.Controls.Add(this.btnBookNow);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblMsgTimes);
-            this.Controls.Add(this.cbxTimes);
             this.Controls.Add(this.lblColor2);
             this.Controls.Add(this.lblHoursOp);
             this.Controls.Add(this.calReservationDate);
@@ -230,11 +237,11 @@
         private System.Windows.Forms.Button btnBookNow;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblMsgTimes;
-        private System.Windows.Forms.ComboBox cbxTimes;
         private System.Windows.Forms.Label lblColor2;
         private System.Windows.Forms.Label lblHoursOp;
         private System.Windows.Forms.MonthCalendar calReservationDate;
         private System.Windows.Forms.ComboBox cbxPartySize;
         private System.Windows.Forms.Label lblMsgTable;
+        private System.Windows.Forms.ComboBox cbxTimes;
     }
 }
