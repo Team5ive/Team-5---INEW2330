@@ -52,16 +52,16 @@ namespace GuiMockups
             // 
             // tbxVerifCode
             // 
-            this.tbxVerifCode.Location = new System.Drawing.Point(379, 290);
+            this.tbxVerifCode.Location = new System.Drawing.Point(106, 280);
             this.tbxVerifCode.Name = "tbxVerifCode";
-            this.tbxVerifCode.Size = new System.Drawing.Size(375, 30);
+            this.tbxVerifCode.Size = new System.Drawing.Size(375, 26);
             this.tbxVerifCode.TabIndex = 83;
             // 
             // lblVerifCode
             // 
             this.lblVerifCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVerifCode.ForeColor = System.Drawing.Color.Black;
-            this.lblVerifCode.Location = new System.Drawing.Point(375, 267);
+            this.lblVerifCode.Location = new System.Drawing.Point(102, 257);
             this.lblVerifCode.Name = "lblVerifCode";
             this.lblVerifCode.Size = new System.Drawing.Size(148, 20);
             this.lblVerifCode.TabIndex = 82;
@@ -69,23 +69,23 @@ namespace GuiMockups
             // 
             // tbxPassword
             // 
-            this.tbxPassword.Location = new System.Drawing.Point(379, 371);
+            this.tbxPassword.Location = new System.Drawing.Point(106, 361);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(375, 30);
+            this.tbxPassword.Size = new System.Drawing.Size(375, 26);
             this.tbxPassword.TabIndex = 79;
             // 
             // tbxEmail
             // 
-            this.tbxEmail.Location = new System.Drawing.Point(379, 209);
+            this.tbxEmail.Location = new System.Drawing.Point(106, 199);
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(375, 30);
+            this.tbxEmail.Size = new System.Drawing.Size(375, 26);
             this.tbxEmail.TabIndex = 78;
             // 
             // lblPassword
             // 
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.Black;
-            this.lblPassword.Location = new System.Drawing.Point(375, 348);
+            this.lblPassword.Location = new System.Drawing.Point(102, 338);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(132, 20);
             this.lblPassword.TabIndex = 75;
@@ -95,7 +95,7 @@ namespace GuiMockups
             // 
             this.lblRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRead.ForeColor = System.Drawing.Color.Black;
-            this.lblRead.Location = new System.Drawing.Point(399, 555);
+            this.lblRead.Location = new System.Drawing.Point(126, 545);
             this.lblRead.Name = "lblRead";
             this.lblRead.Size = new System.Drawing.Size(124, 20);
             this.lblRead.TabIndex = 74;
@@ -105,7 +105,7 @@ namespace GuiMockups
             // 
             this.lblConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirm.ForeColor = System.Drawing.Color.Black;
-            this.lblConfirm.Location = new System.Drawing.Point(660, 535);
+            this.lblConfirm.Location = new System.Drawing.Point(387, 525);
             this.lblConfirm.Name = "lblConfirm";
             this.lblConfirm.Size = new System.Drawing.Size(114, 20);
             this.lblConfirm.TabIndex = 73;
@@ -115,7 +115,7 @@ namespace GuiMockups
             // 
             this.lblByPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblByPro.ForeColor = System.Drawing.Color.Black;
-            this.lblByPro.Location = new System.Drawing.Point(355, 535);
+            this.lblByPro.Location = new System.Drawing.Point(82, 525);
             this.lblByPro.Name = "lblByPro";
             this.lblByPro.Size = new System.Drawing.Size(213, 20);
             this.lblByPro.TabIndex = 72;
@@ -125,7 +125,7 @@ namespace GuiMockups
             // 
             this.lblPrivacyStatement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrivacyStatement.ForeColor = System.Drawing.Color.Black;
-            this.lblPrivacyStatement.Location = new System.Drawing.Point(520, 555);
+            this.lblPrivacyStatement.Location = new System.Drawing.Point(247, 545);
             this.lblPrivacyStatement.Name = "lblPrivacyStatement";
             this.lblPrivacyStatement.Size = new System.Drawing.Size(229, 20);
             this.lblPrivacyStatement.TabIndex = 68;
@@ -135,7 +135,7 @@ namespace GuiMockups
             // 
             this.lblTerms.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTerms.ForeColor = System.Drawing.Color.Black;
-            this.lblTerms.Location = new System.Drawing.Point(563, 535);
+            this.lblTerms.Location = new System.Drawing.Point(290, 525);
             this.lblTerms.Name = "lblTerms";
             this.lblTerms.Size = new System.Drawing.Size(112, 20);
             this.lblTerms.TabIndex = 70;
@@ -145,7 +145,7 @@ namespace GuiMockups
             // 
             this.lblSendCode.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSendCode.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblSendCode.Location = new System.Drawing.Point(425, 443);
+            this.lblSendCode.Location = new System.Drawing.Point(152, 433);
             this.lblSendCode.Name = "lblSendCode";
             this.lblSendCode.Size = new System.Drawing.Size(250, 53);
             this.lblSendCode.TabIndex = 69;
@@ -156,11 +156,11 @@ namespace GuiMockups
             // lblFancy
             // 
             this.lblFancy.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFancy.Font = new System.Drawing.Font("Palace Script MT", 50F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFancy.Font = new System.Drawing.Font("Vladimir Script", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFancy.ForeColor = System.Drawing.Color.Gold;
-            this.lblFancy.Location = new System.Drawing.Point(81, -1);
+            this.lblFancy.Location = new System.Drawing.Point(32, -1);
             this.lblFancy.Name = "lblFancy";
-            this.lblFancy.Size = new System.Drawing.Size(152, 74);
+            this.lblFancy.Size = new System.Drawing.Size(269, 87);
             this.lblFancy.TabIndex = 76;
             this.lblFancy.Text = "Fancy!";
             this.lblFancy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,7 +169,7 @@ namespace GuiMockups
             // 
             this.lblForgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblForgotPass.ForeColor = System.Drawing.Color.Black;
-            this.lblForgotPass.Location = new System.Drawing.Point(373, 109);
+            this.lblForgotPass.Location = new System.Drawing.Point(100, 99);
             this.lblForgotPass.Name = "lblForgotPass";
             this.lblForgotPass.Size = new System.Drawing.Size(275, 50);
             this.lblForgotPass.TabIndex = 77;
@@ -179,7 +179,7 @@ namespace GuiMockups
             // 
             this.lblEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailAddress.Location = new System.Drawing.Point(375, 184);
+            this.lblEmailAddress.Location = new System.Drawing.Point(102, 174);
             this.lblEmailAddress.Name = "lblEmailAddress";
             this.lblEmailAddress.Size = new System.Drawing.Size(235, 22);
             this.lblEmailAddress.TabIndex = 71;
@@ -191,14 +191,14 @@ namespace GuiMockups
             this.lblDarkBanner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDarkBanner.Location = new System.Drawing.Point(9, -1);
             this.lblDarkBanner.Name = "lblDarkBanner";
-            this.lblDarkBanner.Size = new System.Drawing.Size(1111, 74);
+            this.lblDarkBanner.Size = new System.Drawing.Size(1111, 87);
             this.lblDarkBanner.TabIndex = 80;
             // 
             // lblVerify
             // 
             this.lblVerify.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblVerify.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblVerify.Location = new System.Drawing.Point(425, 443);
+            this.lblVerify.Location = new System.Drawing.Point(152, 433);
             this.lblVerify.Name = "lblVerify";
             this.lblVerify.Size = new System.Drawing.Size(250, 53);
             this.lblVerify.TabIndex = 84;
@@ -210,7 +210,7 @@ namespace GuiMockups
             // 
             this.lblChangePass.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblChangePass.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblChangePass.Location = new System.Drawing.Point(425, 443);
+            this.lblChangePass.Location = new System.Drawing.Point(152, 433);
             this.lblChangePass.Name = "lblChangePass";
             this.lblChangePass.Size = new System.Drawing.Size(250, 53);
             this.lblChangePass.TabIndex = 85;
@@ -222,7 +222,7 @@ namespace GuiMockups
             // 
             this.pbxShell.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pbxShell.Image = global::GuiMockups.Properties.Resources.shell_1;
-            this.pbxShell.Location = new System.Drawing.Point(13, 1);
+            this.pbxShell.Location = new System.Drawing.Point(12, 12);
             this.pbxShell.Name = "pbxShell";
             this.pbxShell.Size = new System.Drawing.Size(76, 72);
             this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,12 +231,12 @@ namespace GuiMockups
             // 
             // frmForgotPass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 575);
+            this.ClientSize = new System.Drawing.Size(595, 575);
+            this.Controls.Add(this.pbxShell);
             this.Controls.Add(this.tbxVerifCode);
             this.Controls.Add(this.lblVerifCode);
-            this.Controls.Add(this.pbxShell);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxEmail);
             this.Controls.Add(this.lblPassword);
