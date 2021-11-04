@@ -56,6 +56,53 @@ namespace GuiMockups
              //dispose of database
             _cntDatabase.Dispose();
         }
+        public static void pullBookedTables(string date)
+        {
+            try
+            {
+                //grabs all the book tables base on date passed in
+                string query = "SELECT TableNumber FROM group5fa212330.Reservations WHERE CAST(ReserveDate AS DATE) ='" + date + "'";
+                //create update command
+                SqlCommand _sqlBookedTableCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlBookedTableCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmReservations.bookedTables.Add(Int32.Parse((string)read["TableNumber"]));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlBookedTableCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Employee Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void bookReservation(string date, string time, string table)
+        {
+            try
+            {
+                // Insert for reservation
+                string sqlStatement = "INSERT INTO group5fa212330.Reservations Values(" + _custID + ", '" + date + " " + time + "', " + table + ")";
+                //create update command
+                SqlCommand _sqlReservationCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlReservationCommand.ExecuteNonQuery();
+                //dispose
+                _sqlReservationCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Booking Reservation.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
         public static void insertCustInfo(TextBox firstName, TextBox lastName, TextBox address, TextBox city, TextBox state, TextBox zip, TextBox phone, TextBox email, TextBox userName, TextBox password)
         {
             //string to build a query
