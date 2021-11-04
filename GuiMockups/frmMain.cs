@@ -33,5 +33,11 @@ namespace GuiMockups
         {
             ProgOps.disposeConnection();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout about = new frmAbout();
+            about.ShowDialog();
+        }
     }
 }

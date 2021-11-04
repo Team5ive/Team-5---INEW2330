@@ -179,6 +179,7 @@
             this.btnAddToCart.TabIndex = 60;
             this.btnAddToCart.Text = "Add To Cart";
             this.btnAddToCart.UseVisualStyleBackColor = false;
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // btnHome
             // 
@@ -279,6 +280,7 @@
             this.lblMenu.Size = new System.Drawing.Size(236, 83);
             this.lblMenu.TabIndex = 48;
             this.lblMenu.Text = "Menu";
+            this.lblMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxSwirl1
             // 

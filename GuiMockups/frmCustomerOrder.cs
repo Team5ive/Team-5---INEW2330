@@ -109,5 +109,10 @@ namespace GuiMockups
                 lblNum.Text = count.ToString();
             } 
         }
+
+        private void btnAddToCart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
