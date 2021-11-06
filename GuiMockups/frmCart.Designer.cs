@@ -195,6 +195,7 @@
             this.btnContinueShopping.TabIndex = 43;
             this.btnContinueShopping.Text = "Continue Shopping";
             this.btnContinueShopping.UseVisualStyleBackColor = false;
+            this.btnContinueShopping.Click += new System.EventHandler(this.btnContinueShopping_Click);
             // 
             // pbxShell1
             // 

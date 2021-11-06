@@ -95,6 +95,7 @@
             this.pbxSoup2 = new System.Windows.Forms.PictureBox();
             this.pbxSoup1 = new System.Windows.Forms.PictureBox();
             this.lblSoup1 = new System.Windows.Forms.Label();
+            this.lblCartItemAmount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).BeginInit();
             this.gbxEntrees.SuspendLayout();
@@ -167,6 +168,7 @@
             this.btnShoppingCart.TabIndex = 61;
             this.btnShoppingCart.Text = "Check Out";
             this.btnShoppingCart.UseVisualStyleBackColor = false;
+            this.btnShoppingCart.Click += new System.EventHandler(this.btnShoppingCart_Click);
             // 
             // btnAddToCart
             // 
@@ -851,12 +853,24 @@
     "d fish stew made with mussels, anchovies and shrimp";
             this.lblSoup1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblCartItemAmount
+            // 
+            this.lblCartItemAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartItemAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.lblCartItemAmount.Location = new System.Drawing.Point(509, 536);
+            this.lblCartItemAmount.Name = "lblCartItemAmount";
+            this.lblCartItemAmount.Size = new System.Drawing.Size(241, 42);
+            this.lblCartItemAmount.TabIndex = 71;
+            this.lblCartItemAmount.Text = "Cart(0)";
+            this.lblCartItemAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmCustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(762, 646);
+            this.Controls.Add(this.lblCartItemAmount);
             this.Controls.Add(this.gbxSoups);
             this.Controls.Add(this.gbxDesserts);
             this.Controls.Add(this.gbxDrinks);
@@ -982,5 +996,6 @@
         private System.Windows.Forms.PictureBox pbxDrink2;
         private System.Windows.Forms.PictureBox pbxDrink1;
         private System.Windows.Forms.Label lblDrink1;
+        private System.Windows.Forms.Label lblCartItemAmount;
     }
 }

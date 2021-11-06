@@ -33,6 +33,52 @@ namespace GuiMockups
         //build a connection to db
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
 
+        //lists for cart form
+        private static List<string> _name = new List<string>();
+        private static List<string> _quantity = new List<string>();
+
+        private static List<string> _pricePerUnit = new List<string>();
+        private static List<string> _totalPriceLine = new List<string>();
+
+        // getters and setters for customer menu items
+        public static List<string> Price_Per_Unit
+        {
+            get { return _pricePerUnit; }
+            set { _pricePerUnit = value; }
+        }
+        public static List<string> Total_Price_Per_Line
+        {
+            get { return _totalPriceLine; }
+            set { _totalPriceLine = value; }
+        }
+        public static List<string> Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        public static List<string> Quantity
+        {
+            get { return _quantity; }
+            set { _quantity = value; }
+        }
+
+
+        public static void DGVMainClickData(string name, string priceString, string qtyString)
+        {
+
+            double price = Double.Parse(priceString);
+            double qty = Double.Parse(qtyString);
+
+            //***for your add to cart
+            Name.Add(name);
+            Price_Per_Unit.Add(priceString);
+            Quantity.Add(qtyString);
+            double total = 0;
+            total = qty * price;
+            Total_Price_Per_Line.Add(total.ToString());
+        }
+
+
         private static string _custID;
 
         public static string CustID

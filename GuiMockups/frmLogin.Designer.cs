@@ -131,11 +131,11 @@
             // lblFancy
             // 
             this.lblFancy.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFancy.Font = new System.Drawing.Font("Palace Script MT", 50F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFancy.Font = new System.Drawing.Font("Vladimir Script", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFancy.ForeColor = System.Drawing.Color.Gold;
-            this.lblFancy.Location = new System.Drawing.Point(71, 0);
+            this.lblFancy.Location = new System.Drawing.Point(36, 0);
             this.lblFancy.Name = "lblFancy";
-            this.lblFancy.Size = new System.Drawing.Size(152, 74);
+            this.lblFancy.Size = new System.Drawing.Size(256, 85);
             this.lblFancy.TabIndex = 0;
             this.lblFancy.Text = "Fancy!";
             this.lblFancy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -228,16 +228,16 @@
             this.lblDarkBanner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDarkBanner.Location = new System.Drawing.Point(-1, 0);
             this.lblDarkBanner.Name = "lblDarkBanner";
-            this.lblDarkBanner.Size = new System.Drawing.Size(1111, 74);
+            this.lblDarkBanner.Size = new System.Drawing.Size(1111, 85);
             this.lblDarkBanner.TabIndex = 2;
             // 
             // pbxShell
             // 
             this.pbxShell.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pbxShell.Image = global::GuiMockups.Properties.Resources.shell_1;
-            this.pbxShell.Location = new System.Drawing.Point(3, 2);
+            this.pbxShell.Location = new System.Drawing.Point(-1, 0);
             this.pbxShell.Name = "pbxShell";
-            this.pbxShell.Size = new System.Drawing.Size(76, 72);
+            this.pbxShell.Size = new System.Drawing.Size(89, 84);
             this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxShell.TabIndex = 3;
             this.pbxShell.TabStop = false;
@@ -281,6 +281,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);

@@ -16,5 +16,10 @@ namespace GuiMockups
         {
             InitializeComponent();
         }
+
+        private void btnContinueShopping_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
