@@ -12,6 +12,11 @@ namespace GuiMockups
 {
     public partial class frmTables : Form
     {
+        public static List<string> OrderId = new List<string>();
+        public static List<string> TotalCost = new List<string>();
+        public static List<string> TableNum = new List<string>();
+        public static List<string> CustId = new List<string>();
+
         public frmTables()
         {
             InitializeComponent();
@@ -33,7 +38,7 @@ namespace GuiMockups
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            ProgOps.GetTablesInfo();
         }
     }
 }

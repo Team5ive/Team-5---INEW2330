@@ -398,6 +398,35 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error in Updating Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public static void GetTablesInfo()
+        {
+            try
+            {
+                //grabs all values from customers table
+                string query = "SELECT Order_ID, Cust_ID, TotalCost, Table_Num FROM group5fa212330.Customers WHERE Dine_In = 1";
+                //create update command
+                SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlCustCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmTables.OrderId.Add((read["Order_ID"].ToString()));
+                    frmTables.CustId.Add((read["Cust_ID"].ToString()));
+                    frmTables.TotalCost.Add((read["TotalCost"].ToString()));
+                    frmTables.TableNum.Add((read["Table_Num"].ToString()));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlCustCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Customer Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 
