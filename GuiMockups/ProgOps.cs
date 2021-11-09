@@ -403,7 +403,7 @@ namespace GuiMockups
             try
             {
                 //grabs all values from customers table
-                string query = "SELECT Order_ID, Cust_ID, TotalCost, Table_Num FROM group5fa212330.Customers WHERE Dine_In = 1";
+                string query = "SELECT o.Order_ID, o.Customer_ID, o.TotalCost, o.Table_Num, o.Dine_In, c.Cust_FName FROM group5fa212330.Orders o JOIN group5fa212330.Customers c ON o.Customer_ID = c.Cust_ID";
                 //create update command
                 SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
                 //initializes reader
@@ -411,10 +411,69 @@ namespace GuiMockups
                 //reads the connection and adds the codes to the list
                 while (read.Read())
                 {
-                    frmTables.OrderId.Add((read["Order_ID"].ToString()));
-                    frmTables.CustId.Add((read["Cust_ID"].ToString()));
-                    frmTables.TotalCost.Add((read["TotalCost"].ToString()));
+                    //frmTables.OrderId.Add((read["Order_ID"].ToString()));
+                    //frmTables.CustId.Add((read["Customer_ID"].ToString()));
+                    //frmTables.TotalCost.Add((read["TotalCost"].ToString()));
                     frmTables.TableNum.Add((read["Table_Num"].ToString()));
+                    //frmTables.DineIn.Add((read["Dine_In"].ToString()));
+                    //frmTables.CustName.Add((read["Cust_FName"].ToString()));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlCustCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Customer Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //for data grid view on frmTables
+        public static void DatabaseCommandOrders(DataGridView dgvOrders)
+        {
+            //set command object to null
+            SqlCommand _sqlOrdersCommand = null;
+            //reset data adapter and data table to new
+            SqlDataAdapter _daOrders = new SqlDataAdapter();
+            DataTable _dtOrdersTable = new DataTable();
+
+            try
+            {
+                string query = "SELECT * FROM group5fa212330.Orders;";
+                //est command object
+                _sqlOrdersCommand = new SqlCommand(query, _cntDatabase);
+                //est data adapter
+                _daOrders.SelectCommand = _sqlOrdersCommand;
+                //fill data table
+                _daOrders.Fill(_dtOrdersTable);
+                //bind dgvGames to data table
+                dgvOrders.DataSource = _dtOrdersTable;
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in filling Orders Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //dispose
+            _sqlOrdersCommand.Dispose();
+            _daOrders.Dispose();
+            _dtOrdersTable.Dispose();
+        }
+        public static void GetOrderName(int custId)
+        {
+            try
+            {
+                //grabs all values from customers table
+                string query = "SELECT c.Cust_FName FROM group5fa212330.Customers c JOIN group5fa212330.Orders o ON c.Cust_ID = o.Customer_ID WHERE c.Cust_ID = " + custId;
+                //create update command
+                SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlCustCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmTables.customerName = read["Cust_FName"].ToString();
                 }
                 //closes the reader
                 read.Close();

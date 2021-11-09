@@ -23,5 +23,16 @@ namespace GuiMockups
             MessageBox.Show("You have been signed out.", "Sign Out Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
+
+        private void frmEmployeeHub_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCustOrders_Click(object sender, EventArgs e)
+        {
+            frmTables frmTables = new frmTables();
+            frmTables.ShowDialog();
+        }
     }
 }
