@@ -17,7 +17,6 @@ namespace GuiMockups
             InitializeComponent();
         }
         int count = 0;
-        int cartItemAmount = 0;
         string selectedSection = "";
 
         private void frmCustomerOrder_Load(object sender, EventArgs e)
@@ -31,6 +30,7 @@ namespace GuiMockups
             ProgOps.imageChange(pbxApp1, "201");
             ProgOps.imageChange(pbxApp2, "202");
             ProgOps.imageChange(pbxApp3, "203");
+            lblCartItemAmount.Text = "Cart(" + ProgOps.Name.Count().ToString() + ")";
         }
 
         private void btnEntrees_Click(object sender, EventArgs e)
@@ -137,24 +137,21 @@ namespace GuiMockups
                     }
                     if (radApp1.Checked)
                     {
-                        ProgOps.DGVMainClickData("Scallop", "24.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Scallop", "24.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radApp2.Checked)
                     {
-                        ProgOps.DGVMainClickData("Mesculin Salad", "19.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Mesculin Salad", "19.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radApp3.Checked)
                     {
-                        ProgOps.DGVMainClickData("Tuna-Urchin Toast", "21.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Tuna-Urchin Toast", "21.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     break;
                 case "Entrees":
@@ -165,24 +162,21 @@ namespace GuiMockups
                     }
                     if (radEntree1.Checked)
                     {
-                        ProgOps.DGVMainClickData("Krabby Patty", "10.00", lblNum.Text);
+                        ProgOps.GetDataForCart("Krabby Patty", "10.00", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radEntree2.Checked)
                     {
-                        ProgOps.DGVMainClickData("Dover Sole", "49.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Dover Sole", "49.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radEntree3.Checked)
                     {
-                        ProgOps.DGVMainClickData("Salmon Consommé", "59.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Salmon Consommé", "59.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     break;
                 case "Soups":
@@ -193,24 +187,21 @@ namespace GuiMockups
                     }
                     if (radSoup1.Checked)
                     {
-                        ProgOps.DGVMainClickData("Bouillabaisse", "29.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Bouillabaisse", "29.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radSoup2.Checked)
                     {
-                        ProgOps.DGVMainClickData("Cioppino", "29.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Cioppino", "29.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radSoup3.Checked)
                     {
-                        ProgOps.DGVMainClickData("Shrimp Bisque", "29.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Shrimp Bisque", "29.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     break;
                 case "Desserts":
@@ -221,24 +212,21 @@ namespace GuiMockups
                     }
                     if (radDessert1.Checked)
                     {
-                        ProgOps.DGVMainClickData("Vacherin", "24.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Vacherin", "24.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radDessert2.Checked)
                     {
-                        ProgOps.DGVMainClickData("Mille-Feuille", "19.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Mille-Feuille", "19.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radDessert3.Checked)
                     {
-                        ProgOps.DGVMainClickData("Baba Au Rhum", "21.99", lblNum.Text);
+                        ProgOps.GetDataForCart("Baba Au Rhum", "21.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     break;
                 case "Drinks":
@@ -249,24 +237,21 @@ namespace GuiMockups
                     }
                     if (radDrink1.Checked)
                     {
-                        ProgOps.DGVMainClickData("2009 Château Lafite Rothschild", "424.99", lblNum.Text);
+                        ProgOps.GetDataForCart("2009 Château Lafite Rothschild", "424.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radDrink2.Checked)
                     {
-                        ProgOps.DGVMainClickData("2010 Domaine Romanee-Conti", "944.99", lblNum.Text);
+                        ProgOps.GetDataForCart("2010 Domaine Romanee-Conti", "944.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     if (radDrink3.Checked)
                     {
-                        ProgOps.DGVMainClickData("2015 Guigal Côte Rôtie", "344.99", lblNum.Text);
+                        ProgOps.GetDataForCart("2015 Guigal Côte Rôtie", "344.99", lblNum.Text);
                         lblNum.Text = "0";
                         count = 0;
-                        cartItemAmount++;
                     }
                     break;
 
@@ -274,7 +259,7 @@ namespace GuiMockups
                     break;
             }
 
-            lblCartItemAmount.Text = "Cart(" + cartItemAmount + ")";
+            lblCartItemAmount.Text = "Cart(" + ProgOps.Name.Count().ToString() + ")";
 
         }
 
@@ -282,6 +267,7 @@ namespace GuiMockups
         {
             frmCart cart = new frmCart();
             cart.ShowDialog();
+            this.Close();// closes form to reload cart qty. re opens in close of cart form.
         }
     }
 }

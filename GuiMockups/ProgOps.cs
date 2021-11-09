@@ -62,23 +62,6 @@ namespace GuiMockups
             set { _quantity = value; }
         }
 
-
-        public static void DGVMainClickData(string name, string priceString, string qtyString)
-        {
-
-            double price = Double.Parse(priceString);
-            double qty = Double.Parse(qtyString);
-
-            //***for your add to cart
-            Name.Add(name);
-            Price_Per_Unit.Add(priceString);
-            Quantity.Add(qtyString);
-            double total = 0;
-            total = qty * price;
-            Total_Price_Per_Line.Add(total.ToString());
-        }
-
-
         private static string _custID;
 
         public static string CustID
@@ -102,6 +85,128 @@ namespace GuiMockups
              //dispose of database
             _cntDatabase.Dispose();
         }
+        //frmCustomerOrder(Add to cart button)
+        public static void GetDataForCart(string name, string priceString, string qtyString)
+        {
+            double price = Double.Parse(priceString);
+            int qty = Int32.Parse(qtyString);
+            double total = 0;
+
+            //***for your add to cart
+            bool found = false;
+
+            int count = 0;
+            foreach (var item in _name)
+            {
+
+                if (item == name)
+                {
+                    int currentQty = Int32.Parse(Quantity[count]);
+                    currentQty += qty;
+                    Quantity[count] = currentQty.ToString();
+                    found = true;
+                    total = currentQty * price;
+                    Total_Price_Per_Line[count] = total.ToString();
+                    MessageBox.Show("Updated");
+                }
+                count++;
+            }
+
+            if (!found)
+            {
+                Name.Add(name);
+                Price_Per_Unit.Add(priceString);
+                Quantity.Add(qtyString);
+                total = qty * price;
+                Total_Price_Per_Line.Add(total.ToString());
+                MessageBox.Show("New Addition!");
+            }
+        }
+        //frmCarts
+        public static void ClearList()
+        {
+            //clear list 
+            Price_Per_Unit.Clear();
+            Name.Clear();
+            Quantity.Clear();
+            Total_Price_Per_Line.Clear();
+        }
+        public static void AddToCart(DataGridView dv2)
+        {
+            //***for your shopping cart
+            dv2.ColumnCount = 4;
+
+            dv2.Columns[0].Name = "Menu Item";
+            dv2.Columns[1].Name = "Price";
+            dv2.Columns[2].Name = "Quantity";
+            dv2.Columns[3].Name = "Total Price Per Line";
+
+            for (int i = 0; i < Name.Count; i++)
+            {
+                int rowId = dv2.Rows.Add();
+                dv2.Rows[rowId].Cells[0].Value = Name[i].ToString();
+                dv2.Rows[rowId].Cells[1].Value = Price_Per_Unit[i].ToString();
+                dv2.Rows[rowId].Cells[2].Value = Quantity[i].ToString();
+                dv2.Rows[rowId].Cells[3].Value = Total_Price_Per_Line[i].ToString();
+            }
+        }
+        //totals for frmCart
+        public static void MathForTotals(Label s, Label t, Label n)
+        {
+            double subTotal = 0;
+            double tax = 0;
+            double net = 0;
+            double chargeTax = .0825;
+
+            for (int i = 0; i < Total_Price_Per_Line.Count(); i++)
+            {
+                subTotal += Convert.ToDouble(Total_Price_Per_Line[i]);
+            }
+
+            tax = subTotal * chargeTax;
+            net = subTotal + tax;
+
+            s.Text = subTotal.ToString("C");
+            t.Text = tax.ToString("C");
+            n.Text = net.ToString("C");
+
+        }
+        public static void Remove(DataGridView dgv1)
+        {
+            //remove 1 from quantity based on current selected row in data grid view.
+            //Error
+            int count = 0;
+            bool zero = false;
+            if (Name.Count > 0)
+            {
+                foreach (var item in Name)
+                {
+                    if (item == dgv1.CurrentRow.Cells[0].Value.ToString())
+                    {
+                        int currentQty = Int32.Parse(dgv1.CurrentRow.Cells[2].Value.ToString());
+                        double price = Double.Parse(dgv1.CurrentRow.Cells[1].Value.ToString());
+                        int newQty = currentQty - 1;
+                        Quantity[count] = newQty.ToString();
+                        double total = newQty * price;
+                        Total_Price_Per_Line[count] = total.ToString();
+                        if (newQty == 0)
+                        {
+                            zero = true;
+                        }
+
+                    }
+                    count++;
+                }
+                if (zero)
+                {
+                    Name.Remove(dgv1.CurrentRow.Cells[0].Value.ToString());
+                    Price_Per_Unit.Remove(dgv1.CurrentRow.Cells[1].Value.ToString());
+                    Quantity.Remove(dgv1.CurrentRow.Cells[2].Value.ToString());
+                    Total_Price_Per_Line.Remove(dgv1.CurrentRow.Cells[3].Value.ToString());
+                }
+            }
+        }
+
         public static void pullBookedTables(string date)
         {
             try
