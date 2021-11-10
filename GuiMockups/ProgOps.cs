@@ -570,7 +570,7 @@ namespace GuiMockups
             try
             {
                 //grabs all values from customers table
-                string query = "SELECT c.Cust_FName FROM group5fa212330.Customers c JOIN group5fa212330.Orders o ON c.Cust_ID = o.Customer_ID WHERE c.Cust_ID = " + custId;
+                string query = "SELECT c.Cust_FName FROM group5fa212330.Customers c JOIN group5fa212330.Orders o ON c.Cust_ID = o.Customer_ID WHERE c.Cust_ID = " + custId + ";";
                 //create update command
                 SqlCommand _sqlCustCommand = new SqlCommand(query, _cntDatabase);
                 //initializes reader
@@ -584,6 +584,34 @@ namespace GuiMockups
                 read.Close();
                 //update command
                 _sqlCustCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Customer Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void GetOrderDetails(int orderNum)
+        {
+            try
+            {
+                //grabs all values from customers table
+                string query = "SELECT od.Order_ID, od.Qty, od.Menu_ID, m.MenuItem, m.Cost FROM group5fa212330.Order_Details od JOIN group5fa212330.Menu m ON od.Menu_ID = m.Menu_ID WHERE Order_ID = " + orderNum + ";";
+                //create update command
+                SqlCommand _sqlOrderDetailsCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlOrderDetailsCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmEditOrders.Qty.Add(Convert.ToInt32(read["Qty"]));
+                    frmEditOrders.ItemName.Add(Convert.ToString(read["MenuItem"]));
+                    frmEditOrders.Cost.Add(Convert.ToDouble(read["Cost"]));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlOrderDetailsCommand.Dispose();
             }
             catch (Exception ex)
             {

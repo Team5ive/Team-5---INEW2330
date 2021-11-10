@@ -12,13 +12,7 @@ namespace GuiMockups
 {
     public partial class frmTables : Form
     {
-        public static List<string> OrderId = new List<string>();
-        public static List<string> TotalCost = new List<string>();
-        public static List<double> Price = new List<double>();
         public static List<string> TableNum = new List<string>();
-        public static List<string> CustId = new List<string>();
-        public static List<string> DineIn = new List<string>();
-        public static List<string> CustName = new List<string>();
         public static int orderNum;
         public double orderPrice;
         public static int customerId;

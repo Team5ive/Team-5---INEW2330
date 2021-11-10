@@ -12,6 +12,10 @@ namespace GuiMockups
 {
     public partial class frmEditOrders : Form
     {
+        public static List<int> Qty = new List<int>();
+        public static List<string> ItemName = new List<string>();
+        public static List<double> Cost = new List<double>();
+
         public frmEditOrders()
         {
             InitializeComponent();
@@ -136,6 +140,37 @@ namespace GuiMockups
             btnSoup2.Visible = false;
             btnSoup3.Visible = false;
             btnSoup4.Visible = false;
+        }
+
+        private void frmEditOrders_Load(object sender, EventArgs e)
+        {
+            double total = 0, tax = 0, grandTotal = 0;
+
+            if (frmTables.tableNum > 0)
+            {
+                lblMarker.Text = frmTables.tableNum.ToString();
+                lblOrderTypeOutput.Text = "Table " + frmTables.tableNum.ToString();
+            }
+            else
+            {
+                lblMarker.Text = "Online Order";
+                lblOrderTypeOutput.Text = "Online";
+            }
+            tbxCustNameInput.Text = frmTables.customerName;
+            ProgOps.GetOrderDetails(frmTables.orderNum);
+            //adds the variables in the lists into the list boxes on start up
+            for (int i = 0; i < Qty.Count; i++)
+            {
+                lbxQuantity.Items.Add(Qty[i]);
+                lbxCost.Items.Add(Cost[i].ToString("c"));
+                lbxItems.Items.Add(ItemName[i]);
+                total += Cost[i];
+            }
+            tax = (total * .0825);
+            grandTotal = total + tax;
+            lblTaxOutput.Text = tax.ToString("c");
+            lblTotalOutput.Text = total.ToString("c");
+            lblGrandOutput.Text = grandTotal.ToString("c");
         }
     }
 }
