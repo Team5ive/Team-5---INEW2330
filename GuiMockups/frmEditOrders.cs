@@ -23,127 +23,103 @@ namespace GuiMockups
 
         private void btnAppetizers_Click(object sender, EventArgs e)
         {
-            btnApp1.Visible = true;
-            btnApp2.Visible = true;
-            btnApp3.Visible = true;
-            btnApp4.Visible = true;
-            btnDessert1.Visible = false;
-            btnDessert2.Visible = false;
-            btnDessert3.Visible = false;
-            btnDessert4.Visible = false;
-            btnDrink1.Visible = false;
-            btnDrink2.Visible = false;
-            btnDrink3.Visible = false;
-            btnDrink4.Visible = false;
-            btnEntree1.Visible = false;
-            btnEntree2.Visible = false;
-            btnEntree3.Visible = false;
-            btnEntree4.Visible = false;
-            btnSoup1.Visible = false;
-            btnSoup2.Visible = false;
-            btnSoup3.Visible = false;
-            btnSoup4.Visible = false;
 
+            for (int i = 0; i < 22; i++)
+            {           
+                if (i == 5)
+                {
+                    dgvMenu.Rows[5].Visible = true;
+                    dgvMenu.Rows[6].Visible = true;
+                    dgvMenu.Rows[7].Visible = true;
+                    dgvMenu.Rows[8].Visible = true;
+                    dgvMenu.Rows[9].Visible = true;
+                    i = 10;
+                }
+                CurrencyManager menuManager = (CurrencyManager)BindingContext[dgvMenu.DataSource];
+                menuManager.SuspendBinding();
+                dgvMenu.Rows[i].Visible = false;
+                menuManager.ResumeBinding();
+            }
         }
 
         private void btnEntrees_Click(object sender, EventArgs e)
         {
-            btnApp1.Visible = false;
-            btnApp2.Visible = false;
-            btnApp3.Visible = false;
-            btnApp4.Visible = false;
-            btnDessert1.Visible = false;
-            btnDessert2.Visible = false;
-            btnDessert3.Visible = false;
-            btnDessert4.Visible = false;
-            btnDrink1.Visible = false;
-            btnDrink2.Visible = false;
-            btnDrink3.Visible = false;
-            btnDrink4.Visible = false;
-            btnEntree1.Visible = true;
-            btnEntree2.Visible = true;
-            btnEntree3.Visible = true;
-            btnEntree4.Visible = true;
-            btnSoup1.Visible = false;
-            btnSoup2.Visible = false;
-            btnSoup3.Visible = false;
-            btnSoup4.Visible = false;
+            for (int i = 0; i < 22; i++)
+            {
+                if (i == 0)
+                {
+                    dgvMenu.Rows[0].Visible = true;
+                    dgvMenu.Rows[1].Visible = true;
+                    dgvMenu.Rows[2].Visible = true;
+                    dgvMenu.Rows[3].Visible = true;
+                    dgvMenu.Rows[4].Visible = true;
+                    i = 5;
+                }
+                dgvMenu.Rows[i].Visible = false;
+            }
         }
 
         private void btnSoups_Click(object sender, EventArgs e)
         {
-            btnApp1.Visible = false;
-            btnApp2.Visible = false;
-            btnApp3.Visible = false;
-            btnApp4.Visible = false;
-            btnDessert1.Visible = false;
-            btnDessert2.Visible = false;
-            btnDessert3.Visible = false;
-            btnDessert4.Visible = false;
-            btnDrink1.Visible = false;
-            btnDrink2.Visible = false;
-            btnDrink3.Visible = false;
-            btnDrink4.Visible = false;
-            btnEntree1.Visible = false;
-            btnEntree2.Visible = false;
-            btnEntree3.Visible = false;
-            btnEntree4.Visible = false;
-            btnSoup1.Visible = true;
-            btnSoup2.Visible = true;
-            btnSoup3.Visible = true;
-            btnSoup4.Visible = true;
+            for (int i = 0; i < 22; i++)
+            {
+                if (i == 10)
+                {
+                    dgvMenu.Rows[10].Visible = true;
+                    dgvMenu.Rows[11].Visible = true;
+                    dgvMenu.Rows[12].Visible = true;
+                    dgvMenu.Rows[13].Visible = true;
+                    i = 14;
+                }
+                CurrencyManager menuManager = (CurrencyManager)BindingContext[dgvMenu.DataSource];
+                menuManager.SuspendBinding();
+                dgvMenu.Rows[i].Visible = false;
+                menuManager.ResumeBinding();
+            }
         }
 
         private void btnDesserts_Click(object sender, EventArgs e)
         {
-            btnApp1.Visible = false;
-            btnApp2.Visible = false;
-            btnApp3.Visible = false;
-            btnApp4.Visible = false;
-            btnDessert1.Visible = true;
-            btnDessert2.Visible = true;
-            btnDessert3.Visible = true;
-            btnDessert4.Visible = true;
-            btnDrink1.Visible = false;
-            btnDrink2.Visible = false;
-            btnDrink3.Visible = false;
-            btnDrink4.Visible = false;
-            btnEntree1.Visible = false;
-            btnEntree2.Visible = false;
-            btnEntree3.Visible = false;
-            btnEntree4.Visible = false;
-            btnSoup1.Visible = false;
-            btnSoup2.Visible = false;
-            btnSoup3.Visible = false;
-            btnSoup4.Visible = false;
+            for (int i = 0; i < 22; i++)
+            {
+                if (i == 18)
+                {
+                    dgvMenu.Rows[18].Visible = true;
+                    dgvMenu.Rows[19].Visible = true;
+                    dgvMenu.Rows[20].Visible = true;
+                    dgvMenu.Rows[21].Visible = true;
+                    break;
+                }
+                CurrencyManager menuManager = (CurrencyManager)BindingContext[dgvMenu.DataSource];
+                menuManager.SuspendBinding();
+                dgvMenu.Rows[i].Visible = false;
+                menuManager.ResumeBinding();
+            }
         }
 
         private void btnDrinks_Click(object sender, EventArgs e)
         {
-            btnApp1.Visible = false;
-            btnApp2.Visible = false;
-            btnApp3.Visible = false;
-            btnApp4.Visible = false;
-            btnDessert1.Visible = false;
-            btnDessert2.Visible = false;
-            btnDessert3.Visible = false;
-            btnDessert4.Visible = false;
-            btnDrink1.Visible = true;
-            btnDrink2.Visible = true;
-            btnDrink3.Visible = true;
-            btnDrink4.Visible = true;
-            btnEntree1.Visible = false;
-            btnEntree2.Visible = false;
-            btnEntree3.Visible = false;
-            btnEntree4.Visible = false;
-            btnSoup1.Visible = false;
-            btnSoup2.Visible = false;
-            btnSoup3.Visible = false;
-            btnSoup4.Visible = false;
+            for (int i = 0; i < 22; i++)
+            {
+                if (i == 14)
+                {
+                    dgvMenu.Rows[14].Visible = true;
+                    dgvMenu.Rows[15].Visible = true;
+                    dgvMenu.Rows[16].Visible = true;
+                    dgvMenu.Rows[17].Visible = true;
+                    i = 18;
+                }
+                CurrencyManager menuManager = (CurrencyManager)BindingContext[dgvMenu.DataSource];
+                menuManager.SuspendBinding();
+                dgvMenu.Rows[i].Visible = false;
+                menuManager.ResumeBinding();
+            }
         }
 
         private void frmEditOrders_Load(object sender, EventArgs e)
         {
+            ProgOps.DatabaseCommandMenu(dgvMenu);
+
             double total = 0, tax = 0, grandTotal = 0;
 
             if (frmTables.tableNum > 0)

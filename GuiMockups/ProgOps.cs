@@ -619,6 +619,36 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error Obtaining Customer Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public static void DatabaseCommandMenu(DataGridView dgvMenu)
+        {
+            //set command object to null
+            SqlCommand _sqlMenuCommand = null;
+            //reset data adapter and data table to new
+            SqlDataAdapter _daMenu = new SqlDataAdapter();
+            DataTable _dtMenuTable = new DataTable();
+
+            try
+            {
+                string query = "SELECT Menu_ID, MenuItem, Cost FROM group5fa212330.Menu;";
+                //est command object
+                _sqlMenuCommand = new SqlCommand(query, _cntDatabase);
+                //est data adapter
+                _daMenu.SelectCommand = _sqlMenuCommand;
+                //fill data table
+                _daMenu.Fill(_dtMenuTable);
+                //bind dgvGames to data table
+                dgvMenu.DataSource = _dtMenuTable;
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in filling Orders Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //dispose
+            _sqlMenuCommand.Dispose();
+            _daMenu.Dispose();
+            _dtMenuTable.Dispose();
+        }
     }
 
 
