@@ -516,12 +516,7 @@ namespace GuiMockups
                 //reads the connection and adds the codes to the list
                 while (read.Read())
                 {
-                    //frmTables.OrderId.Add((read["Order_ID"].ToString()));
-                    //frmTables.CustId.Add((read["Customer_ID"].ToString()));
-                    //frmTables.TotalCost.Add((read["TotalCost"].ToString()));
                     frmTables.TableNum.Add((read["Table_Num"].ToString()));
-                    //frmTables.DineIn.Add((read["Dine_In"].ToString()));
-                    //frmTables.CustName.Add((read["Cust_FName"].ToString()));
                 }
                 //closes the reader
                 read.Close();
@@ -648,6 +643,32 @@ namespace GuiMockups
             _sqlMenuCommand.Dispose();
             _daMenu.Dispose();
             _dtMenuTable.Dispose();
+        }
+        public static void InsertIntoOrderDetails(int qty, int orderId, int menuId, double total)
+        {
+            try
+            {
+                //inserts the variables into the database for customers
+                string query1 = "INSERT INTO group5fa212330.Order_details(Order_ID, Menu_ID, Qty)";
+                query1 += " VALUES(" + orderId + ", '" + menuId + "', '" + qty + "');";
+                //create update command
+                SqlCommand _sqlInsertItemCommand = new SqlCommand(query1, _cntDatabase);
+                //update command
+                _sqlInsertItemCommand.ExecuteNonQuery();
+
+                string query = "UPDATE group5fa212330.Orders SET TotalCost = " + total + " WHERE Order_ID = " + orderId +";";
+                //create update command
+                SqlCommand _sqlUpdateOrderCommand = new SqlCommand(query, _cntDatabase);
+                //update command
+                _sqlUpdateOrderCommand.ExecuteNonQuery();
+
+                _sqlInsertItemCommand.Dispose();
+                _sqlUpdateOrderCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 

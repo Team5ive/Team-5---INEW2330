@@ -15,6 +15,12 @@ namespace GuiMockups
         public static List<int> Qty = new List<int>();
         public static List<string> ItemName = new List<string>();
         public static List<double> Cost = new List<double>();
+        public static int addQty;
+        public static int addMenuId;
+        public static double addCost;
+        public static string addItemName;
+        double total = 0, tax = 0, grandTotal = 0;
+
 
         public frmEditOrders()
         {
@@ -118,9 +124,8 @@ namespace GuiMockups
 
         private void frmEditOrders_Load(object sender, EventArgs e)
         {
-            ProgOps.DatabaseCommandMenu(dgvMenu);
+            ProgOps.DatabaseCommandMenu(dgvMenu);  
 
-            double total = 0, tax = 0, grandTotal = 0;
 
             if (frmTables.tableNum > 0)
             {
@@ -133,6 +138,10 @@ namespace GuiMockups
                 lblOrderTypeOutput.Text = "Online";
             }
             tbxCustNameInput.Text = frmTables.customerName;
+            //add below to activated
+            Qty.Clear();
+            Cost.Clear();
+            ItemName.Clear();
             ProgOps.GetOrderDetails(frmTables.orderNum);
             //adds the variables in the lists into the list boxes on start up
             for (int i = 0; i < Qty.Count; i++)
@@ -147,6 +156,59 @@ namespace GuiMockups
             lblTaxOutput.Text = tax.ToString("c");
             lblTotalOutput.Text = total.ToString("c");
             lblGrandOutput.Text = grandTotal.ToString("c");
+        }
+
+        private void btnAddToOrder_Click(object sender, EventArgs e)
+        {
+            //will return and not execute code if the restrictions are met
+            if (tbxQty.Text == "" || tbxQty.Text == "0")
+            {
+                MessageBox.Show("Quantity must be greater than 0.", "No Item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (ItemName.Contains(addItemName))
+            {
+                MessageBox.Show("Item in order!", "Duplicate Item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                ItemName.Add(addItemName);
+                Cost.Add(addCost);
+                addQty = Convert.ToInt32(tbxQty.Text);
+                Qty.Add(addQty);
+                lbxCost.Items.Clear();
+                lbxItems.Items.Clear();
+                lbxQuantity.Items.Clear();
+                for (int i = 0; i < Qty.Count; i++)
+                {
+                    lbxQuantity.Items.Add(Qty[i]);
+                    lbxCost.Items.Add(Cost[i].ToString("c"));
+                    lbxItems.Items.Add(ItemName[i]);
+                    total += Cost[i];
+                }
+                tax = (total * .0825);
+                grandTotal = total + tax;
+                lblTaxOutput.Text = tax.ToString("c");
+                lblTotalOutput.Text = total.ToString("c");
+                lblGrandOutput.Text = grandTotal.ToString("c");
+                ProgOps.InsertIntoOrderDetails(addQty, frmTables.orderNum, addMenuId, grandTotal);
+            }
+        }
+
+        private void dgvMenu_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow menuID;
+            //grab the row index number
+            menuID = dgvMenu.Rows[e.RowIndex];
+            //add values to the variables dependent on which row is clicked
+            addMenuId = Convert.ToInt32(menuID.Cells[0].Value);
+            addItemName = Convert.ToString(menuID.Cells[1].Value);
+            addCost = Convert.ToDouble(menuID.Cells[2].Value);
+        }
+
+        private void frmEditOrders_Activated(object sender, EventArgs e)
+        {
+
         }
     }
 }

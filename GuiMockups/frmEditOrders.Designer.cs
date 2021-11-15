@@ -56,13 +56,14 @@
             this.btnCheckout = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.tbxCustNameInput = new System.Windows.Forms.TextBox();
             this.lblOrderTypeOutput = new System.Windows.Forms.Label();
             this.lblOrderType = new System.Windows.Forms.Label();
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
             this.btnAddToOrder = new System.Windows.Forms.Button();
+            this.lblMultiplier = new System.Windows.Forms.Label();
+            this.tbxQty = new System.Windows.Forms.TextBox();
             this.gbxTableNumber.SuspendLayout();
             this.gbxItems.SuspendLayout();
             this.gbxOrderInfo.SuspendLayout();
@@ -263,7 +264,6 @@
             this.gbxOrderInfo.Controls.Add(this.btnCheckout);
             this.gbxOrderInfo.Controls.Add(this.btnUpdate);
             this.gbxOrderInfo.Controls.Add(this.btnRemove);
-            this.gbxOrderInfo.Controls.Add(this.btnClear);
             this.gbxOrderInfo.Controls.Add(this.tbxCustNameInput);
             this.gbxOrderInfo.Controls.Add(this.lblOrderTypeOutput);
             this.gbxOrderInfo.Controls.Add(this.lblOrderType);
@@ -360,7 +360,7 @@
             this.btnUpdate.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(223, 156);
+            this.btnUpdate.Location = new System.Drawing.Point(127, 156);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(103, 31);
             this.btnUpdate.TabIndex = 2;
@@ -372,29 +372,18 @@
             this.btnRemove.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRemove.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRemove.Location = new System.Drawing.Point(115, 156);
+            this.btnRemove.Location = new System.Drawing.Point(9, 156);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(103, 31);
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "REMOVE";
             this.btnRemove.UseVisualStyleBackColor = false;
             // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClear.Location = new System.Drawing.Point(6, 156);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(103, 31);
-            this.btnClear.TabIndex = 2;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
             // tbxCustNameInput
             // 
             this.tbxCustNameInput.Location = new System.Drawing.Point(11, 50);
             this.tbxCustNameInput.Name = "tbxCustNameInput";
+            this.tbxCustNameInput.ReadOnly = true;
             this.tbxCustNameInput.Size = new System.Drawing.Size(260, 26);
             this.tbxCustNameInput.TabIndex = 1;
             // 
@@ -433,24 +422,44 @@
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.Size = new System.Drawing.Size(434, 311);
             this.dgvMenu.TabIndex = 5;
+            this.dgvMenu.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMenu_CellMouseClick);
             // 
             // btnAddToOrder
             // 
             this.btnAddToOrder.BackColor = System.Drawing.Color.Honeydew;
             this.btnAddToOrder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddToOrder.Location = new System.Drawing.Point(9, 533);
+            this.btnAddToOrder.Location = new System.Drawing.Point(9, 529);
             this.btnAddToOrder.Name = "btnAddToOrder";
             this.btnAddToOrder.Size = new System.Drawing.Size(109, 44);
             this.btnAddToOrder.TabIndex = 1;
-            this.btnAddToOrder.Text = "Add";
+            this.btnAddToOrder.Text = "ADD";
             this.btnAddToOrder.UseVisualStyleBackColor = false;
-            this.btnAddToOrder.Click += new System.EventHandler(this.btnDesserts_Click);
+            this.btnAddToOrder.Click += new System.EventHandler(this.btnAddToOrder_Click);
+            // 
+            // lblMultiplier
+            // 
+            this.lblMultiplier.Location = new System.Drawing.Point(134, 543);
+            this.lblMultiplier.Name = "lblMultiplier";
+            this.lblMultiplier.Size = new System.Drawing.Size(35, 30);
+            this.lblMultiplier.TabIndex = 6;
+            this.lblMultiplier.Text = "X";
+            // 
+            // tbxQty
+            // 
+            this.tbxQty.Location = new System.Drawing.Point(175, 538);
+            this.tbxQty.Name = "tbxQty";
+            this.tbxQty.Size = new System.Drawing.Size(57, 26);
+            this.tbxQty.TabIndex = 7;
+            this.tbxQty.Text = "0";
+            this.tbxQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmEditOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 583);
+            this.Controls.Add(this.tbxQty);
+            this.Controls.Add(this.lblMultiplier);
             this.Controls.Add(this.dgvMenu);
             this.Controls.Add(this.gbxOrderInfo);
             this.Controls.Add(this.gbxItems);
@@ -471,6 +480,7 @@
             this.Name = "frmEditOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";
+            this.Activated += new System.EventHandler(this.frmEditOrders_Activated);
             this.Load += new System.EventHandler(this.frmEditOrders_Load);
             this.gbxTableNumber.ResumeLayout(false);
             this.gbxItems.ResumeLayout(false);
@@ -479,6 +489,7 @@
             this.gbxPayInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -504,7 +515,6 @@
         private System.Windows.Forms.ListBox lbxItems;
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.TextBox tbxCustNameInput;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblOrderType;
         private System.Windows.Forms.Label lblOrderTypeOutput;
         private System.Windows.Forms.Button btnCheckout;
@@ -519,5 +529,7 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dgvMenu;
         private System.Windows.Forms.Button btnAddToOrder;
+        private System.Windows.Forms.Label lblMultiplier;
+        private System.Windows.Forms.TextBox tbxQty;
     }
 }
