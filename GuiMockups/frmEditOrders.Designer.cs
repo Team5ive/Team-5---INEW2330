@@ -54,7 +54,6 @@
             this.lblTaxOutput = new System.Windows.Forms.Label();
             this.lblTax = new System.Windows.Forms.Label();
             this.btnCheckout = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.tbxCustNameInput = new System.Windows.Forms.TextBox();
             this.lblOrderTypeOutput = new System.Windows.Forms.Label();
@@ -262,7 +261,6 @@
             this.gbxOrderInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.gbxOrderInfo.Controls.Add(this.gbxPayInfo);
             this.gbxOrderInfo.Controls.Add(this.btnCheckout);
-            this.gbxOrderInfo.Controls.Add(this.btnUpdate);
             this.gbxOrderInfo.Controls.Add(this.btnRemove);
             this.gbxOrderInfo.Controls.Add(this.tbxCustNameInput);
             this.gbxOrderInfo.Controls.Add(this.lblOrderTypeOutput);
@@ -354,18 +352,7 @@
             this.btnCheckout.TabIndex = 2;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(127, 156);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(103, 31);
-            this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // btnRemove
             // 
@@ -378,6 +365,7 @@
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "REMOVE";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // tbxCustNameInput
             // 
@@ -526,7 +514,6 @@
         private System.Windows.Forms.Label lblTotalOutput;
         private System.Windows.Forms.Label lblGrandOutput;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dgvMenu;
         private System.Windows.Forms.Button btnAddToOrder;
         private System.Windows.Forms.Label lblMultiplier;

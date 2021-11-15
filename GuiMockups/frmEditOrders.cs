@@ -195,6 +195,17 @@ namespace GuiMockups
             }
         }
 
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            frmReceipt frmReceipt = new frmReceipt();
+            frmReceipt.ShowDialog();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dgvMenu_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataGridViewRow menuID;

@@ -67,6 +67,7 @@ namespace GuiMockups
             this.btnEditUser.TabIndex = 5;
             this.btnEditUser.Text = "Edit User Account";
             this.btnEditUser.UseVisualStyleBackColor = false;
+            this.btnEditUser.Click += new System.EventHandler(this.btnEditUser_Click);
             // 
             // btnChangeReserve
             // 
@@ -79,6 +80,7 @@ namespace GuiMockups
             this.btnChangeReserve.TabIndex = 2;
             this.btnChangeReserve.Text = "Change Reservations";
             this.btnChangeReserve.UseVisualStyleBackColor = false;
+            this.btnChangeReserve.Click += new System.EventHandler(this.btnChangeReserve_Click);
             // 
             // btnEditEmployee
             // 
@@ -91,6 +93,7 @@ namespace GuiMockups
             this.btnEditEmployee.TabIndex = 6;
             this.btnEditEmployee.Text = "Edit Employee Account";
             this.btnEditEmployee.UseVisualStyleBackColor = false;
+            this.btnEditEmployee.Click += new System.EventHandler(this.btnEditEmployee_Click);
             // 
             // lblWelcome
             // 
@@ -138,6 +141,7 @@ namespace GuiMockups
             this.btnOrderSupplies.TabIndex = 2;
             this.btnOrderSupplies.Text = "Order Supplies";
             this.btnOrderSupplies.UseVisualStyleBackColor = false;
+            this.btnOrderSupplies.Click += new System.EventHandler(this.btnOrderSupplies_Click);
             // 
             // btnSignOut
             // 

@@ -34,5 +34,27 @@ namespace GuiMockups
             frmTables frmTables = new frmTables();
             frmTables.ShowDialog();
         }
+
+        private void btnOrderSupplies_Click(object sender, EventArgs e)
+        {
+            frmSupplies frmSupplies = new frmSupplies();
+            frmSupplies.ShowDialog();
+        }
+
+        private void btnChangeReserve_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditUser_Click(object sender, EventArgs e)
+        {
+            frmEditCustomerInfo frmEditCustomerInfo = new frmEditCustomerInfo();
+            frmEditCustomerInfo.ShowDialog();
+        }
     }
 }
