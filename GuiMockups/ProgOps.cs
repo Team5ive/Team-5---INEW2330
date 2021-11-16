@@ -602,6 +602,7 @@ namespace GuiMockups
                     frmEditOrders.Qty.Add(Convert.ToInt32(read["Qty"]));
                     frmEditOrders.ItemName.Add(Convert.ToString(read["MenuItem"]));
                     frmEditOrders.Cost.Add(Convert.ToDouble(read["Cost"]));
+                    frmEditOrders.MenuID.Add(Convert.ToInt32(read["Menu_ID"]));
                 }
                 //closes the reader
                 read.Close();
@@ -664,6 +665,24 @@ namespace GuiMockups
 
                 _sqlInsertItemCommand.Dispose();
                 _sqlUpdateOrderCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void RemoveItems(int orderId, int menuId)
+        {
+            try
+            {
+                //inserts the variables into the database for customers
+                string query1 = "DELETE FROM group5fa212330.Order_details WHERE Menu_ID = " + menuId + " AND Order_ID = " + orderId + ";";
+                //create update command
+                SqlCommand _sqlInsertItemCommand = new SqlCommand(query1, _cntDatabase);
+                //update command
+                _sqlInsertItemCommand.ExecuteNonQuery();
+
+                _sqlInsertItemCommand.Dispose();
             }
             catch (Exception ex)
             {

@@ -279,6 +279,7 @@
             this.Name = "frmTables";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Table And Online Orders View";
+            this.Activated += new System.EventHandler(this.frmTables_Activated);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.ResumeLayout(false);

@@ -111,5 +111,11 @@ namespace GuiMockups
         {
             this.dgvOrders.Columns["Order_Date"].Visible = false;
         }
+
+        private void frmTables_Activated(object sender, EventArgs e)
+        {
+            ProgOps.GetTablesInfo();
+            ProgOps.DatabaseCommandOrders(dgvOrders);
+        }
     }
 }

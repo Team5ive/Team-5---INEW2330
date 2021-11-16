@@ -13,6 +13,7 @@ namespace GuiMockups
     public partial class frmEditOrders : Form
     {
         public static List<int> Qty = new List<int>();
+        public static List<int> MenuID = new List<int>();
         public static List<string> ItemName = new List<string>();
         public static List<double> Cost = new List<double>();
         public static int addQty;
@@ -176,6 +177,7 @@ namespace GuiMockups
                 Cost.Add(addCost);
                 addQty = Convert.ToInt32(tbxQty.Text);
                 Qty.Add(addQty);
+                MenuID.Add(addMenuId);
                 lbxCost.Items.Clear();
                 lbxItems.Items.Clear();
                 lbxQuantity.Items.Clear();
@@ -203,7 +205,28 @@ namespace GuiMockups
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-
+            //shows message if the cart is empty on remove click
+            if (lbxItems.Items.Count == 0)
+            {
+                MessageBox.Show("Order is empty.", "Empty Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            //for loop removes the selected item from the list box
+            for (int i = 0; i < lbxItems.Items.Count; i++)
+            {
+                //if statement to check for the selected game and remove that item from lists 
+                //and list boxes as well as update the quantity back to the dgvGames
+                if (lbxItems.SelectedIndex.Equals(i))
+                {
+                    lbxItems.Items.RemoveAt(i);
+                    lbxQuantity.Items.RemoveAt(i);
+                    lbxCost.Items.RemoveAt(i);
+                    Qty.RemoveAt(i);
+                    ItemName.RemoveAt(i);
+                    Cost.RemoveAt(i);
+                    ProgOps.RemoveItems(frmTables.orderNum, MenuID[i]);
+                }
+            }
         }
 
         private void dgvMenu_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
