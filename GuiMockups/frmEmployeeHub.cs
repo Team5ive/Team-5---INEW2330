@@ -48,13 +48,9 @@ namespace GuiMockups
 
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
-
+            frmEmployeesAccount editAccount = new frmEmployeesAccount();
+            editAccount.ShowDialog();
         }
 
-        private void btnEditUser_Click(object sender, EventArgs e)
-        {
-            frmEditCustomerInfo frmEditCustomerInfo = new frmEditCustomerInfo();
-            frmEditCustomerInfo.ShowDialog();
-        }
     }
 }

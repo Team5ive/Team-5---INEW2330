@@ -52,7 +52,9 @@ namespace GuiMockups
             string orderID = (ProgOps.ReadCurrentOrderID() + 1).ToString();
             ProgOps.checkOutOrder(dateString, orderID);
             MessageBox.Show("Order Submitted!");
-            //should open frmReceipt next 
+            //opens frmReceipt next 
+            frmReceipt receipt = new frmReceipt();
+            receipt.ShowDialog();
         }
     }
 }

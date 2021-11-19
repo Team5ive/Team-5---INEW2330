@@ -1415,4 +1415,10 @@
         gzPN+7bh1CtlUOZf054Gob+iv/u7/w/XcAOpJjFr1AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="lblAbout.Text" xml:space="preserve">
+    <value>Fancy! A Restaurant application that improve and personalizes the restaurant experience for both customers and employees. For customers, they can create accounts giving them the ability to reserve tables and order meals ahead of time. Employees depending on position will get access to a multitude of functions to help manage restaurant.
+
+
+</value>
+  </data>
 </root>
