@@ -47,7 +47,7 @@ namespace GuiMockups
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Vladimir Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.label2.Location = new System.Drawing.Point(0, 352);
+            this.label2.Location = new System.Drawing.Point(116, 352);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(475, 58);
             this.label2.TabIndex = 6;
@@ -58,7 +58,7 @@ namespace GuiMockups
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Vladimir Script", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(90, 35);
+            this.label1.Location = new System.Drawing.Point(206, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(279, 116);
             this.label1.TabIndex = 4;
@@ -75,7 +75,7 @@ namespace GuiMockups
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.mnuMain.Size = new System.Drawing.Size(486, 24);
+            this.mnuMain.Size = new System.Drawing.Size(707, 24);
             this.mnuMain.TabIndex = 5;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -111,7 +111,7 @@ namespace GuiMockups
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(110, 120);
+            this.pictureBox1.Location = new System.Drawing.Point(226, 120);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 244);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +123,7 @@ namespace GuiMockups
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(486, 421);
+            this.ClientSize = new System.Drawing.Size(707, 421);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mnuMain);

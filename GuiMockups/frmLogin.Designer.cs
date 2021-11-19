@@ -48,6 +48,7 @@
             this.lblDarkBanner = new System.Windows.Forms.Label();
             this.pbxShell = new System.Windows.Forms.PictureBox();
             this.lblWelcomeBack = new System.Windows.Forms.Label();
+            this.cbxPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.Size = new System.Drawing.Size(375, 26);
             this.tbxPassword.TabIndex = 1;
+            this.tbxPassword.UseSystemPasswordChar = true;
             // 
             // lblForgotPassword
             // 
@@ -252,12 +254,25 @@
             this.lblWelcomeBack.TabIndex = 0;
             this.lblWelcomeBack.Text = "Welcome Back.";
             // 
+            // cbxPassword
+            // 
+            this.cbxPassword.AutoSize = true;
+            this.cbxPassword.Location = new System.Drawing.Point(603, 307);
+            this.cbxPassword.Name = "cbxPassword";
+            this.cbxPassword.Size = new System.Drawing.Size(141, 24);
+            this.cbxPassword.TabIndex = 12;
+            this.cbxPassword.Text = "Show Password";
+            this.cbxPassword.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbxPassword.UseVisualStyleBackColor = true;
+            this.cbxPassword.CheckedChanged += new System.EventHandler(this.cbxPassword_CheckedChanged);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1108, 583);
+            this.Controls.Add(this.cbxPassword);
             this.Controls.Add(this.pbxShell);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxEmail);
@@ -313,5 +328,6 @@
         private System.Windows.Forms.Label lblDarkBanner;
         private System.Windows.Forms.PictureBox pbxShell;
         private System.Windows.Forms.Label lblWelcomeBack;
+        private System.Windows.Forms.CheckBox cbxPassword;
     }
 }

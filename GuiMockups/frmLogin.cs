@@ -143,5 +143,18 @@ namespace GuiMockups
             frmSignUp frmSignUp = new frmSignUp();
             frmSignUp.ShowDialog();
         }
+
+        private void cbxPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            //show or hide password
+            if (cbxPassword.Checked)
+            {
+                tbxPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tbxPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
