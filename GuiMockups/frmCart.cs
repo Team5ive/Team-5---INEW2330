@@ -47,7 +47,12 @@ namespace GuiMockups
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-
+            //submit orders to database(both orders and orderDetails)
+            var dateString = DateTime.Now.ToString("yyyy-MM-dd");
+            string orderID = (ProgOps.ReadCurrentOrderID() + 1).ToString();
+            ProgOps.checkOutOrder(dateString, orderID);
+            MessageBox.Show("Order Submitted!");
+            //should open frmReceipt next 
         }
     }
 }

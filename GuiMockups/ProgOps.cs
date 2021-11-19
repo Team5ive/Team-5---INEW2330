@@ -39,8 +39,16 @@ namespace GuiMockups
 
         private static List<string> _pricePerUnit = new List<string>();
         private static List<string> _totalPriceLine = new List<string>();
+        //added for OrderDetails // added menuID
+        private static List<string> _menu_ID = new List<string>();
+        public static double subTotal = 0;
 
         // getters and setters for customer menu items
+        public static List<string> Menu_ID
+        {// added menuID
+            get { return _menu_ID; }
+            set { _menu_ID = value; }
+        }
         public static List<string> Price_Per_Unit
         {
             get { return _pricePerUnit; }
@@ -82,11 +90,11 @@ namespace GuiMockups
             MessageBox.Show("Close Database Successful", "Close Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public static void disposeConnection() {
-             //dispose of database
+            //dispose of database
             _cntDatabase.Dispose();
         }
-        //frmCustomerOrder(Add to cart button)
-        public static void GetDataForCart(string name, string priceString, string qtyString)
+        //frmCustomerOrder(Add to cart button)// added MenuID
+        public static void GetDataForCart(string name, string priceString, string qtyString, string menuItem)
         {
             double price = Double.Parse(priceString);
             int qty = Int32.Parse(qtyString);
@@ -119,6 +127,7 @@ namespace GuiMockups
                 Quantity.Add(qtyString);
                 total = qty * price;
                 Total_Price_Per_Line.Add(total.ToString());
+                Menu_ID.Add(menuItem);// added menuId
                 MessageBox.Show("New Addition!");
             }
         }
@@ -130,30 +139,105 @@ namespace GuiMockups
             Name.Clear();
             Quantity.Clear();
             Total_Price_Per_Line.Clear();
+            Menu_ID.Clear();// added menuID
         }
         public static void AddToCart(DataGridView dv2)
         {
-            //***for your shopping cart
-            dv2.ColumnCount = 4;
+            //Fills frmCart DGV
+            dv2.ColumnCount = 5;
 
-            dv2.Columns[0].Name = "Menu Item";
-            dv2.Columns[1].Name = "Price";
-            dv2.Columns[2].Name = "Quantity";
-            dv2.Columns[3].Name = "Total Price Per Line";
+            dv2.Columns[0].Name = "MenuID";// added menuID
+            dv2.Columns[1].Name = "Menu Item";
+            dv2.Columns[2].Name = "Price";
+            dv2.Columns[3].Name = "Quantity";
+            dv2.Columns[4].Name = "Total Price Per Line";
 
             for (int i = 0; i < Name.Count; i++)
             {
                 int rowId = dv2.Rows.Add();
-                dv2.Rows[rowId].Cells[0].Value = Name[i].ToString();
-                dv2.Rows[rowId].Cells[1].Value = Price_Per_Unit[i].ToString();
-                dv2.Rows[rowId].Cells[2].Value = Quantity[i].ToString();
-                dv2.Rows[rowId].Cells[3].Value = Total_Price_Per_Line[i].ToString();
+                dv2.Rows[rowId].Cells[0].Value = Menu_ID[i].ToString();// added menuID
+                dv2.Rows[rowId].Cells[1].Value = Name[i].ToString();
+                dv2.Rows[rowId].Cells[2].Value = Price_Per_Unit[i].ToString();
+                dv2.Rows[rowId].Cells[3].Value = Quantity[i].ToString();
+                dv2.Rows[rowId].Cells[4].Value = Total_Price_Per_Line[i].ToString();
             }
         }
+        // gets the most current OrderID from database. 
+        public static int ReadCurrentOrderID()
+        {
+            int OrderIDCurrent = 0;
+            try
+            {
+                string queryString = "SELECT MAX(Order_ID) FROM group5fa212330.Orders";
+                //create update command
+                SqlCommand _sqlEmpCommand = new SqlCommand(queryString, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlEmpCommand.ExecuteReader();
+
+                // Call Read before accessing data. 
+                if (read.HasRows)
+                {
+                    read.Read();
+                    OrderIDCurrent = read.GetInt32(0);
+                }
+
+                // Call Close when done reading.
+                read.Close();
+
+                _sqlEmpCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return OrderIDCurrent;
+        }
+        //should the data be passed here in the Progops or from form back?
+        public static void checkOutOrder(string date, string orderIdentification)
+        {
+            try
+            {
+                // Orders: Order_ID Customer_ID, Employee_ID, Order_Date, TotalCost, Table_Num, Dine_in
+                // (ordering from application employeeID = NULL , Table_Num = 0, Dine_in = 0)
+                //inserts the variables into the database for customers
+                string queryOrder = "INSERT INTO group5fa212330.Orders Values(" + _custID + ", NULL, '" + date + "', " + subTotal + ", 0, 0);";
+                //create update command
+                SqlCommand _sqlInsertOrderCommand = new SqlCommand(queryOrder, _cntDatabase);
+                //update command
+                _sqlInsertOrderCommand.ExecuteNonQuery();
+
+
+                for (int i = 0; i < Menu_ID.Count; i++)
+                {
+                    // Order_details: Order_ID, Menu_ID, Qty
+                    string queryOrderDetails = "INSERT INTO group5fa212330.Order_details Values(" + orderIdentification + ", " + Menu_ID[i] + ", " + Quantity[i] + " );";
+                    //create update command
+                    SqlCommand _sqlInsertDetailsCommand = new SqlCommand(queryOrderDetails, _cntDatabase);
+                    //update command
+                    _sqlInsertDetailsCommand.ExecuteNonQuery();
+                    _sqlInsertDetailsCommand.Dispose();
+                    MessageBox.Show("Added TO OrderDetails" + orderIdentification + ", " + Menu_ID[i] + ", " + Quantity[i]);
+                }
+
+
+
+
+
+                // _sqlInsertDetailsCommand.Dispose();
+                _sqlInsertOrderCommand.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error submitting orders/order", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
+        }
+
+        
         //totals for frmCart
         public static void MathForTotals(Label s, Label t, Label n)
         {
-            double subTotal = 0;
+            //double subTotal = 0;
             double tax = 0;
             double net = 0;
             double chargeTax = .0825;
@@ -199,10 +283,11 @@ namespace GuiMockups
                 }
                 if (zero)
                 {
-                    Name.Remove(dgv1.CurrentRow.Cells[0].Value.ToString());
-                    Price_Per_Unit.Remove(dgv1.CurrentRow.Cells[1].Value.ToString());
-                    Quantity.Remove(dgv1.CurrentRow.Cells[2].Value.ToString());
-                    Total_Price_Per_Line.Remove(dgv1.CurrentRow.Cells[3].Value.ToString());
+                    Menu_ID.Remove(dgv1.CurrentRow.Cells[0].Value.ToString());// added menuID
+                    Name.Remove(dgv1.CurrentRow.Cells[1].Value.ToString());
+                    Price_Per_Unit.Remove(dgv1.CurrentRow.Cells[2].Value.ToString());
+                    Quantity.Remove(dgv1.CurrentRow.Cells[3].Value.ToString());
+                    Total_Price_Per_Line.Remove(dgv1.CurrentRow.Cells[4].Value.ToString());
                 }
             }
         }
