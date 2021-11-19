@@ -47,11 +47,9 @@ namespace GuiMockups
             this.groupBox2.Controls.Add(this.btnChangeReserve);
             this.groupBox2.Controls.Add(this.btnEditEmployee);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.groupBox2.Location = new System.Drawing.Point(466, 161);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(311, 105);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(463, 155);
+            this.groupBox2.Size = new System.Drawing.Size(309, 101);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Managers";
@@ -61,10 +59,9 @@ namespace GuiMockups
             this.btnChangeReserve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.btnChangeReserve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnChangeReserve.ForeColor = System.Drawing.Color.Black;
-            this.btnChangeReserve.Location = new System.Drawing.Point(33, 29);
-            this.btnChangeReserve.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnChangeReserve.Location = new System.Drawing.Point(22, 19);
             this.btnChangeReserve.Name = "btnChangeReserve";
-            this.btnChangeReserve.Size = new System.Drawing.Size(195, 102);
+            this.btnChangeReserve.Size = new System.Drawing.Size(130, 66);
             this.btnChangeReserve.TabIndex = 2;
             this.btnChangeReserve.Text = "Change Reservations";
             this.btnChangeReserve.UseVisualStyleBackColor = false;
@@ -75,10 +72,9 @@ namespace GuiMockups
             this.btnEditEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.btnEditEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnEditEmployee.Location = new System.Drawing.Point(244, 29);
-            this.btnEditEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditEmployee.Location = new System.Drawing.Point(163, 19);
             this.btnEditEmployee.Name = "btnEditEmployee";
-            this.btnEditEmployee.Size = new System.Drawing.Size(195, 102);
+            this.btnEditEmployee.Size = new System.Drawing.Size(130, 66);
             this.btnEditEmployee.TabIndex = 6;
             this.btnEditEmployee.Text = "Edit Employee Account";
             this.btnEditEmployee.UseVisualStyleBackColor = false;
@@ -88,10 +84,9 @@ namespace GuiMockups
             // 
             this.lblWelcome.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblWelcome.Location = new System.Drawing.Point(0, -5);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(0, -3);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(929, 161);
+            this.lblWelcome.Size = new System.Drawing.Size(619, 105);
             this.lblWelcome.TabIndex = 9;
             this.lblWelcome.Text = "Welcome!";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,11 +96,9 @@ namespace GuiMockups
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox1.Controls.Add(this.btnCustOrders);
             this.groupBox1.Controls.Add(this.btnOrderSupplies);
-            this.groupBox1.Location = new System.Drawing.Point(6, 161);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(4, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(452, 155);
+            this.groupBox1.Size = new System.Drawing.Size(301, 101);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Associates";
@@ -114,10 +107,9 @@ namespace GuiMockups
             // 
             this.btnCustOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(139)))), ((int)(((byte)(156)))));
             this.btnCustOrders.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCustOrders.Location = new System.Drawing.Point(27, 29);
-            this.btnCustOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCustOrders.Location = new System.Drawing.Point(18, 19);
             this.btnCustOrders.Name = "btnCustOrders";
-            this.btnCustOrders.Size = new System.Drawing.Size(195, 102);
+            this.btnCustOrders.Size = new System.Drawing.Size(130, 66);
             this.btnCustOrders.TabIndex = 1;
             this.btnCustOrders.Text = "Customer Orders";
             this.btnCustOrders.UseVisualStyleBackColor = false;
@@ -128,10 +120,9 @@ namespace GuiMockups
             this.btnOrderSupplies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(139)))), ((int)(((byte)(156)))));
             this.btnOrderSupplies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnOrderSupplies.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOrderSupplies.Location = new System.Drawing.Point(231, 29);
-            this.btnOrderSupplies.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOrderSupplies.Location = new System.Drawing.Point(154, 19);
             this.btnOrderSupplies.Name = "btnOrderSupplies";
-            this.btnOrderSupplies.Size = new System.Drawing.Size(195, 102);
+            this.btnOrderSupplies.Size = new System.Drawing.Size(130, 66);
             this.btnOrderSupplies.TabIndex = 2;
             this.btnOrderSupplies.Text = "Order Supplies";
             this.btnOrderSupplies.UseVisualStyleBackColor = false;
@@ -142,10 +133,9 @@ namespace GuiMockups
             this.btnSignOut.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnSignOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSignOut.ForeColor = System.Drawing.Color.Black;
-            this.btnSignOut.Location = new System.Drawing.Point(793, -5);
-            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSignOut.Location = new System.Drawing.Point(529, -3);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(124, 45);
+            this.btnSignOut.Size = new System.Drawing.Size(83, 29);
             this.btnSignOut.TabIndex = 12;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
@@ -153,16 +143,16 @@ namespace GuiMockups
             // 
             // frmEmployeeHub
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 313);
+            this.ClientSize = new System.Drawing.Size(620, 203);
             this.ControlBox = false;
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmEmployeeHub";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Hub";
             this.Load += new System.EventHandler(this.frmEmployeeHub_Load);
             this.groupBox2.ResumeLayout(false);

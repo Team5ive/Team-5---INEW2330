@@ -26,6 +26,16 @@ namespace GuiMockups
         private static SqlDataAdapter _daResults2 = new SqlDataAdapter();
         //add the data tables
         private static DataTable _dtResultsTable2 = new DataTable();
+
+        
+        //add command object
+        private static SqlCommand _sqlEmployeesCommand;
+        //add the data adapter
+        private static SqlDataAdapter _daEmployees = new SqlDataAdapter();
+        //add the data tables
+        private static DataTable _dtEmployeesTable = new DataTable();
+        private static StringBuilder errorMessages = new StringBuilder();
+
         //--- frmCustomerOrder
 
         //connection string
@@ -77,6 +87,20 @@ namespace GuiMockups
             get { return _custID; }
             set { _custID = value; }
         }
+
+        private static string _empID;
+
+        public static string EmpID
+        {
+            get { return _empID; }
+            set { _empID = value; }
+        }
+
+        public static DataTable EmployeesTable
+        {//just get this object in the main form
+            get { return _dtEmployeesTable; }
+        }
+
         public static void OpenDatabase()
         {
             //open the connection to database
@@ -434,6 +458,97 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public static void DatabaseCommand(TextBox tbEmployeeID, TextBox tbLastName, TextBox tbFirstName, TextBox tbReportTo, TextBox tbAddress, TextBox tbEmail, TextBox tbCity, TextBox tbState, TextBox tbZip, TextBox tbPhone, TextBox tbUserName, TextBox tbPass)
+        {
+            try
+            {
+                //string to build a query
+                string query = "SELECT * FROM group5fa212330.Employees";
+                //establish a command object
+                _sqlEmployeesCommand = new SqlCommand(query, _cntDatabase);
+                //establish data adapter
+                _daEmployees = new SqlDataAdapter();
+                _daEmployees.SelectCommand = _sqlEmployeesCommand;
+                //fill the data table
+                _dtEmployeesTable = new DataTable();
+                _daEmployees.Fill(_dtEmployeesTable);
+                //bind to controls to data table 
+                tbEmployeeID.DataBindings.Add("Text", _dtEmployeesTable, "Employee_ID");
+                tbLastName.DataBindings.Add("Text", _dtEmployeesTable, "Emp_LName");
+                tbFirstName.DataBindings.Add("Text", _dtEmployeesTable, "Emp_FName");
+                tbReportTo.DataBindings.Add("Text", _dtEmployeesTable, "ReportTo");
+                tbAddress.DataBindings.Add("Text", _dtEmployeesTable, "Address");
+                tbEmail.DataBindings.Add("Text", _dtEmployeesTable, "Email");
+                tbCity.DataBindings.Add("Text", _dtEmployeesTable, "City");
+                tbState.DataBindings.Add("Text", _dtEmployeesTable, "State");
+                tbZip.DataBindings.Add("Text", _dtEmployeesTable, "Zip");
+                tbPhone.DataBindings.Add("Text", _dtEmployeesTable, "Phone");
+                tbUserName.DataBindings.Add("Text", _dtEmployeesTable, "UserName");
+                tbPass.DataBindings.Add("Text", _dtEmployeesTable, "Password");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error in SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        public static void UpdateOnClose()
+        {
+            try
+            {
+                //save the updated employees table
+                SqlCommandBuilder employeesAdapterCommands = new SqlCommandBuilder(_daEmployees);
+                _daEmployees.Update(_dtEmployeesTable);
+            }
+            catch (SqlException ex)
+            {
+                if (ex is SqlException)
+                {//handles more specific SqlException here.
+                    for (int i = 0; i < ex.Errors.Count; i++)
+                    {
+                        errorMessages.Append("Index #" + i + "\n" +
+                            "Message: " + ex.Errors[i].Message + "\n" +
+                            "LineNumber: " + ex.Errors[i].LineNumber + "\n" +
+                            "Source: " + ex.Errors[i].Source + "\n" +
+                            "Procedure: " + ex.Errors[i].Procedure + "\n");
+                    }
+                    MessageBox.Show(errorMessages.ToString(), "Error on UpdateOnClose", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {//handles generic ones here
+                    MessageBox.Show(ex.Message, "Error on UpdateOnClose", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        public static void updateEmployeeInfo(string firstName, string lastName, string address, string city, string state, string zip, string phone, string email, string reportTo, string userName, string password)
+        {
+            try
+            {
+                //update query for customer information
+                string sqlStatement = "UPDATE group5fa212330.Employees " + "SET Emp_FName = '" + firstName
+                    + "', Emp_LName = '" + lastName + "', Address = '" + address
+                    + "', City = '" + city + "', State = '" + state + "', Zip = '"
+                    + zip + "', Phone = '" + phone + "', Email = '" + email
+                    + "' Where Employee_ID = " + _custID;
+                //create update command
+                SqlCommand _sqlCustomerInfoCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlCustomerInfoCommand.ExecuteNonQuery();
+                //dispose
+                _sqlCustomerInfoCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         // ----- frmCustomerOrder(imageChange, changeLabel)
         public static void imageChange(PictureBox pbxItem1, string menuID)
         {
@@ -538,6 +653,7 @@ namespace GuiMockups
                     frmLogin.EmpPass.Add((read["Password"].ToString()));
                     frmLogin.EmpPass.Add((read["Password"].ToString()));
                     frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
+
                 }
                 //closes the reader
                 read.Close();

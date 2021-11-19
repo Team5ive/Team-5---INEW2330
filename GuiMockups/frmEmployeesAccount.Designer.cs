@@ -29,402 +29,337 @@ namespace GuiMockups
         /// </summary>
         private void InitializeComponent()
         {
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.tbxUserName = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.tbxPhone = new System.Windows.Forms.TextBox();
+            this.lblZip = new System.Windows.Forms.Label();
+            this.tbxZip = new System.Windows.Forms.TextBox();
+            this.lblState = new System.Windows.Forms.Label();
+            this.tbxState = new System.Windows.Forms.TextBox();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.tbxCity = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.tbxEmail = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.tbxAddress = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.lblExtension = new System.Windows.Forms.Label();
+            this.lblReportTo = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblEmployeeID = new System.Windows.Forms.Label();
             this.tbxFirstName = new System.Windows.Forms.TextBox();
             this.tbxLastName = new System.Windows.Forms.TextBox();
             this.tbxEmployeeID = new System.Windows.Forms.TextBox();
-            this.tbxExtension = new System.Windows.Forms.TextBox();
+            this.tbxReportTo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label8
+            // lblPass
             // 
-            this.label8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 409);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 20);
-            this.label8.TabIndex = 86;
-            this.label8.Text = "Password:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblPass.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.Location = new System.Drawing.Point(17, 409);
+            this.lblPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(116, 20);
+            this.lblPass.TabIndex = 86;
+            this.lblPass.Text = "Password:";
+            this.lblPass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox8
+            // tbxPassword
             // 
-            this.textBox8.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(141, 407);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(202, 26);
-            this.textBox8.TabIndex = 85;
-            this.textBox8.Text = "******************************";
+            this.tbxPassword.BackColor = System.Drawing.Color.MistyRose;
+            this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPassword.Location = new System.Drawing.Point(141, 407);
+            this.tbxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.ReadOnly = true;
+            this.tbxPassword.Size = new System.Drawing.Size(300, 26);
+            this.tbxPassword.TabIndex = 85;
+            this.tbxPassword.Text = "******************************";
             // 
-            // label7
+            // lblUserName
             // 
-            this.label7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 373);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 20);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "User Name:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblUserName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.Location = new System.Drawing.Point(17, 373);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(116, 20);
+            this.lblUserName.TabIndex = 84;
+            this.lblUserName.Text = "User Name:";
+            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox7
+            // tbxUserName
             // 
-            this.textBox7.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(141, 371);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(202, 26);
-            this.textBox7.TabIndex = 83;
-            this.textBox7.Text = "******************************";
+            this.tbxUserName.BackColor = System.Drawing.Color.MistyRose;
+            this.tbxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUserName.Location = new System.Drawing.Point(141, 371);
+            this.tbxUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUserName.Name = "tbxUserName";
+            this.tbxUserName.ReadOnly = true;
+            this.tbxUserName.Size = new System.Drawing.Size(300, 26);
+            this.tbxUserName.TabIndex = 83;
+            this.tbxUserName.Text = "******************************";
             // 
-            // label6
+            // lblPhone
             // 
-            this.label6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 337);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 20);
-            this.label6.TabIndex = 82;
-            this.label6.Text = "Phone:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblPhone.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(17, 337);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(116, 20);
+            this.lblPhone.TabIndex = 82;
+            this.lblPhone.Text = "Phone:";
+            this.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox6
+            // tbxPhone
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(141, 335);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(202, 26);
-            this.textBox6.TabIndex = 81;
+            this.tbxPhone.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPhone.Location = new System.Drawing.Point(141, 335);
+            this.tbxPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxPhone.Name = "tbxPhone";
+            this.tbxPhone.ReadOnly = true;
+            this.tbxPhone.Size = new System.Drawing.Size(300, 26);
+            this.tbxPhone.TabIndex = 81;
+            this.tbxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPhone_KeyPress);
             // 
-            // label5
+            // lblZip
             // 
-            this.label5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 301);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 20);
-            this.label5.TabIndex = 80;
-            this.label5.Text = "Zip:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblZip.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZip.Location = new System.Drawing.Point(18, 301);
+            this.lblZip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblZip.Name = "lblZip";
+            this.lblZip.Size = new System.Drawing.Size(116, 20);
+            this.lblZip.TabIndex = 80;
+            this.lblZip.Text = "Zip:";
+            this.lblZip.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox5
+            // tbxZip
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(142, 299);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(202, 26);
-            this.textBox5.TabIndex = 79;
+            this.tbxZip.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxZip.Location = new System.Drawing.Point(142, 299);
+            this.tbxZip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxZip.Name = "tbxZip";
+            this.tbxZip.ReadOnly = true;
+            this.tbxZip.Size = new System.Drawing.Size(300, 26);
+            this.tbxZip.TabIndex = 79;
+            this.tbxZip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxZip_KeyPress);
             // 
-            // label4
+            // lblState
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 265);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 20);
-            this.label4.TabIndex = 78;
-            this.label4.Text = "State:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblState.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblState.Location = new System.Drawing.Point(18, 265);
+            this.lblState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(116, 20);
+            this.lblState.TabIndex = 78;
+            this.lblState.Text = "State:";
+            this.lblState.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox4
+            // tbxState
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(142, 263);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(202, 26);
-            this.textBox4.TabIndex = 77;
+            this.tbxState.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxState.Location = new System.Drawing.Point(142, 263);
+            this.tbxState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxState.Name = "tbxState";
+            this.tbxState.ReadOnly = true;
+            this.tbxState.Size = new System.Drawing.Size(300, 26);
+            this.tbxState.TabIndex = 77;
+            this.tbxState.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxState_KeyPress);
             // 
-            // label3
+            // lblCity
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 229);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 20);
-            this.label3.TabIndex = 76;
-            this.label3.Text = "City:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCity.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCity.Location = new System.Drawing.Point(17, 229);
+            this.lblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(116, 20);
+            this.lblCity.TabIndex = 76;
+            this.lblCity.Text = "City:";
+            this.lblCity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3
+            // tbxCity
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(141, 227);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(202, 26);
-            this.textBox3.TabIndex = 75;
+            this.tbxCity.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxCity.Location = new System.Drawing.Point(141, 227);
+            this.tbxCity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxCity.Name = "tbxCity";
+            this.tbxCity.ReadOnly = true;
+            this.tbxCity.Size = new System.Drawing.Size(300, 26);
+            this.tbxCity.TabIndex = 75;
+            this.tbxCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxCity_KeyPress);
             // 
-            // label2
+            // lblEmail
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 193);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 20);
-            this.label2.TabIndex = 74;
-            this.label2.Text = "Email:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblEmail.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(17, 193);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(116, 20);
+            this.lblEmail.TabIndex = 74;
+            this.lblEmail.Text = "Email:";
+            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // tbxEmail
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(141, 191);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(202, 26);
-            this.textBox2.TabIndex = 73;
+            this.tbxEmail.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmail.Location = new System.Drawing.Point(141, 191);
+            this.tbxEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxEmail.Name = "tbxEmail";
+            this.tbxEmail.ReadOnly = true;
+            this.tbxEmail.Size = new System.Drawing.Size(300, 26);
+            this.tbxEmail.TabIndex = 73;
             // 
-            // label1
+            // lblAddress
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 157);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 72;
-            this.label1.Text = "Address:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAddress.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(18, 157);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(116, 20);
+            this.lblAddress.TabIndex = 72;
+            this.lblAddress.Text = "Address:";
+            this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // tbxAddress
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(142, 155);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(202, 26);
-            this.textBox1.TabIndex = 71;
+            this.tbxAddress.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxAddress.Location = new System.Drawing.Point(142, 155);
+            this.tbxAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxAddress.Name = "tbxAddress";
+            this.tbxAddress.ReadOnly = true;
+            this.tbxAddress.Size = new System.Drawing.Size(300, 26);
+            this.tbxAddress.TabIndex = 71;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(253, 543);
+            this.btnExit.Location = new System.Drawing.Point(296, 538);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(91, 27);
             this.btnExit.TabIndex = 70;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(137, 543);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(91, 27);
-            this.button7.TabIndex = 68;
-            this.button7.Text = "&Delete";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(137, 543);
+            this.btnDelete.Location = new System.Drawing.Point(180, 540);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(91, 27);
             this.btnDelete.TabIndex = 69;
             this.btnDelete.Text = "&Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(24, 543);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(91, 27);
-            this.button6.TabIndex = 67;
-            this.button6.Text = "&Add New";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(24, 543);
+            this.btnAdd.Location = new System.Drawing.Point(67, 540);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 27);
             this.btnAdd.TabIndex = 66;
             this.btnAdd.Text = "&Add New";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(253, 496);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 27);
-            this.button5.TabIndex = 65;
-            this.button5.Text = "&Cancel";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(253, 496);
+            this.btnCancel.Location = new System.Drawing.Point(296, 493);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(91, 27);
             this.btnCancel.TabIndex = 64;
             this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(137, 496);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 27);
-            this.button4.TabIndex = 62;
-            this.button4.Text = "&Save";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(137, 496);
+            this.btnSave.Location = new System.Drawing.Point(180, 493);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(91, 27);
             this.btnSave.TabIndex = 61;
             this.btnSave.Text = "&Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(24, 496);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 27);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "&Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(24, 496);
+            this.btnEdit.Location = new System.Drawing.Point(67, 493);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 27);
             this.btnEdit.TabIndex = 59;
             this.btnEdit.Text = "&Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(213, 450);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 27);
-            this.button2.TabIndex = 56;
-            this.button2.Text = "&Next >";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(213, 450);
+            this.btnNext.Location = new System.Drawing.Point(256, 447);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(91, 27);
             this.btnNext.TabIndex = 57;
             this.btnNext.Text = "&Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(77, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 27);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "< &Previous";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrev
             // 
+            this.btnPrev.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(77, 450);
+            this.btnPrev.Location = new System.Drawing.Point(120, 447);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(91, 27);
             this.btnPrev.TabIndex = 53;
             this.btnPrev.Text = "&Previous";
-            this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.UseVisualStyleBackColor = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
-            // lblExtension
+            // lblReportTo
             // 
-            this.lblExtension.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtension.Location = new System.Drawing.Point(18, 121);
-            this.lblExtension.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblExtension.Name = "lblExtension";
-            this.lblExtension.Size = new System.Drawing.Size(116, 20);
-            this.lblExtension.TabIndex = 63;
-            this.lblExtension.Text = "Report to:";
-            this.lblExtension.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblReportTo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblReportTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportTo.Location = new System.Drawing.Point(18, 121);
+            this.lblReportTo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReportTo.Name = "lblReportTo";
+            this.lblReportTo.Size = new System.Drawing.Size(116, 20);
+            this.lblReportTo.TabIndex = 63;
+            this.lblReportTo.Text = "Report to:";
+            this.lblReportTo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblFirstName
             // 
@@ -470,8 +405,9 @@ namespace GuiMockups
             this.tbxFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbxFirstName.Name = "tbxFirstName";
             this.tbxFirstName.ReadOnly = true;
-            this.tbxFirstName.Size = new System.Drawing.Size(202, 26);
+            this.tbxFirstName.Size = new System.Drawing.Size(300, 26);
             this.tbxFirstName.TabIndex = 50;
+            this.tbxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxFirstName_KeyPress);
             // 
             // tbxLastName
             // 
@@ -481,8 +417,9 @@ namespace GuiMockups
             this.tbxLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbxLastName.Name = "tbxLastName";
             this.tbxLastName.ReadOnly = true;
-            this.tbxLastName.Size = new System.Drawing.Size(202, 26);
+            this.tbxLastName.Size = new System.Drawing.Size(300, 26);
             this.tbxLastName.TabIndex = 49;
+            this.tbxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxLastName_KeyPress);
             // 
             // tbxEmployeeID
             // 
@@ -492,66 +429,63 @@ namespace GuiMockups
             this.tbxEmployeeID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbxEmployeeID.Name = "tbxEmployeeID";
             this.tbxEmployeeID.ReadOnly = true;
-            this.tbxEmployeeID.Size = new System.Drawing.Size(202, 26);
+            this.tbxEmployeeID.Size = new System.Drawing.Size(300, 26);
             this.tbxEmployeeID.TabIndex = 48;
+            this.tbxEmployeeID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEmployeeID_KeyPress);
             // 
-            // tbxExtension
+            // tbxReportTo
             // 
-            this.tbxExtension.BackColor = System.Drawing.Color.Honeydew;
-            this.tbxExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxExtension.Location = new System.Drawing.Point(142, 119);
-            this.tbxExtension.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbxExtension.Name = "tbxExtension";
-            this.tbxExtension.ReadOnly = true;
-            this.tbxExtension.Size = new System.Drawing.Size(202, 26);
-            this.tbxExtension.TabIndex = 51;
+            this.tbxReportTo.BackColor = System.Drawing.Color.Honeydew;
+            this.tbxReportTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxReportTo.Location = new System.Drawing.Point(142, 119);
+            this.tbxReportTo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxReportTo.Name = "tbxReportTo";
+            this.tbxReportTo.ReadOnly = true;
+            this.tbxReportTo.Size = new System.Drawing.Size(300, 26);
+            this.tbxReportTo.TabIndex = 51;
+            this.tbxReportTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxReportTo_KeyPress);
             // 
             // frmEmployeesAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 580);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(455, 580);
+            this.Controls.Add(this.lblPass);
+            this.Controls.Add(this.tbxPassword);
+            this.Controls.Add(this.lblUserName);
+            this.Controls.Add(this.tbxUserName);
+            this.Controls.Add(this.lblPhone);
+            this.Controls.Add(this.tbxPhone);
+            this.Controls.Add(this.lblZip);
+            this.Controls.Add(this.tbxZip);
+            this.Controls.Add(this.lblState);
+            this.Controls.Add(this.tbxState);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.tbxCity);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.tbxEmail);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.tbxAddress);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPrev);
-            this.Controls.Add(this.lblExtension);
+            this.Controls.Add(this.lblReportTo);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.tbxFirstName);
             this.Controls.Add(this.tbxLastName);
             this.Controls.Add(this.tbxEmployeeID);
-            this.Controls.Add(this.tbxExtension);
+            this.Controls.Add(this.tbxReportTo);
             this.Name = "frmEmployeesAccount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Accounts";
+            this.Load += new System.EventHandler(this.frmEmployeesAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,44 +493,37 @@ namespace GuiMockups
 
         #endregion
 
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.TextBox tbxPassword;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.TextBox tbxUserName;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.TextBox tbxPhone;
+        private System.Windows.Forms.Label lblZip;
+        private System.Windows.Forms.TextBox tbxZip;
+        private System.Windows.Forms.Label lblState;
+        private System.Windows.Forms.TextBox tbxState;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.TextBox tbxCity;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox tbxEmail;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox tbxAddress;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.Label lblExtension;
+        private System.Windows.Forms.Label lblReportTo;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblEmployeeID;
         private System.Windows.Forms.TextBox tbxFirstName;
         private System.Windows.Forms.TextBox tbxLastName;
         private System.Windows.Forms.TextBox tbxEmployeeID;
-        private System.Windows.Forms.TextBox tbxExtension;
+        private System.Windows.Forms.TextBox tbxReportTo;
     }
 }

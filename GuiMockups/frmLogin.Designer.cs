@@ -49,6 +49,7 @@
             this.pbxShell = new System.Windows.Forms.PictureBox();
             this.lblWelcomeBack = new System.Windows.Forms.Label();
             this.cbxPassword = new System.Windows.Forms.CheckBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -329,5 +330,6 @@
         private System.Windows.Forms.PictureBox pbxShell;
         private System.Windows.Forms.Label lblWelcomeBack;
         private System.Windows.Forms.CheckBox cbxPassword;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
