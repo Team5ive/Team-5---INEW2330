@@ -497,7 +497,7 @@ namespace GuiMockups
             }
         }
 
-        public static void DatabaseCommand(TextBox tbEmployeeID, TextBox tbLastName, TextBox tbFirstName, TextBox tbReportTo, TextBox tbAddress, TextBox tbEmail, TextBox tbCity, TextBox tbState, TextBox tbZip, TextBox tbPhone, TextBox tbUserName, TextBox tbPass)
+        public static void DatabaseCommand(TextBox tbEmployeeID, TextBox tbLastName, TextBox tbFirstName, TextBox tbReportTo, TextBox tbAddress, TextBox tbEmail, TextBox tbCity, TextBox tbState, TextBox tbZip, TextBox tbPhone, TextBox tbUserName, TextBox tbPass, TextBox tbIsManager)
         {
             try
             {
@@ -524,6 +524,8 @@ namespace GuiMockups
                 tbPhone.DataBindings.Add("Text", _dtEmployeesTable, "Phone");
                 tbUserName.DataBindings.Add("Text", _dtEmployeesTable, "UserName");
                 tbPass.DataBindings.Add("Text", _dtEmployeesTable, "Password");
+                tbIsManager.DataBindings.Add("Text", _dtEmployeesTable, "isManager");
+
 
             }
             catch (Exception ex)

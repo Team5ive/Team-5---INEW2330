@@ -46,10 +46,10 @@
             this.lblRead = new System.Windows.Forms.Label();
             this.lblPrivacyStatement = new System.Windows.Forms.Label();
             this.lblDarkBanner = new System.Windows.Forms.Label();
-            this.pbxShell = new System.Windows.Forms.PictureBox();
             this.lblWelcomeBack = new System.Windows.Forms.Label();
             this.cbxPassword = new System.Windows.Forms.CheckBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.pbxShell = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,9 +59,9 @@
             this.lblEmailAddress.ForeColor = System.Drawing.Color.Black;
             this.lblEmailAddress.Location = new System.Drawing.Point(365, 166);
             this.lblEmailAddress.Name = "lblEmailAddress";
-            this.lblEmailAddress.Size = new System.Drawing.Size(140, 22);
+            this.lblEmailAddress.Size = new System.Drawing.Size(193, 22);
             this.lblEmailAddress.TabIndex = 0;
-            this.lblEmailAddress.Text = "Email Address";
+            this.lblEmailAddress.Text = "Email / Username";
             // 
             // lblPassword
             // 
@@ -234,17 +234,6 @@
             this.lblDarkBanner.Size = new System.Drawing.Size(1111, 85);
             this.lblDarkBanner.TabIndex = 2;
             // 
-            // pbxShell
-            // 
-            this.pbxShell.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pbxShell.Image = global::GuiMockups.Properties.Resources.shell_1;
-            this.pbxShell.Location = new System.Drawing.Point(-1, 0);
-            this.pbxShell.Name = "pbxShell";
-            this.pbxShell.Size = new System.Drawing.Size(89, 84);
-            this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxShell.TabIndex = 3;
-            this.pbxShell.TabStop = false;
-            // 
             // lblWelcomeBack
             // 
             this.lblWelcomeBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,6 +255,17 @@
             this.cbxPassword.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cbxPassword.UseVisualStyleBackColor = true;
             this.cbxPassword.CheckedChanged += new System.EventHandler(this.cbxPassword_CheckedChanged);
+            // 
+            // pbxShell
+            // 
+            this.pbxShell.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pbxShell.Image = global::GuiMockups.Properties.Resources.shell_1;
+            this.pbxShell.Location = new System.Drawing.Point(-1, 0);
+            this.pbxShell.Name = "pbxShell";
+            this.pbxShell.Size = new System.Drawing.Size(89, 84);
+            this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxShell.TabIndex = 3;
+            this.pbxShell.TabStop = false;
             // 
             // frmLogin
             // 

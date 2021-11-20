@@ -26,7 +26,7 @@ namespace GuiMockups
         private void frmEmployeesAccount_Load(object sender, EventArgs e)
         {
             //call the database command with parameters of text-boxes
-            ProgOps.DatabaseCommand(tbxEmployeeID, tbxLastName, tbxFirstName, tbxReportTo, tbxAddress, tbxEmail, tbxCity, tbxState, tbxZip, tbxPhone, tbxUserName, tbxPassword);
+            ProgOps.DatabaseCommand(tbxEmployeeID, tbxLastName, tbxFirstName, tbxReportTo, tbxAddress, tbxEmail, tbxCity, tbxState, tbxZip, tbxPhone, tbxUserName, tbxPassword, tbxIsManager);
             //fill currency manager
             employeesManager = (CurrencyManager)this.BindingContext[ProgOps.EmployeesTable];
             SetState("View");
@@ -136,6 +136,19 @@ namespace GuiMockups
             }
         }
 
+        private void tbxIsManager_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //only letter, back space
+            if (e.KeyChar >= 'A' && e.KeyChar <= 'Z' || e.KeyChar >= 'a' && e.KeyChar <= 'z' || (int)e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btnPrev_Click(object sender, EventArgs e)
         {
             if (employeesManager.Position == 0)
@@ -162,11 +175,15 @@ namespace GuiMockups
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //call validation function.
-            /*if (!ValidateData())
+            if (tbxLastName.Text == "" || tbxFirstName.Text == "" ||
+            tbxReportTo.Text == "" || tbxAddress.Text == "" || tbxEmail.Text == "" || 
+            tbxCity.Text == "" || tbxState.Text == "" || tbxZip.Text == "" ||
+            tbxPhone.Text == "" || tbxUserName.Text == "" ||tbxPassword.Text == "" ||
+            tbxIsManager.Text == "")
             {
+                MessageBox.Show("Please fill out all fields", "Warning - Input all fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }*/
+            }
 
             try
             {
@@ -183,17 +200,41 @@ namespace GuiMockups
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            employeesManager.CancelCurrentEdit();
+            if (myState.Equals("Add"))
+            {
+                employeesManager.Position = myBookmark;
+            }
+            //set state to View
+            SetState("View");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            myBookmark = employeesManager.Position;
+            //set state to Add
+            SetState("Add New");
+            employeesManager.AddNew();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                if (MessageBox.Show("Are you sure you want to delete " +
+                    "this record?", "Delete", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+                    == DialogResult.Yes)
+                {
+                    employeesManager.RemoveAt(employeesManager.Position);
+                }
+                SetState("View");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error deleting record.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -230,6 +271,17 @@ namespace GuiMockups
                     tbxEmployeeID.ForeColor = Color.Black;
                     tbxLastName.ReadOnly = true;
                     tbxFirstName.ReadOnly = true;
+                    tbxReportTo.ReadOnly = true;
+                    tbxAddress.ReadOnly = true;
+                    tbxEmail.ReadOnly = true;
+                    tbxCity.ReadOnly = true;
+                    tbxState.ReadOnly = true;
+                    tbxZip.ReadOnly = true;
+                    tbxPhone.ReadOnly = true;
+                    tbxUserName.ReadOnly = true;
+                    tbxPassword.ReadOnly = true;
+                    tbxIsManager.ReadOnly = true;
+
                     btnPrev.Enabled = true;
                     btnNext.Enabled = true;
                     btnAdd.Enabled = true;
@@ -245,6 +297,18 @@ namespace GuiMockups
                     tbxEmployeeID.ForeColor = Color.White;
                     tbxLastName.ReadOnly = false;
                     tbxFirstName.ReadOnly = false;
+                    tbxReportTo.ReadOnly = false;
+                    tbxAddress.ReadOnly = false;
+                    tbxEmail.ReadOnly = false;
+                    tbxCity.ReadOnly = false;
+                    tbxState.ReadOnly = false;
+                    tbxZip.ReadOnly = false;
+                    tbxPhone.ReadOnly = false;
+                    tbxUserName.ReadOnly = false;
+                    tbxPassword.ReadOnly = false;
+                    tbxIsManager.ReadOnly = false;
+
+
                     btnPrev.Enabled = false;
                     btnNext.Enabled = false;
                     btnAdd.Enabled = false;
@@ -260,6 +324,17 @@ namespace GuiMockups
                     tbxEmployeeID.ForeColor = Color.White;
                     tbxLastName.ReadOnly = false;
                     tbxFirstName.ReadOnly = false;
+                    tbxReportTo.ReadOnly = false;
+                    tbxAddress.ReadOnly = false;
+                    tbxEmail.ReadOnly = false;
+                    tbxCity.ReadOnly = false;
+                    tbxState.ReadOnly = false;
+                    tbxZip.ReadOnly = false;
+                    tbxPhone.ReadOnly = false;
+                    tbxUserName.ReadOnly = false;
+                    tbxPassword.ReadOnly = false;
+                    tbxIsManager.ReadOnly = false;
+
                     btnPrev.Enabled = false;
                     btnNext.Enabled = false;
                     btnAdd.Enabled = false;
@@ -273,6 +348,6 @@ namespace GuiMockups
             }
         }
 
-
+        
     }
 }

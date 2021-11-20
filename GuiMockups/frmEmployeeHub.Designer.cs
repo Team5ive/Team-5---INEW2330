@@ -154,7 +154,6 @@ namespace GuiMockups
             this.Name = "frmEmployeeHub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Hub";
-           // this.Load += new System.EventHandler(this.frmEmployeeHub_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

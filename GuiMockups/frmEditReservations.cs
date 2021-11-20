@@ -20,6 +20,10 @@ namespace GuiMockups
         private void btnDelete_Click(object sender, EventArgs e)
         {
             ProgOps.DeleteReservation(tbxReserveID.Text);
+
+            dgvReservations.DataSource = null;
+            dgvReservations.Refresh();
+
             ProgOps.ReservationCommand(dgvReservations);
             MessageBox.Show("Reservation Deleted");
         }

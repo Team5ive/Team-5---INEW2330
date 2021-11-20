@@ -38,6 +38,12 @@ namespace GuiMockups
             this.tbxCustLast = new System.Windows.Forms.TextBox();
             this.tbxCustomerID = new System.Windows.Forms.TextBox();
             this.dgvReservations = new System.Windows.Forms.DataGridView();
+            this.lblReservationID = new System.Windows.Forms.Label();
+            this.lblCustomerID = new System.Windows.Forms.Label();
+            this.lblReservationDate = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.lblTableNumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +116,7 @@ namespace GuiMockups
             this.dgvReservations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvReservations.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReservations.Location = new System.Drawing.Point(28, 12);
+            this.dgvReservations.Location = new System.Drawing.Point(24, 26);
             this.dgvReservations.Name = "dgvReservations";
             this.dgvReservations.ReadOnly = true;
             this.dgvReservations.RowHeadersWidth = 62;
@@ -119,11 +125,71 @@ namespace GuiMockups
             this.dgvReservations.TabIndex = 9;
             this.dgvReservations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservations_CellClick);
             // 
+            // lblReservationID
+            // 
+            this.lblReservationID.Location = new System.Drawing.Point(573, 10);
+            this.lblReservationID.Name = "lblReservationID";
+            this.lblReservationID.Size = new System.Drawing.Size(146, 23);
+            this.lblReservationID.TabIndex = 18;
+            this.lblReservationID.Text = "Reservation ID:";
+            this.lblReservationID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCustomerID
+            // 
+            this.lblCustomerID.Location = new System.Drawing.Point(573, 53);
+            this.lblCustomerID.Name = "lblCustomerID";
+            this.lblCustomerID.Size = new System.Drawing.Size(146, 23);
+            this.lblCustomerID.TabIndex = 19;
+            this.lblCustomerID.Text = "Customer ID:";
+            this.lblCustomerID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblReservationDate
+            // 
+            this.lblReservationDate.Location = new System.Drawing.Point(573, 97);
+            this.lblReservationDate.Name = "lblReservationDate";
+            this.lblReservationDate.Size = new System.Drawing.Size(146, 23);
+            this.lblReservationDate.TabIndex = 20;
+            this.lblReservationDate.Text = "Reservation Date:";
+            this.lblReservationDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.Location = new System.Drawing.Point(573, 186);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(146, 23);
+            this.lblFirstName.TabIndex = 21;
+            this.lblFirstName.Text = "First Name:";
+            this.lblFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.Location = new System.Drawing.Point(573, 230);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(146, 23);
+            this.lblLastName.TabIndex = 22;
+            this.lblLastName.Text = "LastName:";
+            this.lblLastName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTableNumber
+            // 
+            this.lblTableNumber.Location = new System.Drawing.Point(573, 142);
+            this.lblTableNumber.Name = "lblTableNumber";
+            this.lblTableNumber.Size = new System.Drawing.Size(146, 23);
+            this.lblTableNumber.TabIndex = 23;
+            this.lblTableNumber.Text = "Table Number:";
+            this.lblTableNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // frmEditReservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 354);
+            this.Controls.Add(this.lblTableNumber);
+            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblReservationDate);
+            this.Controls.Add(this.lblCustomerID);
+            this.Controls.Add(this.lblReservationID);
             this.Controls.Add(this.tbxReserveID);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -153,5 +219,11 @@ namespace GuiMockups
         private System.Windows.Forms.TextBox tbxCustLast;
         private System.Windows.Forms.TextBox tbxCustomerID;
         private System.Windows.Forms.DataGridView dgvReservations;
+        private System.Windows.Forms.Label lblReservationID;
+        private System.Windows.Forms.Label lblCustomerID;
+        private System.Windows.Forms.Label lblReservationDate;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblLastName;
+        private System.Windows.Forms.Label lblTableNumber;
     }
 }
