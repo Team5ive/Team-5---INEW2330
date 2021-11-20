@@ -133,7 +133,7 @@ namespace GuiMockups
             this.btnSignOut.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnSignOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSignOut.ForeColor = System.Drawing.Color.Black;
-            this.btnSignOut.Location = new System.Drawing.Point(529, -3);
+            this.btnSignOut.Location = new System.Drawing.Point(525, 7);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Size = new System.Drawing.Size(83, 29);
             this.btnSignOut.TabIndex = 12;
@@ -154,7 +154,7 @@ namespace GuiMockups
             this.Name = "frmEmployeeHub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Hub";
-            this.Load += new System.EventHandler(this.frmEmployeeHub_Load);
+           // this.Load += new System.EventHandler(this.frmEmployeeHub_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

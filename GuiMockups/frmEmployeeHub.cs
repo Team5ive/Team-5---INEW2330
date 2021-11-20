@@ -24,11 +24,6 @@ namespace GuiMockups
             this.Close();
         }
 
-        private void frmEmployeeHub_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCustOrders_Click(object sender, EventArgs e)
         {
             frmTables frmTables = new frmTables();
@@ -43,7 +38,8 @@ namespace GuiMockups
 
         private void btnChangeReserve_Click(object sender, EventArgs e)
         {
-
+            frmEditReservations reserve = new frmEditReservations();
+            reserve.ShowDialog();
         }
 
         private void btnEditEmployee_Click(object sender, EventArgs e)

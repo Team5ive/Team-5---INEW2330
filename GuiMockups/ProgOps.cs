@@ -186,6 +186,44 @@ namespace GuiMockups
                 dv2.Rows[rowId].Cells[4].Value = Total_Price_Per_Line[i].ToString();
             }
         }
+        public static void DeleteReservation(string reservationID)
+        {
+
+            try
+            {
+                // Insert for reservation
+                string queryDelete = "DELETE FROM group5fa212330.Reservations WHERE Reservation_ID =  " + reservationID;                //create update command
+                SqlCommand _sqlDeleteReservationCommand = new SqlCommand(queryDelete, _cntDatabase);
+                //update command
+                _sqlDeleteReservationCommand.ExecuteNonQuery();
+                //dispose
+                _sqlDeleteReservationCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Booking Reservation.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void ReservationCommand(DataGridView dvMain)
+        {
+            try
+            {
+                //statement for the DGV
+                string sqlStatement = "SELECT Reservation_ID, Customer_ID, Cust_FName, Cust_LName, ReserveDate, TableNumber From group5fa212330.Reservations r join group5fa212330.Customers c ON r.Customer_ID = c.Cust_ID";
+                SqlCommand _sqlGamesCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                _daResults.SelectCommand = _sqlGamesCommand;
+                _daResults.Fill(_dtResultsTable);
+                dvMain.DataSource = _dtResultsTable;
+                _sqlGamesCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
         // gets the most current OrderID from database. 
         public static int ReadCurrentOrderID()
         {
@@ -216,7 +254,7 @@ namespace GuiMockups
             }
             return OrderIDCurrent;
         }
-        //should the data be passed here in the Progops or from form back?
+
         public static void checkOutOrder(string date, string orderIdentification)
         {
             try
@@ -521,31 +559,6 @@ namespace GuiMockups
                 {//handles generic ones here
                     MessageBox.Show(ex.Message, "Error on UpdateOnClose", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-        }
-
-        public static void updateEmployeeInfo(string firstName, string lastName, string address, string city, string state, string zip, string phone, string email, string reportTo, string userName, string password)
-        {
-            try
-            {
-                //update query for customer information
-                string sqlStatement = "UPDATE group5fa212330.Employees " + "SET Emp_FName = '" + firstName
-                    + "', Emp_LName = '" + lastName + "', Address = '" + address
-                    + "', City = '" + city + "', State = '" + state + "', Zip = '"
-                    + zip + "', Phone = '" + phone + "', Email = '" + email
-                    + "' Where Employee_ID = " + _custID;
-                //create update command
-                SqlCommand _sqlCustomerInfoCommand = new SqlCommand(sqlStatement, _cntDatabase);
-                //update command
-                _sqlCustomerInfoCommand.ExecuteNonQuery();
-                //dispose
-                _sqlCustomerInfoCommand.Dispose();
-                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                //show message on error
-                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

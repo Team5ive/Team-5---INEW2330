@@ -550,3 +550,4 @@ C:\Users\kmoor\Downloads\Team5ive\GuiMockups\obj\Debug\GuiMockups.csproj.Generat
 C:\Users\kmoor\Downloads\Team5ive\GuiMockups\obj\Debug\GuiMockups.csproj.CoreCompileInputs.cache
 C:\Users\kmoor\Downloads\Team5ive\GuiMockups\obj\Debug\GuiMockups.exe
 C:\Users\kmoor\Downloads\Team5ive\GuiMockups\obj\Debug\GuiMockups.pdb
+C:\Users\kmoor\Downloads\Team5ive\GuiMockups\obj\Debug\GuiMockups.frmEditReservations.resources

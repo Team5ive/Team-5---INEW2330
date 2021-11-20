@@ -95,6 +95,12 @@
     <Compile Include="frmEditCustomerInfo.Designer.cs">
       <DependentUpon>frmEditCustomerInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditReservations.Designer.cs">
+      <DependentUpon>frmEditReservations.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployeeHub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditCustomerInfo.resx">
       <DependentUpon>frmEditCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditReservations.resx">
+      <DependentUpon>frmEditReservations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeHub.resx">
       <DependentUpon>frmEmployeeHub.cs</DependentUpon>
