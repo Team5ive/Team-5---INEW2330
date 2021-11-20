@@ -49,14 +49,14 @@ namespace GuiMockups
             // 
             // tbxReserveID
             // 
-            this.tbxReserveID.Location = new System.Drawing.Point(725, 12);
+            this.tbxReserveID.Location = new System.Drawing.Point(725, 28);
             this.tbxReserveID.Name = "tbxReserveID";
             this.tbxReserveID.Size = new System.Drawing.Size(194, 20);
             this.tbxReserveID.TabIndex = 17;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(811, 273);
+            this.btnDelete.Location = new System.Drawing.Point(811, 285);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 35);
             this.btnDelete.TabIndex = 16;
@@ -66,7 +66,7 @@ namespace GuiMockups
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(644, 273);
+            this.btnUpdate.Location = new System.Drawing.Point(638, 285);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(108, 35);
             this.btnUpdate.TabIndex = 15;
@@ -75,35 +75,35 @@ namespace GuiMockups
             // 
             // tbxReserveDate
             // 
-            this.tbxReserveDate.Location = new System.Drawing.Point(725, 100);
+            this.tbxReserveDate.Location = new System.Drawing.Point(725, 116);
             this.tbxReserveDate.Name = "tbxReserveDate";
             this.tbxReserveDate.Size = new System.Drawing.Size(194, 20);
             this.tbxReserveDate.TabIndex = 14;
             // 
             // tbxTableNum
             // 
-            this.tbxTableNum.Location = new System.Drawing.Point(725, 144);
+            this.tbxTableNum.Location = new System.Drawing.Point(725, 160);
             this.tbxTableNum.Name = "tbxTableNum";
             this.tbxTableNum.Size = new System.Drawing.Size(194, 20);
             this.tbxTableNum.TabIndex = 13;
             // 
             // tbxCustFirst
             // 
-            this.tbxCustFirst.Location = new System.Drawing.Point(725, 188);
+            this.tbxCustFirst.Location = new System.Drawing.Point(725, 204);
             this.tbxCustFirst.Name = "tbxCustFirst";
             this.tbxCustFirst.Size = new System.Drawing.Size(194, 20);
             this.tbxCustFirst.TabIndex = 12;
             // 
             // tbxCustLast
             // 
-            this.tbxCustLast.Location = new System.Drawing.Point(725, 232);
+            this.tbxCustLast.Location = new System.Drawing.Point(725, 248);
             this.tbxCustLast.Name = "tbxCustLast";
             this.tbxCustLast.Size = new System.Drawing.Size(194, 20);
             this.tbxCustLast.TabIndex = 11;
             // 
             // tbxCustomerID
             // 
-            this.tbxCustomerID.Location = new System.Drawing.Point(725, 56);
+            this.tbxCustomerID.Location = new System.Drawing.Point(725, 72);
             this.tbxCustomerID.Name = "tbxCustomerID";
             this.tbxCustomerID.Size = new System.Drawing.Size(194, 20);
             this.tbxCustomerID.TabIndex = 10;
@@ -127,7 +127,7 @@ namespace GuiMockups
             // 
             // lblReservationID
             // 
-            this.lblReservationID.Location = new System.Drawing.Point(573, 10);
+            this.lblReservationID.Location = new System.Drawing.Point(573, 26);
             this.lblReservationID.Name = "lblReservationID";
             this.lblReservationID.Size = new System.Drawing.Size(146, 23);
             this.lblReservationID.TabIndex = 18;
@@ -136,7 +136,7 @@ namespace GuiMockups
             // 
             // lblCustomerID
             // 
-            this.lblCustomerID.Location = new System.Drawing.Point(573, 53);
+            this.lblCustomerID.Location = new System.Drawing.Point(573, 69);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(146, 23);
             this.lblCustomerID.TabIndex = 19;
@@ -145,7 +145,7 @@ namespace GuiMockups
             // 
             // lblReservationDate
             // 
-            this.lblReservationDate.Location = new System.Drawing.Point(573, 97);
+            this.lblReservationDate.Location = new System.Drawing.Point(573, 113);
             this.lblReservationDate.Name = "lblReservationDate";
             this.lblReservationDate.Size = new System.Drawing.Size(146, 23);
             this.lblReservationDate.TabIndex = 20;
@@ -154,7 +154,7 @@ namespace GuiMockups
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Location = new System.Drawing.Point(573, 186);
+            this.lblFirstName.Location = new System.Drawing.Point(573, 202);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(146, 23);
             this.lblFirstName.TabIndex = 21;
@@ -163,7 +163,7 @@ namespace GuiMockups
             // 
             // lblLastName
             // 
-            this.lblLastName.Location = new System.Drawing.Point(573, 230);
+            this.lblLastName.Location = new System.Drawing.Point(573, 246);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(146, 23);
             this.lblLastName.TabIndex = 22;
@@ -172,7 +172,7 @@ namespace GuiMockups
             // 
             // lblTableNumber
             // 
-            this.lblTableNumber.Location = new System.Drawing.Point(573, 142);
+            this.lblTableNumber.Location = new System.Drawing.Point(573, 158);
             this.lblTableNumber.Name = "lblTableNumber";
             this.lblTableNumber.Size = new System.Drawing.Size(146, 23);
             this.lblTableNumber.TabIndex = 23;
@@ -183,7 +183,7 @@ namespace GuiMockups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 354);
+            this.ClientSize = new System.Drawing.Size(970, 347);
             this.Controls.Add(this.lblTableNumber);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
@@ -200,7 +200,8 @@ namespace GuiMockups
             this.Controls.Add(this.tbxCustomerID);
             this.Controls.Add(this.dgvReservations);
             this.Name = "frmEditReservations";
-            this.Text = "frmEditReservations";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Edit Reservations";
             this.Load += new System.EventHandler(this.frmEditReservations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             this.ResumeLayout(false);

@@ -21,8 +21,14 @@ namespace GuiMockups
         {
             ProgOps.DeleteReservation(tbxReserveID.Text);
 
-            dgvReservations.DataSource = null;
-            dgvReservations.Refresh();
+            if (this.dgvReservations.DataSource != null)
+            {
+                this.dgvReservations.DataSource = null;
+            }
+            else
+            {
+                this.dgvReservations.Rows.Clear();
+            }
 
             ProgOps.ReservationCommand(dgvReservations);
             MessageBox.Show("Reservation Deleted");
