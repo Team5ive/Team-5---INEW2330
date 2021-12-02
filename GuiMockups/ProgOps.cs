@@ -275,11 +275,11 @@ namespace GuiMockups
                     SqlCommand _sqlInsertDetailsCommand = new SqlCommand(queryOrderDetails, _cntDatabase);
                     // update command
                     _sqlInsertDetailsCommand.ExecuteNonQuery();
-                    _sqlInsertDetailsCommand.Dispose();
-                    MessageBox.Show("Order Submitted!");
+                    _sqlInsertDetailsCommand.Dispose();                    
                 }
 
                 _sqlInsertOrderCommand.Dispose();
+                MessageBox.Show("Order Submitted!");
 
             }
             catch (Exception ex)
