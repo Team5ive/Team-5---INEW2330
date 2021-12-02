@@ -47,14 +47,26 @@ namespace GuiMockups
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-            //submit orders to database(both orders and orderDetails)
-            var dateString = DateTime.Now.ToString("yyyy-MM-dd");
-            string orderID = (ProgOps.ReadCurrentOrderID() + 1).ToString();
-            ProgOps.checkOutOrder(dateString, orderID);
-            MessageBox.Show("Order Submitted!");
-            //opens frmReceipt next 
-            frmReceipt receipt = new frmReceipt();
-            receipt.ShowDialog();
+            if (ProgOps.Name.Count > 0)
+            {
+                // submit orders to database( both orders and orderDetails) 
+                var dateString = DateTime.Now.ToString("yyyy-MM-dd");
+                string orderID = (ProgOps.ReadCurrentOrderID() + 1).ToString();
+                ProgOps.checkOutOrder(dateString, orderID);
+                // clear all order information 
+                ProgOps.ClearList();
+                dgvCart.Rows.Clear();
+                ProgOps.MathForTotals(lblSubtotal, lblTax, lblNetTotal);
+                MessageBox.Show("Order Submitted!");
+                // opens frmReceipt next 
+                frmReceipt receipt = new frmReceipt();
+                receipt.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No items to checkout", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        
     }
 }

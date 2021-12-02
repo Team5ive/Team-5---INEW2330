@@ -105,13 +105,11 @@ namespace GuiMockups
         {
             //open the connection to database
             _cntDatabase.Open();
-            MessageBox.Show("Open Database Successful", "Open Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public static void CloseDatabase()
         {
             //close connection
             _cntDatabase.Close();
-            MessageBox.Show("Close Database Successful", "Close Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public static void disposeConnection() {
             //dispose of database
@@ -250,7 +248,7 @@ namespace GuiMockups
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return OrderIDCurrent;
         }
@@ -261,11 +259,11 @@ namespace GuiMockups
             {
                 // Orders: Order_ID Customer_ID, Employee_ID, Order_Date, TotalCost, Table_Num, Dine_in
                 // (ordering from application employeeID = NULL , Table_Num = 0, Dine_in = 0)
-                //inserts the variables into the database for customers
+                // inserts the variables into the database for customers
                 string queryOrder = "INSERT INTO group5fa212330.Orders Values(" + _custID + ", NULL, '" + date + "', " + subTotal + ", 0, 0);";
-                //create update command
+                // create update command
                 SqlCommand _sqlInsertOrderCommand = new SqlCommand(queryOrder, _cntDatabase);
-                //update command
+                // update command
                 _sqlInsertOrderCommand.ExecuteNonQuery();
 
 
@@ -273,19 +271,14 @@ namespace GuiMockups
                 {
                     // Order_details: Order_ID, Menu_ID, Qty
                     string queryOrderDetails = "INSERT INTO group5fa212330.Order_details Values(" + orderIdentification + ", " + Menu_ID[i] + ", " + Quantity[i] + " );";
-                    //create update command
+                    // create update command
                     SqlCommand _sqlInsertDetailsCommand = new SqlCommand(queryOrderDetails, _cntDatabase);
-                    //update command
+                    // update command
                     _sqlInsertDetailsCommand.ExecuteNonQuery();
                     _sqlInsertDetailsCommand.Dispose();
-                    MessageBox.Show("Added TO OrderDetails" + orderIdentification + ", " + Menu_ID[i] + ", " + Quantity[i]);
+                    MessageBox.Show("Order Submitted!");
                 }
 
-
-
-
-
-                // _sqlInsertDetailsCommand.Dispose();
                 _sqlInsertOrderCommand.Dispose();
 
             }
@@ -299,7 +292,7 @@ namespace GuiMockups
         //totals for frmCart
         public static void MathForTotals(Label s, Label t, Label n)
         {
-            //double subTotal = 0;
+            subTotal = 0;
             double tax = 0;
             double net = 0;
             double chargeTax = .0825;
@@ -320,17 +313,16 @@ namespace GuiMockups
         public static void Remove(DataGridView dgv1)
         {
             //remove 1 from quantity based on current selected row in data grid view.
-            //Error
             int count = 0;
             bool zero = false;
             if (Name.Count > 0)
             {
                 foreach (var item in Name)
                 {
-                    if (item == dgv1.CurrentRow.Cells[0].Value.ToString())
+                    if (item == dgv1.CurrentRow.Cells[1].Value.ToString())
                     {
-                        int currentQty = Int32.Parse(dgv1.CurrentRow.Cells[2].Value.ToString());
-                        double price = Double.Parse(dgv1.CurrentRow.Cells[1].Value.ToString());
+                        int currentQty = Int32.Parse(dgv1.CurrentRow.Cells[3].Value.ToString());
+                        double price = Double.Parse(dgv1.CurrentRow.Cells[2].Value.ToString());
                         int newQty = currentQty - 1;
                         Quantity[count] = newQty.ToString();
                         double total = newQty * price;
@@ -339,17 +331,18 @@ namespace GuiMockups
                         {
                             zero = true;
                         }
-
+                        break;
                     }
                     count++;
                 }
+                // if quantity less than 0 remove from list
                 if (zero)
                 {
-                    Menu_ID.Remove(dgv1.CurrentRow.Cells[0].Value.ToString());// added menuID
-                    Name.Remove(dgv1.CurrentRow.Cells[1].Value.ToString());
-                    Price_Per_Unit.Remove(dgv1.CurrentRow.Cells[2].Value.ToString());
-                    Quantity.Remove(dgv1.CurrentRow.Cells[3].Value.ToString());
-                    Total_Price_Per_Line.Remove(dgv1.CurrentRow.Cells[4].Value.ToString());
+                    Menu_ID.RemoveAt(count);
+                    Name.RemoveAt(count);
+                    Price_Per_Unit.RemoveAt(count);
+                    Quantity.RemoveAt(count);
+                    Total_Price_Per_Line.RemoveAt(count);
                 }
             }
         }
