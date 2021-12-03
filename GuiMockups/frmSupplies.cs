@@ -169,7 +169,11 @@ namespace GuiMockups
                 quantites.Clear();
                 unitPrices.Clear();
                 MathForOrder(lblSubtotal, lblTax, lblTotal);
-            }            
+            }
+            else
+            {
+                MessageBox.Show("No items in order submit", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
