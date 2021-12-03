@@ -49,7 +49,36 @@ namespace GuiMockups
             frmForgotPass.ShowDialog();
         }
 
-        private void lblSignIn_Click(object sender, EventArgs e)
+        
+
+        private void lblSignUp_Click(object sender, EventArgs e)
+        {
+            //opens sign up form
+            frmSignUp frmSignUp = new frmSignUp();
+            frmSignUp.ShowDialog();
+        }
+
+        private void lblJoin_Click(object sender, EventArgs e)
+        {
+            //opens sign up form
+            frmSignUp frmSignUp = new frmSignUp();
+            frmSignUp.ShowDialog();
+        }
+
+        private void cbxPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            //show or hide password
+            if (cbxPassword.Checked)
+            {
+                tbxPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tbxPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
         {
             //clears lists
             CustEmails.Clear();
@@ -99,8 +128,10 @@ namespace GuiMockups
             {
                 int listEmailHash = EmpEmails[i].GetHashCode();
                 int listPassHash = EmpPass[i].GetHashCode();
+                string isManager = EmpIsManager[i];
                 if (emailHash == listEmailHash && passHash == listPassHash)
                 {
+                    ProgOps.Manager = isManager;
                     empLogin = true;
                 }
             }
@@ -110,13 +141,19 @@ namespace GuiMockups
                 //shows different forms dependent on login
                 if (custLogin == true)
                 {
+                    tbxEmail.Text = "";
+                    tbxPassword.Text = "";
                     frmCustomerHome frmCustomerHome = new frmCustomerHome();
                     frmCustomerHome.ShowDialog();
+
                 }
                 if (empLogin == true)
                 {
+                    tbxEmail.Text = "";
+                    tbxPassword.Text = "";
                     frmEmployeeHub frmEmployeeHub = new frmEmployeeHub();
                     frmEmployeeHub.ShowDialog();
+
                 }
             }
             else
@@ -127,33 +164,6 @@ namespace GuiMockups
                 tbxPassword.Text = "";
                 tbxEmail.Focus();
                 return;
-            }
-        }
-
-        private void lblSignUp_Click(object sender, EventArgs e)
-        {
-            //opens sign up form
-            frmSignUp frmSignUp = new frmSignUp();
-            frmSignUp.ShowDialog();
-        }
-
-        private void lblJoin_Click(object sender, EventArgs e)
-        {
-            //opens sign up form
-            frmSignUp frmSignUp = new frmSignUp();
-            frmSignUp.ShowDialog();
-        }
-
-        private void cbxPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            //show or hide password
-            if (cbxPassword.Checked)
-            {
-                tbxPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                tbxPassword.UseSystemPasswordChar = true;
             }
         }
     }

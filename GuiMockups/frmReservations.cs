@@ -117,9 +117,8 @@ namespace GuiMockups
         
     }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            //close this form
             this.Close();
         }
     }

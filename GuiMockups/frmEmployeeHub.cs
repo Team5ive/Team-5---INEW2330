@@ -17,6 +17,23 @@ namespace GuiMockups
             InitializeComponent();
         }
 
+        private void frmEmployeeHub_Load(object sender, EventArgs e)
+        {
+            if (ProgOps.Manager == "True")
+            {
+                gbxManagers.Enabled = true;
+                btnChangeReserve.Text = "Change Reservations";
+                btnEditEmployee.Text = "Edit Employee Account";
+                
+            }
+            if (ProgOps.Manager == "False")
+            {
+                gbxManagers.Enabled = false;
+                btnChangeReserve.Text = "**********";
+                btnEditEmployee.Text = "**********";
+            }
+        }
+
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             //sign out message
@@ -48,5 +65,6 @@ namespace GuiMockups
             editAccount.ShowDialog();
         }
 
+        
     }
 }

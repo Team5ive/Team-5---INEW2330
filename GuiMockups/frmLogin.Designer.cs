@@ -33,7 +33,6 @@
             this.tbxEmail = new System.Windows.Forms.TextBox();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.lblForgotPassword = new System.Windows.Forms.Label();
-            this.lblSignIn = new System.Windows.Forms.Label();
             this.lblNotMember = new System.Windows.Forms.Label();
             this.lblJoin = new System.Windows.Forms.Label();
             this.lblFancy = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.cbxPassword = new System.Windows.Forms.CheckBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.pbxShell = new System.Windows.Forms.PictureBox();
+            this.btnSignIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,18 +98,6 @@
             this.lblForgotPassword.TabIndex = 0;
             this.lblForgotPassword.Text = "Forgot password?";
             this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
-            // 
-            // lblSignIn
-            // 
-            this.lblSignIn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSignIn.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblSignIn.Location = new System.Drawing.Point(429, 370);
-            this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(250, 53);
-            this.lblSignIn.TabIndex = 0;
-            this.lblSignIn.Text = "Sign In";
-            this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // lblNotMember
             // 
@@ -267,8 +255,21 @@
             this.pbxShell.TabIndex = 3;
             this.pbxShell.TabStop = false;
             // 
+            // btnSignIn
+            // 
+            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSignIn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSignIn.Location = new System.Drawing.Point(429, 370);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(250, 53);
+            this.btnSignIn.TabIndex = 13;
+            this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -287,13 +288,13 @@
             this.Controls.Add(this.lblTerms);
             this.Controls.Add(this.lblJoin);
             this.Controls.Add(this.lblNotMember);
-            this.Controls.Add(this.lblSignIn);
             this.Controls.Add(this.lblForgotPassword);
             this.Controls.Add(this.lblSignUp);
             this.Controls.Add(this.lblFancy);
             this.Controls.Add(this.lblWelcomeBack);
             this.Controls.Add(this.lblEmailAddress);
             this.Controls.Add(this.lblDarkBanner);
+            this.Controls.Add(this.btnSignIn);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
@@ -314,7 +315,6 @@
         private System.Windows.Forms.TextBox tbxEmail;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Label lblForgotPassword;
-        private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.Label lblNotMember;
         private System.Windows.Forms.Label lblJoin;
         private System.Windows.Forms.Label lblFancy;
@@ -331,5 +331,6 @@
         private System.Windows.Forms.Label lblWelcomeBack;
         private System.Windows.Forms.CheckBox cbxPassword;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button btnSignIn;
     }
 }

@@ -81,7 +81,13 @@ namespace GuiMockups
         }
 
         private static string _custID;
+        private static string _manager;
 
+        public static string Manager
+        {
+            get { return _manager; }
+            set { _manager = value; }
+        }
         public static string CustID
         {
             get { return _custID; }
@@ -660,6 +666,7 @@ namespace GuiMockups
                     frmLogin.EmpEmails.Add((read["UserName"].ToString()));
                     frmLogin.EmpPass.Add((read["Password"].ToString()));
                     frmLogin.EmpPass.Add((read["Password"].ToString()));
+                    frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
                     frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
 
                 }

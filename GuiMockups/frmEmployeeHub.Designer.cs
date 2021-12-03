@@ -29,30 +29,30 @@ namespace GuiMockups
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbxManagers = new System.Windows.Forms.GroupBox();
             this.btnChangeReserve = new System.Windows.Forms.Button();
             this.btnEditEmployee = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxAssociates = new System.Windows.Forms.GroupBox();
             this.btnCustOrders = new System.Windows.Forms.Button();
             this.btnOrderSupplies = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbxManagers.SuspendLayout();
+            this.gbxAssociates.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox2
+            // gbxManagers
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.groupBox2.Controls.Add(this.btnChangeReserve);
-            this.groupBox2.Controls.Add(this.btnEditEmployee);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.groupBox2.Location = new System.Drawing.Point(311, 105);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(309, 101);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Managers";
+            this.gbxManagers.BackColor = System.Drawing.SystemColors.GrayText;
+            this.gbxManagers.Controls.Add(this.btnChangeReserve);
+            this.gbxManagers.Controls.Add(this.btnEditEmployee);
+            this.gbxManagers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.gbxManagers.Location = new System.Drawing.Point(311, 105);
+            this.gbxManagers.Name = "gbxManagers";
+            this.gbxManagers.Size = new System.Drawing.Size(309, 101);
+            this.gbxManagers.TabIndex = 11;
+            this.gbxManagers.TabStop = false;
+            this.gbxManagers.Text = "Managers";
             // 
             // btnChangeReserve
             // 
@@ -91,17 +91,17 @@ namespace GuiMockups
             this.lblWelcome.Text = "Welcome!";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox1
+            // gbxAssociates
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox1.Controls.Add(this.btnCustOrders);
-            this.groupBox1.Controls.Add(this.btnOrderSupplies);
-            this.groupBox1.Location = new System.Drawing.Point(4, 105);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(301, 101);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Associates";
+            this.gbxAssociates.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gbxAssociates.Controls.Add(this.btnCustOrders);
+            this.gbxAssociates.Controls.Add(this.btnOrderSupplies);
+            this.gbxAssociates.Location = new System.Drawing.Point(4, 105);
+            this.gbxAssociates.Name = "gbxAssociates";
+            this.gbxAssociates.Size = new System.Drawing.Size(301, 101);
+            this.gbxAssociates.TabIndex = 10;
+            this.gbxAssociates.TabStop = false;
+            this.gbxAssociates.Text = "Associates";
             // 
             // btnCustOrders
             // 
@@ -148,25 +148,26 @@ namespace GuiMockups
             this.ClientSize = new System.Drawing.Size(620, 203);
             this.ControlBox = false;
             this.Controls.Add(this.btnSignOut);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbxManagers);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxAssociates);
             this.Name = "frmEmployeeHub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Hub";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmEmployeeHub_Load);
+            this.gbxManagers.ResumeLayout(false);
+            this.gbxAssociates.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxManagers;
         private System.Windows.Forms.Button btnChangeReserve;
         private System.Windows.Forms.Button btnEditEmployee;
         private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxAssociates;
         private System.Windows.Forms.Button btnCustOrders;
         private System.Windows.Forms.Button btnOrderSupplies;
         private System.Windows.Forms.Button btnSignOut;

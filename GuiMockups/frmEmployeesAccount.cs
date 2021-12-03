@@ -237,29 +237,7 @@ namespace GuiMockups
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            /*Message box that asks if user is sure they want to exit with yes/no response…
-             * If yes is selected Exit…
-             * If no is selected go back to form.*/
-            try
-            {
-                DialogResult response;
-                response = MessageBox.Show("Are you sure you want to Exit?",
-                    "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-                if (response == DialogResult.No)
-                {
-                    return;
-                }
-                ProgOps.UpdateOnClose();
-
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         private void SetState(string appState)
         {
@@ -289,7 +267,7 @@ namespace GuiMockups
                     btnCancel.Enabled = false;
                     btnEdit.Enabled = true;
                     btnDelete.Enabled = true;
-                    btnExit.Enabled = true;
+                    btnClose.Enabled = true;
                     tbxLastName.Focus();
                     break;
                 case "Add New":
@@ -316,7 +294,7 @@ namespace GuiMockups
                     btnCancel.Enabled = true;
                     btnEdit.Enabled = false;
                     btnDelete.Enabled = false;
-                    btnExit.Enabled = false;
+                    btnClose.Enabled = false;
                     tbxLastName.Focus();
                     break;
                 case "Edit":
@@ -342,12 +320,34 @@ namespace GuiMockups
                     btnCancel.Enabled = true;
                     btnEdit.Enabled = false;
                     btnDelete.Enabled = false;
-                    btnExit.Enabled = false;
+                    btnClose.Enabled = false;
                     tbxLastName.Focus();
                     break;
             }
         }
 
-        
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            /*Message box that asks if user is sure they want to exit with yes/no response…
+             * If yes is selected Exit…
+             * If no is selected go back to form.*/
+            try
+            {
+                DialogResult response;
+                response = MessageBox.Show("Are you sure you want to Exit?",
+                    "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (response == DialogResult.No)
+                {
+                    return;
+                }
+                ProgOps.UpdateOnClose();
+
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

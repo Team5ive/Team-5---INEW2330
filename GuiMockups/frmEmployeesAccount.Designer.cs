@@ -45,7 +45,7 @@ namespace GuiMockups
             this.tbxEmail = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.tbxAddress = new System.Windows.Forms.TextBox();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -263,17 +263,17 @@ namespace GuiMockups
             this.tbxAddress.Size = new System.Drawing.Size(300, 26);
             this.tbxAddress.TabIndex = 4;
             // 
-            // btnExit
+            // btnClose
             // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(295, 572);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(91, 27);
-            this.btnExit.TabIndex = 20;
-            this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnClose.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(295, 572);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(91, 27);
+            this.btnClose.TabIndex = 20;
+            this.btnClose.Text = "C&lose";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDelete
             // 
@@ -506,7 +506,7 @@ namespace GuiMockups
             this.Controls.Add(this.tbxEmail);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.tbxAddress);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnCancel);
@@ -549,7 +549,7 @@ namespace GuiMockups
         private System.Windows.Forms.TextBox tbxEmail;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox tbxAddress;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
