@@ -213,13 +213,29 @@ namespace GuiMockups
         {
             try
             {
-                //statement for the DGV
+
+                //statement for the DGV              
                 string sqlStatement = "SELECT Reservation_ID, Customer_ID, Cust_FName, Cust_LName, ReserveDate, TableNumber From group5fa212330.Reservations r join group5fa212330.Customers c ON r.Customer_ID = c.Cust_ID";
-                SqlCommand _sqlGamesCommand = new SqlCommand(sqlStatement, _cntDatabase);
-                _daResults.SelectCommand = _sqlGamesCommand;
+                
+                //set command object to null
+                SqlCommand _sqlReservationsCommand = null;
+                //reset data adapter and data-table to new
+                _daResults = new SqlDataAdapter();
+                _dtResultsTable = new DataTable();
+                //establish a command object
+                _sqlReservationsCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //establish data adapter
+                _daResults.SelectCommand = _sqlReservationsCommand;
+                //fill the data table
                 _daResults.Fill(_dtResultsTable);
+                //bind data grid view to data table
                 dvMain.DataSource = _dtResultsTable;
-                _sqlGamesCommand.Dispose();
+
+                //dispose of command, adapter, and table objects
+                _sqlReservationsCommand.Dispose();
+                _daResults.Dispose();
+                _dtResultsTable.Dispose();
+
             }
             catch (Exception ex)
             {
@@ -487,7 +503,6 @@ namespace GuiMockups
                 _sqlCustomerInfoCommand.ExecuteNonQuery();
                 //dispose
                 _sqlCustomerInfoCommand.Dispose();
-                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

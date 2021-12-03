@@ -175,22 +175,83 @@ namespace GuiMockups
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (tbxLastName.Text == "" || tbxFirstName.Text == "" ||
-            tbxReportTo.Text == "" || tbxAddress.Text == "" || tbxEmail.Text == "" || 
-            tbxCity.Text == "" || tbxState.Text == "" || tbxZip.Text == "" ||
-            tbxPhone.Text == "" || tbxUserName.Text == "" ||tbxPassword.Text == "" ||
-            tbxIsManager.Text == "")
-            {
-                MessageBox.Show("Please fill out all fields", "Warning - Input all fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+
+            bool isFirstCharLetter = false, isSecondCharAlphaNum = false,
+                    isAtSymbolPresent = false, spacesInEmail = false;
+            bool validEmail = false;
+            int countAt = 0, countPeriod = 0;
 
             try
             {
-                employeesManager.EndCurrentEdit();
-                MessageBox.Show("Record saved.", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //return to a view state at the end of Save
-                SetState("View");
+
+                if (tbxLastName.Text == "" || tbxFirstName.Text == "" || 
+                    tbxAddress.Text == "" || tbxEmail.Text == "" ||
+                    tbxCity.Text == "" || tbxState.Text == "" || tbxZip.Text == "" ||
+                    tbxPhone.Text == "" || tbxUserName.Text == "" || tbxPassword.Text == "" ||
+                    tbxIsManager.Text == "")
+                {
+                    MessageBox.Show("Please fill out all fields", "Warning - Input all fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                for (int i = 0; i < tbxEmail.Text.Length; i++)
+                {
+
+                    if (i == 0 && char.IsLetter(tbxEmail.Text[i]))
+                    {
+                        isFirstCharLetter = true;
+                    }
+                    if (i == 1 && char.IsLetterOrDigit(tbxEmail.Text[i]))
+                    {
+                        isSecondCharAlphaNum = true;
+                    }
+                    if (tbxEmail.Text[i] == '@')
+                    {
+                        isAtSymbolPresent = true;
+                        countAt++;
+                    }
+                    if (countAt >= 2)
+                    {
+                        isAtSymbolPresent = false;
+                    }
+                    if (tbxEmail.Text[i] == ' ')
+                    {
+                        spacesInEmail = true;
+                    }
+
+                    if (i == tbxEmail.Text.Length - 1)
+                    {
+                        if (isFirstCharLetter && isSecondCharAlphaNum && isAtSymbolPresent && !(spacesInEmail))
+                        {
+                            //updates employee information
+
+                            employeesManager.EndCurrentEdit();
+                            MessageBox.Show("Record saved.", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //return to a view state at the end of Save
+                            SetState("View");
+                        }
+                        else if (!isFirstCharLetter)
+                        {
+                            MessageBox.Show("First character must be a letter", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (!isSecondCharAlphaNum)
+                        {
+                            MessageBox.Show("Second character should be a letter/Number", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (!isAtSymbolPresent)
+                        {
+                            MessageBox.Show("Only allow one @ symbol in email", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (spacesInEmail)
+                        {
+                            MessageBox.Show("Email cant contain spaces", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                }
+            
+
+                
             }
             catch (Exception ex)
             {

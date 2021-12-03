@@ -19,19 +19,11 @@ namespace GuiMockups
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            // deletes Reservation
             ProgOps.DeleteReservation(tbxReserveID.Text);
-
-            if (this.dgvReservations.DataSource != null)
-            {
-                this.dgvReservations.DataSource = null;
-            }
-            else
-            {
-                this.dgvReservations.Rows.Clear();
-            }
-
-            ProgOps.ReservationCommand(dgvReservations);
             MessageBox.Show("Reservation Deleted");
+            //fill data grid view
+            ProgOps.ReservationCommand(dgvReservations);        
         }
 
         private void frmEditReservations_Load(object sender, EventArgs e)
@@ -47,6 +39,13 @@ namespace GuiMockups
             tbxCustLast.Text = dgvReservations.CurrentRow.Cells[3].Value.ToString();
             tbxReserveDate.Text = dgvReservations.CurrentRow.Cells[4].Value.ToString();
             tbxTableNum.Text = dgvReservations.CurrentRow.Cells[5].Value.ToString();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+            //fill data grid view
+            ProgOps.ReservationCommand(dgvReservations);
         }
     }
 }

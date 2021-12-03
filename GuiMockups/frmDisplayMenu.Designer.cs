@@ -185,7 +185,7 @@
             this.lblAppetizers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblAppetizers.Location = new System.Drawing.Point(164, 202);
             this.lblAppetizers.Name = "lblAppetizers";
-            this.lblAppetizers.Size = new System.Drawing.Size(120, 24);
+            this.lblAppetizers.Size = new System.Drawing.Size(85, 16);
             this.lblAppetizers.TabIndex = 63;
             this.lblAppetizers.Text = "Appetizers";
             // 
@@ -213,7 +213,7 @@
             this.lblEntrees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblEntrees.Location = new System.Drawing.Point(164, 377);
             this.lblEntrees.Name = "lblEntrees";
-            this.lblEntrees.Size = new System.Drawing.Size(86, 24);
+            this.lblEntrees.Size = new System.Drawing.Size(61, 16);
             this.lblEntrees.TabIndex = 66;
             this.lblEntrees.Text = "Entrees";
             // 
@@ -233,7 +233,7 @@
             this.lblSoup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblSoup.Location = new System.Drawing.Point(164, 561);
             this.lblSoup.Name = "lblSoup";
-            this.lblSoup.Size = new System.Drawing.Size(73, 24);
+            this.lblSoup.Size = new System.Drawing.Size(51, 16);
             this.lblSoup.TabIndex = 68;
             this.lblSoup.Text = "Soups";
             // 
@@ -245,7 +245,7 @@
             this.lblScallop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblScallop.Location = new System.Drawing.Point(174, 253);
             this.lblScallop.Name = "lblScallop";
-            this.lblScallop.Size = new System.Drawing.Size(413, 21);
+            this.lblScallop.Size = new System.Drawing.Size(281, 14);
             this.lblScallop.TabIndex = 70;
             this.lblScallop.Text = "Scallops ............................................ 24.99";
             // 
@@ -257,7 +257,7 @@
             this.lblSalad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblSalad.Location = new System.Drawing.Point(469, 253);
             this.lblSalad.Name = "lblSalad";
-            this.lblSalad.Size = new System.Drawing.Size(422, 21);
+            this.lblSalad.Size = new System.Drawing.Size(289, 14);
             this.lblSalad.TabIndex = 71;
             this.lblSalad.Text = "Mesculin Salad ................................... 19.99";
             // 
@@ -269,7 +269,7 @@
             this.lblToast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblToast.Location = new System.Drawing.Point(174, 317);
             this.lblToast.Name = "lblToast";
-            this.lblToast.Size = new System.Drawing.Size(411, 21);
+            this.lblToast.Size = new System.Drawing.Size(282, 14);
             this.lblToast.TabIndex = 72;
             this.lblToast.Text = "Tuna-Urchin Toast ............................ 21.99";
             // 
@@ -281,7 +281,7 @@
             this.lblOyster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblOyster.Location = new System.Drawing.Point(469, 317);
             this.lblOyster.Name = "lblOyster";
-            this.lblOyster.Size = new System.Drawing.Size(429, 21);
+            this.lblOyster.Size = new System.Drawing.Size(290, 14);
             this.lblOyster.TabIndex = 73;
             this.lblOyster.Text = "Oysters .................................................19.99";
             // 
@@ -383,7 +383,7 @@
             this.lblDover.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDover.Location = new System.Drawing.Point(174, 489);
             this.lblDover.Name = "lblDover";
-            this.lblDover.Size = new System.Drawing.Size(419, 21);
+            this.lblDover.Size = new System.Drawing.Size(285, 14);
             this.lblDover.TabIndex = 80;
             this.lblDover.Text = "Dover Sole  ........................................ 49.99";
             // 
@@ -395,7 +395,7 @@
             this.lblSalmon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblSalmon.Location = new System.Drawing.Point(469, 425);
             this.lblSalmon.Name = "lblSalmon";
-            this.lblSalmon.Size = new System.Drawing.Size(426, 21);
+            this.lblSalmon.Size = new System.Drawing.Size(291, 14);
             this.lblSalmon.TabIndex = 79;
             this.lblSalmon.Text = "Salmon Consommé  ............................. 59.99";
             // 
@@ -407,7 +407,7 @@
             this.lblKrabby.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblKrabby.Location = new System.Drawing.Point(174, 425);
             this.lblKrabby.Name = "lblKrabby";
-            this.lblKrabby.Size = new System.Drawing.Size(413, 21);
+            this.lblKrabby.Size = new System.Drawing.Size(282, 14);
             this.lblKrabby.TabIndex = 78;
             this.lblKrabby.Text = "Krabby Patty  .................................... 10.00";
             // 
@@ -419,7 +419,7 @@
             this.lblSurf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblSurf.Location = new System.Drawing.Point(469, 489);
             this.lblSurf.Name = "lblSurf";
-            this.lblSurf.Size = new System.Drawing.Size(429, 21);
+            this.lblSurf.Size = new System.Drawing.Size(291, 14);
             this.lblSurf.TabIndex = 85;
             this.lblSurf.Text = "Surf and Turf ........................................69.99";
             // 
@@ -439,7 +439,7 @@
             this.lblDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDrinks.Location = new System.Drawing.Point(169, 903);
             this.lblDrinks.Name = "lblDrinks";
-            this.lblDrinks.Size = new System.Drawing.Size(80, 24);
+            this.lblDrinks.Size = new System.Drawing.Size(56, 16);
             this.lblDrinks.TabIndex = 86;
             this.lblDrinks.Text = "Drinks";
             // 
@@ -459,7 +459,7 @@
             this.lblDesserts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDesserts.Location = new System.Drawing.Point(164, 731);
             this.lblDesserts.Name = "lblDesserts";
-            this.lblDesserts.Size = new System.Drawing.Size(96, 24);
+            this.lblDesserts.Size = new System.Drawing.Size(68, 16);
             this.lblDesserts.TabIndex = 88;
             this.lblDesserts.Text = "Desserts";
             // 
@@ -471,7 +471,7 @@
             this.lblOysterHouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblOysterHouse.Location = new System.Drawing.Point(469, 682);
             this.lblOysterHouse.Name = "lblOysterHouse";
-            this.lblOysterHouse.Size = new System.Drawing.Size(412, 21);
+            this.lblOysterHouse.Size = new System.Drawing.Size(284, 14);
             this.lblOysterHouse.TabIndex = 97;
             this.lblOysterHouse.Text = "Oyster House Clam Chowder ..............29.99";
             // 
@@ -528,7 +528,7 @@
             this.lblCioppino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblCioppino.Location = new System.Drawing.Point(174, 673);
             this.lblCioppino.Name = "lblCioppino";
-            this.lblCioppino.Size = new System.Drawing.Size(419, 21);
+            this.lblCioppino.Size = new System.Drawing.Size(287, 14);
             this.lblCioppino.TabIndex = 92;
             this.lblCioppino.Text = "Cioppino  ............................................29.99";
             // 
@@ -540,7 +540,7 @@
             this.lblShrimp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblShrimp.Location = new System.Drawing.Point(469, 609);
             this.lblShrimp.Name = "lblShrimp";
-            this.lblShrimp.Size = new System.Drawing.Size(416, 21);
+            this.lblShrimp.Size = new System.Drawing.Size(284, 14);
             this.lblShrimp.TabIndex = 91;
             this.lblShrimp.Text = "Shrimp Bisque ....................................29.99";
             // 
@@ -552,7 +552,7 @@
             this.lblBouilla.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblBouilla.Location = new System.Drawing.Point(174, 609);
             this.lblBouilla.Name = "lblBouilla";
-            this.lblBouilla.Size = new System.Drawing.Size(417, 21);
+            this.lblBouilla.Size = new System.Drawing.Size(286, 14);
             this.lblBouilla.TabIndex = 90;
             this.lblBouilla.Text = "Bouillabaisse ......................................29.99";
             // 
@@ -564,7 +564,7 @@
             this.lblOaBlack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblOaBlack.Location = new System.Drawing.Point(469, 846);
             this.lblOaBlack.Name = "lblOaBlack";
-            this.lblOaBlack.Size = new System.Drawing.Size(415, 21);
+            this.lblOaBlack.Size = new System.Drawing.Size(283, 14);
             this.lblOaBlack.TabIndex = 105;
             this.lblOaBlack.Text = "Black Forest .......................................27.99";
             // 
@@ -620,7 +620,7 @@
             this.lblMille.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblMille.Location = new System.Drawing.Point(174, 846);
             this.lblMille.Name = "lblMille";
-            this.lblMille.Size = new System.Drawing.Size(416, 21);
+            this.lblMille.Size = new System.Drawing.Size(284, 14);
             this.lblMille.TabIndex = 100;
             this.lblMille.Text = "Mille-Feuille ......................................19.99";
             // 
@@ -632,7 +632,7 @@
             this.lblBaba.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblBaba.Location = new System.Drawing.Point(469, 782);
             this.lblBaba.Name = "lblBaba";
-            this.lblBaba.Size = new System.Drawing.Size(412, 21);
+            this.lblBaba.Size = new System.Drawing.Size(282, 14);
             this.lblBaba.TabIndex = 99;
             this.lblBaba.Text = "Baba Au Rhum ...................................21.99";
             // 
@@ -644,7 +644,7 @@
             this.lblVacherin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblVacherin.Location = new System.Drawing.Point(174, 782);
             this.lblVacherin.Name = "lblVacherin";
-            this.lblVacherin.Size = new System.Drawing.Size(418, 21);
+            this.lblVacherin.Size = new System.Drawing.Size(284, 14);
             this.lblVacherin.TabIndex = 98;
             this.lblVacherin.Text = "Vacherin .............................................24.99";
             // 
@@ -656,9 +656,9 @@
             this.lblDrinkFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDrinkFour.Location = new System.Drawing.Point(472, 1015);
             this.lblDrinkFour.Name = "lblDrinkFour";
-            this.lblDrinkFour.Size = new System.Drawing.Size(148, 21);
+            this.lblDrinkFour.Size = new System.Drawing.Size(280, 14);
             this.lblDrinkFour.TabIndex = 113;
-            this.lblDrinkFour.Text = "Fountain Drink";
+            this.lblDrinkFour.Text = "Fountain Drink ....................................4.99";
             // 
             // lblDrinkFourDesc
             // 
@@ -712,7 +712,7 @@
             this.lblDrinkThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDrinkThree.Location = new System.Drawing.Point(177, 1015);
             this.lblDrinkThree.Name = "lblDrinkThree";
-            this.lblDrinkThree.Size = new System.Drawing.Size(415, 21);
+            this.lblDrinkThree.Size = new System.Drawing.Size(290, 14);
             this.lblDrinkThree.TabIndex = 108;
             this.lblDrinkThree.Text = "2010 Domaine Romanee-Conti ..........944.99";
             // 
@@ -724,7 +724,7 @@
             this.lblDrinkTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDrinkTwo.Location = new System.Drawing.Point(472, 951);
             this.lblDrinkTwo.Name = "lblDrinkTwo";
-            this.lblDrinkTwo.Size = new System.Drawing.Size(399, 21);
+            this.lblDrinkTwo.Size = new System.Drawing.Size(279, 14);
             this.lblDrinkTwo.TabIndex = 107;
             this.lblDrinkTwo.Text = "2015 Guigal Côte Rôtie ..................344.99";
             // 
@@ -736,13 +736,13 @@
             this.lblDrinkOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblDrinkOne.Location = new System.Drawing.Point(177, 951);
             this.lblDrinkOne.Name = "lblDrinkOne";
-            this.lblDrinkOne.Size = new System.Drawing.Size(413, 21);
+            this.lblDrinkOne.Size = new System.Drawing.Size(291, 14);
             this.lblDrinkOne.TabIndex = 106;
             this.lblDrinkOne.Text = "2009 Château Lafite Rothschild ........424.99";
             // 
             // frmDisplayMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;

@@ -96,6 +96,21 @@
             this.pbxSoup1 = new System.Windows.Forms.PictureBox();
             this.lblSoup1 = new System.Windows.Forms.Label();
             this.lblCartItemAmount = new System.Windows.Forms.Label();
+            this.radSoup4 = new System.Windows.Forms.RadioButton();
+            this.lblSoup4 = new System.Windows.Forms.Label();
+            this.pbxSoup4 = new System.Windows.Forms.PictureBox();
+            this.radDessert4 = new System.Windows.Forms.RadioButton();
+            this.lblDessert4 = new System.Windows.Forms.Label();
+            this.pbxDessert4 = new System.Windows.Forms.PictureBox();
+            this.radDrink4 = new System.Windows.Forms.RadioButton();
+            this.lblDrink4 = new System.Windows.Forms.Label();
+            this.pbxDrink4 = new System.Windows.Forms.PictureBox();
+            this.radEntree4 = new System.Windows.Forms.RadioButton();
+            this.lblEntree4 = new System.Windows.Forms.Label();
+            this.pbxEntree4 = new System.Windows.Forms.PictureBox();
+            this.radApp4 = new System.Windows.Forms.RadioButton();
+            this.lblApp4 = new System.Windows.Forms.Label();
+            this.pbxApp4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).BeginInit();
             this.gbxEntrees.SuspendLayout();
@@ -118,13 +133,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinus
             // 
             this.btnMinus.BackColor = System.Drawing.Color.DimGray;
             this.btnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnMinus.Location = new System.Drawing.Point(265, 540);
+            this.btnMinus.Location = new System.Drawing.Point(415, 528);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(50, 32);
@@ -137,7 +157,7 @@
             // 
             this.btnPlus.BackColor = System.Drawing.Color.DimGray;
             this.btnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnPlus.Location = new System.Drawing.Point(438, 540);
+            this.btnPlus.Location = new System.Drawing.Point(588, 528);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(50, 32);
@@ -150,7 +170,7 @@
             // 
             this.lblNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.lblNum.Location = new System.Drawing.Point(341, 525);
+            this.lblNum.Location = new System.Drawing.Point(491, 513);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(71, 53);
             this.lblNum.TabIndex = 62;
@@ -161,7 +181,7 @@
             // 
             this.btnShoppingCart.BackColor = System.Drawing.Color.DimGray;
             this.btnShoppingCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnShoppingCart.Location = new System.Drawing.Point(491, 591);
+            this.btnShoppingCart.Location = new System.Drawing.Point(641, 579);
             this.btnShoppingCart.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnShoppingCart.Name = "btnShoppingCart";
             this.btnShoppingCart.Size = new System.Drawing.Size(117, 39);
@@ -174,7 +194,7 @@
             // 
             this.btnAddToCart.BackColor = System.Drawing.Color.DimGray;
             this.btnAddToCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnAddToCart.Location = new System.Drawing.Point(317, 591);
+            this.btnAddToCart.Location = new System.Drawing.Point(467, 579);
             this.btnAddToCart.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(117, 39);
@@ -187,7 +207,7 @@
             // 
             this.btnHome.BackColor = System.Drawing.Color.DimGray;
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnHome.Location = new System.Drawing.Point(144, 591);
+            this.btnHome.Location = new System.Drawing.Point(294, 579);
             this.btnHome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(117, 39);
@@ -200,7 +220,7 @@
             // 
             this.btnDrinks.BackColor = System.Drawing.Color.DimGray;
             this.btnDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnDrinks.Location = new System.Drawing.Point(592, 99);
+            this.btnDrinks.Location = new System.Drawing.Point(742, 99);
             this.btnDrinks.Name = "btnDrinks";
             this.btnDrinks.Size = new System.Drawing.Size(106, 35);
             this.btnDrinks.TabIndex = 58;
@@ -212,7 +232,7 @@
             // 
             this.btnDesserts.BackColor = System.Drawing.Color.DimGray;
             this.btnDesserts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnDesserts.Location = new System.Drawing.Point(457, 99);
+            this.btnDesserts.Location = new System.Drawing.Point(607, 99);
             this.btnDesserts.Name = "btnDesserts";
             this.btnDesserts.Size = new System.Drawing.Size(106, 35);
             this.btnDesserts.TabIndex = 57;
@@ -224,7 +244,7 @@
             // 
             this.btnSoups.BackColor = System.Drawing.Color.DimGray;
             this.btnSoups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnSoups.Location = new System.Drawing.Point(323, 99);
+            this.btnSoups.Location = new System.Drawing.Point(473, 99);
             this.btnSoups.Name = "btnSoups";
             this.btnSoups.Size = new System.Drawing.Size(106, 35);
             this.btnSoups.TabIndex = 56;
@@ -236,7 +256,7 @@
             // 
             this.btnEntrees.BackColor = System.Drawing.Color.DimGray;
             this.btnEntrees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnEntrees.Location = new System.Drawing.Point(189, 99);
+            this.btnEntrees.Location = new System.Drawing.Point(339, 99);
             this.btnEntrees.Name = "btnEntrees";
             this.btnEntrees.Size = new System.Drawing.Size(106, 35);
             this.btnEntrees.TabIndex = 55;
@@ -248,7 +268,7 @@
             // 
             this.btnAppetizers.BackColor = System.Drawing.Color.DimGray;
             this.btnAppetizers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.btnAppetizers.Location = new System.Drawing.Point(55, 99);
+            this.btnAppetizers.Location = new System.Drawing.Point(205, 99);
             this.btnAppetizers.Name = "btnAppetizers";
             this.btnAppetizers.Size = new System.Drawing.Size(106, 35);
             this.btnAppetizers.TabIndex = 54;
@@ -261,7 +281,7 @@
             this.lblGrey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblGrey.Location = new System.Drawing.Point(-3, 93);
             this.lblGrey.Name = "lblGrey";
-            this.lblGrey.Size = new System.Drawing.Size(765, 45);
+            this.lblGrey.Size = new System.Drawing.Size(1058, 45);
             this.lblGrey.TabIndex = 53;
             // 
             // lblYellow
@@ -269,7 +289,7 @@
             this.lblYellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
             this.lblYellow.Location = new System.Drawing.Point(-3, 115);
             this.lblYellow.Name = "lblYellow";
-            this.lblYellow.Size = new System.Drawing.Size(765, 28);
+            this.lblYellow.Size = new System.Drawing.Size(1058, 28);
             this.lblYellow.TabIndex = 52;
             // 
             // lblMenu
@@ -277,7 +297,7 @@
             this.lblMenu.BackColor = System.Drawing.Color.Transparent;
             this.lblMenu.Font = new System.Drawing.Font("Vladimir Script", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.lblMenu.Location = new System.Drawing.Point(258, 4);
+            this.lblMenu.Location = new System.Drawing.Point(408, 4);
             this.lblMenu.Name = "lblMenu";
             this.lblMenu.Size = new System.Drawing.Size(236, 83);
             this.lblMenu.TabIndex = 48;
@@ -287,7 +307,7 @@
             // pbxSwirl1
             // 
             this.pbxSwirl1.Image = ((System.Drawing.Image)(resources.GetObject("pbxSwirl1.Image")));
-            this.pbxSwirl1.Location = new System.Drawing.Point(10, 4);
+            this.pbxSwirl1.Location = new System.Drawing.Point(160, 4);
             this.pbxSwirl1.Name = "pbxSwirl1";
             this.pbxSwirl1.Size = new System.Drawing.Size(242, 86);
             this.pbxSwirl1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -297,7 +317,7 @@
             // pbxSwirl2
             // 
             this.pbxSwirl2.Image = ((System.Drawing.Image)(resources.GetObject("pbxSwirl2.Image")));
-            this.pbxSwirl2.Location = new System.Drawing.Point(500, 4);
+            this.pbxSwirl2.Location = new System.Drawing.Point(650, 4);
             this.pbxSwirl2.Name = "pbxSwirl2";
             this.pbxSwirl2.Size = new System.Drawing.Size(242, 86);
             this.pbxSwirl2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,6 +326,9 @@
             // 
             // gbxEntrees
             // 
+            this.gbxEntrees.Controls.Add(this.radEntree4);
+            this.gbxEntrees.Controls.Add(this.lblEntree4);
+            this.gbxEntrees.Controls.Add(this.pbxEntree4);
             this.gbxEntrees.Controls.Add(this.radEntree3);
             this.gbxEntrees.Controls.Add(this.radEntree2);
             this.gbxEntrees.Controls.Add(this.radEntree1);
@@ -316,9 +339,9 @@
             this.gbxEntrees.Controls.Add(this.pbxEntree1);
             this.gbxEntrees.Controls.Add(this.lblEntree1);
             this.gbxEntrees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxEntrees.Location = new System.Drawing.Point(114, 152);
+            this.gbxEntrees.Location = new System.Drawing.Point(41, 163);
             this.gbxEntrees.Name = "gbxEntrees";
-            this.gbxEntrees.Size = new System.Drawing.Size(542, 358);
+            this.gbxEntrees.Size = new System.Drawing.Size(969, 314);
             this.gbxEntrees.TabIndex = 69;
             this.gbxEntrees.TabStop = false;
             this.gbxEntrees.Text = "Entrees";
@@ -326,7 +349,7 @@
             // radEntree3
             // 
             this.radEntree3.AutoSize = true;
-            this.radEntree3.Location = new System.Drawing.Point(15, 280);
+            this.radEntree3.Location = new System.Drawing.Point(491, 88);
             this.radEntree3.Name = "radEntree3";
             this.radEntree3.Size = new System.Drawing.Size(14, 13);
             this.radEntree3.TabIndex = 71;
@@ -336,7 +359,7 @@
             // radEntree2
             // 
             this.radEntree2.AutoSize = true;
-            this.radEntree2.Location = new System.Drawing.Point(15, 171);
+            this.radEntree2.Location = new System.Drawing.Point(15, 202);
             this.radEntree2.Name = "radEntree2";
             this.radEntree2.Size = new System.Drawing.Size(14, 13);
             this.radEntree2.TabIndex = 70;
@@ -346,7 +369,7 @@
             // radEntree1
             // 
             this.radEntree1.AutoSize = true;
-            this.radEntree1.Location = new System.Drawing.Point(11, 62);
+            this.radEntree1.Location = new System.Drawing.Point(11, 93);
             this.radEntree1.Name = "radEntree1";
             this.radEntree1.Size = new System.Drawing.Size(14, 13);
             this.radEntree1.TabIndex = 69;
@@ -356,17 +379,17 @@
             // lblEntree3
             // 
             this.lblEntree3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree3.Location = new System.Drawing.Point(187, 240);
+            this.lblEntree3.Location = new System.Drawing.Point(663, 48);
             this.lblEntree3.Name = "lblEntree3";
-            this.lblEntree3.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree3.Size = new System.Drawing.Size(271, 103);
             this.lblEntree3.TabIndex = 68;
-            this.lblEntree3.Text = "Salmon Consommé  ............................................... 59.99\r\n\r\nBarely " +
-    "Cooked Faroe Islands Salmon; Tarragon-Basil Sauce Vierge, Tomato Consommé";
+            this.lblEntree3.Text = "Salmon Consommé  ..................................... 59.99\r\n\r\nBarely Cooked Far" +
+    "oe Islands Salmon; Tarragon-Basil Sauce Vierge, Tomato Consommé";
             this.lblEntree3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxEntree3
             // 
-            this.pbxEntree3.Location = new System.Drawing.Point(32, 240);
+            this.pbxEntree3.Location = new System.Drawing.Point(508, 48);
             this.pbxEntree3.Name = "pbxEntree3";
             this.pbxEntree3.Size = new System.Drawing.Size(134, 104);
             this.pbxEntree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -376,9 +399,9 @@
             // lblEntree2
             // 
             this.lblEntree2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree2.Location = new System.Drawing.Point(187, 130);
+            this.lblEntree2.Location = new System.Drawing.Point(187, 161);
             this.lblEntree2.Name = "lblEntree2";
-            this.lblEntree2.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree2.Size = new System.Drawing.Size(271, 103);
             this.lblEntree2.TabIndex = 66;
             this.lblEntree2.Text = "Dover Sole  .................................................... 49.99\r\n\r\nSautéed" +
     " Dover Sole, Toasted Almonds, Wild Mushroom, Soy-Lime Emulsion";
@@ -386,7 +409,7 @@
             // 
             // pbxEntree2
             // 
-            this.pbxEntree2.Location = new System.Drawing.Point(30, 130);
+            this.pbxEntree2.Location = new System.Drawing.Point(30, 161);
             this.pbxEntree2.Name = "pbxEntree2";
             this.pbxEntree2.Size = new System.Drawing.Size(134, 104);
             this.pbxEntree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -395,7 +418,7 @@
             // 
             // pbxEntree1
             // 
-            this.pbxEntree1.Location = new System.Drawing.Point(30, 19);
+            this.pbxEntree1.Location = new System.Drawing.Point(30, 50);
             this.pbxEntree1.Name = "pbxEntree1";
             this.pbxEntree1.Size = new System.Drawing.Size(134, 104);
             this.pbxEntree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -405,9 +428,9 @@
             // lblEntree1
             // 
             this.lblEntree1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree1.Location = new System.Drawing.Point(187, 18);
+            this.lblEntree1.Location = new System.Drawing.Point(187, 49);
             this.lblEntree1.Name = "lblEntree1";
-            this.lblEntree1.Size = new System.Drawing.Size(344, 103);
+            this.lblEntree1.Size = new System.Drawing.Size(271, 103);
             this.lblEntree1.TabIndex = 65;
             this.lblEntree1.Text = "Krabby Patty  .................................................. 10.00\r\n\r\nSesame " +
     "seed buns, dill pickle, red onion, sliced, tomato, sliced, butter lettuce";
@@ -415,6 +438,9 @@
             // 
             // gbxDrinks
             // 
+            this.gbxDrinks.Controls.Add(this.radDrink4);
+            this.gbxDrinks.Controls.Add(this.lblDrink4);
+            this.gbxDrinks.Controls.Add(this.pbxDrink4);
             this.gbxDrinks.Controls.Add(this.radDrink3);
             this.gbxDrinks.Controls.Add(this.radDrink2);
             this.gbxDrinks.Controls.Add(this.radDrink1);
@@ -425,9 +451,9 @@
             this.gbxDrinks.Controls.Add(this.pbxDrink1);
             this.gbxDrinks.Controls.Add(this.lblDrink1);
             this.gbxDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxDrinks.Location = new System.Drawing.Point(103, 152);
+            this.gbxDrinks.Location = new System.Drawing.Point(52, 158);
             this.gbxDrinks.Name = "gbxDrinks";
-            this.gbxDrinks.Size = new System.Drawing.Size(542, 358);
+            this.gbxDrinks.Size = new System.Drawing.Size(969, 314);
             this.gbxDrinks.TabIndex = 70;
             this.gbxDrinks.TabStop = false;
             this.gbxDrinks.Text = "Drinks";
@@ -435,7 +461,7 @@
             // radDrink3
             // 
             this.radDrink3.AutoSize = true;
-            this.radDrink3.Location = new System.Drawing.Point(12, 279);
+            this.radDrink3.Location = new System.Drawing.Point(487, 85);
             this.radDrink3.Name = "radDrink3";
             this.radDrink3.Size = new System.Drawing.Size(14, 13);
             this.radDrink3.TabIndex = 71;
@@ -445,7 +471,7 @@
             // radDrink2
             // 
             this.radDrink2.AutoSize = true;
-            this.radDrink2.Location = new System.Drawing.Point(12, 170);
+            this.radDrink2.Location = new System.Drawing.Point(12, 201);
             this.radDrink2.Name = "radDrink2";
             this.radDrink2.Size = new System.Drawing.Size(14, 13);
             this.radDrink2.TabIndex = 70;
@@ -455,7 +481,7 @@
             // radDrink1
             // 
             this.radDrink1.AutoSize = true;
-            this.radDrink1.Location = new System.Drawing.Point(12, 61);
+            this.radDrink1.Location = new System.Drawing.Point(12, 92);
             this.radDrink1.Name = "radDrink1";
             this.radDrink1.Size = new System.Drawing.Size(14, 13);
             this.radDrink1.TabIndex = 69;
@@ -466,17 +492,17 @@
             // 
             this.lblDrink3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblDrink3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDrink3.Location = new System.Drawing.Point(183, 242);
+            this.lblDrink3.Location = new System.Drawing.Point(658, 48);
             this.lblDrink3.Name = "lblDrink3";
-            this.lblDrink3.Size = new System.Drawing.Size(344, 103);
+            this.lblDrink3.Size = new System.Drawing.Size(271, 103);
             this.lblDrink3.TabIndex = 68;
-            this.lblDrink3.Text = "2015 Guigal Côte Rôtie ..........................................344.99\r\n\r\nA dens" +
-    "e and dark Syrah wine with velvety texture and \r\ndark fruit aromas";
+            this.lblDrink3.Text = "2015 Guigal Côte Rôtie ......344.99\r\n\r\nA dense and dark Syrah wine with velvety t" +
+    "exture and \r\ndark fruit aromas";
             this.lblDrink3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxDrink3
             // 
-            this.pbxDrink3.Location = new System.Drawing.Point(30, 241);
+            this.pbxDrink3.Location = new System.Drawing.Point(505, 47);
             this.pbxDrink3.Name = "pbxDrink3";
             this.pbxDrink3.Size = new System.Drawing.Size(134, 104);
             this.pbxDrink3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -486,17 +512,17 @@
             // lblDrink2
             // 
             this.lblDrink2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDrink2.Location = new System.Drawing.Point(183, 127);
+            this.lblDrink2.Location = new System.Drawing.Point(183, 158);
             this.lblDrink2.Name = "lblDrink2";
-            this.lblDrink2.Size = new System.Drawing.Size(344, 103);
+            this.lblDrink2.Size = new System.Drawing.Size(271, 103);
             this.lblDrink2.TabIndex = 66;
-            this.lblDrink2.Text = "2010 Domaine Romanee-Conti ...................................944.99\r\n\r\nA floral " +
-    "and complex, dry wine with red berry fruit aromas";
+            this.lblDrink2.Text = "2010 Domaine Romanee-Conti .........944.99\r\n\r\nA floral and complex, dry wine with" +
+    " red berry fruit aromas";
             this.lblDrink2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxDrink2
             // 
-            this.pbxDrink2.Location = new System.Drawing.Point(30, 129);
+            this.pbxDrink2.Location = new System.Drawing.Point(30, 160);
             this.pbxDrink2.Name = "pbxDrink2";
             this.pbxDrink2.Size = new System.Drawing.Size(134, 104);
             this.pbxDrink2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -505,7 +531,7 @@
             // 
             // pbxDrink1
             // 
-            this.pbxDrink1.Location = new System.Drawing.Point(30, 17);
+            this.pbxDrink1.Location = new System.Drawing.Point(30, 48);
             this.pbxDrink1.Name = "pbxDrink1";
             this.pbxDrink1.Size = new System.Drawing.Size(134, 104);
             this.pbxDrink1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -515,16 +541,19 @@
             // lblDrink1
             // 
             this.lblDrink1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDrink1.Location = new System.Drawing.Point(183, 18);
+            this.lblDrink1.Location = new System.Drawing.Point(183, 49);
             this.lblDrink1.Name = "lblDrink1";
-            this.lblDrink1.Size = new System.Drawing.Size(344, 103);
+            this.lblDrink1.Size = new System.Drawing.Size(271, 103);
             this.lblDrink1.TabIndex = 65;
-            this.lblDrink1.Text = "2009 Château Lafite Rothschild .................................424.99\r\n\r\nA bouqu" +
-    "et ofSauvignon, Merlot, Cabernet, Verdot come together in this wine";
+            this.lblDrink1.Text = "2009 Château Lafite Rothschild ............424.99\r\n\r\nA bouquet ofSauvignon, Merlo" +
+    "t, Cabernet, Verdot come together in this wine";
             this.lblDrink1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gbxDesserts
             // 
+            this.gbxDesserts.Controls.Add(this.radDessert4);
+            this.gbxDesserts.Controls.Add(this.lblDessert4);
+            this.gbxDesserts.Controls.Add(this.pbxDessert4);
             this.gbxDesserts.Controls.Add(this.radDessert3);
             this.gbxDesserts.Controls.Add(this.radDessert2);
             this.gbxDesserts.Controls.Add(this.radDessert1);
@@ -535,9 +564,9 @@
             this.gbxDesserts.Controls.Add(this.pbxDessert1);
             this.gbxDesserts.Controls.Add(this.lblDessert1);
             this.gbxDesserts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxDesserts.Location = new System.Drawing.Point(103, 147);
+            this.gbxDesserts.Location = new System.Drawing.Point(64, 164);
             this.gbxDesserts.Name = "gbxDesserts";
-            this.gbxDesserts.Size = new System.Drawing.Size(542, 358);
+            this.gbxDesserts.Size = new System.Drawing.Size(969, 314);
             this.gbxDesserts.TabIndex = 70;
             this.gbxDesserts.TabStop = false;
             this.gbxDesserts.Text = "Desserts";
@@ -545,7 +574,7 @@
             // radDessert3
             // 
             this.radDessert3.AutoSize = true;
-            this.radDessert3.Location = new System.Drawing.Point(10, 279);
+            this.radDessert3.Location = new System.Drawing.Point(486, 83);
             this.radDessert3.Name = "radDessert3";
             this.radDessert3.Size = new System.Drawing.Size(14, 13);
             this.radDessert3.TabIndex = 71;
@@ -555,7 +584,7 @@
             // radDessert2
             // 
             this.radDessert2.AutoSize = true;
-            this.radDessert2.Location = new System.Drawing.Point(12, 170);
+            this.radDessert2.Location = new System.Drawing.Point(17, 197);
             this.radDessert2.Name = "radDessert2";
             this.radDessert2.Size = new System.Drawing.Size(14, 13);
             this.radDessert2.TabIndex = 70;
@@ -565,7 +594,7 @@
             // radDessert1
             // 
             this.radDessert1.AutoSize = true;
-            this.radDessert1.Location = new System.Drawing.Point(12, 61);
+            this.radDessert1.Location = new System.Drawing.Point(17, 88);
             this.radDessert1.Name = "radDessert1";
             this.radDessert1.Size = new System.Drawing.Size(14, 13);
             this.radDessert1.TabIndex = 69;
@@ -575,17 +604,17 @@
             // lblDessert3
             // 
             this.lblDessert3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDessert3.Location = new System.Drawing.Point(183, 240);
+            this.lblDessert3.Location = new System.Drawing.Point(659, 43);
             this.lblDessert3.Name = "lblDessert3";
-            this.lblDessert3.Size = new System.Drawing.Size(344, 103);
+            this.lblDessert3.Size = new System.Drawing.Size(271, 103);
             this.lblDessert3.TabIndex = 68;
-            this.lblDessert3.Text = "Baba Au Rhum ....................................................21.99\r\n\r\nWhipped" +
-    " Caramelized Honey, Tahitian Vanilla Ice Cream";
+            this.lblDessert3.Text = "Baba Au Rhum ................................................21.99\r\n\r\nWhipped Car" +
+    "amelized Honey, Tahitian Vanilla Ice Cream";
             this.lblDessert3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxDessert3
             // 
-            this.pbxDessert3.Location = new System.Drawing.Point(28, 241);
+            this.pbxDessert3.Location = new System.Drawing.Point(504, 43);
             this.pbxDessert3.Name = "pbxDessert3";
             this.pbxDessert3.Size = new System.Drawing.Size(134, 104);
             this.pbxDessert3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -595,9 +624,9 @@
             // lblDessert2
             // 
             this.lblDessert2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDessert2.Location = new System.Drawing.Point(183, 128);
+            this.lblDessert2.Location = new System.Drawing.Point(188, 155);
             this.lblDessert2.Name = "lblDessert2";
-            this.lblDessert2.Size = new System.Drawing.Size(344, 103);
+            this.lblDessert2.Size = new System.Drawing.Size(271, 103);
             this.lblDessert2.TabIndex = 66;
             this.lblDessert2.Text = "Mille-Feuille ...................................................19.99\r\n\r\nRhubarb" +
     "-Blackberry Compote, Caramelized Puff Pastry, Yogurt Sorbet";
@@ -605,7 +634,7 @@
             // 
             // pbxDessert2
             // 
-            this.pbxDessert2.Location = new System.Drawing.Point(30, 129);
+            this.pbxDessert2.Location = new System.Drawing.Point(35, 156);
             this.pbxDessert2.Name = "pbxDessert2";
             this.pbxDessert2.Size = new System.Drawing.Size(134, 104);
             this.pbxDessert2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -614,7 +643,7 @@
             // 
             // pbxDessert1
             // 
-            this.pbxDessert1.Location = new System.Drawing.Point(30, 17);
+            this.pbxDessert1.Location = new System.Drawing.Point(35, 44);
             this.pbxDessert1.Name = "pbxDessert1";
             this.pbxDessert1.Size = new System.Drawing.Size(134, 104);
             this.pbxDessert1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -624,9 +653,9 @@
             // lblDessert1
             // 
             this.lblDessert1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDessert1.Location = new System.Drawing.Point(183, 18);
+            this.lblDessert1.Location = new System.Drawing.Point(188, 45);
             this.lblDessert1.Name = "lblDessert1";
-            this.lblDessert1.Size = new System.Drawing.Size(344, 103);
+            this.lblDessert1.Size = new System.Drawing.Size(271, 103);
             this.lblDessert1.TabIndex = 65;
             this.lblDessert1.Text = "Vacherin ........................................................24.99\r\n\r\nWhite S" +
     "esame Dacquoise, Labne Mousse Concord Grape Sorbet";
@@ -634,6 +663,9 @@
             // 
             // gbxAppetizers
             // 
+            this.gbxAppetizers.Controls.Add(this.radApp4);
+            this.gbxAppetizers.Controls.Add(this.lblApp4);
+            this.gbxAppetizers.Controls.Add(this.pbxApp4);
             this.gbxAppetizers.Controls.Add(this.radApp3);
             this.gbxAppetizers.Controls.Add(this.radApp2);
             this.gbxAppetizers.Controls.Add(this.radApp1);
@@ -644,11 +676,11 @@
             this.gbxAppetizers.Controls.Add(this.pbxApp1);
             this.gbxAppetizers.Controls.Add(this.lblApp1);
             this.gbxAppetizers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxAppetizers.Location = new System.Drawing.Point(103, 152);
+            this.gbxAppetizers.Location = new System.Drawing.Point(56, 158);
             this.gbxAppetizers.Margin = new System.Windows.Forms.Padding(2);
             this.gbxAppetizers.Name = "gbxAppetizers";
             this.gbxAppetizers.Padding = new System.Windows.Forms.Padding(2);
-            this.gbxAppetizers.Size = new System.Drawing.Size(542, 358);
+            this.gbxAppetizers.Size = new System.Drawing.Size(969, 314);
             this.gbxAppetizers.TabIndex = 51;
             this.gbxAppetizers.TabStop = false;
             this.gbxAppetizers.Text = "Appetizers";
@@ -656,7 +688,7 @@
             // radApp3
             // 
             this.radApp3.AutoSize = true;
-            this.radApp3.Location = new System.Drawing.Point(20, 281);
+            this.radApp3.Location = new System.Drawing.Point(489, 86);
             this.radApp3.Name = "radApp3";
             this.radApp3.Size = new System.Drawing.Size(14, 13);
             this.radApp3.TabIndex = 59;
@@ -666,7 +698,7 @@
             // radApp2
             // 
             this.radApp2.AutoSize = true;
-            this.radApp2.Location = new System.Drawing.Point(20, 172);
+            this.radApp2.Location = new System.Drawing.Point(20, 202);
             this.radApp2.Name = "radApp2";
             this.radApp2.Size = new System.Drawing.Size(14, 13);
             this.radApp2.TabIndex = 58;
@@ -676,7 +708,7 @@
             // radApp1
             // 
             this.radApp1.AutoSize = true;
-            this.radApp1.Location = new System.Drawing.Point(20, 61);
+            this.radApp1.Location = new System.Drawing.Point(20, 91);
             this.radApp1.Name = "radApp1";
             this.radApp1.Size = new System.Drawing.Size(14, 13);
             this.radApp1.TabIndex = 57;
@@ -686,17 +718,17 @@
             // lblApp3
             // 
             this.lblApp3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblApp3.Location = new System.Drawing.Point(189, 243);
+            this.lblApp3.Location = new System.Drawing.Point(658, 48);
             this.lblApp3.Name = "lblApp3";
-            this.lblApp3.Size = new System.Drawing.Size(344, 103);
+            this.lblApp3.Size = new System.Drawing.Size(271, 103);
             this.lblApp3.TabIndex = 56;
-            this.lblApp3.Text = "Tuna-Urchin Toast .............................................. 21.99\r\n\r\nTuna Ta" +
-    "rtare-Sea Urchin Toast, Jus de Viande";
+            this.lblApp3.Text = "Tuna-Urchin Toast .................................. 21.99\r\n\r\nTuna Tartare-Sea Ur" +
+    "chin Toast, Jus de Viande";
             this.lblApp3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxApp3
             // 
-            this.pbxApp3.Location = new System.Drawing.Point(36, 243);
+            this.pbxApp3.Location = new System.Drawing.Point(505, 48);
             this.pbxApp3.Name = "pbxApp3";
             this.pbxApp3.Size = new System.Drawing.Size(134, 104);
             this.pbxApp3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -706,17 +738,17 @@
             // lblApp2
             // 
             this.lblApp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblApp2.Location = new System.Drawing.Point(189, 132);
+            this.lblApp2.Location = new System.Drawing.Point(189, 162);
             this.lblApp2.Name = "lblApp2";
-            this.lblApp2.Size = new System.Drawing.Size(344, 103);
+            this.lblApp2.Size = new System.Drawing.Size(271, 103);
             this.lblApp2.TabIndex = 54;
-            this.lblApp2.Text = "Mesculin Salad ................................................. 19.99\r\n\r\nMarket " +
-    "Herbs and Seasonal Vegetables; Truffle Vinaigrette";
+            this.lblApp2.Text = "Mesculin Salad ....................................... 19.99\r\n\r\nMarket Herbs and " +
+    "Seasonal Vegetables; Truffle Vinaigrette";
             this.lblApp2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbxApp2
             // 
-            this.pbxApp2.Location = new System.Drawing.Point(36, 132);
+            this.pbxApp2.Location = new System.Drawing.Point(36, 162);
             this.pbxApp2.Name = "pbxApp2";
             this.pbxApp2.Size = new System.Drawing.Size(134, 104);
             this.pbxApp2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -725,7 +757,7 @@
             // 
             // pbxApp1
             // 
-            this.pbxApp1.Location = new System.Drawing.Point(36, 18);
+            this.pbxApp1.Location = new System.Drawing.Point(36, 48);
             this.pbxApp1.Name = "pbxApp1";
             this.pbxApp1.Size = new System.Drawing.Size(134, 104);
             this.pbxApp1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -735,9 +767,9 @@
             // lblApp1
             // 
             this.lblApp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblApp1.Location = new System.Drawing.Point(189, 19);
+            this.lblApp1.Location = new System.Drawing.Point(189, 49);
             this.lblApp1.Name = "lblApp1";
-            this.lblApp1.Size = new System.Drawing.Size(344, 103);
+            this.lblApp1.Size = new System.Drawing.Size(271, 103);
             this.lblApp1.TabIndex = 53;
             this.lblApp1.Text = "Scallops ....................................................... 24.99\r\n\r\nScallop" +
     " Ceviche; Scorched Baby Corn, Lime-Truffle Emulsion, Ultra Thin Saffron Tuile";
@@ -745,6 +777,9 @@
             // 
             // gbxSoups
             // 
+            this.gbxSoups.Controls.Add(this.radSoup4);
+            this.gbxSoups.Controls.Add(this.lblSoup4);
+            this.gbxSoups.Controls.Add(this.pbxSoup4);
             this.gbxSoups.Controls.Add(this.radSoup3);
             this.gbxSoups.Controls.Add(this.radSoup2);
             this.gbxSoups.Controls.Add(this.radSoup1);
@@ -755,9 +790,9 @@
             this.gbxSoups.Controls.Add(this.pbxSoup1);
             this.gbxSoups.Controls.Add(this.lblSoup1);
             this.gbxSoups.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.gbxSoups.Location = new System.Drawing.Point(105, 152);
+            this.gbxSoups.Location = new System.Drawing.Point(35, 170);
             this.gbxSoups.Name = "gbxSoups";
-            this.gbxSoups.Size = new System.Drawing.Size(542, 358);
+            this.gbxSoups.Size = new System.Drawing.Size(969, 314);
             this.gbxSoups.TabIndex = 70;
             this.gbxSoups.TabStop = false;
             this.gbxSoups.Text = "Soups";
@@ -765,7 +800,7 @@
             // radSoup3
             // 
             this.radSoup3.AutoSize = true;
-            this.radSoup3.Location = new System.Drawing.Point(13, 280);
+            this.radSoup3.Location = new System.Drawing.Point(484, 86);
             this.radSoup3.Name = "radSoup3";
             this.radSoup3.Size = new System.Drawing.Size(14, 13);
             this.radSoup3.TabIndex = 71;
@@ -775,7 +810,7 @@
             // radSoup2
             // 
             this.radSoup2.AutoSize = true;
-            this.radSoup2.Location = new System.Drawing.Point(13, 171);
+            this.radSoup2.Location = new System.Drawing.Point(15, 200);
             this.radSoup2.Name = "radSoup2";
             this.radSoup2.Size = new System.Drawing.Size(14, 13);
             this.radSoup2.TabIndex = 70;
@@ -785,7 +820,7 @@
             // radSoup1
             // 
             this.radSoup1.AutoSize = true;
-            this.radSoup1.Location = new System.Drawing.Point(13, 60);
+            this.radSoup1.Location = new System.Drawing.Point(12, 88);
             this.radSoup1.Name = "radSoup1";
             this.radSoup1.Size = new System.Drawing.Size(14, 13);
             this.radSoup1.TabIndex = 69;
@@ -795,21 +830,20 @@
             // lblSoup3
             // 
             this.lblSoup3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSoup3.Location = new System.Drawing.Point(186, 242);
+            this.lblSoup3.Location = new System.Drawing.Point(658, 46);
             this.lblSoup3.Name = "lblSoup3";
-            this.lblSoup3.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup3.Size = new System.Drawing.Size(271, 103);
             this.lblSoup3.TabIndex = 68;
-            this.lblSoup3.Text = "Shrimp Bisque ...................................................29.99\r\n\r\nA thick" +
-    ", creamy soup made with shellfish and thickened by a paste made from their shell" +
-    "s";
+            this.lblSoup3.Text = "Shrimp Bisque .................................................29.99\r\n\r\nA thick, " +
+    "creamy soup made with shellfish and thickened by a paste made from their shells";
             this.lblSoup3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblSoup2
             // 
             this.lblSoup2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSoup2.Location = new System.Drawing.Point(186, 129);
+            this.lblSoup2.Location = new System.Drawing.Point(189, 159);
             this.lblSoup2.Name = "lblSoup2";
-            this.lblSoup2.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup2.Size = new System.Drawing.Size(271, 103);
             this.lblSoup2.TabIndex = 66;
             this.lblSoup2.Text = "Cioppino  .......................................................29.99\r\n\r\nStew of" +
     " fish and shellfish cooked with tomatoes, wine, spices, and herbs";
@@ -817,7 +851,7 @@
             // 
             // pbxSoup3
             // 
-            this.pbxSoup3.Location = new System.Drawing.Point(32, 241);
+            this.pbxSoup3.Location = new System.Drawing.Point(504, 45);
             this.pbxSoup3.Name = "pbxSoup3";
             this.pbxSoup3.Size = new System.Drawing.Size(134, 104);
             this.pbxSoup3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -826,7 +860,7 @@
             // 
             // pbxSoup2
             // 
-            this.pbxSoup2.Location = new System.Drawing.Point(32, 128);
+            this.pbxSoup2.Location = new System.Drawing.Point(35, 158);
             this.pbxSoup2.Name = "pbxSoup2";
             this.pbxSoup2.Size = new System.Drawing.Size(134, 104);
             this.pbxSoup2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -835,7 +869,7 @@
             // 
             // pbxSoup1
             // 
-            this.pbxSoup1.Location = new System.Drawing.Point(30, 16);
+            this.pbxSoup1.Location = new System.Drawing.Point(33, 46);
             this.pbxSoup1.Name = "pbxSoup1";
             this.pbxSoup1.Size = new System.Drawing.Size(134, 104);
             this.pbxSoup1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -845,9 +879,9 @@
             // lblSoup1
             // 
             this.lblSoup1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSoup1.Location = new System.Drawing.Point(186, 16);
+            this.lblSoup1.Location = new System.Drawing.Point(189, 46);
             this.lblSoup1.Name = "lblSoup1";
-            this.lblSoup1.Size = new System.Drawing.Size(344, 103);
+            this.lblSoup1.Size = new System.Drawing.Size(271, 103);
             this.lblSoup1.TabIndex = 65;
             this.lblSoup1.Text = "Bouillabaisse ...................................................29.99\r\n\r\nSeasone" +
     "d fish stew made with mussels, anchovies and shrimp";
@@ -857,30 +891,181 @@
             // 
             this.lblCartItemAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCartItemAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.lblCartItemAmount.Location = new System.Drawing.Point(509, 536);
+            this.lblCartItemAmount.Location = new System.Drawing.Point(692, 518);
             this.lblCartItemAmount.Name = "lblCartItemAmount";
             this.lblCartItemAmount.Size = new System.Drawing.Size(241, 42);
             this.lblCartItemAmount.TabIndex = 71;
             this.lblCartItemAmount.Text = "Cart(0)";
             this.lblCartItemAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // radSoup4
+            // 
+            this.radSoup4.AutoSize = true;
+            this.radSoup4.Location = new System.Drawing.Point(484, 200);
+            this.radSoup4.Name = "radSoup4";
+            this.radSoup4.Size = new System.Drawing.Size(14, 13);
+            this.radSoup4.TabIndex = 74;
+            this.radSoup4.TabStop = true;
+            this.radSoup4.UseVisualStyleBackColor = true;
+            // 
+            // lblSoup4
+            // 
+            this.lblSoup4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSoup4.Location = new System.Drawing.Point(658, 158);
+            this.lblSoup4.Name = "lblSoup4";
+            this.lblSoup4.Size = new System.Drawing.Size(271, 103);
+            this.lblSoup4.TabIndex = 73;
+            this.lblSoup4.Text = "Oyster House Clam Chowder .................29.99\r\n\r\nA thick chowder made from cla" +
+    "ms, potatoes, onions, and cream";
+            this.lblSoup4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxSoup4
+            // 
+            this.pbxSoup4.Location = new System.Drawing.Point(504, 158);
+            this.pbxSoup4.Name = "pbxSoup4";
+            this.pbxSoup4.Size = new System.Drawing.Size(134, 104);
+            this.pbxSoup4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup4.TabIndex = 72;
+            this.pbxSoup4.TabStop = false;
+            // 
+            // radDessert4
+            // 
+            this.radDessert4.AutoSize = true;
+            this.radDessert4.Location = new System.Drawing.Point(485, 197);
+            this.radDessert4.Name = "radDessert4";
+            this.radDessert4.Size = new System.Drawing.Size(14, 13);
+            this.radDessert4.TabIndex = 74;
+            this.radDessert4.TabStop = true;
+            this.radDessert4.UseVisualStyleBackColor = true;
+            // 
+            // lblDessert4
+            // 
+            this.lblDessert4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDessert4.Location = new System.Drawing.Point(659, 156);
+            this.lblDessert4.Name = "lblDessert4";
+            this.lblDessert4.Size = new System.Drawing.Size(271, 103);
+            this.lblDessert4.TabIndex = 73;
+            this.lblDessert4.Text = "Black Forest ....................................................27.99\r\n\r\nChocola" +
+    "te Cherry Crémeux, Devil’s Food Cake, Brandied Cherries";
+            this.lblDessert4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxDessert4
+            // 
+            this.pbxDessert4.Location = new System.Drawing.Point(504, 156);
+            this.pbxDessert4.Name = "pbxDessert4";
+            this.pbxDessert4.Size = new System.Drawing.Size(134, 104);
+            this.pbxDessert4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDessert4.TabIndex = 72;
+            this.pbxDessert4.TabStop = false;
+            // 
+            // radDrink4
+            // 
+            this.radDrink4.AutoSize = true;
+            this.radDrink4.Location = new System.Drawing.Point(488, 197);
+            this.radDrink4.Name = "radDrink4";
+            this.radDrink4.Size = new System.Drawing.Size(14, 13);
+            this.radDrink4.TabIndex = 74;
+            this.radDrink4.TabStop = true;
+            this.radDrink4.UseVisualStyleBackColor = true;
+            // 
+            // lblDrink4
+            // 
+            this.lblDrink4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDrink4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrink4.Location = new System.Drawing.Point(659, 160);
+            this.lblDrink4.Name = "lblDrink4";
+            this.lblDrink4.Size = new System.Drawing.Size(271, 103);
+            this.lblDrink4.TabIndex = 73;
+            this.lblDrink4.Text = "Fountain Drink ..........................................4.99\r\n\r\nAny choice of ou" +
+    "r Coke products";
+            this.lblDrink4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxDrink4
+            // 
+            this.pbxDrink4.Location = new System.Drawing.Point(506, 159);
+            this.pbxDrink4.Name = "pbxDrink4";
+            this.pbxDrink4.Size = new System.Drawing.Size(134, 104);
+            this.pbxDrink4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDrink4.TabIndex = 72;
+            this.pbxDrink4.TabStop = false;
+            // 
+            // radEntree4
+            // 
+            this.radEntree4.AutoSize = true;
+            this.radEntree4.Location = new System.Drawing.Point(491, 201);
+            this.radEntree4.Name = "radEntree4";
+            this.radEntree4.Size = new System.Drawing.Size(14, 13);
+            this.radEntree4.TabIndex = 74;
+            this.radEntree4.TabStop = true;
+            this.radEntree4.UseVisualStyleBackColor = true;
+            // 
+            // lblEntree4
+            // 
+            this.lblEntree4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblEntree4.Location = new System.Drawing.Point(663, 161);
+            this.lblEntree4.Name = "lblEntree4";
+            this.lblEntree4.Size = new System.Drawing.Size(271, 103);
+            this.lblEntree4.TabIndex = 73;
+            this.lblEntree4.Text = "Surf and Turf............................................... 69.99\r\n\r\nPan Roasted" +
+    " Monkfish and Braised Oxtail Butternut Squash Canneloni; Spiced Red Wine Sauce";
+            this.lblEntree4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxEntree4
+            // 
+            this.pbxEntree4.Location = new System.Drawing.Point(508, 161);
+            this.pbxEntree4.Name = "pbxEntree4";
+            this.pbxEntree4.Size = new System.Drawing.Size(134, 104);
+            this.pbxEntree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEntree4.TabIndex = 72;
+            this.pbxEntree4.TabStop = false;
+            // 
+            // radApp4
+            // 
+            this.radApp4.AutoSize = true;
+            this.radApp4.Location = new System.Drawing.Point(489, 200);
+            this.radApp4.Name = "radApp4";
+            this.radApp4.Size = new System.Drawing.Size(14, 13);
+            this.radApp4.TabIndex = 62;
+            this.radApp4.TabStop = true;
+            this.radApp4.UseVisualStyleBackColor = true;
+            // 
+            // lblApp4
+            // 
+            this.lblApp4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblApp4.Location = new System.Drawing.Point(658, 162);
+            this.lblApp4.Name = "lblApp4";
+            this.lblApp4.Size = new System.Drawing.Size(271, 103);
+            this.lblApp4.TabIndex = 61;
+            this.lblApp4.Text = "Oysters.............................................. 19.99\r\n\r\nSingle Variety or " +
+    "Assortment of Oysters (Six Pieces)";
+            this.lblApp4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxApp4
+            // 
+            this.pbxApp4.Location = new System.Drawing.Point(505, 162);
+            this.pbxApp4.Name = "pbxApp4";
+            this.pbxApp4.Size = new System.Drawing.Size(134, 104);
+            this.pbxApp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxApp4.TabIndex = 60;
+            this.pbxApp4.TabStop = false;
+            // 
             // frmCustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(762, 646);
-            this.Controls.Add(this.lblCartItemAmount);
-            this.Controls.Add(this.gbxSoups);
+            this.ClientSize = new System.Drawing.Size(1052, 639);
             this.Controls.Add(this.gbxDesserts);
             this.Controls.Add(this.gbxDrinks);
+            this.Controls.Add(this.gbxSoups);
+            this.Controls.Add(this.gbxAppetizers);
             this.Controls.Add(this.gbxEntrees);
+            this.Controls.Add(this.lblCartItemAmount);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.lblNum);
             this.Controls.Add(this.btnShoppingCart);
             this.Controls.Add(this.btnAddToCart);
-            this.Controls.Add(this.gbxAppetizers);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnDrinks);
             this.Controls.Add(this.btnDesserts);
@@ -924,6 +1109,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -997,5 +1187,20 @@
         private System.Windows.Forms.PictureBox pbxDrink1;
         private System.Windows.Forms.Label lblDrink1;
         private System.Windows.Forms.Label lblCartItemAmount;
+        private System.Windows.Forms.RadioButton radSoup4;
+        private System.Windows.Forms.Label lblSoup4;
+        private System.Windows.Forms.PictureBox pbxSoup4;
+        private System.Windows.Forms.RadioButton radDessert4;
+        private System.Windows.Forms.Label lblDessert4;
+        private System.Windows.Forms.PictureBox pbxDessert4;
+        private System.Windows.Forms.RadioButton radDrink4;
+        private System.Windows.Forms.Label lblDrink4;
+        private System.Windows.Forms.PictureBox pbxDrink4;
+        private System.Windows.Forms.RadioButton radEntree4;
+        private System.Windows.Forms.Label lblEntree4;
+        private System.Windows.Forms.PictureBox pbxEntree4;
+        private System.Windows.Forms.RadioButton radApp4;
+        private System.Windows.Forms.Label lblApp4;
+        private System.Windows.Forms.PictureBox pbxApp4;
     }
 }

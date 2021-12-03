@@ -38,12 +38,92 @@ namespace GuiMockups
 
         private void btnUpdateInfo_Click(object sender, EventArgs e)
         {
-            //updates customer information
-            ProgOps.updateCustomerInfo(tbxFirstName.Text, tbxLastName.Text, tbxAddress.Text, tbxCity.Text, tbxState.Text, tbxZip.Text, tbxPhone.Text, tbxEmail.Text);
+            
+
+            bool isFirstCharLetter = false, isSecondCharAlphaNum = false,
+                    isAtSymbolPresent = false, spacesInEmail = false;
+            bool validEmail = false;
+            int countAt = 0, countPeriod = 0;
+
+            try
+            {
+                if (tbxFirstName.Text.Trim() == "" || tbxLastName.Text.Trim() == "" ||
+                tbxAddress.Text.Trim() == "" || tbxCity.Text.Trim() == "" || tbxState.Text.Trim() == "" ||
+                tbxZip.Text.Trim() == "" || tbxPhone.Text.Trim() == "" || tbxEmail.Text.Trim() == "")
+                {
+                    MessageBox.Show("Please fill out all fields in personal information", "Warning - Personal information empty fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                for (int i = 0; i < tbxEmail.Text.Length; i++)
+                {
+
+                    if (i == 0 && char.IsLetter(tbxEmail.Text[i]))
+                    {
+                        isFirstCharLetter = true;
+                    }
+                    if (i == 1 && char.IsLetterOrDigit(tbxEmail.Text[i]))
+                    {
+                        isSecondCharAlphaNum = true;
+                    }
+                    if (tbxEmail.Text[i] == '@')
+                    {
+                        isAtSymbolPresent = true;
+                        countAt++;
+                    }
+                    if (countAt >= 2)
+                    {
+                        isAtSymbolPresent = false;
+                    }
+                    if (tbxEmail.Text[i] == ' ')
+                    {
+                        spacesInEmail = true;
+                    }
+
+                    if (i == tbxEmail.Text.Length - 1)
+                    {
+                        if (isFirstCharLetter && isSecondCharAlphaNum && isAtSymbolPresent && !(spacesInEmail))
+                        {
+                            //updates customer information
+
+                            ProgOps.updateCustomerInfo(tbxFirstName.Text, tbxLastName.Text, tbxAddress.Text, tbxCity.Text, tbxState.Text, tbxZip.Text, tbxPhone.Text, tbxEmail.Text);
+                            MessageBox.Show("Account Updated Successfully", "Account Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else if (!isFirstCharLetter)
+                        {
+                            MessageBox.Show("First character must be a letter", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (!isSecondCharAlphaNum)
+                        {
+                            MessageBox.Show("Second character should be a letter/Number", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (!isAtSymbolPresent)
+                        {
+                            MessageBox.Show("Only allow one @ symbol in email", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (spacesInEmail)
+                        {
+                            MessageBox.Show("Email cant contain spaces", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
 
         private void btnUpdateLogin_Click(object sender, EventArgs e)
         {
+            if (tbxUserName.Text.Trim() == "" || tbxPassword.Text.Trim() == "")
+            {
+                MessageBox.Show("Please fill out all fields in login information", "Warning - Login information empty fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             //update customer login information
             ProgOps.updateCustomerLogin(tbxUserName.Text, tbxPassword.Text);
         }
