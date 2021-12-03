@@ -21,6 +21,7 @@ namespace GuiMockups
         public static List<string> EmpPass = new List<string>();
         public static List<string> EmpIsManager = new List<string>();
         public static List<string> custID = new List<string>();
+        public static List<string> employID = new List<string>();
         public frmLogin()
         {
             InitializeComponent();
@@ -129,8 +130,10 @@ namespace GuiMockups
                 int listEmailHash = EmpEmails[i].GetHashCode();
                 int listPassHash = EmpPass[i].GetHashCode();
                 string isManager = EmpIsManager[i];
+                string employeeID = employID[i];
                 if (emailHash == listEmailHash && passHash == listPassHash)
                 {
+                    ProgOps.EmpID = employeeID;
                     ProgOps.Manager = isManager;
                     empLogin = true;
                 }

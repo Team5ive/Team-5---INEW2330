@@ -28,168 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbxSuppliesInfo = new System.Windows.Forms.GroupBox();
             this.lbxQuantity = new System.Windows.Forms.ListBox();
-            this.lbxItems = new System.Windows.Forms.ListBox();
-            this.lblQty = new System.Windows.Forms.Label();
-            this.lblItems = new System.Windows.Forms.Label();
-            this.gbxSuppliesControl = new System.Windows.Forms.GroupBox();
-            this.btnPlaceOrder = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.tbxEmployeeID = new System.Windows.Forms.TextBox();
-            this.tbxEmployeeName = new System.Windows.Forms.TextBox();
-            this.lblEmployeeID = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lbxCart = new System.Windows.Forms.ListBox();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblCart = new System.Windows.Forms.Label();
             this.lblTables = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblSupplies = new System.Windows.Forms.Label();
-            this.lblBorder2 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRemoveSupply = new System.Windows.Forms.Button();
-            this.btnEditQty = new System.Windows.Forms.Button();
-            this.gbxSuppliesInfo.SuspendLayout();
-            this.gbxSuppliesControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvSupplies = new System.Windows.Forms.DataGridView();
+            this.lblOnHandPrompt = new System.Windows.Forms.Label();
+            this.lblToOrderPrompt = new System.Windows.Forms.Label();
+            this.lblOnHand = new System.Windows.Forms.Label();
+            this.btnAddCart = new System.Windows.Forms.Button();
+            this.lblTotalPrompt = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.lblTaxPrompt = new System.Windows.Forms.Label();
+            this.lblSubtotalPrompt = new System.Windows.Forms.Label();
+            this.cbxQuantity = new System.Windows.Forms.ComboBox();
+            this.lblProductPrompt = new System.Windows.Forms.Label();
+            this.lblProductName = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblLowerSeparator = new System.Windows.Forms.Label();
+            this.lblUpperSeparator = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplies)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gbxSuppliesInfo
-            // 
-            this.gbxSuppliesInfo.Controls.Add(this.lbxQuantity);
-            this.gbxSuppliesInfo.Controls.Add(this.lbxItems);
-            this.gbxSuppliesInfo.Controls.Add(this.lblQty);
-            this.gbxSuppliesInfo.Controls.Add(this.lblItems);
-            this.gbxSuppliesInfo.Location = new System.Drawing.Point(2, 314);
-            this.gbxSuppliesInfo.Name = "gbxSuppliesInfo";
-            this.gbxSuppliesInfo.Size = new System.Drawing.Size(516, 267);
-            this.gbxSuppliesInfo.TabIndex = 5;
-            this.gbxSuppliesInfo.TabStop = false;
             // 
             // lbxQuantity
             // 
             this.lbxQuantity.FormattingEnabled = true;
-            this.lbxQuantity.ItemHeight = 25;
-            this.lbxQuantity.Location = new System.Drawing.Point(391, 24);
+            this.lbxQuantity.ItemHeight = 20;
+            this.lbxQuantity.Location = new System.Drawing.Point(420, 272);
             this.lbxQuantity.Name = "lbxQuantity";
-            this.lbxQuantity.Size = new System.Drawing.Size(122, 229);
+            this.lbxQuantity.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.lbxQuantity.Size = new System.Drawing.Size(122, 224);
             this.lbxQuantity.TabIndex = 1;
             // 
-            // lbxItems
+            // lbxCart
             // 
-            this.lbxItems.FormattingEnabled = true;
-            this.lbxItems.ItemHeight = 25;
-            this.lbxItems.Location = new System.Drawing.Point(0, 24);
-            this.lbxItems.Name = "lbxItems";
-            this.lbxItems.Size = new System.Drawing.Size(392, 229);
-            this.lbxItems.TabIndex = 1;
+            this.lbxCart.FormattingEnabled = true;
+            this.lbxCart.ItemHeight = 20;
+            this.lbxCart.Location = new System.Drawing.Point(-1, 272);
+            this.lbxCart.Name = "lbxCart";
+            this.lbxCart.Size = new System.Drawing.Size(415, 224);
+            this.lbxCart.TabIndex = 1;
             // 
-            // lblQty
+            // lblQuantity
             // 
-            this.lblQty.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblQty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblQty.Location = new System.Drawing.Point(391, 0);
-            this.lblQty.Name = "lblQty";
-            this.lblQty.Size = new System.Drawing.Size(122, 25);
-            this.lblQty.TabIndex = 0;
-            this.lblQty.Text = "Quantity";
-            this.lblQty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblQuantity.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblQuantity.Location = new System.Drawing.Point(420, 244);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(122, 25);
+            this.lblQuantity.TabIndex = 0;
+            this.lblQuantity.Text = "Quantity";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblItems
+            // lblCart
             // 
-            this.lblItems.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblItems.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblItems.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblItems.Location = new System.Drawing.Point(0, 0);
-            this.lblItems.Name = "lblItems";
-            this.lblItems.Size = new System.Drawing.Size(392, 25);
-            this.lblItems.TabIndex = 0;
-            this.lblItems.Text = "Item";
-            this.lblItems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gbxSuppliesControl
-            // 
-            this.gbxSuppliesControl.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.gbxSuppliesControl.Controls.Add(this.btnPlaceOrder);
-            this.gbxSuppliesControl.Controls.Add(this.button1);
-            this.gbxSuppliesControl.Controls.Add(this.btnClear);
-            this.gbxSuppliesControl.Controls.Add(this.tbxEmployeeID);
-            this.gbxSuppliesControl.Controls.Add(this.tbxEmployeeName);
-            this.gbxSuppliesControl.Controls.Add(this.lblEmployeeID);
-            this.gbxSuppliesControl.Controls.Add(this.lblCustomerName);
-            this.gbxSuppliesControl.Location = new System.Drawing.Point(565, 314);
-            this.gbxSuppliesControl.Name = "gbxSuppliesControl";
-            this.gbxSuppliesControl.Size = new System.Drawing.Size(471, 267);
-            this.gbxSuppliesControl.TabIndex = 6;
-            this.gbxSuppliesControl.TabStop = false;
-            // 
-            // btnPlaceOrder
-            // 
-            this.btnPlaceOrder.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnPlaceOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnPlaceOrder.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnPlaceOrder.Location = new System.Drawing.Point(13, 224);
-            this.btnPlaceOrder.Name = "btnPlaceOrder";
-            this.btnPlaceOrder.Size = new System.Drawing.Size(103, 31);
-            this.btnPlaceOrder.TabIndex = 2;
-            this.btnPlaceOrder.Text = "Place Order";
-            this.btnPlaceOrder.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button1.Location = new System.Drawing.Point(133, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "REMOVE FROM ORDER";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClear.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnClear.Location = new System.Drawing.Point(362, 224);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(103, 31);
-            this.btnClear.TabIndex = 2;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
-            // tbxEmployeeID
-            // 
-            this.tbxEmployeeID.Location = new System.Drawing.Point(13, 141);
-            this.tbxEmployeeID.Name = "tbxEmployeeID";
-            this.tbxEmployeeID.Size = new System.Drawing.Size(260, 30);
-            this.tbxEmployeeID.TabIndex = 1;
-            // 
-            // tbxEmployeeName
-            // 
-            this.tbxEmployeeName.Location = new System.Drawing.Point(13, 62);
-            this.tbxEmployeeName.Name = "tbxEmployeeName";
-            this.tbxEmployeeName.Size = new System.Drawing.Size(260, 30);
-            this.tbxEmployeeName.TabIndex = 1;
-            // 
-            // lblEmployeeID
-            // 
-            this.lblEmployeeID.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblEmployeeID.Location = new System.Drawing.Point(9, 105);
-            this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(125, 20);
-            this.lblEmployeeID.TabIndex = 0;
-            this.lblEmployeeID.Text = "Employee ID";
-            // 
-            // lblCustomerName
-            // 
-            this.lblCustomerName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblCustomerName.Location = new System.Drawing.Point(9, 26);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(134, 20);
-            this.lblCustomerName.TabIndex = 0;
-            this.lblCustomerName.Text = "Employee Name";
+            this.lblCart.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblCart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCart.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblCart.Location = new System.Drawing.Point(-1, 244);
+            this.lblCart.Name = "lblCart";
+            this.lblCart.Size = new System.Drawing.Size(415, 25);
+            this.lblCart.TabIndex = 0;
+            this.lblCart.Text = "Cart";
+            this.lblCart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTables
             // 
@@ -198,128 +106,291 @@
             this.lblTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTables.Location = new System.Drawing.Point(-1, -1);
             this.lblTables.Name = "lblTables";
-            this.lblTables.Size = new System.Drawing.Size(1111, 32);
+            this.lblTables.Size = new System.Drawing.Size(543, 32);
             this.lblTables.TabIndex = 7;
-            this.lblTables.Text = "Supplies";
+            this.lblTables.Text = "Supplies Inventory";
             this.lblTables.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // dataGridView1
+            // dgvSupplies
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1104, 207);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvSupplies.AllowUserToAddRows = false;
+            this.dgvSupplies.AllowUserToDeleteRows = false;
+            this.dgvSupplies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSupplies.Location = new System.Drawing.Point(-1, 34);
+            this.dgvSupplies.Name = "dgvSupplies";
+            this.dgvSupplies.ReadOnly = true;
+            this.dgvSupplies.RowHeadersWidth = 51;
+            this.dgvSupplies.Size = new System.Drawing.Size(543, 207);
+            this.dgvSupplies.TabIndex = 8;
+            this.dgvSupplies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplies_CellClick);
             // 
-            // lblSupplies
+            // lblOnHandPrompt
             // 
-            this.lblSupplies.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblSupplies.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblSupplies.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplies.Location = new System.Drawing.Point(-1, 281);
-            this.lblSupplies.Name = "lblSupplies";
-            this.lblSupplies.Size = new System.Drawing.Size(1111, 32);
-            this.lblSupplies.TabIndex = 7;
-            this.lblSupplies.Text = "Supplies                                                                         " +
-    "                                                    Employee Information";
-            this.lblSupplies.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblOnHandPrompt.Location = new System.Drawing.Point(570, 98);
+            this.lblOnHandPrompt.Name = "lblOnHandPrompt";
+            this.lblOnHandPrompt.Size = new System.Drawing.Size(140, 29);
+            this.lblOnHandPrompt.TabIndex = 9;
+            this.lblOnHandPrompt.Text = "Quantity On-hand:";
+            this.lblOnHandPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblBorder2
+            // lblToOrderPrompt
             // 
-            this.lblBorder2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblBorder2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBorder2.Location = new System.Drawing.Point(549, 312);
-            this.lblBorder2.Name = "lblBorder2";
-            this.lblBorder2.Size = new System.Drawing.Size(10, 272);
-            this.lblBorder2.TabIndex = 9;
+            this.lblToOrderPrompt.Location = new System.Drawing.Point(570, 142);
+            this.lblToOrderPrompt.Name = "lblToOrderPrompt";
+            this.lblToOrderPrompt.Size = new System.Drawing.Size(140, 29);
+            this.lblToOrderPrompt.TabIndex = 10;
+            this.lblToOrderPrompt.Text = "Quantity to order:";
+            this.lblToOrderPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnAdd
+            // lblOnHand
             // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAdd.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdd.Location = new System.Drawing.Point(2, 246);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(124, 31);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add To Order";
-            this.btnAdd.UseVisualStyleBackColor = false;
+            this.lblOnHand.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblOnHand.Location = new System.Drawing.Point(716, 98);
+            this.lblOnHand.Name = "lblOnHand";
+            this.lblOnHand.Size = new System.Drawing.Size(151, 29);
+            this.lblOnHand.TabIndex = 11;
+            this.lblOnHand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnRemoveSupply
+            // btnAddCart
             // 
-            this.btnRemoveSupply.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnRemoveSupply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRemoveSupply.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnRemoveSupply.Location = new System.Drawing.Point(132, 246);
-            this.btnRemoveSupply.Name = "btnRemoveSupply";
-            this.btnRemoveSupply.Size = new System.Drawing.Size(124, 31);
-            this.btnRemoveSupply.TabIndex = 2;
-            this.btnRemoveSupply.Text = "Remove";
-            this.btnRemoveSupply.UseVisualStyleBackColor = false;
+            this.btnAddCart.Location = new System.Drawing.Point(751, 190);
+            this.btnAddCart.Name = "btnAddCart";
+            this.btnAddCart.Size = new System.Drawing.Size(116, 35);
+            this.btnAddCart.TabIndex = 13;
+            this.btnAddCart.Text = "Add to cart";
+            this.btnAddCart.UseVisualStyleBackColor = true;
+            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
             // 
-            // btnEditQty
+            // lblTotalPrompt
             // 
-            this.btnEditQty.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnEditQty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEditQty.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnEditQty.Location = new System.Drawing.Point(262, 246);
-            this.btnEditQty.Name = "btnEditQty";
-            this.btnEditQty.Size = new System.Drawing.Size(141, 31);
-            this.btnEditQty.TabIndex = 2;
-            this.btnEditQty.Text = "Update Quantity";
-            this.btnEditQty.UseVisualStyleBackColor = false;
+            this.lblTotalPrompt.Location = new System.Drawing.Point(669, 363);
+            this.lblTotalPrompt.Name = "lblTotalPrompt";
+            this.lblTotalPrompt.Size = new System.Drawing.Size(76, 29);
+            this.lblTotalPrompt.TabIndex = 14;
+            this.lblTotalPrompt.Text = "Total:";
+            this.lblTotalPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Supplies
+            // btnRemove
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.btnRemove.Location = new System.Drawing.Point(548, 287);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(100, 54);
+            this.btnRemove.TabIndex = 16;
+            this.btnRemove.Text = "Remove Item";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(548, 442);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(100, 54);
+            this.btnSubmit.TabIndex = 17;
+            this.btnSubmit.Text = "Submit Order";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnClearAll
+            // 
+            this.btnClearAll.Location = new System.Drawing.Point(548, 364);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(100, 54);
+            this.btnClearAll.TabIndex = 18;
+            this.btnClearAll.Text = "Clear All";
+            this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
+            // 
+            // lblTaxPrompt
+            // 
+            this.lblTaxPrompt.Location = new System.Drawing.Point(669, 325);
+            this.lblTaxPrompt.Name = "lblTaxPrompt";
+            this.lblTaxPrompt.Size = new System.Drawing.Size(76, 29);
+            this.lblTaxPrompt.TabIndex = 19;
+            this.lblTaxPrompt.Text = "Tax:";
+            this.lblTaxPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblSubtotalPrompt
+            // 
+            this.lblSubtotalPrompt.Location = new System.Drawing.Point(669, 287);
+            this.lblSubtotalPrompt.Name = "lblSubtotalPrompt";
+            this.lblSubtotalPrompt.Size = new System.Drawing.Size(76, 29);
+            this.lblSubtotalPrompt.TabIndex = 20;
+            this.lblSubtotalPrompt.Text = "Subtotal:";
+            this.lblSubtotalPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cbxQuantity
+            // 
+            this.cbxQuantity.FormattingEnabled = true;
+            this.cbxQuantity.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cbxQuantity.Location = new System.Drawing.Point(716, 143);
+            this.cbxQuantity.Name = "cbxQuantity";
+            this.cbxQuantity.Size = new System.Drawing.Size(151, 28);
+            this.cbxQuantity.TabIndex = 21;
+            // 
+            // lblProductPrompt
+            // 
+            this.lblProductPrompt.Location = new System.Drawing.Point(570, 54);
+            this.lblProductPrompt.Name = "lblProductPrompt";
+            this.lblProductPrompt.Size = new System.Drawing.Size(140, 29);
+            this.lblProductPrompt.TabIndex = 22;
+            this.lblProductPrompt.Text = "Product:";
+            this.lblProductPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblProductName
+            // 
+            this.lblProductName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblProductName.Location = new System.Drawing.Point(716, 54);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(151, 29);
+            this.lblProductName.TabIndex = 23;
+            this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(767, 442);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 54);
+            this.btnClose.TabIndex = 24;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblLowerSeparator
+            // 
+            this.lblLowerSeparator.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblLowerSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblLowerSeparator.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblLowerSeparator.Location = new System.Drawing.Point(548, 244);
+            this.lblLowerSeparator.Name = "lblLowerSeparator";
+            this.lblLowerSeparator.Size = new System.Drawing.Size(345, 25);
+            this.lblLowerSeparator.TabIndex = 25;
+            this.lblLowerSeparator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblUpperSeparator
+            // 
+            this.lblUpperSeparator.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblUpperSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblUpperSeparator.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpperSeparator.Location = new System.Drawing.Point(548, -1);
+            this.lblUpperSeparator.Name = "lblUpperSeparator";
+            this.lblUpperSeparator.Size = new System.Drawing.Size(345, 32);
+            this.lblUpperSeparator.TabIndex = 26;
+            this.lblUpperSeparator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSubtotal.Location = new System.Drawing.Point(751, 287);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(116, 29);
+            this.lblSubtotal.TabIndex = 27;
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTax
+            // 
+            this.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTax.Location = new System.Drawing.Point(751, 325);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(116, 29);
+            this.lblTax.TabIndex = 28;
+            this.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTotal.Location = new System.Drawing.Point(751, 363);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(116, 29);
+            this.lblTotal.TabIndex = 29;
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // frmSupplies
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1108, 583);
-            this.Controls.Add(this.btnEditQty);
-            this.Controls.Add(this.btnRemoveSupply);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.lblBorder2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblSupplies);
+            this.ClientSize = new System.Drawing.Size(888, 505);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblTax);
+            this.Controls.Add(this.lblSubtotal);
+            this.Controls.Add(this.lblUpperSeparator);
+            this.Controls.Add(this.lblLowerSeparator);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.lblProductName);
+            this.Controls.Add(this.lblProductPrompt);
+            this.Controls.Add(this.cbxQuantity);
+            this.Controls.Add(this.lblSubtotalPrompt);
+            this.Controls.Add(this.lblTaxPrompt);
+            this.Controls.Add(this.btnClearAll);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.lblTotalPrompt);
+            this.Controls.Add(this.btnAddCart);
+            this.Controls.Add(this.lblOnHand);
+            this.Controls.Add(this.lblToOrderPrompt);
+            this.Controls.Add(this.lblOnHandPrompt);
+            this.Controls.Add(this.lbxQuantity);
+            this.Controls.Add(this.dgvSupplies);
+            this.Controls.Add(this.lbxCart);
+            this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.lblTables);
-            this.Controls.Add(this.gbxSuppliesControl);
-            this.Controls.Add(this.gbxSuppliesInfo);
+            this.Controls.Add(this.lblCart);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Supplies";
+            this.Name = "frmSupplies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Supplies View";
             this.Load += new System.EventHandler(this.Supplies_Load);
-            this.gbxSuppliesInfo.ResumeLayout(false);
-            this.gbxSuppliesControl.ResumeLayout(false);
-            this.gbxSuppliesControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplies)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox gbxSuppliesInfo;
         private System.Windows.Forms.ListBox lbxQuantity;
-        private System.Windows.Forms.ListBox lbxItems;
-        private System.Windows.Forms.Label lblQty;
-        private System.Windows.Forms.Label lblItems;
-        private System.Windows.Forms.GroupBox gbxSuppliesControl;
-        private System.Windows.Forms.Button btnPlaceOrder;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.TextBox tbxEmployeeName;
-        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.ListBox lbxCart;
+        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblCart;
         private System.Windows.Forms.Label lblTables;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lblSupplies;
-        private System.Windows.Forms.TextBox tbxEmployeeID;
-        private System.Windows.Forms.Label lblEmployeeID;
-        private System.Windows.Forms.Label lblBorder2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnRemoveSupply;
-        private System.Windows.Forms.Button btnEditQty;
+        private System.Windows.Forms.DataGridView dgvSupplies;
+        private System.Windows.Forms.Label lblOnHandPrompt;
+        private System.Windows.Forms.Label lblToOrderPrompt;
+        private System.Windows.Forms.Label lblOnHand;
+        private System.Windows.Forms.Button btnAddCart;
+        private System.Windows.Forms.Label lblTotalPrompt;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnClearAll;
+        private System.Windows.Forms.Label lblTaxPrompt;
+        private System.Windows.Forms.Label lblSubtotalPrompt;
+        private System.Windows.Forms.ComboBox cbxQuantity;
+        private System.Windows.Forms.Label lblProductPrompt;
+        private System.Windows.Forms.Label lblProductName;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblLowerSeparator;
+        private System.Windows.Forms.Label lblUpperSeparator;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label lblTax;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

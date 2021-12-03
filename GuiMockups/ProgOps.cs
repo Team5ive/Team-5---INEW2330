@@ -49,6 +49,8 @@ namespace GuiMockups
 
         private static List<string> _pricePerUnit = new List<string>();
         private static List<string> _totalPriceLine = new List<string>();
+
+
         //added for OrderDetails // added menuID
         private static List<string> _menu_ID = new List<string>();
         public static double subTotal = 0;
@@ -275,6 +277,36 @@ namespace GuiMockups
             return OrderIDCurrent;
         }
 
+        public static int ReadCurrentInvoiceID()
+        {
+            int invoiceIDCurrent = 0;
+            try
+            {
+                string queryString = "SELECT MAX(InvoiceID) FROM group5fa212330.Invoices";
+                //create update command
+                SqlCommand _sqlInvoiceCommand = new SqlCommand(queryString, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlInvoiceCommand.ExecuteReader();
+
+                // Call Read before accessing data. 
+                if (read.HasRows)
+                {
+                    read.Read();
+                    invoiceIDCurrent = read.GetInt32(0);
+                }
+
+                // Call Close when done reading.
+                read.Close();
+
+                _sqlInvoiceCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return invoiceIDCurrent;
+        }
+
         public static void checkOutOrder(string date, string orderIdentification)
         {
             try
@@ -308,6 +340,37 @@ namespace GuiMockups
             {
                 MessageBox.Show(ex.Message, "Error submitting orders/order", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } 
+        }
+        public static void submitSuppliesOrder(string date, string invoiceIdent, double sub)
+        {
+            try
+            {
+                // Invoices: InvoiceID Employee_ID, OrderDate, TotalCost
+                string querySuppliesOrder = "INSERT INTO group5fa212330.Invoices Values(" + _empID + ", '" + date + "', " + sub + ");";
+                // create update command
+                SqlCommand _sqlInsertSuppliesOrderCommand = new SqlCommand(querySuppliesOrder, _cntDatabase);
+                // update command
+                _sqlInsertSuppliesOrderCommand.ExecuteNonQuery();
+
+                for (int i = 0; i < frmSupplies.items.Count; i++)
+                {
+                    // InvoiceDetails: InvoiceID, SupplierID, ProductID, QTY
+                    string querySuppliesOrderDetails = "INSERT INTO group5fa212330.InvoiceDetails Values(" + invoiceIdent + ", " + frmSupplies.supID[i] + ", " + frmSupplies.prodID[i] + ", " + frmSupplies.quantites[i] + " );";
+                    // create update command
+                    SqlCommand _sqlInsertSuppliesDetailsCommand = new SqlCommand(querySuppliesOrderDetails, _cntDatabase);
+                    // update command
+                    _sqlInsertSuppliesDetailsCommand.ExecuteNonQuery();
+                    _sqlInsertSuppliesDetailsCommand.Dispose();
+                }
+
+                _sqlInsertSuppliesOrderCommand.Dispose();
+                MessageBox.Show("Order Submitted!");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error submitting orders/order", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         
@@ -669,7 +732,7 @@ namespace GuiMockups
             try
             {
                 //grabs all values from employees table
-                string query = "SELECT Email, UserName, Password, isManager FROM group5fa212330.Employees";
+                string query = "SELECT Email, UserName, Password, isManager, Employee_ID FROM group5fa212330.Employees";
                 //create update command
                 SqlCommand _sqlEmpCommand = new SqlCommand(query, _cntDatabase);
                 //initializes reader
@@ -683,6 +746,9 @@ namespace GuiMockups
                     frmLogin.EmpPass.Add((read["Password"].ToString()));
                     frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
                     frmLogin.EmpIsManager.Add((read["isManager"].ToString()));
+                    frmLogin.employID.Add((read["Employee_ID"].ToString()));
+                    frmLogin.employID.Add((read["Employee_ID"].ToString()));
+
 
                 }
                 //closes the reader
@@ -791,6 +857,44 @@ namespace GuiMockups
             _daOrders.Dispose();
             _dtOrdersTable.Dispose();
         }
+
+        public static void DatabaseCommandSupplies(DataGridView dgvSupplies)
+        {
+            //set command object to null
+            SqlCommand _sqlSuppliesCommand = null;
+            //reset data adapter and data table to new
+            SqlDataAdapter _daSupplies = new SqlDataAdapter();
+            DataTable _dtSuppliesTable = new DataTable();
+
+            try
+            {
+                string query = "SELECT p.ProductID AS 'P. ID', ProductName AS 'Product', " +
+                    "UnitPrice AS 'Price Per', Qty AS 'Quantity', s.SupplierID AS 'S. ID', " +
+                    "SupplierName AS 'Supplier', Address AS 'S. Address', Phone AS 'S. Phone' " +
+                    "from group5fa212330.ProductSupplier ps " +
+                    "join group5fa212330.Products p ON ps.ProductID = p.ProductID " +
+                    "join group5fa212330.Suppliers s ON s.SupplierID = ps.SupplierID " +
+                    "ORDER BY p.ProductID;";
+                //est command object
+                _sqlSuppliesCommand = new SqlCommand(query, _cntDatabase);
+                //est data adapter
+                _daSupplies.SelectCommand = _sqlSuppliesCommand;
+                //fill data table
+                _daSupplies.Fill(_dtSuppliesTable);
+                //bind dgvSupplies to data table
+                dgvSupplies.DataSource = _dtSuppliesTable;
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in filling Orders Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //dispose
+            _sqlSuppliesCommand.Dispose();
+            _daSupplies.Dispose();
+            _dtSuppliesTable.Dispose();
+        }
+
         public static void GetOrderName(int custId)
         {
             try
