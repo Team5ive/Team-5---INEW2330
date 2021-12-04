@@ -192,6 +192,28 @@ namespace GuiMockups
                 dv2.Rows[rowId].Cells[4].Value = Total_Price_Per_Line[i].ToString();
             }
         }
+        public static void EditCustomerReservations(string reservationID, string reservedDate, string tableNum)
+        {
+            try
+            {
+                //Reservation_ID, Customer_ID, ReserveDate, TableNumber
+                string sqlStatement = "UPDATE group5fa212330.Reservations " + "SET ReserveDate = '" + reservedDate
+                    + "', TableNumber = " + tableNum + " Where Reservation_ID = " + reservationID;
+
+                //create update command
+                SqlCommand _sqlEditReservationCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //update command
+                _sqlEditReservationCommand.ExecuteNonQuery();
+                //dispose
+                _sqlEditReservationCommand.Dispose();
+                MessageBox.Show("Information has been Updated!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in Updating your information.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public static void DeleteReservation(string reservationID)
         {
 
@@ -217,7 +239,7 @@ namespace GuiMockups
             {
 
                 //statement for the DGV              
-                string sqlStatement = "SELECT Reservation_ID, Customer_ID, Cust_FName, Cust_LName, ReserveDate, TableNumber From group5fa212330.Reservations r join group5fa212330.Customers c ON r.Customer_ID = c.Cust_ID";
+                string sqlStatement = "SELECT Reservation_ID, Customer_ID, Cust_FName, Cust_LName, ReserveDate, TableNumber From group5fa212330.Reservations r join group5fa212330.Customers c ON r.Customer_ID = c.Cust_ID Where ReserveDate >= GETDATE();";
                 
                 //set command object to null
                 SqlCommand _sqlReservationsCommand = null;
@@ -446,6 +468,7 @@ namespace GuiMockups
                 while (read.Read())
                 {
                     frmReservations.bookedTables.Add(read["TableNumber"].ToString());
+                    frmEditReservations.tablesBooked.Add(read["TableNumber"].ToString());
                 }
                 //closes the reader
                 read.Close();
