@@ -37,7 +37,6 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblMsgTimes = new System.Windows.Forms.Label();
             this.lblColor2 = new System.Windows.Forms.Label();
-            this.lblHoursOp = new System.Windows.Forms.Label();
             this.calReservationDate = new System.Windows.Forms.MonthCalendar();
             this.cbxPartySize = new System.Windows.Forms.ComboBox();
             this.lblMsgTable = new System.Windows.Forms.Label();
@@ -136,20 +135,9 @@
             this.lblColor2.Size = new System.Drawing.Size(438, 373);
             this.lblColor2.TabIndex = 45;
             // 
-            // lblHoursOp
-            // 
-            this.lblHoursOp.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoursOp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.lblHoursOp.Location = new System.Drawing.Point(38, 59);
-            this.lblHoursOp.Name = "lblHoursOp";
-            this.lblHoursOp.Size = new System.Drawing.Size(175, 95);
-            this.lblHoursOp.TabIndex = 44;
-            this.lblHoursOp.Text = "Hours Of Operation: \r\nTues.-wed. 5pm-11pm﻿\r\nThurs. 5pm-12am\r\nFri.-Sat. 5pm-2am﻿\r\n" +
-    "Closed Sun.-Mon.";
-            // 
             // calReservationDate
             // 
-            this.calReservationDate.Location = new System.Drawing.Point(42, 173);
+            this.calReservationDate.Location = new System.Drawing.Point(41, 137);
             this.calReservationDate.Name = "calReservationDate";
             this.calReservationDate.TabIndex = 43;
             // 
@@ -189,11 +177,10 @@
             // 
             this.cbxTimes.FormattingEnabled = true;
             this.cbxTimes.Items.AddRange(new object[] {
-            "11:00am",
-            "2:00pm",
-            "5:00pm",
-            "8:00pm",
-            "11:00pm"});
+            "12:00pm",
+            "3:00pm",
+            "6:00pm",
+            "9:00pm"});
             this.cbxTimes.Location = new System.Drawing.Point(487, 168);
             this.cbxTimes.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTimes.Name = "cbxTimes";
@@ -217,7 +204,6 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblMsgTimes);
             this.Controls.Add(this.lblColor2);
-            this.Controls.Add(this.lblHoursOp);
             this.Controls.Add(this.calReservationDate);
             this.Name = "frmReservations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -238,7 +224,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblMsgTimes;
         private System.Windows.Forms.Label lblColor2;
-        private System.Windows.Forms.Label lblHoursOp;
         private System.Windows.Forms.MonthCalendar calReservationDate;
         private System.Windows.Forms.ComboBox cbxPartySize;
         private System.Windows.Forms.Label lblMsgTable;

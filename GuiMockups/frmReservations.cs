@@ -85,36 +85,45 @@ namespace GuiMockups
                 MessageBox.Show("Please Select Reservation time.", "No Time Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            //clear list.
-            bookedTables.Clear();
-            //fill bookedTables list 
-            ProgOps.pullBookedTables(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"));
-            //fill availableTables list
-            createList();
-            string strTime = cbxTimes.Text;
-            DateTime convertTime = DateTime.Parse(strTime);
+            DateTime todaysDate = DateTime.Now;
+            DateTime selectedDate = calReservationDate.SelectionStart.Date;
+            if (selectedDate > todaysDate)
+            {
+                //clear list.
+                bookedTables.Clear();
+                //fill bookedTables list 
+                ProgOps.pullBookedTables(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"));
+                //fill availableTables list
+                createList();
+                string strTime = cbxTimes.Text;
+                DateTime convertTime = DateTime.Parse(strTime);
 
-            //party size less than 4 and bookedTable list less than 10 means tables are available 
-            if (Int32.Parse(cbxPartySize.Text) <= 4 && bookedTables.Count < 10)
-            {
-                // book tables(date, time, table)
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
-            }
-            else if (Int32.Parse(cbxPartySize.Text) >= 4 && bookedTables.Count < 9)
-            {
-                //book tables(date, time, table)
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
-                ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[1]);
+                //party size less than 4 and bookedTable list less than 10 means tables are available 
+                if (Int32.Parse(cbxPartySize.Text) <= 4 && bookedTables.Count < 10)
+                {
+                    // book tables(date, time, table)
+                    ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
+                }
+                else if (Int32.Parse(cbxPartySize.Text) >= 4 && bookedTables.Count < 9)
+                {
+                    //book tables(date, time, table)
+                    ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[0]);
+                    ProgOps.bookReservation(calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd"), convertTime.ToString("HH:mm"), availableTables[1]);
+                }
+                else
+                {
+                    //no available tables at specified time
+                    MessageBox.Show("No tables available during the time slot selected", "Booked", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cbxTimes.SelectedIndex = -1;
+                    return;
+                }
+                MessageBox.Show("Your Request for " + calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd") + " at " + strTime + " has been reserved!", "Reserved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                //no available tables at specified time
-                MessageBox.Show("No tables available during the time slot selected", "Booked", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cbxTimes.SelectedIndex = -1;
+                MessageBox.Show("Reservation only available as early as tomorrow", "Unable to process reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            MessageBox.Show("Your Request for " + calReservationDate.SelectionStart.Date.ToString("yyyy-MM-dd") + " at " + strTime + " has been reserved!", "Reserved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        
     }
 
         private void btnClose_Click(object sender, EventArgs e)

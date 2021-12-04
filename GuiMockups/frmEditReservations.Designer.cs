@@ -281,18 +281,10 @@ namespace GuiMockups
             // 
             this.cbxHour.FormattingEnabled = true;
             this.cbxHour.Items.AddRange(new object[] {
-            "1",
-            "2",
+            "12",
             "3",
-            "4",
-            "5",
             "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
+            "9"});
             this.cbxHour.Location = new System.Drawing.Point(726, 223);
             this.cbxHour.Name = "cbxHour";
             this.cbxHour.Size = new System.Drawing.Size(52, 21);

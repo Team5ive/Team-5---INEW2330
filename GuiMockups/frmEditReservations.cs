@@ -115,29 +115,52 @@ namespace GuiMockups
                 MessageBox.Show("All fields must be filled", "Empty Fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            string addTime = " ";
             //clear list.
             tablesBooked.Clear();
-            
-
+            //concatenate strings
             string justDate = "";
-            justDate = cbxYear.Text + "-" + cbxMonth.Text + "-" + cbxDay.Text; 
-            string addTime = " " + (int.Parse(cbxHour.Text) + 12) + ":00";
-            string updatedDateTime = justDate + addTime;
-
-            //fill bookedTables list 
-            ProgOps.pullBookedTables(justDate);
-            //fill availableTables list
-            createList();
-
-            if (tablesBooked.Count < 10)
+            justDate = cbxYear.Text + "-" + cbxMonth.Text + "-" + cbxDay.Text;
+            if (Int32.Parse(cbxHour.Text) != 12)
             {
-                // edit/update reservation
-                ProgOps.EditCustomerReservations(tbxReserveID.Text, updatedDateTime, availableTables[0]);
-                //fill data grid view
-                ProgOps.ReservationCommand(dgvReservations);
+                addTime = " " + (int.Parse(cbxHour.Text) + 12) + ":00";
             }
-            
+            else
+            {
+                addTime = " " + cbxHour.Text + ":00";
+
+            }
+            string updatedDateTime = justDate + addTime;
+            DateTime todaysDate = DateTime.Now;
+            DateTime selectedDate = DateTime.Parse(justDate);
+            if (selectedDate > todaysDate)
+            {
+                //fill bookedTables list 
+                ProgOps.pullBookedTables(justDate);
+                //fill availableTables list
+                createList();
+
+                if (tablesBooked.Count < 10)
+                {
+                    // edit/update reservation
+                    ProgOps.EditCustomerReservations(tbxReserveID.Text, updatedDateTime, availableTables[0].ToString());
+                    //fill data grid view
+                    ProgOps.ReservationCommand(dgvReservations);
+                }
+                else
+                {
+                    //no available tables at specified time
+                    MessageBox.Show("No tables available during the time slot selected", "Booked", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Reservation only available as early as tomorrow", "Unable to process reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
+            
     }
 }
