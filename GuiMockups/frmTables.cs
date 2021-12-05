@@ -20,7 +20,7 @@ namespace GuiMockups
         public static int tableNum;
         public static bool dineIn;
         public static string customerName;
-
+        public DataGridView orders { get { return this.dgvOrders; } }
         public frmTables()
         {
             InitializeComponent();
@@ -115,6 +115,7 @@ namespace GuiMockups
         private void frmTables_Activated(object sender, EventArgs e)
         {
             ProgOps.GetTablesInfo();
+            dgvOrders.Refresh();
             ProgOps.DatabaseCommandOrders(dgvOrders);
         }
     }

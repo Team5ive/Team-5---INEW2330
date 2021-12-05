@@ -1037,6 +1037,61 @@ namespace GuiMockups
                 string query1 = "DELETE FROM group5fa212330.Order_details WHERE Menu_ID = " + menuId + " AND Order_ID = " + orderId + ";";
                 //create update command
                 SqlCommand _sqlInsertItemCommand = new SqlCommand(query1, _cntDatabase);
+
+                _sqlInsertItemCommand.ExecuteNonQuery();
+
+                //update command
+                _sqlInsertItemCommand.ExecuteNonQuery();
+
+                _sqlInsertItemCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void RefreshOrders()
+        {
+            //set command object to null
+            SqlCommand _sqlOrdersCommand = null;
+            //reset data adapter and data table to new
+            SqlDataAdapter _daOrders = new SqlDataAdapter();
+            DataTable _dtOrdersTable = new DataTable();
+
+            frmTables myForm = new frmTables();
+            var orders = myForm.orders;
+
+            try
+            {
+                string query = "SELECT * FROM group5fa212330.Orders;";
+                //est command object
+                _sqlOrdersCommand = new SqlCommand(query, _cntDatabase);
+                //est data adapter
+                _daOrders.SelectCommand = _sqlOrdersCommand;
+                //fill data table
+                _daOrders.Fill(_dtOrdersTable);
+                //bind dgvGames to data table
+                orders.DataSource = _dtOrdersTable;
+            }
+            catch (Exception ex)
+            {
+                //show message on error
+                MessageBox.Show(ex.Message, "Error in filling Orders Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //dispose
+            _sqlOrdersCommand.Dispose();
+            _daOrders.Dispose();
+            _dtOrdersTable.Dispose();
+        }
+        public static void UpdateTotal (double total, int orderId)
+        {
+            try
+            {
+                //inserts the variables into the database for customers
+                string query = "UPDATE group5fa212330.Orders SET TotalCost = " + total + " WHERE Order_ID = " + orderId + ";";
+                //create update command
+                SqlCommand _sqlInsertItemCommand = new SqlCommand(query, _cntDatabase);
+
                 //update command
                 _sqlInsertItemCommand.ExecuteNonQuery();
 

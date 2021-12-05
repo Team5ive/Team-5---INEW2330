@@ -171,5 +171,11 @@ namespace GuiMockups
         {
             tbxFirstName.Focus();
         }
+
+        private void frmSignUp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ProgOps.GetEmpInfo();
+            ProgOps.GetCustInfo();
+        }
     }
 }

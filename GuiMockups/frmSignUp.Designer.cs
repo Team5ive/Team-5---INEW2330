@@ -106,7 +106,7 @@
             this.tbxPassword.Location = new System.Drawing.Point(369, 356);
             this.tbxPassword.MaxLength = 50;
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(375, 26);
+            this.tbxPassword.Size = new System.Drawing.Size(375, 30);
             this.tbxPassword.TabIndex = 4;
             // 
             // tbxEmail
@@ -114,7 +114,7 @@
             this.tbxEmail.Location = new System.Drawing.Point(369, 228);
             this.tbxEmail.MaxLength = 50;
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(375, 26);
+            this.tbxEmail.Size = new System.Drawing.Size(375, 30);
             this.tbxEmail.TabIndex = 2;
             this.tbxEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEmail_KeyPress);
             // 
@@ -272,7 +272,7 @@
             this.tbxFirstName.Location = new System.Drawing.Point(369, 164);
             this.tbxFirstName.MaxLength = 50;
             this.tbxFirstName.Name = "tbxFirstName";
-            this.tbxFirstName.Size = new System.Drawing.Size(174, 26);
+            this.tbxFirstName.Size = new System.Drawing.Size(174, 30);
             this.tbxFirstName.TabIndex = 0;
             this.tbxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxFirstName_KeyPress);
             // 
@@ -291,7 +291,7 @@
             this.tbxLastName.Location = new System.Drawing.Point(569, 164);
             this.tbxLastName.MaxLength = 50;
             this.tbxLastName.Name = "tbxLastName";
-            this.tbxLastName.Size = new System.Drawing.Size(174, 26);
+            this.tbxLastName.Size = new System.Drawing.Size(174, 30);
             this.tbxLastName.TabIndex = 1;
             this.tbxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxLastName_KeyPress);
             // 
@@ -314,7 +314,7 @@
             this.tbxUserName.Location = new System.Drawing.Point(369, 291);
             this.tbxUserName.MaxLength = 50;
             this.tbxUserName.Name = "tbxUserName";
-            this.tbxUserName.Size = new System.Drawing.Size(375, 26);
+            this.tbxUserName.Size = new System.Drawing.Size(375, 30);
             this.tbxUserName.TabIndex = 3;
             this.tbxUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxUserName_KeyPress);
             // 
@@ -330,7 +330,7 @@
             // 
             // frmSignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1108, 583);
@@ -365,6 +365,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSignUp";
             this.Text = "frmSignUp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSignUp_FormClosing);
             this.Load += new System.EventHandler(this.frmSignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).EndInit();
             this.ResumeLayout(false);

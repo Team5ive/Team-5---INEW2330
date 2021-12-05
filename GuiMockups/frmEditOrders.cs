@@ -181,6 +181,9 @@ namespace GuiMockups
                 lbxCost.Items.Clear();
                 lbxItems.Items.Clear();
                 lbxQuantity.Items.Clear();
+                total = 0;
+                tax = 0;
+                grandTotal = 0;
                 for (int i = 0; i < Qty.Count; i++)
                 {
                     lbxQuantity.Items.Add(Qty[i]);
@@ -227,6 +230,27 @@ namespace GuiMockups
                     ProgOps.RemoveItems(frmTables.orderNum, MenuID[i]);
                 }
             }
+            total = 0;
+            tax = 0;
+            grandTotal = 0;
+            for (int x = 0; x < Cost.Count; x++)
+            {
+                total += Cost[x];
+            }
+            tax = (total * .0825);
+            grandTotal = total + tax;
+            lblTaxOutput.Text = tax.ToString("c");
+            lblTotalOutput.Text = total.ToString("c");
+            lblGrandOutput.Text = grandTotal.ToString("c");
+            string gTotal = grandTotal.ToString("N2");
+            grandTotal = Convert.ToDouble(gTotal);
+            ProgOps.UpdateTotal(grandTotal, frmTables.orderNum);
+        }
+
+        private void frmEditOrders_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ProgOps.GetTablesInfo();
+            ProgOps.RefreshOrders();
         }
 
         private void dgvMenu_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -238,11 +262,6 @@ namespace GuiMockups
             addMenuId = Convert.ToInt32(menuID.Cells[0].Value);
             addItemName = Convert.ToString(menuID.Cells[1].Value);
             addCost = Convert.ToDouble(menuID.Cells[2].Value);
-        }
-
-        private void frmEditOrders_Activated(object sender, EventArgs e)
-        {
-
         }
     }
 }
