@@ -202,8 +202,13 @@ namespace GuiMockups
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            frmReceipt frmReceipt = new frmReceipt();
-            frmReceipt.ShowDialog();
+            //creates and shows the crystal report on the frmReciept
+            CrystalReports.crptCheckout reciept = new CrystalReports.crptCheckout();
+            reciept.SetDatabaseLogon("group5fa212330", "5283165");
+            frmReceipt frmReciept = new frmReceipt();
+            frmReciept.crvReciept.ReportSource = null;
+            frmReciept.crvReciept.ReportSource = reciept;
+            frmReciept.Show();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
