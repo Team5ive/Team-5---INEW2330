@@ -21,6 +21,7 @@ namespace GuiMockups
         public static double addCost;
         public static string addItemName;
         double total = 0, tax = 0, grandTotal = 0;
+        public static List<int> CheckDigit = new List<int>();
 
 
         public frmEditOrders()
@@ -203,6 +204,10 @@ namespace GuiMockups
         private void btnCheckout_Click(object sender, EventArgs e)
         {
             //creates and shows the crystal report on the frmReciept
+            ProgOps.GetMaxCheckDigit();
+            int checkDigit = CheckDigit.First();
+            checkDigit += 1;
+            ProgOps.UpdateCheckDigit(frmTables.orderNum, checkDigit);
             CrystalReports.crptCheckout reciept = new CrystalReports.crptCheckout();
             reciept.SetDatabaseLogon("group5fa212330", "5283165");
             frmReceipt frmReciept = new frmReceipt();

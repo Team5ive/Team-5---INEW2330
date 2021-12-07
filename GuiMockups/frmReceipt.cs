@@ -12,9 +12,20 @@ namespace GuiMockups
 {
     public partial class frmReceipt : Form
     {
+        public static int orderNumber = frmTables.orderNum;
         public frmReceipt()
         {
             InitializeComponent();
+        }
+
+        private void frmReceipt_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crvReciept_Load(object sender, EventArgs e)
+        {
+            int od = orderNumber;
         }
     }
 }

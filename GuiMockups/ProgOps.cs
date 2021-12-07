@@ -1102,8 +1102,51 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public static void UpdateCheckDigit(int orderId, int checkDigit)
+        {
+            try
+            {
+                //inserts the variables into the database for customers
+                string query = "UPDATE group5fa212330.Orders SET CheckDigit = " + checkDigit + " WHERE Order_ID = " + orderId + ";";
+                //create update command
+                SqlCommand _sqlInsertItemCommand = new SqlCommand(query, _cntDatabase);
+
+                //update command
+                _sqlInsertItemCommand.ExecuteNonQuery();
+
+                _sqlInsertItemCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public static void GetMaxCheckDigit()
+        {
+            try
+            {
+                //grabs all values from customers table
+                string query = "SELECT MAX(CheckDigit) AS MaxCheckDigit FROM group5fa212330.Orders;";
+                //create update command
+                SqlCommand _sqlOrderDetailsCommand = new SqlCommand(query, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqlOrderDetailsCommand.ExecuteReader();
+                //reads the connection and adds the codes to the list
+                while (read.Read())
+                {
+                    frmEditOrders.CheckDigit.Add(Convert.ToInt32(read["MaxCheckDigit"]));
+                }
+                //closes the reader
+                read.Close();
+                //update command
+                _sqlOrderDetailsCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //error message
+                MessageBox.Show(ex.Message, "Error Obtaining Check Digit", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
-
-
 }
 

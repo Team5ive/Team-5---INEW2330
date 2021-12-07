@@ -45,6 +45,7 @@
             this.crvReciept.Size = new System.Drawing.Size(827, 452);
             this.crvReciept.TabIndex = 0;
             this.crvReciept.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.crvReciept.Load += new System.EventHandler(this.crvReciept_Load);
             // 
             // frmReceipt
             // 
@@ -56,6 +57,7 @@
             this.Name = "frmReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Receipt";
+            this.Load += new System.EventHandler(this.frmReceipt_Load);
             this.ResumeLayout(false);
 
         }
