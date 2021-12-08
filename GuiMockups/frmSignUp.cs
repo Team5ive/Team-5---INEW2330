@@ -177,5 +177,15 @@ namespace GuiMockups
             ProgOps.GetEmpInfo();
             ProgOps.GetCustInfo();
         }
+
+        private void lblSignIn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblSignInBottom_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

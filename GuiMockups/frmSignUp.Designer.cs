@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pbxShell = new System.Windows.Forms.PictureBox();
-            this.lblSignIn = new System.Windows.Forms.Label();
             this.lblFancy = new System.Windows.Forms.Label();
             this.lblDarkBanner = new System.Windows.Forms.Label();
             this.tbxPassword = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@
             this.btnJoin = new System.Windows.Forms.Button();
             this.tbxUserName = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.lblSignIn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,17 +68,6 @@
             this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxShell.TabIndex = 7;
             this.pbxShell.TabStop = false;
-            // 
-            // lblSignIn
-            // 
-            this.lblSignIn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignIn.ForeColor = System.Drawing.Color.Gold;
-            this.lblSignIn.Location = new System.Drawing.Point(1026, 24);
-            this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(69, 20);
-            this.lblSignIn.TabIndex = 4;
-            this.lblSignIn.Text = "Sign In";
             // 
             // lblFancy
             // 
@@ -106,7 +95,7 @@
             this.tbxPassword.Location = new System.Drawing.Point(369, 356);
             this.tbxPassword.MaxLength = 50;
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(375, 30);
+            this.tbxPassword.Size = new System.Drawing.Size(375, 26);
             this.tbxPassword.TabIndex = 4;
             // 
             // tbxEmail
@@ -114,7 +103,7 @@
             this.tbxEmail.Location = new System.Drawing.Point(369, 228);
             this.tbxEmail.MaxLength = 50;
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(375, 30);
+            this.tbxEmail.Size = new System.Drawing.Size(375, 26);
             this.tbxEmail.TabIndex = 2;
             this.tbxEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEmail_KeyPress);
             // 
@@ -200,13 +189,14 @@
             // 
             // lblSignInBottom
             // 
-            this.lblSignInBottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignInBottom.ForeColor = System.Drawing.Color.Black;
-            this.lblSignInBottom.Location = new System.Drawing.Point(413, 502);
+            this.lblSignInBottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignInBottom.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblSignInBottom.Location = new System.Drawing.Point(405, 502);
             this.lblSignInBottom.Name = "lblSignInBottom";
-            this.lblSignInBottom.Size = new System.Drawing.Size(62, 20);
+            this.lblSignInBottom.Size = new System.Drawing.Size(70, 20);
             this.lblSignInBottom.TabIndex = 16;
             this.lblSignInBottom.Text = "Sign in";
+            this.lblSignInBottom.Click += new System.EventHandler(this.lblSignInBottom_Click);
             // 
             // lblNotMember
             // 
@@ -272,7 +262,7 @@
             this.tbxFirstName.Location = new System.Drawing.Point(369, 164);
             this.tbxFirstName.MaxLength = 50;
             this.tbxFirstName.Name = "tbxFirstName";
-            this.tbxFirstName.Size = new System.Drawing.Size(174, 30);
+            this.tbxFirstName.Size = new System.Drawing.Size(174, 26);
             this.tbxFirstName.TabIndex = 0;
             this.tbxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxFirstName_KeyPress);
             // 
@@ -291,7 +281,7 @@
             this.tbxLastName.Location = new System.Drawing.Point(569, 164);
             this.tbxLastName.MaxLength = 50;
             this.tbxLastName.Name = "tbxLastName";
-            this.tbxLastName.Size = new System.Drawing.Size(174, 30);
+            this.tbxLastName.Size = new System.Drawing.Size(174, 26);
             this.tbxLastName.TabIndex = 1;
             this.tbxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxLastName_KeyPress);
             // 
@@ -314,7 +304,7 @@
             this.tbxUserName.Location = new System.Drawing.Point(369, 291);
             this.tbxUserName.MaxLength = 50;
             this.tbxUserName.Name = "tbxUserName";
-            this.tbxUserName.Size = new System.Drawing.Size(375, 30);
+            this.tbxUserName.Size = new System.Drawing.Size(375, 26);
             this.tbxUserName.TabIndex = 3;
             this.tbxUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxUserName_KeyPress);
             // 
@@ -328,9 +318,21 @@
             this.lblUserName.TabIndex = 25;
             this.lblUserName.Text = "Username";
             // 
+            // lblSignIn
+            // 
+            this.lblSignIn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignIn.ForeColor = System.Drawing.Color.Gold;
+            this.lblSignIn.Location = new System.Drawing.Point(1026, 24);
+            this.lblSignIn.Name = "lblSignIn";
+            this.lblSignIn.Size = new System.Drawing.Size(69, 20);
+            this.lblSignIn.TabIndex = 4;
+            this.lblSignIn.Text = "Sign In";
+            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
+            // 
             // frmSignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1108, 583);
@@ -364,7 +366,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSignUp";
-            this.Text = "frmSignUp";
+            this.Text = "Fancy! - Sign Up";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSignUp_FormClosing);
             this.Load += new System.EventHandler(this.frmSignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).EndInit();
@@ -376,7 +378,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbxShell;
-        private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.Label lblFancy;
         private System.Windows.Forms.Label lblDarkBanner;
         private System.Windows.Forms.TextBox tbxPassword;
@@ -402,5 +403,6 @@
         private System.Windows.Forms.Button btnJoin;
         private System.Windows.Forms.TextBox tbxUserName;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblSignIn;
     }
 }
