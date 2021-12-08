@@ -145,7 +145,6 @@ namespace GuiMockups
                     found = true;
                     total = currentQty * price;
                     Total_Price_Per_Line[count] = total.ToString();
-                    MessageBox.Show("Updated");
                 }
                 count++;
             }
@@ -158,7 +157,6 @@ namespace GuiMockups
                 total = qty * price;
                 Total_Price_Per_Line.Add(total.ToString());
                 Menu_ID.Add(menuItem);// added menuId
-                MessageBox.Show("New Addition!");
             }
         }
         //frmCarts
