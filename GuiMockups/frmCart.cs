@@ -58,7 +58,6 @@ namespace GuiMockups
                 ProgOps.ClearList();
                 dgvCart.Rows.Clear();
                 ProgOps.MathForTotals(lblSubtotal, lblTax, lblNetTotal);
-                MessageBox.Show("Order Submitted!");
                 // opens frmReceipt next 
                 frmReceipt receipt = new frmReceipt();
                 receipt.ShowDialog();
