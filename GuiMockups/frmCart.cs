@@ -59,8 +59,12 @@ namespace GuiMockups
                 dgvCart.Rows.Clear();
                 ProgOps.MathForTotals(lblSubtotal, lblTax, lblNetTotal);
                 // opens frmReceipt next 
-                frmReceipt receipt = new frmReceipt();
-                receipt.ShowDialog();
+                CrystalReports.crptCustomerReciept reciept = new CrystalReports.crptCustomerReciept();
+                reciept.SetDatabaseLogon("group5fa212330", "5283165");
+                frmReceipt frmReciept = new frmReceipt();
+                frmReciept.crvReciept.ReportSource = null;
+                frmReciept.crvReciept.ReportSource = reciept;
+                frmReciept.Show();
             }
             else
             {
