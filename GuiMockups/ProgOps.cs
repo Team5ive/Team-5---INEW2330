@@ -299,6 +299,36 @@ namespace GuiMockups
             return OrderIDCurrent;
         }
 
+        public static int ReadCurrentCheckDigit()
+        {
+            int digit = 0;
+            try
+            {
+                string queryString = "SELECT MAX(CheckDigit) AS MaxCheckDigit FROM group5fa212330.Orders";
+                //create command
+                SqlCommand _sqldigitCommand = new SqlCommand(queryString, _cntDatabase);
+                //initializes reader
+                SqlDataReader read = _sqldigitCommand.ExecuteReader();
+
+                // Call Read before accessing data. 
+                if (read.HasRows)
+                {
+                    read.Read();
+                    digit = read.GetInt32(0);
+                }
+
+                // Call Close when done reading.
+                read.Close();
+
+                _sqldigitCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error - updating current check-digit column", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return digit;
+        }
+
         public static int ReadCurrentInvoiceID()
         {
             int invoiceIDCurrent = 0;
@@ -329,14 +359,14 @@ namespace GuiMockups
             return invoiceIDCurrent;
         }
 
-        public static void checkOutOrder(string date, string orderIdentification)
+        public static void checkOutOrder(string date, string orderIdentification, string digit)
         {
             try
             {
-                // Orders: Order_ID Customer_ID, Employee_ID, Order_Date, TotalCost, Table_Num, Dine_in
+                // Orders: Order_ID Customer_ID, Employee_ID, Order_Date, TotalCost, Table_Num, Dine_in, CheckDigit
                 // (ordering from application employeeID = NULL , Table_Num = 0, Dine_in = 0)
                 // inserts the variables into the database for customers
-                string queryOrder = "INSERT INTO group5fa212330.Orders Values(" + _custID + ", NULL, '" + date + "', " + subTotal + ", 0, 0);";
+                string queryOrder = "INSERT INTO group5fa212330.Orders Values(" + _custID + ", NULL, '" + date + "', " + subTotal + ", 0, 0, " + digit + ");";
                 // create update command
                 SqlCommand _sqlInsertOrderCommand = new SqlCommand(queryOrder, _cntDatabase);
                 // update command
@@ -1121,6 +1151,7 @@ namespace GuiMockups
                 MessageBox.Show(ex.Message, "Error inserting or updating orders/order details Table", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         public static void GetMaxCheckDigit()
         {
             try

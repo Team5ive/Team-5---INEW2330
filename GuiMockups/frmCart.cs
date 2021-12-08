@@ -52,7 +52,8 @@ namespace GuiMockups
                 // submit orders to database( both orders and orderDetails) 
                 var dateString = DateTime.Now.ToString("yyyy-MM-dd");
                 string orderID = (ProgOps.ReadCurrentOrderID() + 1).ToString();
-                ProgOps.checkOutOrder(dateString, orderID);
+                string checkOutDigit = (ProgOps.ReadCurrentCheckDigit() + 1).ToString();
+                ProgOps.checkOutOrder(dateString, orderID, checkOutDigit);
                 // clear all order information 
                 ProgOps.ClearList();
                 dgvCart.Rows.Clear();
