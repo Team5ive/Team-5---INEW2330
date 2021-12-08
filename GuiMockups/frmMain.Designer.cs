@@ -38,6 +38,7 @@ namespace GuiMockups
             this.mnuMainItmAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMainItmHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.pbxShell = new System.Windows.Forms.PictureBox();
+            this.hlpFancy = new System.Windows.Forms.HelpProvider();
             this.mnuMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +137,7 @@ namespace GuiMockups
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Fine Dining and Breathing";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).EndInit();
@@ -154,5 +156,6 @@ namespace GuiMockups
         private System.Windows.Forms.ToolStripMenuItem mnuMainItmAbout;
         private System.Windows.Forms.ToolStripMenuItem mnuMainItmHelp;
         private System.Windows.Forms.PictureBox pbxShell;
+        private System.Windows.Forms.HelpProvider hlpFancy;
     }
 }

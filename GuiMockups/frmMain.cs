@@ -43,7 +43,13 @@ namespace GuiMockups
 
         private void mnuMainItmHelp_Click(object sender, EventArgs e)
         {
+            Help.ShowHelp(this, hlpFancy.HelpNamespace);
 
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            hlpFancy.HelpNamespace = Application.StartupPath + "\\FancyHelp.chm";
         }
     }
 }
