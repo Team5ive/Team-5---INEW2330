@@ -2,9 +2,41 @@
 Compatibility=1.1 or later
 Compiled file=FancyHelp.chm
 Contents file=TableOfContentsFancy.hhc
+Default topic=frmMain.htm
 Display compile progress=No
 Language=0x409 English (United States)
 
+
+[FILES]
+frmReceipt.htm
+frmCart.htm
+tbxQuantity.htm
+menuRadioButtons.htm
+categoryButtons.htm
+frmCustomerOrder.htm
+gbxLoginInformation.htm
+gbxPersonalInformation.htm
+frmEditCustomerInfo.htm
+frmReservations.htm
+btnProfile.htm
+btnOrder.htm
+btnReservations.htm
+frmCustomerHome.htm
+btnGetCode.htm
+frmForgotPass.htm
+frmDisplayMenu.htm
+frmAbout.htm
+btnSignUp.htm
+lblSignInPrompts.htm
+frmSignUp.htm
+btnSignIn.htm
+lblSignUpPrompts.htm
+lblForgotPass.htm
+frmLogin.htm
+mnuHelp.htm
+mnuSignLog.htm
+mnuMenu.htm
+frmMain.htm
 
 [INFOTYPES]
 
