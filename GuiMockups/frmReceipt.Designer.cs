@@ -40,20 +40,20 @@
             this.crvReciept.DisplayToolbar = false;
             this.crvReciept.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crvReciept.Location = new System.Drawing.Point(0, 0);
-            this.crvReciept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crvReciept.Name = "crvReciept";
-            this.crvReciept.Size = new System.Drawing.Size(827, 452);
+            this.crvReciept.Size = new System.Drawing.Size(620, 367);
             this.crvReciept.TabIndex = 0;
             this.crvReciept.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crvReciept.Load += new System.EventHandler(this.crvReciept_Load);
             // 
             // frmReceipt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 452);
+            this.ClientSize = new System.Drawing.Size(620, 367);
             this.Controls.Add(this.crvReciept);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Receipt";

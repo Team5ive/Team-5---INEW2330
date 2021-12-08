@@ -46,6 +46,9 @@
             this.pbxSwirl1 = new System.Windows.Forms.PictureBox();
             this.pbxSwirl2 = new System.Windows.Forms.PictureBox();
             this.gbxEntrees = new System.Windows.Forms.GroupBox();
+            this.radEntree4 = new System.Windows.Forms.RadioButton();
+            this.lblEntree4 = new System.Windows.Forms.Label();
+            this.pbxEntree4 = new System.Windows.Forms.PictureBox();
             this.radEntree3 = new System.Windows.Forms.RadioButton();
             this.radEntree2 = new System.Windows.Forms.RadioButton();
             this.radEntree1 = new System.Windows.Forms.RadioButton();
@@ -56,6 +59,9 @@
             this.pbxEntree1 = new System.Windows.Forms.PictureBox();
             this.lblEntree1 = new System.Windows.Forms.Label();
             this.gbxDrinks = new System.Windows.Forms.GroupBox();
+            this.radDrink4 = new System.Windows.Forms.RadioButton();
+            this.lblDrink4 = new System.Windows.Forms.Label();
+            this.pbxDrink4 = new System.Windows.Forms.PictureBox();
             this.radDrink3 = new System.Windows.Forms.RadioButton();
             this.radDrink2 = new System.Windows.Forms.RadioButton();
             this.radDrink1 = new System.Windows.Forms.RadioButton();
@@ -66,6 +72,9 @@
             this.pbxDrink1 = new System.Windows.Forms.PictureBox();
             this.lblDrink1 = new System.Windows.Forms.Label();
             this.gbxDesserts = new System.Windows.Forms.GroupBox();
+            this.radDessert4 = new System.Windows.Forms.RadioButton();
+            this.lblDessert4 = new System.Windows.Forms.Label();
+            this.pbxDessert4 = new System.Windows.Forms.PictureBox();
             this.radDessert3 = new System.Windows.Forms.RadioButton();
             this.radDessert2 = new System.Windows.Forms.RadioButton();
             this.radDessert1 = new System.Windows.Forms.RadioButton();
@@ -76,6 +85,9 @@
             this.pbxDessert1 = new System.Windows.Forms.PictureBox();
             this.lblDessert1 = new System.Windows.Forms.Label();
             this.gbxAppetizers = new System.Windows.Forms.GroupBox();
+            this.radApp4 = new System.Windows.Forms.RadioButton();
+            this.lblApp4 = new System.Windows.Forms.Label();
+            this.pbxApp4 = new System.Windows.Forms.PictureBox();
             this.radApp3 = new System.Windows.Forms.RadioButton();
             this.radApp2 = new System.Windows.Forms.RadioButton();
             this.radApp1 = new System.Windows.Forms.RadioButton();
@@ -86,6 +98,9 @@
             this.pbxApp1 = new System.Windows.Forms.PictureBox();
             this.lblApp1 = new System.Windows.Forms.Label();
             this.gbxSoups = new System.Windows.Forms.GroupBox();
+            this.radSoup4 = new System.Windows.Forms.RadioButton();
+            this.lblSoup4 = new System.Windows.Forms.Label();
+            this.pbxSoup4 = new System.Windows.Forms.PictureBox();
             this.radSoup3 = new System.Windows.Forms.RadioButton();
             this.radSoup2 = new System.Windows.Forms.RadioButton();
             this.radSoup1 = new System.Windows.Forms.RadioButton();
@@ -96,48 +111,33 @@
             this.pbxSoup1 = new System.Windows.Forms.PictureBox();
             this.lblSoup1 = new System.Windows.Forms.Label();
             this.lblCartItemAmount = new System.Windows.Forms.Label();
-            this.radSoup4 = new System.Windows.Forms.RadioButton();
-            this.lblSoup4 = new System.Windows.Forms.Label();
-            this.pbxSoup4 = new System.Windows.Forms.PictureBox();
-            this.radDessert4 = new System.Windows.Forms.RadioButton();
-            this.lblDessert4 = new System.Windows.Forms.Label();
-            this.pbxDessert4 = new System.Windows.Forms.PictureBox();
-            this.radDrink4 = new System.Windows.Forms.RadioButton();
-            this.lblDrink4 = new System.Windows.Forms.Label();
-            this.pbxDrink4 = new System.Windows.Forms.PictureBox();
-            this.radEntree4 = new System.Windows.Forms.RadioButton();
-            this.lblEntree4 = new System.Windows.Forms.Label();
-            this.pbxEntree4 = new System.Windows.Forms.PictureBox();
-            this.radApp4 = new System.Windows.Forms.RadioButton();
-            this.lblApp4 = new System.Windows.Forms.Label();
-            this.pbxApp4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).BeginInit();
             this.gbxEntrees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).BeginInit();
             this.gbxDrinks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink1)).BeginInit();
             this.gbxDesserts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).BeginInit();
             this.gbxAppetizers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).BeginInit();
             this.gbxSoups.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinus
@@ -346,6 +346,36 @@
             this.gbxEntrees.TabStop = false;
             this.gbxEntrees.Text = "Entrees";
             // 
+            // radEntree4
+            // 
+            this.radEntree4.AutoSize = true;
+            this.radEntree4.Location = new System.Drawing.Point(491, 201);
+            this.radEntree4.Name = "radEntree4";
+            this.radEntree4.Size = new System.Drawing.Size(14, 13);
+            this.radEntree4.TabIndex = 74;
+            this.radEntree4.TabStop = true;
+            this.radEntree4.UseVisualStyleBackColor = true;
+            // 
+            // lblEntree4
+            // 
+            this.lblEntree4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblEntree4.Location = new System.Drawing.Point(663, 161);
+            this.lblEntree4.Name = "lblEntree4";
+            this.lblEntree4.Size = new System.Drawing.Size(271, 103);
+            this.lblEntree4.TabIndex = 73;
+            this.lblEntree4.Text = "Surf and Turf............................................... 69.99\r\n\r\nPan Roasted" +
+    " Monkfish and Braised Oxtail Butternut Squash Canneloni; Spiced Red Wine Sauce";
+            this.lblEntree4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxEntree4
+            // 
+            this.pbxEntree4.Location = new System.Drawing.Point(508, 161);
+            this.pbxEntree4.Name = "pbxEntree4";
+            this.pbxEntree4.Size = new System.Drawing.Size(134, 104);
+            this.pbxEntree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEntree4.TabIndex = 72;
+            this.pbxEntree4.TabStop = false;
+            // 
             // radEntree3
             // 
             this.radEntree3.AutoSize = true;
@@ -457,6 +487,37 @@
             this.gbxDrinks.TabIndex = 70;
             this.gbxDrinks.TabStop = false;
             this.gbxDrinks.Text = "Drinks";
+            // 
+            // radDrink4
+            // 
+            this.radDrink4.AutoSize = true;
+            this.radDrink4.Location = new System.Drawing.Point(488, 197);
+            this.radDrink4.Name = "radDrink4";
+            this.radDrink4.Size = new System.Drawing.Size(14, 13);
+            this.radDrink4.TabIndex = 74;
+            this.radDrink4.TabStop = true;
+            this.radDrink4.UseVisualStyleBackColor = true;
+            // 
+            // lblDrink4
+            // 
+            this.lblDrink4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDrink4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrink4.Location = new System.Drawing.Point(659, 160);
+            this.lblDrink4.Name = "lblDrink4";
+            this.lblDrink4.Size = new System.Drawing.Size(271, 103);
+            this.lblDrink4.TabIndex = 73;
+            this.lblDrink4.Text = "Fountain Drink ..........................................4.99\r\n\r\nAny choice of ou" +
+    "r Coke products";
+            this.lblDrink4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxDrink4
+            // 
+            this.pbxDrink4.Location = new System.Drawing.Point(506, 159);
+            this.pbxDrink4.Name = "pbxDrink4";
+            this.pbxDrink4.Size = new System.Drawing.Size(134, 104);
+            this.pbxDrink4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDrink4.TabIndex = 72;
+            this.pbxDrink4.TabStop = false;
             // 
             // radDrink3
             // 
@@ -570,6 +631,36 @@
             this.gbxDesserts.TabIndex = 70;
             this.gbxDesserts.TabStop = false;
             this.gbxDesserts.Text = "Desserts";
+            // 
+            // radDessert4
+            // 
+            this.radDessert4.AutoSize = true;
+            this.radDessert4.Location = new System.Drawing.Point(485, 197);
+            this.radDessert4.Name = "radDessert4";
+            this.radDessert4.Size = new System.Drawing.Size(14, 13);
+            this.radDessert4.TabIndex = 74;
+            this.radDessert4.TabStop = true;
+            this.radDessert4.UseVisualStyleBackColor = true;
+            // 
+            // lblDessert4
+            // 
+            this.lblDessert4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblDessert4.Location = new System.Drawing.Point(659, 156);
+            this.lblDessert4.Name = "lblDessert4";
+            this.lblDessert4.Size = new System.Drawing.Size(271, 103);
+            this.lblDessert4.TabIndex = 73;
+            this.lblDessert4.Text = "Black Forest ....................................................27.99\r\n\r\nChocola" +
+    "te Cherry Crémeux, Devil’s Food Cake, Brandied Cherries";
+            this.lblDessert4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxDessert4
+            // 
+            this.pbxDessert4.Location = new System.Drawing.Point(504, 156);
+            this.pbxDessert4.Name = "pbxDessert4";
+            this.pbxDessert4.Size = new System.Drawing.Size(134, 104);
+            this.pbxDessert4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxDessert4.TabIndex = 72;
+            this.pbxDessert4.TabStop = false;
             // 
             // radDessert3
             // 
@@ -685,6 +776,36 @@
             this.gbxAppetizers.TabStop = false;
             this.gbxAppetizers.Text = "Appetizers";
             // 
+            // radApp4
+            // 
+            this.radApp4.AutoSize = true;
+            this.radApp4.Location = new System.Drawing.Point(489, 200);
+            this.radApp4.Name = "radApp4";
+            this.radApp4.Size = new System.Drawing.Size(14, 13);
+            this.radApp4.TabIndex = 62;
+            this.radApp4.TabStop = true;
+            this.radApp4.UseVisualStyleBackColor = true;
+            // 
+            // lblApp4
+            // 
+            this.lblApp4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblApp4.Location = new System.Drawing.Point(658, 162);
+            this.lblApp4.Name = "lblApp4";
+            this.lblApp4.Size = new System.Drawing.Size(271, 103);
+            this.lblApp4.TabIndex = 61;
+            this.lblApp4.Text = "Oysters.............................................. 19.99\r\n\r\nSingle Variety or " +
+    "Assortment of Oysters (Six Pieces)";
+            this.lblApp4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxApp4
+            // 
+            this.pbxApp4.Location = new System.Drawing.Point(505, 162);
+            this.pbxApp4.Name = "pbxApp4";
+            this.pbxApp4.Size = new System.Drawing.Size(134, 104);
+            this.pbxApp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxApp4.TabIndex = 60;
+            this.pbxApp4.TabStop = false;
+            // 
             // radApp3
             // 
             this.radApp3.AutoSize = true;
@@ -797,6 +918,36 @@
             this.gbxSoups.TabStop = false;
             this.gbxSoups.Text = "Soups";
             // 
+            // radSoup4
+            // 
+            this.radSoup4.AutoSize = true;
+            this.radSoup4.Location = new System.Drawing.Point(484, 200);
+            this.radSoup4.Name = "radSoup4";
+            this.radSoup4.Size = new System.Drawing.Size(14, 13);
+            this.radSoup4.TabIndex = 74;
+            this.radSoup4.TabStop = true;
+            this.radSoup4.UseVisualStyleBackColor = true;
+            // 
+            // lblSoup4
+            // 
+            this.lblSoup4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lblSoup4.Location = new System.Drawing.Point(658, 158);
+            this.lblSoup4.Name = "lblSoup4";
+            this.lblSoup4.Size = new System.Drawing.Size(271, 103);
+            this.lblSoup4.TabIndex = 73;
+            this.lblSoup4.Text = "Oyster House Clam Chowder .................29.99\r\n\r\nA thick chowder made from cla" +
+    "ms, potatoes, onions, and cream";
+            this.lblSoup4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbxSoup4
+            // 
+            this.pbxSoup4.Location = new System.Drawing.Point(504, 158);
+            this.pbxSoup4.Name = "pbxSoup4";
+            this.pbxSoup4.Size = new System.Drawing.Size(134, 104);
+            this.pbxSoup4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoup4.TabIndex = 72;
+            this.pbxSoup4.TabStop = false;
+            // 
             // radSoup3
             // 
             this.radSoup3.AutoSize = true;
@@ -898,157 +1049,6 @@
             this.lblCartItemAmount.Text = "Cart(0)";
             this.lblCartItemAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // radSoup4
-            // 
-            this.radSoup4.AutoSize = true;
-            this.radSoup4.Location = new System.Drawing.Point(484, 200);
-            this.radSoup4.Name = "radSoup4";
-            this.radSoup4.Size = new System.Drawing.Size(14, 13);
-            this.radSoup4.TabIndex = 74;
-            this.radSoup4.TabStop = true;
-            this.radSoup4.UseVisualStyleBackColor = true;
-            // 
-            // lblSoup4
-            // 
-            this.lblSoup4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblSoup4.Location = new System.Drawing.Point(658, 158);
-            this.lblSoup4.Name = "lblSoup4";
-            this.lblSoup4.Size = new System.Drawing.Size(271, 103);
-            this.lblSoup4.TabIndex = 73;
-            this.lblSoup4.Text = "Oyster House Clam Chowder .................29.99\r\n\r\nA thick chowder made from cla" +
-    "ms, potatoes, onions, and cream";
-            this.lblSoup4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxSoup4
-            // 
-            this.pbxSoup4.Location = new System.Drawing.Point(504, 158);
-            this.pbxSoup4.Name = "pbxSoup4";
-            this.pbxSoup4.Size = new System.Drawing.Size(134, 104);
-            this.pbxSoup4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxSoup4.TabIndex = 72;
-            this.pbxSoup4.TabStop = false;
-            // 
-            // radDessert4
-            // 
-            this.radDessert4.AutoSize = true;
-            this.radDessert4.Location = new System.Drawing.Point(485, 197);
-            this.radDessert4.Name = "radDessert4";
-            this.radDessert4.Size = new System.Drawing.Size(14, 13);
-            this.radDessert4.TabIndex = 74;
-            this.radDessert4.TabStop = true;
-            this.radDessert4.UseVisualStyleBackColor = true;
-            // 
-            // lblDessert4
-            // 
-            this.lblDessert4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDessert4.Location = new System.Drawing.Point(659, 156);
-            this.lblDessert4.Name = "lblDessert4";
-            this.lblDessert4.Size = new System.Drawing.Size(271, 103);
-            this.lblDessert4.TabIndex = 73;
-            this.lblDessert4.Text = "Black Forest ....................................................27.99\r\n\r\nChocola" +
-    "te Cherry Crémeux, Devil’s Food Cake, Brandied Cherries";
-            this.lblDessert4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxDessert4
-            // 
-            this.pbxDessert4.Location = new System.Drawing.Point(504, 156);
-            this.pbxDessert4.Name = "pbxDessert4";
-            this.pbxDessert4.Size = new System.Drawing.Size(134, 104);
-            this.pbxDessert4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxDessert4.TabIndex = 72;
-            this.pbxDessert4.TabStop = false;
-            // 
-            // radDrink4
-            // 
-            this.radDrink4.AutoSize = true;
-            this.radDrink4.Location = new System.Drawing.Point(488, 197);
-            this.radDrink4.Name = "radDrink4";
-            this.radDrink4.Size = new System.Drawing.Size(14, 13);
-            this.radDrink4.TabIndex = 74;
-            this.radDrink4.TabStop = true;
-            this.radDrink4.UseVisualStyleBackColor = true;
-            // 
-            // lblDrink4
-            // 
-            this.lblDrink4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDrink4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDrink4.Location = new System.Drawing.Point(659, 160);
-            this.lblDrink4.Name = "lblDrink4";
-            this.lblDrink4.Size = new System.Drawing.Size(271, 103);
-            this.lblDrink4.TabIndex = 73;
-            this.lblDrink4.Text = "Fountain Drink ..........................................4.99\r\n\r\nAny choice of ou" +
-    "r Coke products";
-            this.lblDrink4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxDrink4
-            // 
-            this.pbxDrink4.Location = new System.Drawing.Point(506, 159);
-            this.pbxDrink4.Name = "pbxDrink4";
-            this.pbxDrink4.Size = new System.Drawing.Size(134, 104);
-            this.pbxDrink4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxDrink4.TabIndex = 72;
-            this.pbxDrink4.TabStop = false;
-            // 
-            // radEntree4
-            // 
-            this.radEntree4.AutoSize = true;
-            this.radEntree4.Location = new System.Drawing.Point(491, 201);
-            this.radEntree4.Name = "radEntree4";
-            this.radEntree4.Size = new System.Drawing.Size(14, 13);
-            this.radEntree4.TabIndex = 74;
-            this.radEntree4.TabStop = true;
-            this.radEntree4.UseVisualStyleBackColor = true;
-            // 
-            // lblEntree4
-            // 
-            this.lblEntree4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEntree4.Location = new System.Drawing.Point(663, 161);
-            this.lblEntree4.Name = "lblEntree4";
-            this.lblEntree4.Size = new System.Drawing.Size(271, 103);
-            this.lblEntree4.TabIndex = 73;
-            this.lblEntree4.Text = "Surf and Turf............................................... 69.99\r\n\r\nPan Roasted" +
-    " Monkfish and Braised Oxtail Butternut Squash Canneloni; Spiced Red Wine Sauce";
-            this.lblEntree4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxEntree4
-            // 
-            this.pbxEntree4.Location = new System.Drawing.Point(508, 161);
-            this.pbxEntree4.Name = "pbxEntree4";
-            this.pbxEntree4.Size = new System.Drawing.Size(134, 104);
-            this.pbxEntree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxEntree4.TabIndex = 72;
-            this.pbxEntree4.TabStop = false;
-            // 
-            // radApp4
-            // 
-            this.radApp4.AutoSize = true;
-            this.radApp4.Location = new System.Drawing.Point(489, 200);
-            this.radApp4.Name = "radApp4";
-            this.radApp4.Size = new System.Drawing.Size(14, 13);
-            this.radApp4.TabIndex = 62;
-            this.radApp4.TabStop = true;
-            this.radApp4.UseVisualStyleBackColor = true;
-            // 
-            // lblApp4
-            // 
-            this.lblApp4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblApp4.Location = new System.Drawing.Point(658, 162);
-            this.lblApp4.Name = "lblApp4";
-            this.lblApp4.Size = new System.Drawing.Size(271, 103);
-            this.lblApp4.TabIndex = 61;
-            this.lblApp4.Text = "Oysters.............................................. 19.99\r\n\r\nSingle Variety or " +
-    "Assortment of Oysters (Six Pieces)";
-            this.lblApp4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbxApp4
-            // 
-            this.pbxApp4.Location = new System.Drawing.Point(505, 162);
-            this.pbxApp4.Name = "pbxApp4";
-            this.pbxApp4.Size = new System.Drawing.Size(134, 104);
-            this.pbxApp4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxApp4.TabIndex = 60;
-            this.pbxApp4.TabStop = false;
-            // 
             // frmCustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1078,6 +1078,8 @@
             this.Controls.Add(this.pbxSwirl2);
             this.Controls.Add(this.lblMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmCustomerOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Order";
@@ -1086,34 +1088,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSwirl2)).EndInit();
             this.gbxEntrees.ResumeLayout(false);
             this.gbxEntrees.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEntree1)).EndInit();
             this.gbxDrinks.ResumeLayout(false);
             this.gbxDrinks.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDrink1)).EndInit();
             this.gbxDesserts.ResumeLayout(false);
             this.gbxDesserts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessert1)).EndInit();
             this.gbxAppetizers.ResumeLayout(false);
             this.gbxAppetizers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxApp1)).EndInit();
             this.gbxSoups.ResumeLayout(false);
             this.gbxSoups.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSoup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSoup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDessert4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDrink4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEntree4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxApp4)).EndInit();
             this.ResumeLayout(false);
 
         }

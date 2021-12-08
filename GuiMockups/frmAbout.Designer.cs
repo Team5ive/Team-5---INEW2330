@@ -116,6 +116,8 @@ namespace GuiMockups
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pbxSwirl1);
             this.Controls.Add(this.pbxSwirl2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - About Us";

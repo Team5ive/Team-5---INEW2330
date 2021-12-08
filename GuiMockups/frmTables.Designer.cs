@@ -53,10 +53,9 @@
             this.lblTable1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable1.Location = new System.Drawing.Point(325, 100);
-            this.lblTable1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable1.Location = new System.Drawing.Point(244, 81);
             this.lblTable1.Name = "lblTable1";
-            this.lblTable1.Size = new System.Drawing.Size(149, 71);
+            this.lblTable1.Size = new System.Drawing.Size(112, 58);
             this.lblTable1.TabIndex = 0;
             this.lblTable1.Text = "Table 1";
             this.lblTable1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,10 +65,9 @@
             this.lblTable2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable2.Location = new System.Drawing.Point(495, 100);
-            this.lblTable2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable2.Location = new System.Drawing.Point(371, 81);
             this.lblTable2.Name = "lblTable2";
-            this.lblTable2.Size = new System.Drawing.Size(149, 71);
+            this.lblTable2.Size = new System.Drawing.Size(112, 58);
             this.lblTable2.TabIndex = 0;
             this.lblTable2.Text = "Table 2";
             this.lblTable2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,10 +77,9 @@
             this.lblTable3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable3.Location = new System.Drawing.Point(664, 100);
-            this.lblTable3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable3.Location = new System.Drawing.Point(498, 81);
             this.lblTable3.Name = "lblTable3";
-            this.lblTable3.Size = new System.Drawing.Size(149, 71);
+            this.lblTable3.Size = new System.Drawing.Size(112, 58);
             this.lblTable3.TabIndex = 0;
             this.lblTable3.Text = "Table 3";
             this.lblTable3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,10 +89,9 @@
             this.lblTable4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable4.Location = new System.Drawing.Point(833, 100);
-            this.lblTable4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable4.Location = new System.Drawing.Point(625, 81);
             this.lblTable4.Name = "lblTable4";
-            this.lblTable4.Size = new System.Drawing.Size(149, 71);
+            this.lblTable4.Size = new System.Drawing.Size(112, 58);
             this.lblTable4.TabIndex = 0;
             this.lblTable4.Text = "Table 4";
             this.lblTable4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,10 +101,9 @@
             this.lblTable5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable5.Location = new System.Drawing.Point(1003, 100);
-            this.lblTable5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable5.Location = new System.Drawing.Point(752, 81);
             this.lblTable5.Name = "lblTable5";
-            this.lblTable5.Size = new System.Drawing.Size(149, 71);
+            this.lblTable5.Size = new System.Drawing.Size(112, 58);
             this.lblTable5.TabIndex = 0;
             this.lblTable5.Text = "Table 5";
             this.lblTable5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,10 +113,9 @@
             this.lblTable6.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable6.Location = new System.Drawing.Point(325, 188);
-            this.lblTable6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable6.Location = new System.Drawing.Point(244, 153);
             this.lblTable6.Name = "lblTable6";
-            this.lblTable6.Size = new System.Drawing.Size(149, 71);
+            this.lblTable6.Size = new System.Drawing.Size(112, 58);
             this.lblTable6.TabIndex = 0;
             this.lblTable6.Text = "Table 6";
             this.lblTable6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,10 +125,9 @@
             this.lblTable7.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable7.Location = new System.Drawing.Point(495, 188);
-            this.lblTable7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable7.Location = new System.Drawing.Point(371, 153);
             this.lblTable7.Name = "lblTable7";
-            this.lblTable7.Size = new System.Drawing.Size(149, 71);
+            this.lblTable7.Size = new System.Drawing.Size(112, 58);
             this.lblTable7.TabIndex = 0;
             this.lblTable7.Text = "Table 7";
             this.lblTable7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,10 +137,9 @@
             this.lblTable8.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable8.Location = new System.Drawing.Point(664, 188);
-            this.lblTable8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable8.Location = new System.Drawing.Point(498, 153);
             this.lblTable8.Name = "lblTable8";
-            this.lblTable8.Size = new System.Drawing.Size(149, 71);
+            this.lblTable8.Size = new System.Drawing.Size(112, 58);
             this.lblTable8.TabIndex = 0;
             this.lblTable8.Text = "Table 8";
             this.lblTable8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,10 +149,9 @@
             this.lblTable9.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable9.Location = new System.Drawing.Point(833, 188);
-            this.lblTable9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable9.Location = new System.Drawing.Point(625, 153);
             this.lblTable9.Name = "lblTable9";
-            this.lblTable9.Size = new System.Drawing.Size(149, 71);
+            this.lblTable9.Size = new System.Drawing.Size(112, 58);
             this.lblTable9.TabIndex = 0;
             this.lblTable9.Text = "Table 9";
             this.lblTable9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,10 +161,9 @@
             this.lblTable10.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTable10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTable10.Location = new System.Drawing.Point(1003, 188);
-            this.lblTable10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTable10.Location = new System.Drawing.Point(752, 153);
             this.lblTable10.Name = "lblTable10";
-            this.lblTable10.Size = new System.Drawing.Size(149, 71);
+            this.lblTable10.Size = new System.Drawing.Size(112, 58);
             this.lblTable10.TabIndex = 0;
             this.lblTable10.Text = "Table 10";
             this.lblTable10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -183,10 +173,9 @@
             this.lblLegend.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLegend.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLegend.Location = new System.Drawing.Point(745, 55);
-            this.lblLegend.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLegend.Location = new System.Drawing.Point(559, 45);
             this.lblLegend.Name = "lblLegend";
-            this.lblLegend.Size = new System.Drawing.Size(164, 28);
+            this.lblLegend.Size = new System.Drawing.Size(123, 23);
             this.lblLegend.TabIndex = 2;
             this.lblLegend.Text = "Open Table";
             this.lblLegend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,10 +185,9 @@
             this.lblLegend2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblLegend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLegend2.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLegend2.Location = new System.Drawing.Point(573, 55);
-            this.lblLegend2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLegend2.Location = new System.Drawing.Point(430, 45);
             this.lblLegend2.Name = "lblLegend2";
-            this.lblLegend2.Size = new System.Drawing.Size(164, 28);
+            this.lblLegend2.Size = new System.Drawing.Size(123, 23);
             this.lblLegend2.TabIndex = 2;
             this.lblLegend2.Text = "Occupied Table";
             this.lblLegend2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,10 +197,9 @@
             this.lblOrderInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblOrderInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblOrderInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderInfo.Location = new System.Drawing.Point(-1, 321);
-            this.lblOrderInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOrderInfo.Location = new System.Drawing.Point(-1, 261);
             this.lblOrderInfo.Name = "lblOrderInfo";
-            this.lblOrderInfo.Size = new System.Drawing.Size(1481, 39);
+            this.lblOrderInfo.Size = new System.Drawing.Size(1111, 32);
             this.lblOrderInfo.TabIndex = 4;
             this.lblOrderInfo.Text = "Table and Order Information  ";
             this.lblOrderInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,9 +210,8 @@
             this.lblTables.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTables.Location = new System.Drawing.Point(-1, -1);
-            this.lblTables.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTables.Name = "lblTables";
-            this.lblTables.Size = new System.Drawing.Size(1481, 39);
+            this.lblTables.Size = new System.Drawing.Size(1111, 32);
             this.lblTables.TabIndex = 4;
             this.lblTables.Text = "All Tables";
             this.lblTables.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,10 +221,9 @@
             this.lblSuppliesView.BackColor = System.Drawing.SystemColors.Highlight;
             this.lblSuppliesView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSuppliesView.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblSuppliesView.Location = new System.Drawing.Point(1305, 4);
-            this.lblSuppliesView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSuppliesView.Location = new System.Drawing.Point(979, 3);
             this.lblSuppliesView.Name = "lblSuppliesView";
-            this.lblSuppliesView.Size = new System.Drawing.Size(164, 28);
+            this.lblSuppliesView.Size = new System.Drawing.Size(123, 23);
             this.lblSuppliesView.TabIndex = 2;
             this.lblSuppliesView.Text = "Supplies View";
             this.lblSuppliesView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,11 +232,10 @@
             // dgvOrders
             // 
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrders.Location = new System.Drawing.Point(0, 359);
-            this.dgvOrders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvOrders.Location = new System.Drawing.Point(0, 292);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowHeadersWidth = 51;
-            this.dgvOrders.Size = new System.Drawing.Size(1175, 353);
+            this.dgvOrders.Size = new System.Drawing.Size(881, 287);
             this.dgvOrders.TabIndex = 16;
             this.dgvOrders.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvOrders_CellMouseClick);
             this.dgvOrders.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvOrders_DataBindingComplete);
@@ -260,10 +244,9 @@
             // 
             this.btnViewOrder.BackColor = System.Drawing.SystemColors.Info;
             this.btnViewOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewOrder.Location = new System.Drawing.Point(1247, 500);
-            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewOrder.Location = new System.Drawing.Point(935, 406);
             this.btnViewOrder.Name = "btnViewOrder";
-            this.btnViewOrder.Size = new System.Drawing.Size(177, 91);
+            this.btnViewOrder.Size = new System.Drawing.Size(133, 74);
             this.btnViewOrder.TabIndex = 17;
             this.btnViewOrder.Text = "View Order";
             this.btnViewOrder.UseVisualStyleBackColor = false;
@@ -271,10 +254,10 @@
             // 
             // frmTables
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1479, 718);
+            this.ClientSize = new System.Drawing.Size(963, 570);
             this.Controls.Add(this.btnViewOrder);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.lblOrderInfo);
@@ -292,12 +275,12 @@
             this.Controls.Add(this.lblTable2);
             this.Controls.Add(this.lblTable1);
             this.Controls.Add(this.lblTables);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTables";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Table And Online Orders View";
+            this.Text = "Fancy! - Table And Online Orders";
             this.Activated += new System.EventHandler(this.frmTables_Activated);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();

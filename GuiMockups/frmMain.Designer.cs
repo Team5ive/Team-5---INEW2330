@@ -128,6 +128,7 @@ namespace GuiMockups
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

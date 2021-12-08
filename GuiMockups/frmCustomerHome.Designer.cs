@@ -176,6 +176,7 @@
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.lblColor2);
             this.Controls.Add(this.pbxShell);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmCustomerHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! -  Customer Menu";

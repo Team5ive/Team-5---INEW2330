@@ -151,6 +151,8 @@ namespace GuiMockups
             this.Controls.Add(this.gbxManagers);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.gbxAssociates);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmEmployeeHub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Hub";

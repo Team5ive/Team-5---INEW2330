@@ -196,28 +196,28 @@
             // lbxCost
             // 
             this.lbxCost.FormattingEnabled = true;
-            this.lbxCost.ItemHeight = 25;
+            this.lbxCost.ItemHeight = 20;
             this.lbxCost.Location = new System.Drawing.Point(512, 24);
             this.lbxCost.Name = "lbxCost";
-            this.lbxCost.Size = new System.Drawing.Size(115, 229);
+            this.lbxCost.Size = new System.Drawing.Size(115, 224);
             this.lbxCost.TabIndex = 1;
             // 
             // lbxQuantity
             // 
             this.lbxQuantity.FormattingEnabled = true;
-            this.lbxQuantity.ItemHeight = 25;
+            this.lbxQuantity.ItemHeight = 20;
             this.lbxQuantity.Location = new System.Drawing.Point(391, 24);
             this.lbxQuantity.Name = "lbxQuantity";
-            this.lbxQuantity.Size = new System.Drawing.Size(122, 229);
+            this.lbxQuantity.Size = new System.Drawing.Size(122, 224);
             this.lbxQuantity.TabIndex = 1;
             // 
             // lbxItems
             // 
             this.lbxItems.FormattingEnabled = true;
-            this.lbxItems.ItemHeight = 25;
+            this.lbxItems.ItemHeight = 20;
             this.lbxItems.Location = new System.Drawing.Point(0, 24);
             this.lbxItems.Name = "lbxItems";
-            this.lbxItems.Size = new System.Drawing.Size(392, 229);
+            this.lbxItems.Size = new System.Drawing.Size(392, 224);
             this.lbxItems.TabIndex = 1;
             // 
             // lblCost
@@ -372,7 +372,7 @@
             this.tbxCustNameInput.Location = new System.Drawing.Point(11, 50);
             this.tbxCustNameInput.Name = "tbxCustNameInput";
             this.tbxCustNameInput.ReadOnly = true;
-            this.tbxCustNameInput.Size = new System.Drawing.Size(260, 30);
+            this.tbxCustNameInput.Size = new System.Drawing.Size(260, 26);
             this.tbxCustNameInput.TabIndex = 1;
             // 
             // lblOrderTypeOutput
@@ -399,7 +399,7 @@
             this.lblCustomerName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCustomerName.Location = new System.Drawing.Point(9, 26);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(154, 25);
+            this.lblCustomerName.Size = new System.Drawing.Size(124, 20);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "Customer Name";
             // 
@@ -437,14 +437,14 @@
             // 
             this.tbxQty.Location = new System.Drawing.Point(175, 538);
             this.tbxQty.Name = "tbxQty";
-            this.tbxQty.Size = new System.Drawing.Size(57, 30);
+            this.tbxQty.Size = new System.Drawing.Size(57, 26);
             this.tbxQty.TabIndex = 7;
             this.tbxQty.Text = "0";
             this.tbxQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmEditOrders
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 583);
             this.Controls.Add(this.tbxQty);
@@ -463,12 +463,13 @@
             this.Controls.Add(this.lblBorder2);
             this.Controls.Add(this.lblBorder);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEditOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Orders";
+            this.Text = "Fancy! - Orders";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditOrders_FormClosing);
             this.Load += new System.EventHandler(this.frmEditOrders_Load);
             this.gbxTableNumber.ResumeLayout(false);

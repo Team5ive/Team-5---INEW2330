@@ -205,6 +205,8 @@
             this.Controls.Add(this.lblMsgTimes);
             this.Controls.Add(this.lblColor2);
             this.Controls.Add(this.calReservationDate);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmReservations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Reservations";

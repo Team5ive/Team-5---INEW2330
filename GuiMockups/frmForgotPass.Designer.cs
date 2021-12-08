@@ -54,7 +54,7 @@ namespace GuiMockups
             // 
             this.tbxVerifCode.Location = new System.Drawing.Point(323, 277);
             this.tbxVerifCode.Name = "tbxVerifCode";
-            this.tbxVerifCode.Size = new System.Drawing.Size(375, 30);
+            this.tbxVerifCode.Size = new System.Drawing.Size(375, 26);
             this.tbxVerifCode.TabIndex = 83;
             // 
             // lblVerifCode
@@ -71,14 +71,14 @@ namespace GuiMockups
             // 
             this.tbxPassword.Location = new System.Drawing.Point(323, 358);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(375, 30);
+            this.tbxPassword.Size = new System.Drawing.Size(375, 26);
             this.tbxPassword.TabIndex = 79;
             // 
             // tbxEmail
             // 
             this.tbxEmail.Location = new System.Drawing.Point(323, 196);
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(375, 30);
+            this.tbxEmail.Size = new System.Drawing.Size(375, 26);
             this.tbxEmail.TabIndex = 78;
             // 
             // lblPassword
@@ -231,7 +231,7 @@ namespace GuiMockups
             // 
             // frmForgotPass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 575);
             this.Controls.Add(this.pbxShell);
@@ -253,9 +253,12 @@ namespace GuiMockups
             this.Controls.Add(this.lblVerify);
             this.Controls.Add(this.lblChangePass);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "frmForgotPass";
-            this.Text = "Forgot Password";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Fancy! - Forgot Password";
             this.Load += new System.EventHandler(this.frmForgotPass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).EndInit();
             this.ResumeLayout(false);

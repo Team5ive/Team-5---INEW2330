@@ -326,9 +326,11 @@ namespace GuiMockups
             this.Controls.Add(this.tbxCustomerID);
             this.Controls.Add(this.dgvReservations);
             this.Controls.Add(this.lblDateSeparator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmEditReservations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Edit Reservations";
+            this.Text = "Fancy! Edit Reservations";
             this.Load += new System.EventHandler(this.frmEditReservations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             this.ResumeLayout(false);

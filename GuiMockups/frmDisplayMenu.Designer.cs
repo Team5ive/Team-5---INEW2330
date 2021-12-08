@@ -746,7 +746,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(949, 614);
+            this.ClientSize = new System.Drawing.Size(949, 648);
             this.Controls.Add(this.pbxShell);
             this.Controls.Add(this.lblFancy);
             this.Controls.Add(this.lblDrinkFour);
@@ -806,8 +806,9 @@
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.lblDarkBanner);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "frmDisplayMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Menu";

@@ -522,6 +522,8 @@ namespace GuiMockups
             this.Controls.Add(this.tbxLastName);
             this.Controls.Add(this.tbxEmployeeID);
             this.Controls.Add(this.tbxReportTo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmEmployeesAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fancy! - Employee Accounts";
