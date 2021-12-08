@@ -111,18 +111,18 @@ namespace GuiMockups
 
                     //Sends email
                     smtpClient.Send(mailMessage);
+                    MessageBox.Show("Verification code sent. When recieved enter verification code and press the 'Verify' button.\n(Email with verification code may be in spam folder)", "Delivered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    lblVerifCode.Visible = true;
+                    tbxVerifCode.Visible = true;
+                    lblSendCode.Visible = false;
+                    lblVerify.Visible = true;
+                    tbxEmail.ReadOnly = true;
+                    tbxVerifCode.Focus();
                 }
                 catch
                 {
                     MessageBox.Show("Verification code not sent\n\nPlease try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                lblVerifCode.Visible = true;
-                tbxVerifCode.Visible = true;
-                lblSendCode.Visible = false;
-                lblVerify.Visible = true;
-                tbxEmail.ReadOnly = true;
-                MessageBox.Show("Verification code sent. When recieved enter verification code and press the 'Verify' button.\n(Email with verification code may be in spam folder)", "Delivered", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tbxVerifCode.Focus();
             }
             else
             {
