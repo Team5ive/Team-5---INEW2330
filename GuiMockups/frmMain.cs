@@ -17,27 +17,33 @@ namespace GuiMockups
             InitializeComponent();
         }
 
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmLogin frmLogin = new frmLogin();
-            frmLogin.ShowDialog();
-        }
-
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDisplayMenu menu = new frmDisplayMenu();
-            menu.ShowDialog();
-        }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             ProgOps.disposeConnection();
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mnuMainItmSignLog_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
+        }
+
+        private void mnuMainItmMenu_Click(object sender, EventArgs e)
+        {
+            frmDisplayMenu menu = new frmDisplayMenu();
+            menu.ShowDialog();
+        }
+
+        private void mnuMainItmAbout_Click(object sender, EventArgs e)
         {
             frmAbout about = new frmAbout();
             about.ShowDialog();
+        }
+
+        private void mnuMainItmHelp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

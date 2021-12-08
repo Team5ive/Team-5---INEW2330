@@ -30,48 +30,48 @@ namespace GuiMockups
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFineDiningSubtitle = new System.Windows.Forms.Label();
+            this.lblFancyTitle = new System.Windows.Forms.Label();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mnuMainItmMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItmSignLog = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItmAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItmHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbxShell = new System.Windows.Forms.PictureBox();
             this.mnuMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // lblFineDiningSubtitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Vladimir Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.label2.Location = new System.Drawing.Point(116, 352);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(475, 58);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Fine Dining and Breathing";
+            this.lblFineDiningSubtitle.AutoSize = true;
+            this.lblFineDiningSubtitle.Font = new System.Drawing.Font("Vladimir Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFineDiningSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.lblFineDiningSubtitle.Location = new System.Drawing.Point(116, 352);
+            this.lblFineDiningSubtitle.Name = "lblFineDiningSubtitle";
+            this.lblFineDiningSubtitle.Size = new System.Drawing.Size(475, 58);
+            this.lblFineDiningSubtitle.TabIndex = 6;
+            this.lblFineDiningSubtitle.Text = "Fine Dining and Breathing";
             // 
-            // label1
+            // lblFancyTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Vladimir Script", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(206, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 116);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Fancy!";
+            this.lblFancyTitle.AutoSize = true;
+            this.lblFancyTitle.Font = new System.Drawing.Font("Vladimir Script", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFancyTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(207)))), ((int)(((byte)(96)))));
+            this.lblFancyTitle.Location = new System.Drawing.Point(206, 35);
+            this.lblFancyTitle.Name = "lblFancyTitle";
+            this.lblFancyTitle.Size = new System.Drawing.Size(279, 116);
+            this.lblFancyTitle.TabIndex = 4;
+            this.lblFancyTitle.Text = "Fancy!";
             // 
             // mnuMain
             // 
             this.mnuMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
-            this.loginToolStripMenuItem,
-            this.aboutToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.mnuMainItmMenu,
+            this.mnuMainItmSignLog,
+            this.mnuMainItmAbout,
+            this.mnuMainItmHelp});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
@@ -79,44 +79,45 @@ namespace GuiMockups
             this.mnuMain.TabIndex = 5;
             this.mnuMain.Text = "menuStrip1";
             // 
-            // menuToolStripMenuItem
+            // mnuMainItmMenu
             // 
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 22);
-            this.menuToolStripMenuItem.Text = "Menu";
-            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
+            this.mnuMainItmMenu.Name = "mnuMainItmMenu";
+            this.mnuMainItmMenu.Size = new System.Drawing.Size(50, 22);
+            this.mnuMainItmMenu.Text = "Menu";
+            this.mnuMainItmMenu.Click += new System.EventHandler(this.mnuMainItmMenu_Click);
             // 
-            // loginToolStripMenuItem
+            // mnuMainItmSignLog
             // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.loginToolStripMenuItem.Text = "SignUp/Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            this.mnuMainItmSignLog.Name = "mnuMainItmSignLog";
+            this.mnuMainItmSignLog.Size = new System.Drawing.Size(92, 22);
+            this.mnuMainItmSignLog.Text = "SignUp/Login";
+            this.mnuMainItmSignLog.Click += new System.EventHandler(this.mnuMainItmSignLog_Click);
             // 
-            // aboutToolStripMenuItem
+            // mnuMainItmAbout
             // 
-            this.aboutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.mnuMainItmAbout.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.mnuMainItmAbout.Name = "mnuMainItmAbout";
+            this.mnuMainItmAbout.Size = new System.Drawing.Size(52, 22);
+            this.mnuMainItmAbout.Text = "About";
+            this.mnuMainItmAbout.Click += new System.EventHandler(this.mnuMainItmAbout_Click);
             // 
-            // helpToolStripMenuItem
+            // mnuMainItmHelp
             // 
-            this.helpToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.mnuMainItmHelp.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.mnuMainItmHelp.Name = "mnuMainItmHelp";
+            this.mnuMainItmHelp.Size = new System.Drawing.Size(44, 22);
+            this.mnuMainItmHelp.Text = "Help";
+            this.mnuMainItmHelp.Click += new System.EventHandler(this.mnuMainItmHelp_Click);
             // 
-            // pictureBox1
+            // pbxShell
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(226, 120);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.pbxShell.Image = ((System.Drawing.Image)(resources.GetObject("pbxShell.Image")));
+            this.pbxShell.Location = new System.Drawing.Point(226, 120);
+            this.pbxShell.Name = "pbxShell";
+            this.pbxShell.Size = new System.Drawing.Size(264, 244);
+            this.pbxShell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxShell.TabIndex = 7;
+            this.pbxShell.TabStop = false;
             // 
             // frmMain
             // 
@@ -124,10 +125,10 @@ namespace GuiMockups
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(707, 421);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFineDiningSubtitle);
+            this.Controls.Add(this.lblFancyTitle);
             this.Controls.Add(this.mnuMain);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxShell);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "frmMain";
@@ -137,7 +138,7 @@ namespace GuiMockups
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,13 +146,13 @@ namespace GuiMockups
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFineDiningSubtitle;
+        private System.Windows.Forms.Label lblFancyTitle;
         private System.Windows.Forms.MenuStrip mnuMain;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItmMenu;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItmSignLog;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItmAbout;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItmHelp;
+        private System.Windows.Forms.PictureBox pbxShell;
     }
 }

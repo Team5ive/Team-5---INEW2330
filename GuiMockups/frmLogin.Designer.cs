@@ -47,7 +47,6 @@
             this.lblDarkBanner = new System.Windows.Forms.Label();
             this.lblWelcomeBack = new System.Windows.Forms.Label();
             this.cbxPassword = new System.Windows.Forms.CheckBox();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.pbxShell = new System.Windows.Forms.PictureBox();
             this.btnSignIn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxShell)).BeginInit();
@@ -332,7 +331,6 @@
         private System.Windows.Forms.PictureBox pbxShell;
         private System.Windows.Forms.Label lblWelcomeBack;
         private System.Windows.Forms.CheckBox cbxPassword;
-        private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button btnSignIn;
     }
 }
